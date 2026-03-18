@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Literacy Quiz — NYU Silver</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap">
+<style>
+  :root { --purple: #57068C; --purple-bg: #F7F4FB; --green: #2E7D32; --border: #E8E5E0; --text: #2D2D2D; --text-light: #777; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; padding: 20px; max-width: 640px; margin: 0 auto; }
+  .progress { font-size: 12px; color: var(--text-light); margin-bottom: 12px; }
+  .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; margin-top: 6px; }
+  .progress-fill { height: 100%; background: var(--purple); border-radius: 2px; transition: width 0.3s; }
+  .question { font-size: 15px; font-weight: 600; margin-bottom: 16px; line-height: 1.5; }
+  .topic-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--purple); background: var(--purple-bg); padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; display: inline-block; }
+  .option { display: block; width: 100%; text-align: left; padding: 12px 16px; margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; background: white; cursor: pointer; font-size: 13px; font-family: inherit; color: var(--text); transition: all 0.15s; line-height: 1.5; }
+  .option:hover { border-color: var(--purple); background: var(--purple-bg); }
+  .option.correct { border-color: var(--green); background: #E8F5E9; }
+  .option.wrong { border-color: #D32F2F; background: #FFEBEE; }
+  .option.disabled { pointer-events: none; opacity: 0.7; }
+  .explanation { padding: 12px 16px; border-radius: 8px; font-size: 12px; line-height: 1.6; margin-top: 8px; display: none; }
+  .explanation.show { display: block; animation: fadeIn 0.3s; }
+  .explanation.ok { background: #E8F5E9; color: #1B5E20; }
+  .explanation.nope { background: #FFF8E1; color: #E65100; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+  .next-btn { display: none; margin-top: 12px; padding: 10px 20px; background: var(--purple); color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .next-btn.show { display: inline-block; }
+  .next-btn:hover { opacity: 0.9; }
+  .result { text-align: center; padding: 20px; }
+  .score { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: var(--purple); }
+  .badge { font-size: 16px; font-weight: 700; color: var(--purple); margin: 8px 0; }
+  .meter { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; font-size: 11px; }
+  .meter-label { width: 80px; font-weight: 600; }
+  .meter-bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .meter-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+  .meter-fill.g { background: var(--green); }
+  .meter-fill.m { background: #FF9800; }
+  .meter-fill.l { background: #D32F2F; }
+</style>
+</head>
+<body>
+
+<div class="progress"><span id="prog">Question 1 of 7</span><div class="progress-bar"><div class="progress-fill" id="progFill" style="width:14%"></div></div></div>
+<div id="content"></div>
+
+<script>
+const allQs = [
+  { q:'When an AI "hallucinates," what does that mean?', topic:'Concepts', opts:['The AI is malfunctioning','The AI confidently generates false information','The AI is processing an image','The AI refuses to answer'], c:1, exp:'Hallucination = plausible but factually incorrect content. Dangerous in case notes and court reports.' },
+  { q:'A student pastes a client intake form into ChatGPT. Primary concern?', topic:'Ethics', opts:['AI might give bad advice','Student is being lazy','PHI may be stored, violating HIPAA','AI lacks SW terminology'], c:2, exp:'Commercial AI is not HIPAA-compliant. PII entered may be stored or used in model training.' },
+  { q:'What does "temperature" control in an AI model?', topic:'Concepts', opts:['Response speed','Randomness/creativity','Number of sources','Response length'], c:1, exp:'Low temp = predictable (clinical docs). High temp = creative (brainstorming).' },
+  { q:'AI detector flags a paper at 72%. Best first step?', topic:'Policy', opts:['Report for dishonesty','Fail via email','Meet privately, ask about writing process','Run through more detectors'], c:2, exp:'Detection tools have significant false-positive rates. A private conversation provides context no tool can.' },
+  { q:'Why might a zero-tolerance AI ban backfire?', topic:'Policy', opts:['Students hide use instead of engaging','Detectors are too expensive','NASW requires AI integration','Students have legal right to use AI'], c:0, exp:'Prohibition without pedagogy pushes AI use underground. Move from policing to teaching.' },
+  { q:'What is "prompt engineering" in SW context?', topic:'Concepts', opts:['Building AI from scratch','Crafting effective AI instructions','Writing student assignment prompts','Debugging AI code'], c:1, exp:'Crafting prompts for better outputs — essential for role-play personas and case simulations.' },
+  { q:'Colleague says "AI can\'t be biased — it\'s just math." Best response?', topic:'Ethics', opts:['They\'re right','AI reflects biases in training data','Only matters for tech companies','Ban all AI'], c:1, exp:'AI reflects training data biases — racial, gender, cultural. Ask: whose perspectives are centered?' },
+  { q:'Most AI-resistant assignment type?', topic:'Policy', opts:['5-page paper','Oral case presentation','Literature review','Written self-reflection'], c:1, exp:'Oral presentations require real-time defense. AI cannot present or answer peer questions.' },
+  { q:'What is RAG and why does it matter for SW?', topic:'Concepts', opts:['Random Access Generation','Retrieval-Augmented Generation','Rapid Assessment Guide','Recursive AI Grading'], c:1, exp:'RAG connects AI to specific documents — could ground responses in agency policies or DSM criteria.' },
+  { q:'Student with disability uses AI as accommodation. Detector flags paper. What do you do?', topic:'Ethics', opts:['Report — accommodations don\'t cover AI','Consult disability services first','Ignore the flag','Require rewrite without AI'], c:1, exp:'AI as accommodation is evolving. Consult disability services — this requires institutional guidance.' }
+];
+
+let state = { idx: 0, score: 0, qs: [], topics: {} };
+
+function init() {
+  state = { idx: 0, score: 0, qs: [...allQs].sort(() => Math.random()-0.5).slice(0,7), topics: {} };
+  render();
+}
+
+function render() {
+  const total = state.qs.length;
+  if (state.idx >= total) return showResult();
+  const q = state.qs[state.idx];
+  document.getElementById('prog').textContent = `Question ${state.idx+1} of ${total} · ${q.topic}`;
+  document.getElementById('progFill').style.width = ((state.idx+1)/total*100)+'%';
+  document.getElementById('content').innerHTML = `
+    <div class="topic-tag">${q.topic}</div>
+    <div class="question">${q.q}</div>
+    ${q.opts.map((o,i) => `<button class="option" onclick="answer(${i},this)">${o}</button>`).join('')}
+    <div class="explanation" id="expl"></div>
+    <button class="next-btn" id="nextBtn" onclick="state.idx++;render();">${state.idx<total-1?'Next Question →':'See Results →'}</button>
+  `;
+}
+
+function answer(i, btn) {
+  const q = state.qs[state.idx];
+  const ok = i === q.c;
+  if (ok) state.score++;
+  if (!state.topics[q.topic]) state.topics[q.topic] = {t:0,c:0};
+  state.topics[q.topic].t++;
+  if (ok) state.topics[q.topic].c++;
+  document.querySelectorAll('.option').forEach((o,j) => {
+    o.classList.add('disabled');
+    if (j===q.c) o.classList.add('correct');
+    if (j===i && !ok) o.classList.add('wrong');
+  });
+  const e = document.getElementById('expl');
+  e.className = 'explanation show ' + (ok?'ok':'nope');
+  e.innerHTML = (ok?'<strong>Correct!</strong> ':'<strong>Not quite.</strong> ') + q.exp;
+  document.getElementById('nextBtn').classList.add('show');
+}
+
+function showResult() {
+  const total = state.qs.length;
+  const pct = Math.round(state.score/total*100);
+  const badge = pct===100?'🏆 AI Literacy Champion':pct>=85?'🎯 Expert Level':pct>=70?'📚 Strong Foundation':pct>=50?'🌱 Growing Awareness':'🔰 Getting Started';
+  let meters = '';
+  for (const [topic, d] of Object.entries(state.topics)) {
+    const tp = Math.round(d.c/d.t*100);
+    const cls = tp>=70?'g':tp>=40?'m':'l';
+    meters += `<div class="meter"><span class="meter-label">${topic}</span><div class="meter-bar"><div class="meter-fill ${cls}" style="width:${tp}%"></div></div><span style="width:30px;text-align:right;font-weight:600;color:var(--text-light);">${d.c}/${d.t}</span></div>`;
+  }
+  document.getElementById('prog').textContent = 'Complete!';
+  document.getElementById('progFill').style.width = '100%';
+  document.getElementById('content').innerHTML = `<div class="result">
+    <div class="score">${state.score}/${total}</div>
+    <div class="badge">${badge}</div>
+    <div style="font-size:13px;color:var(--text-light);margin-bottom:16px;">${pct>=70?'Well-prepared to guide faculty AI discussions.':'Review the Foundations section to strengthen.'}</div>
+    <div style="text-align:left;max-width:300px;margin:0 auto 16px;"><div style="font-size:11px;font-weight:700;color:var(--text-light);margin-bottom:6px;">TOPIC BREAKDOWN</div>${meters}</div>
+    <button class="next-btn show" onclick="init()">🔄 Shuffle & Try Again</button>
+  </div>`;
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syllabus Policy Generator — NYU Silver</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+  :root { --purple: #57068C; --purple-bg: #F7F4FB; --green: #2E7D32; --blue: #2B579A; --orange: #E65100; --border: #E8E5E0; --text: #2D2D2D; --text-light: #777; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; padding: 20px; max-width: 700px; margin: 0 auto; }
+  h2 { font-size: 18px; font-weight: 700; color: var(--purple); margin-bottom: 8px; }
+  p { font-size: 13px; color: var(--text-light); margin-bottom: 16px; line-height: 1.6; }
+  .fields { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .fields input { flex: 1; min-width: 160px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; outline: none; }
+  .fields input:focus { border-color: var(--purple); }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+  .tab { flex: 1; padding: 12px; border: none; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; font-family: inherit; color: white; transition: all 0.15s; }
+  .tab:hover { opacity: 0.9; transform: translateY(-1px); }
+  .tab-open { background: var(--green); }
+  .tab-restricted { background: var(--blue); }
+  .tab-none { background: var(--orange); }
+  .policy-box { display: none; border-left: 4px solid var(--purple); background: var(--purple-bg); padding: 16px 20px; border-radius: 0 10px 10px 0; margin-bottom: 12px; position: relative; animation: fadeIn 0.25s; }
+  .policy-box.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+  .policy-box h3 { font-size: 13px; font-weight: 700; color: var(--purple); margin-bottom: 6px; }
+  .policy-text { font-size: 13px; font-style: italic; color: #555; line-height: 1.7; }
+  .policy-text .hl { font-weight: 600; color: var(--purple); background: rgba(87,6,140,0.06); padding: 0 2px; border-radius: 2px; }
+  .copy-btn { position: absolute; top: 12px; right: 12px; background: var(--purple); color: white; border: none; padding: 5px 12px; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .copy-btn:hover { opacity: 0.9; }
+  .consequences { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; background: #F8F7F5; font-size: 13px; line-height: 1.8; display: none; animation: fadeIn 0.25s; }
+  .consequences.active { display: block; }
+  .consequences h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-light); margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<h2>AI Policy Generator for Your Syllabus</h2>
+<p>Enter your course details, choose your stance, and get ready-to-paste syllabus language.</p>
+
+<div class="fields">
+  <input type="text" id="course" placeholder="Course name (e.g., Advanced Clinical Practice)" oninput="update()">
+  <input type="text" id="semester" placeholder="Semester (e.g., Fall 2026)" oninput="update()">
+</div>
+
+<div class="tabs">
+  <button class="tab tab-open" onclick="show('open')">Open Use</button>
+  <button class="tab tab-restricted" onclick="show('restricted')">Restricted Use</button>
+  <button class="tab tab-none" onclick="show('none')">AI-Free</button>
+</div>
+
+<div class="policy-box" id="box-open">
+  <button class="copy-btn" onclick="copy('open')">Copy</button>
+  <h3>Open AI Use — Sample Language</h3>
+  <p class="policy-text" id="text-open"></p>
+</div>
+<div class="policy-box" id="box-restricted">
+  <button class="copy-btn" onclick="copy('restricted')">Copy</button>
+  <h3>Restricted AI Use — Sample Language</h3>
+  <p class="policy-text" id="text-restricted"></p>
+</div>
+<div class="policy-box" id="box-none">
+  <button class="copy-btn" onclick="copy('none')">Copy</button>
+  <h3>AI-Free — Sample Language</h3>
+  <p class="policy-text" id="text-none"></p>
+</div>
+
+<div class="consequences" id="conseq"></div>
+
+<script>
+let currentType = null;
+
+const policies = {
+  open: (c,s) => `"Generative AI tools (such as ChatGPT, Claude, or Gemini) may be used in ${c}${s} as intellectual tools. If you use AI assistance, you must: (1) disclose which tool(s) you used, (2) describe how you used it, and (3) include relevant prompts as an appendix. Uncited AI use constitutes academic dishonesty. Note: AI tools must never be used with real client data, identifying information, or content subject to HIPAA protections."`,
+  restricted: (c,s) => `"In ${c}${s}, generative AI may only be used for brainstorming, generating initial outlines, or checking grammar. Using AI to draft, write, or substantially revise your submitted analysis or prose is not permitted. Process recordings, field placement documentation, and clinical reflections must be entirely your own work. Where AI is used within the permitted scope, you must document it."`,
+  none: (c,s) => `"${c}${s} requires you to develop clinical assessment, analytical writing, and ethical reasoning skills through your own independent effort. The use of generative AI tools to produce or edit submitted work is not permitted. This reflects a belief that you deserve the opportunity to develop these skills yourself — skills your future clients will depend on."`
+};
+
+const consequences = {
+  open: { title: 'WHAT STUDENTS CAN DO — OPEN USE', items: [
+    {ok:true, t:'Use AI for brainstorming and idea generation'},
+    {ok:true, t:'Use AI for drafting and revision (with citation)'},
+    {ok:true, t:'Use AI for research synthesis'},
+    {ok:false, t:'Use AI with real client data (HIPAA)'},
+    {ok:false, t:'Submit without disclosure and citation'},
+    {ok:'warn', t:'Must include prompts as appendix'}
+  ]},
+  restricted: { title: 'WHAT STUDENTS CAN DO — RESTRICTED', items: [
+    {ok:true, t:'Brainstorming and initial outlines'},
+    {ok:true, t:'Grammar and style checking'},
+    {ok:false, t:'Draft or substantially revise prose'},
+    {ok:false, t:'Process recordings or clinical reflections'},
+    {ok:false, t:'Field placement documentation'},
+    {ok:'warn', t:'Must document any AI use'}
+  ]},
+  none: { title: 'WHAT STUDENTS CAN DO — AI-FREE', items: [
+    {ok:false, t:'Produce or edit any submitted work with AI'},
+    {ok:false, t:'Draft, outline, or revise with AI'},
+    {ok:true, t:'Use AI for personal learning (not submitted)'},
+    {ok:'warn', t:'Build skills your future clients depend on'},
+    {ok:'warn', t:'Requires clear detection/integrity plan'}
+  ]}
+};
+
+function update() {
+  const course = document.getElementById('course').value.trim();
+  const sem = document.getElementById('semester').value.trim();
+  const c = course ? `<span class="hl">${course}</span>` : 'this course';
+  const s = sem ? ` (${sem})` : '';
+  for (const [type, fn] of Object.entries(policies)) {
+    document.getElementById('text-' + type).innerHTML = fn(c, s);
+  }
+}
+
+function show(type) {
+  currentType = type;
+  document.querySelectorAll('.policy-box').forEach(b => b.classList.remove('active'));
+  document.getElementById('box-' + type).classList.add('active');
+  const cq = consequences[type];
+  const el = document.getElementById('conseq');
+  el.classList.add('active');
+  el.innerHTML = `<h4>${cq.title}</h4>` + cq.items.map(i => {
+    const icon = i.ok === true ? '<span style="color:var(--green)">✓</span>' : i.ok === false ? '<span style="color:#D32F2F">✗</span>' : '<span style="color:#FF9800">⚠</span>';
+    return `<div>${icon} ${i.t}</div>`;
+  }).join('');
+}
+
+function copy(type) {
+  const el = document.getElementById('text-' + type);
+  const text = el.textContent.replace(/^"|"$/g, '');
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.parentElement.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+
+update();
+</script>
+</body>
+</html>

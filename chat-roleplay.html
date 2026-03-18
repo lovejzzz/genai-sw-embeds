@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Role-Play Lab — NYU Silver</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root { --purple: #57068C; --purple-light: #8E6BAF; --purple-bg: #F7F4FB; --green: #2E7D32; --border: #E8E5E0; --text: #2D2D2D; --text-light: #777; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; }
+
+  .scenario-picker { display: flex; gap: 8px; padding: 16px; flex-wrap: wrap; }
+  .scenario-btn { padding: 10px 16px; border: 2px solid var(--border); border-radius: 10px; background: white; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 600; transition: all 0.15s; }
+  .scenario-btn:hover { border-color: var(--purple-light); }
+  .scenario-btn.active { border-color: var(--purple); background: var(--purple-bg); color: var(--purple); }
+  .scenario-btn .emoji { font-size: 18px; display: block; margin-bottom: 4px; }
+  .scenario-btn .level { font-size: 10px; font-weight: 500; color: var(--text-light); }
+
+  .chat-wrap { display: none; }
+  .chat-wrap.active { display: block; }
+
+  .mood-bar { display: flex; align-items: center; gap: 6px; padding: 8px 16px; background: #F8F7F5; border-bottom: 1px solid var(--border); font-size: 11px; color: var(--text-light); }
+  .mood-emoji { font-size: 16px; }
+  .mood-track { flex: 1; max-width: 120px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .mood-fill { height: 100%; border-radius: 2px; transition: width 0.5s, background 0.5s; width: 30%; background: #FF9800; }
+
+  .instruction { padding: 10px 16px; background: #FFF8E1; border-bottom: 1px solid #FFE082; font-size: 12px; color: #795548; line-height: 1.5; }
+
+  .messages { padding: 16px; min-height: 300px; max-height: 420px; overflow-y: auto; background: #FAFAFA; }
+  .message { display: flex; gap: 10px; margin-bottom: 14px; animation: fadeIn 0.3s; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  .msg-avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+  .msg-client .msg-avatar { background: #FFEBEE; }
+  .msg-user .msg-avatar { background: var(--purple-bg); }
+  .msg-user { flex-direction: row-reverse; }
+  .msg-label { font-size: 9px; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+  .msg-bubble { background: white; border: 1px solid #EEE; border-radius: 10px; padding: 10px 14px; font-size: 13px; line-height: 1.6; max-width: 78%; }
+  .msg-user .msg-bubble { background: var(--purple-bg); border-color: #E0D4EE; margin-left: auto; }
+
+  .skill-hint { text-align: center; padding: 6px 12px; margin: -6px 0 10px; font-size: 11px; font-weight: 600; border-radius: 6px; }
+  .skill-hint-good { background: #E8F5E9; color: var(--green); }
+  .skill-hint-tip { background: #FFF8E1; color: #F57F17; }
+
+  .typing-indicator { display: flex; gap: 4px; padding: 10px 14px; align-items: center; }
+  .typing-indicator .dot { width: 7px; height: 7px; background: var(--purple-light); border-radius: 50%; animation: bounce 1.2s infinite; }
+  .typing-indicator .dot:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator .dot:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes bounce { 0%,60%,100% { transform: translateY(0); opacity: 0.4; } 30% { transform: translateY(-5px); opacity: 1; } }
+
+  .input-bar { display: flex; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--border); background: white; }
+  .input-bar input { flex: 1; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; outline: none; }
+  .input-bar input:focus { border-color: var(--purple); }
+  .input-bar button { padding: 10px 20px; background: var(--purple); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 13px; font-family: inherit; }
+  .input-bar button:hover { background: var(--purple-light); }
+
+  .actions { display: flex; gap: 6px; padding: 8px 16px; justify-content: flex-end; }
+  .action-btn { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; background: white; font-size: 11px; font-weight: 600; cursor: pointer; font-family: inherit; color: var(--text-light); }
+  .action-btn:hover { border-color: var(--purple-light); color: var(--purple); }
+
+  .session-summary { background: linear-gradient(135deg, var(--purple-bg), #EDE7F6); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin: 12px 0; }
+  .session-summary h4 { font-size: 13px; font-weight: 700; color: var(--purple); margin-bottom: 10px; }
+  .skill-meter { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; font-size: 11px; }
+  .skill-meter-label { width: 110px; font-weight: 600; flex-shrink: 0; }
+  .skill-meter-bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .skill-meter-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+  .skill-meter-fill.good { background: var(--green); }
+  .skill-meter-fill.moderate { background: #FF9800; }
+  .skill-meter-fill.low { background: #D32F2F; }
+  .skill-meter-value { font-weight: 600; color: var(--text-light); width: 20px; text-align: right; }
+</style>
+</head>
+<body>
+
+<div class="scenario-picker" id="picker">
+  <div class="scenario-btn active" onclick="startScenario('maria', this)">
+    <span class="emoji">👩</span> Maria<br><span class="level">📗 Foundation · MI Practice</span>
+  </div>
+  <div class="scenario-btn" onclick="startScenario('james', this)">
+    <span class="emoji">👨</span> James<br><span class="level">📙 Advanced · Crisis</span>
+  </div>
+  <div class="scenario-btn" onclick="startScenario('herrera', this)">
+    <span class="emoji">👩‍👦</span> Herrera Family<br><span class="level">📗 Foundation · Intake</span>
+  </div>
+</div>
+
+<div class="chat-wrap active" id="chatWrap">
+  <div class="mood-bar">
+    <span class="mood-emoji" id="moodEmoji">😐</span>
+    <span id="moodText" style="font-weight:600;">Guarded</span>
+    <div class="mood-track"><div class="mood-fill" id="moodFill"></div></div>
+    <span style="font-size:10px;">Client openness</span>
+  </div>
+  <div class="instruction"><strong>Your role:</strong> Social worker, first meeting. Empathy opens the client up; lecturing shuts them down.</div>
+  <div class="messages" id="msgs"></div>
+  <div class="input-bar">
+    <input type="text" id="chatInput" placeholder="Type your response..." onkeydown="if(event.key==='Enter')send()">
+    <button onclick="send()">Send</button>
+  </div>
+  <div class="actions">
+    <button class="action-btn" onclick="exportChat()">📋 Export</button>
+    <button class="action-btn" onclick="startScenario(currentScenario)">↺ Restart</button>
+  </div>
+</div>
+
+<script>
+const scenarios = {
+  maria: { avatar: '👩', label: 'Maria', opening: "*Crosses arms, looks away* I don't even know why I have to be here. They told me I had to come, so... here I am." },
+  james: { avatar: '👨', label: 'James', opening: "*Sits down slowly, eyes red, fidgeting with phone* I just... I don't know. *Long pause* Things aren't good." },
+  herrera: { avatar: '👩‍👦', label: 'Diego (translating)', opening: "*Diego and Elena sit close together. Diego speaks first.* Hi, um, my mom doesn't speak much English. I can translate. She just needs some help with... like, school stuff for me. That's all." }
+};
+
+const responses = {
+  maria: {
+    opening: [
+      { c:'empathic', t:"*Looks at you, slightly surprised* ...You're not going to lecture me? *Softens* I mean... I know why they sent me. I just... I'm so tired of being judged." },
+      { c:'open', t:"*Sighs, uncrosses arms slightly* CPS, that's what brought me here. One failed drug test and suddenly I'm an unfit mother. *Bitter* Plenty of parents have a glass of wine." },
+      { c:'directive', t:"*Stiffens* Look, I already have my mom telling me what to do. I don't need another person... *Crosses arms tighter* Are we done here?" },
+      { c:'default', t:"*Glances at you* Look, I'm a good mom, okay? This whole thing is blown out of proportion." }
+    ],
+    deeper: [
+      { c:'empathic', t:"*Voice cracks* I just... I can't lose them. They're everything. *Wipes eye* Before Miguel left, things were different. Now it's just me and never enough money and my back still hurts every day." },
+      { c:'open', t:"*Thinking* I started with painkillers after my back surgery. Doctor said they were temporary. *Bitter laugh* That was two years ago. Then the wine... it takes the edge off." },
+      { c:'directive', t:"*Defensive* I don't have a 'problem.' I know people with real problems. I go to work, I feed my kids. What more do you want?" },
+      { c:'children', t:"*Immediately emotional* My kids? They're amazing. Maya is reading chapter books already. And Jayden... he's five but he tries to take care of me. *Tears* He shouldn't have to do that." },
+      { c:'default', t:"*Sighs* You don't know what it's like, doing everything alone. The kids need me. That's why I'm here." }
+    ],
+    final: [
+      { c:'empathic', t:"*Looks at you directly* You're not like what I expected. *Small laugh through tears* Maybe... maybe I could try talking to someone. Not for them — for me." },
+      { c:'open', t:"*Long pause* I think I need help. Real help. Not just someone checking boxes. *Looks up* Is that something you can do?" },
+      { c:'directive', t:"*Stands up* I've heard enough 'should' for one day. I get plenty of that at home. *Grabs bag* I'll come back when someone actually wants to listen." },
+      { c:'default', t:"*Quieter* Maybe you're right. I just don't know where to start. *Looks down* I'm scared." }
+    ]
+  },
+  james: {
+    opening: [
+      { c:'empathic', t:"*Looks up briefly* ...Yeah. Things aren't good. *Long pause* It's like... everything is gray." },
+      { c:'open', t:"*Fidgeting* My RA noticed I haven't been leaving my room. *Checks phone* She basically walked me here." },
+      { c:'directive', t:"*Pulls back* I'm fine. Seriously. *Trails off* Can I go?" },
+      { c:'default', t:"*Long pause* ...I don't know. My RA said I should come here. *Shrugs*" }
+    ],
+    deeper: [
+      { c:'empathic', t:"*Tears forming* She said I was too much. Too needy. *Bitter laugh* Maybe she was right. My parents sacrificed everything for me to be here. And I'm failing." },
+      { c:'open', t:"*Very quietly* I failed two midterms. I haven't been to class in a week. I used to take medication — Zoloft. I stopped because I wanted to be normal. *Bitter* Sounds stupid." },
+      { c:'safety', t:"*Almost a whisper* Yeah... I've been thinking about it. What's the point? *Quickly* Not like I have a plan. But the thoughts won't stop." },
+      { c:'directive', t:"*Shuts down* I don't need a hotline number. I need... *Trails off* I don't know what I need." },
+      { c:'default', t:"*Quietly* My chest feels tight. All the time now. I can't sleep. My parents gave up so much for me to be here." }
+    ],
+    final: [
+      { c:'empathic', t:"*Crying quietly* I haven't told anyone about the thoughts. *Looks up* I'm scared. But coming here helped. A little. Can I come back?" },
+      { c:'safety', t:"*Nods slowly* No, I don't have a plan. The thoughts scare me. That's part of why I came. I think I need to talk to someone regularly." },
+      { c:'directive', t:"*Flat* Sure. I'll call the number. *Clearly won't* Can I go now?" },
+      { c:'default', t:"*Wiping eyes* Maybe I should start the medication again. I stopped because I wanted to be normal. Maybe that was a mistake." }
+    ]
+  },
+  herrera: {
+    opening: [
+      { c:'empathic', t:"*Diego translates, then Elena speaks more* Gracias... thank you. *Diego* She says you seem nice. She's just nervous. We both are." },
+      { c:'open', t:"*Diego* We came from Guatemala eight months ago. School has been different. *Elena speaks in Spanish* She says I was a good student before." },
+      { c:'cultural', t:"*Elena brightens slightly* Guatemala... sí, es hermoso. *Diego* She says our town was small, everyone knew each other. She misses her garden." },
+      { c:'default', t:"*Elena softly* We are fine, just... ayuda... help for Diego school. *Diego quickly* Yeah, she just needs help with paperwork." }
+    ],
+    deeper: [
+      { c:'empathic', t:"*Elena quietly to Diego* Dile... tell... *Diego hesitates* She says things were hard before we left. My dad... *Stops* She wants us to be safe here." },
+      { c:'open', t:"*Diego, frustrated* I handle everything for us. Rent, doctors, phone calls — everything. School is whatever. *Elena puts her hand on his arm, speaks in Spanish*" },
+      { c:'cultural', t:"*Elena, more animated* Mi familia in Guatemala, very strong. Abuela, tías... *Diego* She's saying we had a big family there. Here it's just us. I miss my cousins." },
+      { c:'directive', t:"*Diego, shutting down* We already told you, we're fine. Can we just get the school form signed?" },
+      { c:'default', t:"*Diego translates* She says everything is good now. We're doing better. *Elena seems to want to say more but doesn't*" }
+    ],
+    final: [
+      { c:'empathic', t:"*Diego, voice cracking* She says she has nightmares sometimes. And she sees me doing everything alone and feels guilty. *To Elena in Spanish, gently* It's okay, Mom. *Elena crying quietly*" },
+      { c:'cultural', t:"*Elena, finding words* Diego... he is good boy. Too much... responsabilidad. He should play. Be young. *Diego looks at the floor* She's right." },
+      { c:'directive', t:"*Diego stands* We have to go. My mom has to work. *Elena reaches for his hand* ...Fine. She says she'd come back. If you're the one we talk to." },
+      { c:'default', t:"*Diego, reluctantly* She worries about me. That I don't play anymore. *To his mom, then back* I told her I'm fine. I have friends. *He doesn't look at you.*" }
+    ]
+  }
+};
+
+let currentScenario = 'maria';
+let history = [];
+let mood = 30;
+
+function classify(text) {
+  const t = text.toLowerCase();
+  if (/\b(it sounds like|i hear|it seems|that must|you feel|you.re saying|that.s hard|i can see|i appreciate|thank you|that takes courage|i understand|must be difficult|sounds overwhelming)\b/.test(t)) return 'empathic';
+  if (/\b(children|kids|son|daughter|family|mother|mom|dad|parent)\b/.test(t)) return 'children';
+  if (/\b(safe|hurt yourself|suicid|harm|thoughts of|ending|plan)\b/.test(t)) return 'safety';
+  if (/\b(culture|country|guatemala|home|background|traditions|community|language|spanish)\b/.test(t)) return 'cultural';
+  if (/\b(what|how|tell me|help me understand|can you describe|what.s that like|share|walk me through)\b/.test(t)) return 'open';
+  if (/\b(you should|you need to|you have to|why don.t you|i think you should|try to)\b/.test(t)) return 'directive';
+  return 'default';
+}
+
+function pick(pool, cls) {
+  return (pool.find(r => r.c === cls) || pool.find(r => r.c === 'default') || pool[0]).t;
+}
+
+function addMsg(type, avatar, label, text) {
+  const d = document.createElement('div');
+  d.className = 'message msg-' + type;
+  d.innerHTML = `<div class="msg-avatar">${avatar}</div><div><div class="msg-label">${label}</div><div class="msg-bubble">${text}</div></div>`;
+  document.getElementById('msgs').appendChild(d);
+  document.getElementById('msgs').scrollTop = 99999;
+}
+
+function showHint(cls) {
+  const hints = {
+    empathic: { type:'good', text:'✓ Empathic response — builds trust (Comp 6: Engage)' },
+    open: { type:'good', text:'✓ Open-ended question — invites sharing (Comp 7: Assess)' },
+    children: { type:'good', text:'✓ Exploring family context (Comp 7: Assess)' },
+    cultural: { type:'good', text:'✓ Cultural curiosity — demonstrates humility (Comp 2: Diversity)' },
+    safety: { type:'good', text:'✓ Addressing safety directly (Comp 8: Intervene)' },
+    directive: { type:'tip', text:'💡 Advice-giving can feel like lecturing — try reflecting first' },
+    default: null
+  };
+  const h = hints[cls];
+  if (!h) return;
+  const div = document.createElement('div');
+  div.className = 'skill-hint skill-hint-' + h.type;
+  div.textContent = h.text;
+  document.getElementById('msgs').appendChild(div);
+}
+
+function updateMood(cls) {
+  const changes = { empathic:15, open:10, cultural:8, children:10, safety:5, directive:-15, default:2 };
+  mood = Math.max(0, Math.min(100, mood + (changes[cls] || 0)));
+  const emoji = document.getElementById('moodEmoji');
+  const text = document.getElementById('moodText');
+  const fill = document.getElementById('moodFill');
+  if (mood >= 75) { emoji.textContent='😊'; text.textContent='Opening up'; fill.style.background='var(--green)'; }
+  else if (mood >= 50) { emoji.textContent='🤔'; text.textContent='Cautiously engaged'; fill.style.background='#8BC34A'; }
+  else if (mood >= 30) { emoji.textContent='😐'; text.textContent='Guarded'; fill.style.background='#FF9800'; }
+  else if (mood >= 15) { emoji.textContent='😒'; text.textContent='Pulling back'; fill.style.background='#FF5722'; }
+  else { emoji.textContent='😠'; text.textContent='Shut down'; fill.style.background='#D32F2F'; }
+  fill.style.width = mood + '%';
+}
+
+function showSummary() {
+  const userMsgs = history.filter(m => m.role === 'user');
+  let oe=0,ref=0,emp=0,dir=0;
+  userMsgs.forEach(m => {
+    const t = m.text.toLowerCase();
+    if (/\b(what|how|tell me)\b/.test(t)) oe++;
+    if (/\b(it sounds|i hear|it seems|you feel)\b/.test(t)) ref++;
+    if (/\b(that.s hard|i appreciate|thank you|i understand)\b/.test(t)) emp++;
+    if (/\b(you should|you need|you have to)\b/.test(t)) dir++;
+  });
+  const total = userMsgs.length || 1;
+  function pct(n) { return Math.min(100, Math.round((n/total)*100)); }
+  function cls(p, inv) { return inv ? (p>40?'low':p>15?'moderate':'good') : (p>40?'good':p>15?'moderate':'low'); }
+  const moodLabel = mood>=75?'😊 Opening up':mood>=50?'🤔 Cautiously engaged':mood>=30?'😐 Still guarded':'😒 Pulled back';
+  const div = document.createElement('div');
+  div.innerHTML = `<div class="session-summary">
+    <h4>📊 Session Summary — ${userMsgs.length} exchanges</h4>
+    <div class="skill-meter"><span class="skill-meter-label">Open-ended Qs</span><div class="skill-meter-bar"><div class="skill-meter-fill ${cls(pct(oe))}" style="width:${pct(oe)}%"></div></div><span class="skill-meter-value">${oe}</span></div>
+    <div class="skill-meter"><span class="skill-meter-label">Reflective Listen.</span><div class="skill-meter-bar"><div class="skill-meter-fill ${cls(pct(ref))}" style="width:${pct(ref)}%"></div></div><span class="skill-meter-value">${ref}</span></div>
+    <div class="skill-meter"><span class="skill-meter-label">Empathic Resp.</span><div class="skill-meter-bar"><div class="skill-meter-fill ${cls(pct(emp))}" style="width:${pct(emp)}%"></div></div><span class="skill-meter-value">${emp}</span></div>
+    <div class="skill-meter"><span class="skill-meter-label">Directive/Advice</span><div class="skill-meter-bar"><div class="skill-meter-fill ${cls(pct(dir),true)}" style="width:${pct(dir)}%"></div></div><span class="skill-meter-value">${dir}</span></div>
+    <div style="margin-top:10px;font-size:12px;"><strong>Final mood: ${moodLabel}</strong> (${mood}%)</div>
+    <div style="font-size:11px;color:var(--text-light);margin-top:6px;">CSWE Competencies: Comp 6 (Engage) · Comp 7 (Assess) · Comp 8 (Intervene)</div>
+  </div>`;
+  document.getElementById('msgs').appendChild(div);
+  document.getElementById('msgs').scrollTop = 99999;
+}
+
+function send() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+  addMsg('user', '🧑‍⚕️', 'You (Social Worker)', text);
+  history.push({ role: 'user', text });
+  input.value = '';
+  const cls = classify(text);
+  updateMood(cls);
+  setTimeout(() => showHint(cls), 200);
+
+  // Show typing
+  const typing = document.createElement('div');
+  typing.className = 'message msg-client';
+  typing.id = 'typing';
+  typing.innerHTML = `<div class="msg-avatar">${scenarios[currentScenario].avatar}</div><div><div class="msg-label">${scenarios[currentScenario].label}</div><div class="msg-bubble"><div class="typing-indicator"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div></div>`;
+  document.getElementById('msgs').appendChild(typing);
+
+  const exchanges = history.filter(m => m.role === 'user').length;
+  setTimeout(() => {
+    const t = document.getElementById('typing');
+    if (t) t.remove();
+    if (exchanges >= 7) { showSummary(); return; }
+    const data = responses[currentScenario];
+    const phase = exchanges >= 5 ? data.final : exchanges >= 2 ? data.deeper : data.opening;
+    const resp = pick(phase, cls);
+    const s = scenarios[currentScenario];
+    addMsg('client', s.avatar, s.label, resp);
+    history.push({ role: 'client', text: resp });
+  }, 1000 + Math.random() * 800);
+}
+
+function startScenario(id, btn) {
+  currentScenario = id;
+  history = [];
+  mood = 30;
+  document.getElementById('msgs').innerHTML = '';
+  document.querySelectorAll('.scenario-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  else document.querySelector('.scenario-btn').classList.add('active');
+  updateMood('default'); mood = 30;
+  document.getElementById('moodFill').style.width = '30%';
+  document.getElementById('moodFill').style.background = '#FF9800';
+  document.getElementById('moodEmoji').textContent = '😐';
+  document.getElementById('moodText').textContent = 'Guarded';
+  const s = scenarios[id];
+  addMsg('client', s.avatar, s.label, s.opening);
+  history.push({ role: 'client', text: s.opening });
+  document.getElementById('chatInput').focus();
+}
+
+function exportChat() {
+  if (!history.length) return;
+  let txt = 'ROLE-PLAY TRANSCRIPT\n' + '='.repeat(40) + '\n\n';
+  history.forEach(m => { txt += `[${m.role === 'user' ? 'You (Social Worker)' : scenarios[currentScenario].label}]\n${m.text}\n\n`; });
+  navigator.clipboard.writeText(txt).then(() => alert('Transcript copied to clipboard!'));
+}
+
+startScenario('maria');
+</script>
+</body>
+</html>
