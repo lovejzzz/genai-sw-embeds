@@ -791,7 +791,7 @@
   <div class="masthead-rule" aria-hidden="true"></div>
   <div class="masthead-rule-thin" aria-hidden="true"></div>
   <h1><span class="the">The</span> AI Times</h1>
-  <div class="masthead-sub">Daily Intelligence for Social Work Educators</div>
+  <div class="masthead-sub">AI &amp; Education News for Social Work Educators</div>
   <div class="masthead-meta">
     <span class="masthead-date" id="mastheadDate">Loading...</span>
     <span aria-hidden="true">&middot;</span>
@@ -833,12 +833,12 @@
 
 <!-- ═══ SECTION NAV ═══ -->
 <nav class="section-nav" id="sectionNav" role="tablist" aria-label="Filter by category">
-  <button class="section-btn active" role="tab" aria-selected="true" data-cat="all">All</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="all">All</button>
+  <button class="section-btn active" role="tab" aria-selected="true" data-cat="education">Education</button>
   <button class="section-btn" role="tab" aria-selected="false" data-cat="research">Research</button>
   <button class="section-btn" role="tab" aria-selected="false" data-cat="industry">Industry</button>
   <button class="section-btn" role="tab" aria-selected="false" data-cat="policy">Policy</button>
   <button class="section-btn" role="tab" aria-selected="false" data-cat="tools">Tools</button>
-  <button class="section-btn" role="tab" aria-selected="false" data-cat="education">Education</button>
   <button class="section-btn" role="tab" aria-selected="false" data-cat="ethics">Ethics</button>
 </nav>
 
@@ -872,7 +872,7 @@ const ARCHIVE_URL = 'archive/';
 
 let allArticles = [];
 let filteredArticles = [];
-let currentCategory = 'all';
+let currentCategory = 'education';
 let selectedDate = null; // null = today
 let availableDates = [];
 let searchQuery = '';
@@ -1559,7 +1559,7 @@ async function init() {
     updateBriefing();
     updateTrending();
     updateSavedFilterButton();
-    filterByCategory('all');
+    filterByCategory('education');
   } catch (e) {
     $('mainContent').innerHTML =
       '<div class="empty-state">' +

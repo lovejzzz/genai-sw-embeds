@@ -103,10 +103,70 @@ FEEDS = [
         "region": "North America",
         "default_category": "Ethics",
     },
-    # Education
+    # ── Education (expanded) ──
     {
         "url": "https://www.edsurge.com/articles_rss",
         "source": "EdSurge",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://www.insidehighered.com/rss/feed",
+        "source": "Inside Higher Ed",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://thejournal.com/rss-feeds/rss-all-702702702702702.aspx",
+        "source": "THE Journal",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://www.chronicle.com/section/technology/31/rss",
+        "source": "Chronicle of Higher Ed",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://www.educationnext.org/feed/",
+        "source": "Education Next",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://www.eschoolnews.com/feed/",
+        "source": "eSchool News",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://campustechnology.com/rss-feeds/all-702702702702702.aspx",
+        "source": "Campus Technology",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://educationaltechnologyjournal.springeropen.com/articles/most-recent/rss.xml",
+        "source": "Ed Tech Journal",
+        "region": "Europe",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://www.timeshighereducation.com/rss/news",
+        "source": "Times Higher Education",
+        "region": "Europe",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://teachonline.ca/feed",
+        "source": "Contact North",
+        "region": "North America",
+        "default_category": "Education",
+    },
+    {
+        "url": "https://www.educause.edu/feed",
+        "source": "EDUCAUSE",
         "region": "North America",
         "default_category": "Education",
     },
@@ -136,7 +196,11 @@ CATEGORY_KEYWORDS = {
     "Education": [
         "education", "student", "teacher", "school", "university", "classroom",
         "learning", "curriculum", "academic", "faculty", "higher education",
-        "coursework", "cheating", "plagiarism", "tutoring",
+        "coursework", "cheating", "plagiarism", "tutoring", "campus",
+        "pedagogy", "instructor", "syllabus", "assessment", "grading",
+        "college", "edtech", "LMS", "Canvas", "Brightspace", "Blackboard",
+        "lecture", "homework", "dissertation", "thesis", "dean",
+        "social work education", "teaching", "professor",
     ],
     "Tools": [
         "launch", "release", "app", "product", "feature", "update", "tool",
@@ -357,8 +421,16 @@ def fetch_feed(feed_config: dict, cutoff_date: datetime) -> list:
                 continue
 
             # AI-relevance filter for general feeds
-            if source in ["Ars Technica", "BBC", "The Guardian", "EdSurge",
-                          "South China Morning Post"]:
+            GENERAL_FEEDS = [
+                "Ars Technica", "BBC", "The Guardian", "EdSurge",
+                "South China Morning Post",
+                # Education feeds (general — need AI filter)
+                "Inside Higher Ed", "THE Journal", "Chronicle of Higher Ed",
+                "Education Next", "eSchool News", "Campus Technology",
+                "Ed Tech Journal", "Times Higher Education", "Contact North",
+                "EDUCAUSE",
+            ]
+            if source in GENERAL_FEEDS:
                 if not is_ai_related(title, description):
                     continue
 
