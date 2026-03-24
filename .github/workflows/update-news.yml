@@ -9,6 +9,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   fetch-news:
     runs-on: ubuntu-latest
@@ -20,8 +23,6 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v5
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         with:
           python-version: '3.12'
 
@@ -50,7 +51,7 @@ jobs:
           git commit -m "$(cat <<EOF
           Update AI Times — ${DATE}
 
-          Auto-generated daily edition from 13+ RSS feeds worldwide.
+          Auto-generated daily edition from 24 RSS feeds worldwide.
           EOF
           )"
           git push
