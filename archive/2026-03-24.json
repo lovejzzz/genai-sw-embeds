@@ -1,9 +1,42 @@
 {
-  "updated": "2026-03-24T22:13:28.369881+00:00",
+  "updated": "2026-03-24T22:38:19.752218+00:00",
   "source_count": 7,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "bd33e802a843",
+      "title": "OpenAI shutters AI video generator Sora after just six months",
+      "description": "App that allowed people to make and share AI videos was popular but received criticism for racist and violent contentIn an abrupt announcement on Tuesday, OpenAI said it was “saying goodbye” to its AI video generator Sora. The move comes just six months after the company’s splashy launch of a...",
+      "link": "https://www.theguardian.com/technology/2026/mar/24/openai-ai-video-sora",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-03-24T22:34:10+00:00",
+      "image": "https://i.guim.co.uk/img/media/3d9cc6f1553853f0e0f1c48699fd6ae57e012bf4/610_0_3979_3185/master/3979.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8e04d987c50a2555afc4d173ea8b455c"
+    },
+    {
+      "id": "3a38d63e1a3d",
+      "title": "Kentucky woman rejects $26 million offer to turn her farm into a data center",
+      "description": "A \"major artificial intelligence company\" reportedly offered a Kentucky women $26 million to build a data center on their farm.",
+      "link": "https://techcrunch.com/2026/03/24/kentucky-woman-rejects-26-million-offer-to-turn-her-farm-into-a-data-center/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-24T22:22:57+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800"
+    },
+    {
+      "id": "9a577bfeef60",
+      "title": "Pentagon’s ‘Attempt to Cripple’ Anthropic Is Troublesome, Judge Says",
+      "description": "During a hearing Tuesday, a district court judge questioned the Department of Defense’s motivations for labeling the Claude AI developer a supply-chain risk.",
+      "link": "https://www.wired.com/story/pentagons-attempt-to-cripple-anthropic-is-troublesome-judge-says/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T22:13:17+00:00",
+      "image": "https://media.wired.com/photos/69c30bf9dc53bcd949e45335/master/pass/Pentagon-Attempt-to-Cripple-Anthropic-Troublesome-Business-2268179185.jpg"
+    },
     {
       "id": "b9587208ad7e",
       "title": "Anthropic and Pentagon face off in court over ban on company’s AI model",
@@ -49,8 +82,8 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/spotify-logo-phone-GettyImages-2236404299.jpg?w=1024"
     },
     {
-      "id": "0fba9864efec",
-      "title": "Arm’s first CPU ever will plug into Meta’s AI datacenters later this year",
+      "id": "4d2054d7a664",
+      "title": "Arm’s first CPU ever will plug into Meta’s AI data centers later this year",
       "description": "After decades of only licensing its chip designs for others to use, UK-based Arm revealed the first chip it's producing on its own, and the first customer. Dubbed the Arm AGI CPU, it's another chip designed for inference, or running the cloud processing for AI tools like AI agents that can...",
       "link": "https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta",
       "source": "The Verge",
@@ -500,17 +533,6 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
     },
     {
-      "id": "a392a41308f1",
-      "title": "Vibe-coding startup Lovable is on the hunt for acquisitions",
-      "description": "Lovable's founder said the fast-growing vibe-coding startup is looking for startups and teams to join its company.",
-      "link": "https://techcrunch.com/2026/03/23/vibe-coding-startup-lovable-is-on-the-hunt-for-acquisitions/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-03-23T18:22:04+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2245627953.jpg?resize=1200,800"
-    },
-    {
       "id": "eb3baf274128",
       "title": "On algorithms, life, and learning",
       "description": "Operations research expert Dimitris Bertsimas delivered the annual Killian Lecture, providing a look at the past and future of his work.",
@@ -531,28 +553,6 @@
       "category": "Industry",
       "published": "2026-03-23T16:51:35+00:00",
       "image": "https://i.guim.co.uk/img/media/a4fc80e643187b6b66f98b0e0f64193afdc28f1e/428_0_3331_2667/master/3331.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c26cfb00b5ae54e23f23868406a7d5d6"
-    },
-    {
-      "id": "733843fdc177",
-      "title": "Tencent adds ClawBot plug-in to WeChat amid OpenClaw boom and privacy warnings",
-      "description": "Tencent Holdings is rolling out a “ClawBot” plug-in for China’s most popular app WeChat as it seeks to capitalise on the OpenClaw craze, even as authorities continue to warn about risks. The move announced on Sunday will allow WeChat’s more than 1 billion monthly active users to command their...",
-      "link": "https://www.scmp.com/tech/article/3347590/tencent-adds-clawbot-plug-wechat-amid-openclaw-boom-and-privacy-warnings?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-03-23T14:30:07+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/23/f512f193-ca12-4834-8d21-16b19655021b_3af00751.jpg?itok=NYToD2eh&v=1774259314"
-    },
-    {
-      "id": "b1de5020822a",
-      "title": "Do we have to keep talking about AI? The machines are always one step ahead | Zoe Williams",
-      "description": "Whether you want to free it or regulate it into submission, one thing is clear: this new technology is moving so fast that we can’t fully grasp itAt an 80th birthday party at the weekend, I met an academic who was evasive about his field. When he finally disclosed “computer science”, I asked him...",
-      "link": "https://www.theguardian.com/commentisfree/2026/mar/23/do-we-have-to-keep-talking-about-ai-the-machines-are-always-one-step-ahead",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-03-23T13:50:39+00:00",
-      "image": "https://i.guim.co.uk/img/media/704b8e621d1be08da651007340a8a667981ee0f6/0_0_5687_4550/master/5687.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=bb8ccb5c2594595f09f42d2ac3a6ad24"
     }
   ]
 }
