@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-24T21:52:23.259783+00:00",
+  "updated": "2026-03-24T21:55:26.365036+00:00",
   "source_count": 7,
   "region_count": 3,
   "article_count": 50,
@@ -13,7 +13,7 @@
       "region": "Europe",
       "category": "Policy",
       "published": "2026-03-24T21:09:40+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/af4915a6ba1caec426b216d6719dab95157d0ad3/432_0_4320_3456/master/4320.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7fb86e58a08effb9da383adb0cb247f6"
     },
     {
       "id": "7e3b009455cc",
@@ -35,7 +35,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-24T21:00:30+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800"
     },
     {
       "id": "3b5ede9653e6",
@@ -46,7 +46,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-24T20:56:25+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/spotify-logo-phone-GettyImages-2236404299.jpg?w=1024"
     },
     {
       "id": "0fba9864efec",
@@ -68,7 +68,7 @@
       "region": "North America",
       "category": "Industry",
       "published": "2026-03-24T20:40:56+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1177951659.jpg?resize=1200,800"
     },
     {
       "id": "e0b89364ae6b",
@@ -79,7 +79,7 @@
       "region": "North America",
       "category": "Policy",
       "published": "2026-03-24T19:48:54+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2018/08/GettyImages-576856756.jpg?resize=1200,840"
     },
     {
       "id": "b77d68d7248a",
@@ -90,7 +90,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-24T19:27:56+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Screenshot-2026-03-24-at-9.15.10-AM.png?resize=1200,675"
     },
     {
       "id": "354246d26a20",
@@ -101,7 +101,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-24T19:12:11+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/google-tv.webp?resize=1200,675"
     },
     {
       "id": "f00f28286cf0",
@@ -112,7 +112,7 @@
       "region": "Europe",
       "category": "Tools",
       "published": "2026-03-24T18:57:05+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/d395ff03b8fee7107ea8746951d996238e3244d1/226_0_2248_1799/master/2248.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=24f37488090a452d5d7de941051a7f53"
     },
     {
       "id": "d4af6dbda341",
@@ -123,7 +123,7 @@
       "region": "North America",
       "category": "Policy",
       "published": "2026-03-24T18:41:34+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024"
     },
     {
       "id": "424a026b9c96",
@@ -134,7 +134,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-24T18:41:33+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/talat-app-at-2.11.22-PM.jpg?w=1086"
     },
     {
       "id": "16cb9fb648de",
@@ -145,7 +145,7 @@
       "region": "North America",
       "category": "Industry",
       "published": "2026-03-24T17:18:29+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Doss-Founder-Photo.jpg?resize=1200,800"
     },
     {
       "id": "81f9267694c0",
@@ -167,7 +167,7 @@
       "region": "Europe",
       "category": "Policy",
       "published": "2026-03-24T17:00:43+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/c39c02f387fd1ad989b0b2e75e5bedaa4f6f8ddf/1_0_2496_1997/master/2496.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=112de3dfd4616ec41e252dd52951d15e"
     },
     {
       "id": "df03ca23cd44",
@@ -189,7 +189,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-24T16:00:00+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Screenshot-2026-03-24-at-6.20.59-AM.png?w=939"
     },
     {
       "id": "4f77dc4e73d1",
@@ -211,7 +211,7 @@
       "region": "Europe",
       "category": "Ethics",
       "published": "2026-03-24T13:58:47+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/33b11539ba53c3319b8e079458592ca7a6586bf4/787_0_6665_5335/master/6665.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c457b97319b180e35ee90a67f9d6a3b0"
     },
     {
       "id": "35c38dabd589",
@@ -244,7 +244,7 @@
       "region": "North America",
       "category": "Research",
       "published": "2026-03-24T13:00:00+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2025/09/Mirage-background.png?w=1200"
     },
     {
       "id": "3d9072d7aadb",
@@ -255,7 +255,7 @@
       "region": "North America",
       "category": "Research",
       "published": "2026-03-24T12:05:00+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2025/05/Google-DeepMind.jpg?w=1024"
     },
     {
       "id": "8b606f1a30a6",
@@ -266,7 +266,7 @@
       "region": "Europe",
       "category": "Policy",
       "published": "2026-03-24T12:00:37+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/709910649e650089f9652871991ff055769f17c2/314_0_3125_2501/master/3125.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=24806a322459dcc9581ac1ca1684c7f9"
     },
     {
       "id": "f1e9477a0eb4",
@@ -288,7 +288,7 @@
       "region": "Europe",
       "category": "Tools",
       "published": "2026-03-24T10:40:32+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/d58e3aac6f0229d8898fb9662f67f64e3d40e5f7/292_0_2917_2333/master/2917.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=64e0d9b8ecd843e19f375b7538600cbb"
     },
     {
       "id": "0af8c775a86b",
@@ -365,7 +365,7 @@
       "region": "Europe",
       "category": "Policy",
       "published": "2026-03-24T06:00:12+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/c17c4dd03bec179e97a197bb75aef019d5fce6a3/175_0_5151_4122/master/5151.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8f8cb84f344197a3dff5e283a6a447a5"
     },
     {
       "id": "03ba26692200",
@@ -453,7 +453,7 @@
       "region": "North America",
       "category": "Policy",
       "published": "2026-03-23T22:36:39+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2023/06/GettyImages-138341302.jpg?resize=1200,771"
     },
     {
       "id": "91d8a9962b67",
@@ -475,7 +475,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-03-23T20:15:59+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/bernie-and-claude.jpeg?w=1143"
     },
     {
       "id": "e8cf7d097540",
@@ -508,7 +508,7 @@
       "region": "North America",
       "category": "Industry",
       "published": "2026-03-23T18:22:04+00:00",
-      "image": null
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2245627953.jpg?resize=1200,800"
     },
     {
       "id": "eb3baf274128",
@@ -530,7 +530,7 @@
       "region": "Europe",
       "category": "Industry",
       "published": "2026-03-23T16:51:35+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/a4fc80e643187b6b66f98b0e0f64193afdc28f1e/428_0_3331_2667/master/3331.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c26cfb00b5ae54e23f23868406a7d5d6"
     },
     {
       "id": "733843fdc177",
@@ -552,7 +552,7 @@
       "region": "Europe",
       "category": "Policy",
       "published": "2026-03-23T13:50:39+00:00",
-      "image": null
+      "image": "https://i.guim.co.uk/img/media/704b8e621d1be08da651007340a8a667981ee0f6/0_0_5687_4550/master/5687.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=bb8ccb5c2594595f09f42d2ac3a6ad24"
     }
   ]
 }
