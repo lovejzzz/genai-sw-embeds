@@ -4,121 +4,507 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Literacy Quiz — NYU Silver</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap">
 <style>
-  :root { --purple: #57068C; --purple-bg: #F7F4FB; --green: #2E7D32; --border: #E8E5E0; --text: #2D2D2D; --text-light: #777; }
+  :root {
+    --nyu-purple: #57068C;
+    --nyu-purple-light: #8E6BAF;
+    --nyu-purple-bg: #F7F4FB;
+    --accent-blue: #2B579A;
+    --green: #2E7D32;
+    --orange: #E65100;
+    --warm-gray: #F8F7F5;
+    --border: #E8E5E0;
+    --text: #2D2D2D;
+    --text-light: #777;
+    --radius: 12px;
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; padding: 20px; max-width: 640px; margin: 0 auto; }
-  .progress { font-size: 12px; color: var(--text-light); margin-bottom: 12px; }
-  .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; margin-top: 6px; }
-  .progress-fill { height: 100%; background: var(--purple); border-radius: 2px; transition: width 0.3s; }
-  .question { font-size: 15px; font-weight: 600; margin-bottom: 16px; line-height: 1.5; }
-  .topic-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--purple); background: var(--purple-bg); padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; display: inline-block; }
-  .option { display: block; width: 100%; text-align: left; padding: 12px 16px; margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; background: white; cursor: pointer; font-size: 13px; font-family: inherit; color: var(--text); transition: all 0.15s; line-height: 1.5; }
-  .option:hover { border-color: var(--purple); background: var(--purple-bg); }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; padding: 24px; max-width: 640px; margin: 0 auto; }
+
+  /* Focus visible */
+  *:focus-visible { outline: 2px solid var(--nyu-purple); outline-offset: 2px; }
+  button:active { transform: scale(0.97); }
+
+  /* Screen-reader only */
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(80px);
+    background: var(--text); color: white; padding: 10px 20px; border-radius: 8px;
+    font-size: 13px; font-weight: 600; font-family: inherit;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 200;
+    opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+  /* Progress */
+  .progress { font-size: 12px; color: var(--text-light); margin-bottom: 14px; font-weight: 500; }
+  .progress-bar {
+    height: 6px; background: var(--border); border-radius: 3px;
+    overflow: hidden; margin-top: 8px;
+  }
+  .progress-fill {
+    height: 100%; background: linear-gradient(90deg, var(--nyu-purple), var(--nyu-purple-light));
+    border-radius: 3px; transition: width 0.4s ease;
+  }
+
+  /* Topic tag */
+  .topic-tag {
+    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--nyu-purple); background: var(--nyu-purple-bg); padding: 4px 10px;
+    border-radius: 6px; margin-bottom: 10px; display: inline-block;
+    animation: tagSlide 0.3s ease-out;
+  }
+  @keyframes tagSlide { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
+
+  /* Question */
+  .question-wrap { animation: fadeIn 0.35s ease; }
+  .question {
+    font-size: 16px; font-weight: 700; margin-bottom: 20px; line-height: 1.6;
+    color: var(--text);
+  }
+
+  /* Options */
+  .options-group { margin-bottom: 8px; }
+  .option {
+    display: flex; align-items: flex-start; gap: 12px;
+    width: 100%; text-align: left; padding: 14px 18px; margin-bottom: 10px;
+    border: 2px solid var(--border); border-radius: var(--radius); background: white;
+    cursor: pointer; font-size: 13px; font-family: inherit; color: var(--text);
+    transition: all 0.2s ease; line-height: 1.6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  }
+  .option:hover:not(.disabled) { border-color: var(--nyu-purple-light); background: var(--nyu-purple-bg); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(87,6,140,0.08); }
+  .option:focus-visible:not(.disabled) { border-color: var(--nyu-purple); }
+  .option .option-letter {
+    width: 26px; height: 26px; border-radius: 50%; background: var(--warm-gray);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; color: var(--text-light); flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+  .option:hover:not(.disabled) .option-letter { background: var(--nyu-purple); color: white; }
   .option.correct { border-color: var(--green); background: #E8F5E9; }
+  .option.correct .option-letter { background: var(--green); color: white; }
   .option.wrong { border-color: #D32F2F; background: #FFEBEE; }
-  .option.disabled { pointer-events: none; opacity: 0.7; }
-  .explanation { padding: 12px 16px; border-radius: 8px; font-size: 12px; line-height: 1.6; margin-top: 8px; display: none; }
-  .explanation.show { display: block; animation: fadeIn 0.3s; }
-  .explanation.ok { background: #E8F5E9; color: #1B5E20; }
-  .explanation.nope { background: #FFF8E1; color: #E65100; }
-  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
-  .next-btn { display: none; margin-top: 12px; padding: 10px 20px; background: var(--purple); color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; font-family: inherit; }
-  .next-btn.show { display: inline-block; }
-  .next-btn:hover { opacity: 0.9; }
-  .result { text-align: center; padding: 20px; }
-  .score { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: var(--purple); }
-  .badge { font-size: 16px; font-weight: 700; color: var(--purple); margin: 8px 0; }
-  .meter { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; font-size: 11px; }
-  .meter-label { width: 80px; font-weight: 600; }
+  .option.wrong .option-letter { background: #D32F2F; color: white; }
+  .option.disabled { pointer-events: none; opacity: 0.65; }
+  .option.disabled.correct { opacity: 1; }
+  .option.disabled.wrong { opacity: 1; }
+
+  /* Explanation */
+  .explanation {
+    padding: 14px 18px; border-radius: var(--radius); font-size: 13px;
+    line-height: 1.7; margin-top: 12px; display: none;
+  }
+  .explanation.show { display: block; animation: fadeIn 0.3s ease; }
+  .explanation.ok { background: #E8F5E9; color: #1B5E20; border-left: 3px solid var(--green); }
+  .explanation.nope { background: #FFF8E1; color: #BF360C; border-left: 3px solid var(--orange); }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Next button */
+  .next-btn {
+    display: none; margin-top: 16px; padding: 12px 24px;
+    background: var(--nyu-purple); color: white; border: none; border-radius: 8px;
+    font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit;
+    transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(87,6,140,0.15);
+  }
+  .next-btn.show { display: inline-block; animation: fadeIn 0.3s ease; }
+  .next-btn:hover { background: var(--nyu-purple-light); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(87,6,140,0.2); }
+
+  /* Results */
+  .result { text-align: center; padding: 24px 0; animation: fadeIn 0.5s ease; }
+  .score-wrap { margin-bottom: 8px; }
+  .score {
+    font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 700;
+    color: var(--nyu-purple); animation: scoreReveal 0.6s ease-out;
+    display: inline-block;
+  }
+  .score-total { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--nyu-purple-light); }
+  @keyframes scoreReveal { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+
+  .badge {
+    font-size: 18px; font-weight: 700; color: var(--nyu-purple); margin: 10px 0;
+    animation: fadeIn 0.5s ease 0.3s both;
+  }
+  .result-desc {
+    font-size: 13px; color: var(--text-light); margin-bottom: 20px; line-height: 1.6;
+    animation: fadeIn 0.5s ease 0.4s both;
+  }
+
+  /* Topic breakdown */
+  .breakdown {
+    text-align: left; max-width: 360px; margin: 0 auto 20px;
+    animation: fadeIn 0.5s ease 0.5s both;
+  }
+  .breakdown-title {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: var(--text-light); margin-bottom: 10px;
+  }
+  .meter { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 12px; }
+  .meter-label { width: 80px; font-weight: 600; flex-shrink: 0; }
   .meter-bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
-  .meter-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+  .meter-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease; }
   .meter-fill.g { background: var(--green); }
   .meter-fill.m { background: #FF9800; }
   .meter-fill.l { background: #D32F2F; }
+  .meter-value { font-weight: 700; color: var(--text-light); width: 32px; text-align: right; }
+
+  /* Result actions */
+  .result-actions {
+    display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+    animation: fadeIn 0.5s ease 0.6s both;
+  }
+  .result-btn {
+    padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 13px;
+    cursor: pointer; font-family: inherit; transition: all 0.2s ease; border: none;
+  }
+  .result-btn-primary { background: var(--nyu-purple); color: white; box-shadow: 0 2px 8px rgba(87,6,140,0.15); }
+  .result-btn-primary:hover { background: var(--nyu-purple-light); transform: translateY(-1px); }
+  .result-btn-secondary {
+    background: white; color: var(--text); border: 1px solid var(--border) !important;
+  }
+  .result-btn-secondary:hover { border-color: var(--nyu-purple-light) !important; color: var(--nyu-purple); background: var(--nyu-purple-bg); }
+
+  /* Answer review */
+  .review-toggle {
+    margin-top: 16px; font-size: 13px; font-weight: 600; color: var(--nyu-purple);
+    cursor: pointer; background: none; border: none; font-family: inherit;
+    transition: color 0.15s;
+  }
+  .review-toggle:hover { color: var(--nyu-purple-light); }
+  .review-list { text-align: left; max-width: 500px; margin: 16px auto 0; display: none; }
+  .review-list.show { display: block; animation: fadeIn 0.3s ease; }
+  .review-item {
+    padding: 14px 18px; border: 1px solid var(--border); border-radius: var(--radius);
+    margin-bottom: 10px; font-size: 12px; line-height: 1.7; background: white;
+  }
+  .review-item.review-correct { border-left: 3px solid var(--green); }
+  .review-item.review-wrong { border-left: 3px solid #D32F2F; }
+  .review-q { font-weight: 700; margin-bottom: 6px; font-size: 13px; }
+  .review-answer { color: var(--text-light); }
+  .review-answer strong { color: var(--text); }
+  .review-exp { margin-top: 6px; font-size: 11px; color: var(--text-light); font-style: italic; }
+
+  /* Confetti */
+  .confetti-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100; overflow: hidden; }
+  .confetti-piece {
+    position: absolute; width: 10px; height: 10px; top: -10px;
+    animation: confettiFall linear forwards;
+  }
+  @keyframes confettiFall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; max-width: 100%; }
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 14px; }
+    .question { font-size: 14px; margin-bottom: 16px; }
+    .option { padding: 12px 14px; font-size: 12px; margin-bottom: 8px; }
+    .option .option-letter { width: 22px; height: 22px; font-size: 10px; }
+    .score { font-size: 42px; }
+    .score-total { font-size: 22px; }
+    .result { padding: 16px 0; }
+    .breakdown { max-width: 100%; }
+    .meter-label { width: 70px; font-size: 11px; }
+    .result-actions { flex-direction: column; align-items: center; }
+    .result-btn { width: 100%; max-width: 240px; }
+  }
 </style>
 </head>
 <body>
 
-<div class="progress"><span id="prog">Question 1 of 7</span><div class="progress-bar"><div class="progress-fill" id="progFill" style="width:14%"></div></div></div>
+<div class="progress">
+  <span id="prog">Question 1 of 7</span>
+  <div class="progress-bar" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" aria-label="Quiz progress" id="progBar">
+    <div class="progress-fill" id="progFill" style="width:14%"></div>
+  </div>
+</div>
 <div id="content"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
+/* ── Data ── */
 const allQs = [
   { q:'When an AI "hallucinates," what does that mean?', topic:'Concepts', opts:['The AI is malfunctioning','The AI confidently generates false information','The AI is processing an image','The AI refuses to answer'], c:1, exp:'Hallucination = plausible but factually incorrect content. Dangerous in case notes and court reports.' },
   { q:'A student pastes a client intake form into ChatGPT. Primary concern?', topic:'Ethics', opts:['AI might give bad advice','Student is being lazy','PHI may be stored, violating HIPAA','AI lacks SW terminology'], c:2, exp:'Commercial AI is not HIPAA-compliant. PII entered may be stored or used in model training.' },
   { q:'What does "temperature" control in an AI model?', topic:'Concepts', opts:['Response speed','Randomness/creativity','Number of sources','Response length'], c:1, exp:'Low temp = predictable (clinical docs). High temp = creative (brainstorming).' },
   { q:'AI detector flags a paper at 72%. Best first step?', topic:'Policy', opts:['Report for dishonesty','Fail via email','Meet privately, ask about writing process','Run through more detectors'], c:2, exp:'Detection tools have significant false-positive rates. A private conversation provides context no tool can.' },
   { q:'Why might a zero-tolerance AI ban backfire?', topic:'Policy', opts:['Students hide use instead of engaging','Detectors are too expensive','NASW requires AI integration','Students have legal right to use AI'], c:0, exp:'Prohibition without pedagogy pushes AI use underground. Move from policing to teaching.' },
-  { q:'What is "prompt engineering" in SW context?', topic:'Concepts', opts:['Building AI from scratch','Crafting effective AI instructions','Writing student assignment prompts','Debugging AI code'], c:1, exp:'Crafting prompts for better outputs — essential for role-play personas and case simulations.' },
-  { q:'Colleague says "AI can\'t be biased — it\'s just math." Best response?', topic:'Ethics', opts:['They\'re right','AI reflects biases in training data','Only matters for tech companies','Ban all AI'], c:1, exp:'AI reflects training data biases — racial, gender, cultural. Ask: whose perspectives are centered?' },
+  { q:'What is "prompt engineering" in SW context?', topic:'Concepts', opts:['Building AI from scratch','Crafting effective AI instructions','Writing student assignment prompts','Debugging AI code'], c:1, exp:'Crafting prompts for better outputs \u2014 essential for role-play personas and case simulations.' },
+  { q:'Colleague says "AI can\'t be biased \u2014 it\'s just math." Best response?', topic:'Ethics', opts:['They\'re right','AI reflects biases in training data','Only matters for tech companies','Ban all AI'], c:1, exp:'AI reflects training data biases \u2014 racial, gender, cultural. Ask: whose perspectives are centered?' },
   { q:'Most AI-resistant assignment type?', topic:'Policy', opts:['5-page paper','Oral case presentation','Literature review','Written self-reflection'], c:1, exp:'Oral presentations require real-time defense. AI cannot present or answer peer questions.' },
-  { q:'What is RAG and why does it matter for SW?', topic:'Concepts', opts:['Random Access Generation','Retrieval-Augmented Generation','Rapid Assessment Guide','Recursive AI Grading'], c:1, exp:'RAG connects AI to specific documents — could ground responses in agency policies or DSM criteria.' },
-  { q:'Student with disability uses AI as accommodation. Detector flags paper. What do you do?', topic:'Ethics', opts:['Report — accommodations don\'t cover AI','Consult disability services first','Ignore the flag','Require rewrite without AI'], c:1, exp:'AI as accommodation is evolving. Consult disability services — this requires institutional guidance.' }
+  { q:'What is RAG and why does it matter for SW?', topic:'Concepts', opts:['Random Access Generation','Retrieval-Augmented Generation','Rapid Assessment Guide','Recursive AI Grading'], c:1, exp:'RAG connects AI to specific documents \u2014 could ground responses in agency policies or DSM criteria.' },
+  { q:'Student with disability uses AI as accommodation. Detector flags paper. What do you do?', topic:'Ethics', opts:['Report \u2014 accommodations don\'t cover AI','Consult disability services first','Ignore the flag','Require rewrite without AI'], c:1, exp:'AI as accommodation is evolving. Consult disability services \u2014 this requires institutional guidance.' }
 ];
 
-let state = { idx: 0, score: 0, qs: [], topics: {} };
+/* ── State ── */
+let state = { idx: 0, score: 0, qs: [], topics: {}, answers: [] };
 
+/* ── Utilities ── */
+function $(id) { return document.getElementById(id); }
+const letters = ['A', 'B', 'C', 'D'];
+
+function showToast(msg, duration = 2500) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timeout);
+  t._timeout = setTimeout(() => t.classList.remove('show'), duration);
+}
+
+/* ── Init ── */
 function init() {
-  state = { idx: 0, score: 0, qs: [...allQs].sort(() => Math.random()-0.5).slice(0,7), topics: {} };
+  state = { idx: 0, score: 0, qs: [...allQs].sort(() => Math.random() - 0.5).slice(0, 7), topics: {}, answers: [] };
   render();
 }
 
+/* ── Render question ── */
 function render() {
   const total = state.qs.length;
   if (state.idx >= total) return showResult();
+
   const q = state.qs[state.idx];
-  document.getElementById('prog').textContent = `Question ${state.idx+1} of ${total} · ${q.topic}`;
-  document.getElementById('progFill').style.width = ((state.idx+1)/total*100)+'%';
-  document.getElementById('content').innerHTML = `
-    <div class="topic-tag">${q.topic}</div>
-    <div class="question">${q.q}</div>
-    ${q.opts.map((o,i) => `<button class="option" onclick="answer(${i},this)">${o}</button>`).join('')}
-    <div class="explanation" id="expl"></div>
-    <button class="next-btn" id="nextBtn" onclick="state.idx++;render();">${state.idx<total-1?'Next Question →':'See Results →'}</button>
+  const pct = Math.round(((state.idx + 1) / total) * 100);
+  $('prog').textContent = `Question ${state.idx + 1} of ${total} \u00B7 ${q.topic}`;
+  $('progFill').style.width = pct + '%';
+  $('progBar').setAttribute('aria-valuenow', pct);
+
+  $('content').innerHTML = `
+    <div class="question-wrap">
+      <div class="topic-tag">${q.topic}</div>
+      <div class="question" id="quizQuestion">${q.q}</div>
+      <div class="options-group" role="radiogroup" aria-labelledby="quizQuestion" id="optionsGroup">
+        ${q.opts.map((o, i) => `<button class="option" role="radio" aria-checked="false" data-idx="${i}" tabindex="${i === 0 ? '0' : '-1'}">
+          <span class="option-letter" aria-hidden="true">${letters[i]}</span>
+          <span>${o}</span>
+        </button>`).join('')}
+      </div>
+      <div class="explanation" id="expl" role="alert"></div>
+      <button class="next-btn" id="nextBtn" aria-label="${state.idx < total - 1 ? 'Next question' : 'See results'}">${state.idx < total - 1 ? 'Next Question \u2192' : 'See Results \u2192'}</button>
+    </div>
   `;
+
+  // Wire up option clicks
+  document.querySelectorAll('.option').forEach(btn => {
+    btn.addEventListener('click', () => answer(parseInt(btn.dataset.idx), btn));
+  });
+
+  // Wire up next button
+  $('nextBtn').addEventListener('click', () => { state.idx++; render(); });
+
+  // Arrow key navigation for options
+  $('optionsGroup').addEventListener('keydown', (e) => {
+    const opts = [...document.querySelectorAll('.option:not(.disabled)')];
+    if (!opts.length) return;
+    const idx = opts.indexOf(document.activeElement);
+    if (idx === -1) return;
+
+    let next = -1;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') next = (idx + 1) % opts.length;
+    else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') next = (idx - 1 + opts.length) % opts.length;
+
+    if (next !== -1) {
+      e.preventDefault();
+      opts.forEach((o, i) => o.tabIndex = i === next ? 0 : -1);
+      opts[next].focus();
+    }
+  });
 }
 
+/* ── Answer ── */
 function answer(i, btn) {
   const q = state.qs[state.idx];
   const ok = i === q.c;
   if (ok) state.score++;
-  if (!state.topics[q.topic]) state.topics[q.topic] = {t:0,c:0};
+
+  if (!state.topics[q.topic]) state.topics[q.topic] = { t: 0, c: 0 };
   state.topics[q.topic].t++;
   if (ok) state.topics[q.topic].c++;
-  document.querySelectorAll('.option').forEach((o,j) => {
-    o.classList.add('disabled');
-    if (j===q.c) o.classList.add('correct');
-    if (j===i && !ok) o.classList.add('wrong');
+
+  // Track for review
+  state.answers.push({
+    question: q.q,
+    chosen: q.opts[i],
+    correct: q.opts[q.c],
+    isCorrect: ok,
+    explanation: q.exp
   });
-  const e = document.getElementById('expl');
-  e.className = 'explanation show ' + (ok?'ok':'nope');
-  e.innerHTML = (ok?'<strong>Correct!</strong> ':'<strong>Not quite.</strong> ') + q.exp;
-  document.getElementById('nextBtn').classList.add('show');
+
+  // Update option states
+  document.querySelectorAll('.option').forEach((o, j) => {
+    o.classList.add('disabled');
+    o.setAttribute('aria-disabled', 'true');
+    if (j === q.c) { o.classList.add('correct'); o.setAttribute('aria-checked', 'true'); }
+    if (j === i && !ok) { o.classList.add('wrong'); o.setAttribute('aria-checked', 'true'); }
+  });
+
+  // Show explanation
+  const e = $('expl');
+  e.className = 'explanation show ' + (ok ? 'ok' : 'nope');
+  e.innerHTML = (ok ? '<strong>Correct!</strong> ' : '<strong>Not quite.</strong> ') + q.exp;
+
+  // Scroll explanation into view
+  setTimeout(() => e.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+
+  // Show next button
+  $('nextBtn').classList.add('show');
+  setTimeout(() => $('nextBtn').focus(), 350);
 }
 
+/* ── Results ── */
 function showResult() {
   const total = state.qs.length;
-  const pct = Math.round(state.score/total*100);
-  const badge = pct===100?'🏆 AI Literacy Champion':pct>=85?'🎯 Expert Level':pct>=70?'📚 Strong Foundation':pct>=50?'🌱 Growing Awareness':'🔰 Getting Started';
+  const pct = Math.round(state.score / total * 100);
+  const badge = pct === 100 ? 'AI Literacy Champion' : pct >= 85 ? 'Expert Level' : pct >= 70 ? 'Strong Foundation' : pct >= 50 ? 'Growing Awareness' : 'Getting Started';
+  const badgeIcon = pct === 100 ? '\uD83C\uDFC6' : pct >= 85 ? '\uD83C\uDFAF' : pct >= 70 ? '\uD83D\uDCDA' : pct >= 50 ? '\uD83C\uDF31' : '\uD83D\uDD30';
+
+  // Build meter HTML (start at 0 width for animation)
   let meters = '';
   for (const [topic, d] of Object.entries(state.topics)) {
-    const tp = Math.round(d.c/d.t*100);
-    const cls = tp>=70?'g':tp>=40?'m':'l';
-    meters += `<div class="meter"><span class="meter-label">${topic}</span><div class="meter-bar"><div class="meter-fill ${cls}" style="width:${tp}%"></div></div><span style="width:30px;text-align:right;font-weight:600;color:var(--text-light);">${d.c}/${d.t}</span></div>`;
+    const tp = Math.round(d.c / d.t * 100);
+    const cls = tp >= 70 ? 'g' : tp >= 40 ? 'm' : 'l';
+    meters += `<div class="meter"><span class="meter-label">${topic}</span><div class="meter-bar"><div class="meter-fill ${cls}" data-width="${tp}" style="width:0%"></div></div><span class="meter-value">${d.c}/${d.t}</span></div>`;
   }
-  document.getElementById('prog').textContent = 'Complete!';
-  document.getElementById('progFill').style.width = '100%';
-  document.getElementById('content').innerHTML = `<div class="result">
-    <div class="score">${state.score}/${total}</div>
-    <div class="badge">${badge}</div>
-    <div style="font-size:13px;color:var(--text-light);margin-bottom:16px;">${pct>=70?'Well-prepared to guide faculty AI discussions.':'Review the Foundations section to strengthen.'}</div>
-    <div style="text-align:left;max-width:300px;margin:0 auto 16px;"><div style="font-size:11px;font-weight:700;color:var(--text-light);margin-bottom:6px;">TOPIC BREAKDOWN</div>${meters}</div>
-    <button class="next-btn show" onclick="init()">🔄 Shuffle & Try Again</button>
+
+  // Build review HTML
+  let reviewItems = '';
+  state.answers.forEach((a, i) => {
+    reviewItems += `<div class="review-item ${a.isCorrect ? 'review-correct' : 'review-wrong'}">
+      <div class="review-q">${i + 1}. ${a.question}</div>
+      <div class="review-answer">${a.isCorrect ? '<strong style="color:var(--green)">\u2713 Correct</strong>' : `<strong style="color:#D32F2F">\u2717 Your answer:</strong> ${a.chosen}<br><strong style="color:var(--green)">\u2713 Correct:</strong> ${a.correct}`}</div>
+      <div class="review-exp">${a.explanation}</div>
+    </div>`;
+  });
+
+  $('prog').textContent = 'Complete!';
+  $('progFill').style.width = '100%';
+  $('progBar').setAttribute('aria-valuenow', '100');
+
+  $('content').innerHTML = `<div class="result" role="status" aria-live="assertive">
+    <div class="score-wrap">
+      <span class="score" id="scoreNum" aria-label="You scored ${state.score} out of ${total}">0</span><span class="score-total">/${total}</span>
+    </div>
+    <div class="badge">${badgeIcon} ${badge}</div>
+    <div class="result-desc">${pct >= 70 ? 'Well-prepared to guide faculty AI discussions.' : 'Review the Foundations section to strengthen your understanding.'}</div>
+    <div class="breakdown">
+      <div class="breakdown-title">Topic Breakdown</div>
+      ${meters}
+    </div>
+    <div class="result-actions">
+      <button class="result-btn result-btn-primary" id="retryBtn">Shuffle &amp; Try Again</button>
+      <button class="result-btn result-btn-secondary" id="shareBtn">Copy Score</button>
+    </div>
+    <button class="review-toggle" id="reviewToggle">Review Answers \u25BC</button>
+    <div class="review-list" id="reviewList">${reviewItems}</div>
   </div>`;
+
+  // Wire up buttons
+  $('retryBtn').addEventListener('click', init);
+  $('shareBtn').addEventListener('click', shareScore);
+  $('reviewToggle').addEventListener('click', toggleReview);
+
+  // Animate score counter
+  animateScore(state.score, total);
+
+  // Animate meter fills after delay
+  setTimeout(() => {
+    document.querySelectorAll('.meter-fill[data-width]').forEach(f => {
+      f.style.width = f.dataset.width + '%';
+    });
+  }, 600);
+
+  // Confetti on perfect score
+  if (state.score === total) {
+    setTimeout(showConfetti, 400);
+  }
 }
 
+/* ── Score animation ── */
+function animateScore(target, total) {
+  const el = $('scoreNum');
+  if (!el) return;
+  let current = 0;
+  const duration = 800;
+  const start = performance.now();
+
+  function tick(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // Ease out
+    const eased = 1 - Math.pow(1 - progress, 3);
+    current = Math.round(eased * target);
+    el.textContent = current;
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+/* ── Confetti ── */
+function showConfetti() {
+  const container = document.createElement('div');
+  container.className = 'confetti-container';
+  document.body.appendChild(container);
+
+  const colors = ['#57068C', '#8E6BAF', '#2E7D32', '#FF9800', '#E65100', '#2B579A', '#D32F2F', '#F7F4FB'];
+
+  for (let i = 0; i < 24; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.random() * 100 + '%';
+    piece.style.width = (6 + Math.random() * 8) + 'px';
+    piece.style.height = (6 + Math.random() * 8) + 'px';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    piece.style.animationDuration = (1.5 + Math.random() * 2) + 's';
+    piece.style.animationDelay = Math.random() * 0.8 + 's';
+    container.appendChild(piece);
+  }
+
+  setTimeout(() => container.remove(), 4000);
+}
+
+/* ── Share score ── */
+function shareScore() {
+  const total = state.qs.length;
+  const pct = Math.round(state.score / total * 100);
+  const badge = pct === 100 ? 'AI Literacy Champion' : pct >= 85 ? 'Expert Level' : pct >= 70 ? 'Strong Foundation' : pct >= 50 ? 'Growing Awareness' : 'Getting Started';
+
+  let topicSummary = [];
+  for (const [topic, d] of Object.entries(state.topics)) {
+    topicSummary.push(`${topic}: ${d.c}/${d.t}`);
+  }
+
+  const text = `NYU Silver AI Literacy Quiz: ${state.score}/${total} (${pct}%)\n${badge}\n${topicSummary.join(' | ')}`;
+  navigator.clipboard.writeText(text).then(() => showToast('Score copied to clipboard'));
+}
+
+/* ── Review toggle ── */
+function toggleReview() {
+  const list = $('reviewList');
+  const btn = $('reviewToggle');
+  const isShown = list.classList.contains('show');
+  list.classList.toggle('show');
+  btn.textContent = isShown ? 'Review Answers \u25BC' : 'Hide Answers \u25B2';
+}
+
+/* ── Dark mode listener ── */
+window.addEventListener('message', (e) => {
+  if (e.data && e.data.theme) {
+    document.documentElement.setAttribute('data-theme', e.data.theme);
+  }
+});
+
+/* ── Start ── */
 init();
 </script>
 </body>

@@ -4,138 +4,418 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Syllabus Policy Generator — NYU Silver</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap">
 <style>
-  :root { --purple: #57068C; --purple-bg: #F7F4FB; --green: #2E7D32; --blue: #2B579A; --orange: #E65100; --border: #E8E5E0; --text: #2D2D2D; --text-light: #777; }
+  :root {
+    --nyu-purple: #57068C;
+    --nyu-purple-light: #8E6BAF;
+    --nyu-purple-bg: #F7F4FB;
+    --accent-blue: #2B579A;
+    --green: #2E7D32;
+    --orange: #E65100;
+    --warm-gray: #F8F7F5;
+    --border: #E8E5E0;
+    --text: #2D2D2D;
+    --text-light: #777;
+    --radius: 12px;
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; padding: 20px; max-width: 700px; margin: 0 auto; }
-  h2 { font-size: 18px; font-weight: 700; color: var(--purple); margin-bottom: 8px; }
-  p { font-size: 13px; color: var(--text-light); margin-bottom: 16px; line-height: 1.6; }
-  .fields { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-  .fields input { flex: 1; min-width: 160px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; outline: none; }
-  .fields input:focus { border-color: var(--purple); }
-  .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-  .tab { flex: 1; padding: 12px; border: none; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; font-family: inherit; color: white; transition: all 0.15s; }
-  .tab:hover { opacity: 0.9; transform: translateY(-1px); }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #FAFAF8; padding: 24px; max-width: 700px; margin: 0 auto; }
+
+  /* Focus visible */
+  *:focus-visible { outline: 2px solid var(--nyu-purple); outline-offset: 2px; }
+  button:active { transform: scale(0.97); }
+
+  /* Screen-reader only */
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(80px);
+    background: var(--text); color: white; padding: 10px 20px; border-radius: 8px;
+    font-size: 13px; font-weight: 600; font-family: inherit;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 200;
+    opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+  /* Header */
+  .header { margin-bottom: 20px; }
+  .header h2 {
+    font-size: 20px; font-weight: 800; color: var(--nyu-purple);
+    margin-bottom: 6px; line-height: 1.3;
+  }
+  .header p { font-size: 14px; color: var(--text-light); line-height: 1.6; margin: 0; }
+
+  /* Fields */
+  .fields { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .field-wrap { flex: 1; min-width: 160px; position: relative; }
+  .field-wrap label {
+    display: block; font-size: 11px; font-weight: 700; color: var(--text-light);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;
+  }
+  .field-wrap input {
+    width: 100%; padding: 11px 14px; border: 2px solid var(--border); border-radius: 8px;
+    font-size: 14px; font-family: inherit; outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s; background: white;
+  }
+  .field-wrap input:focus { border-color: var(--nyu-purple); box-shadow: 0 0 0 3px rgba(87,6,140,0.08); }
+  .field-wrap input::placeholder { color: #BBB; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+  .tabs[role="tablist"] {}
+  .tab {
+    flex: 1; padding: 14px 12px; border: none; border-radius: var(--radius);
+    font-weight: 700; font-size: 13px; cursor: pointer; font-family: inherit;
+    color: white; transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  .tab:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  .tab[aria-selected="false"] { opacity: 0.65; }
+  .tab[aria-selected="true"] { opacity: 1; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.18); }
   .tab-open { background: var(--green); }
-  .tab-restricted { background: var(--blue); }
+  .tab-restricted { background: var(--accent-blue); }
   .tab-none { background: var(--orange); }
-  .policy-box { display: none; border-left: 4px solid var(--purple); background: var(--purple-bg); padding: 16px 20px; border-radius: 0 10px 10px 0; margin-bottom: 12px; position: relative; animation: fadeIn 0.25s; }
+  .tab .tab-label { display: block; font-size: 14px; }
+  .tab .tab-sub { display: block; font-size: 10px; font-weight: 500; opacity: 0.85; margin-top: 2px; }
+
+  /* Policy boxes */
+  .policy-box {
+    display: none; padding: 20px 24px; border-radius: 0 var(--radius) var(--radius) 0;
+    margin-bottom: 16px; position: relative; animation: fadeIn 0.3s ease;
+    border-left: 4px solid var(--nyu-purple);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
   .policy-box.active { display: block; }
-  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
-  .policy-box h3 { font-size: 13px; font-weight: 700; color: var(--purple); margin-bottom: 6px; }
-  .policy-text { font-size: 13px; font-style: italic; color: #555; line-height: 1.7; }
-  .policy-text .hl { font-weight: 600; color: var(--purple); background: rgba(87,6,140,0.06); padding: 0 2px; border-radius: 2px; }
-  .copy-btn { position: absolute; top: 12px; right: 12px; background: var(--purple); color: white; border: none; padding: 5px 12px; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer; font-family: inherit; }
-  .copy-btn:hover { opacity: 0.9; }
-  .consequences { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; background: #F8F7F5; font-size: 13px; line-height: 1.8; display: none; animation: fadeIn 0.25s; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Policy box color variants */
+  #box-open { border-left-color: var(--green); background: #F1F8F1; }
+  #box-restricted { border-left-color: var(--accent-blue); background: #F0F4FA; }
+  #box-none { border-left-color: var(--orange); background: #FFF8F3; }
+
+  .policy-box h3 { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+  #box-open h3 { color: var(--green); }
+  #box-restricted h3 { color: var(--accent-blue); }
+  #box-none h3 { color: var(--orange); }
+
+  .policy-text {
+    font-size: 14px; color: #444; line-height: 1.8;
+    padding: 16px; background: rgba(255,255,255,0.7); border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .policy-text .hl {
+    font-weight: 700; color: var(--nyu-purple);
+    background: rgba(87,6,140,0.06); padding: 1px 4px; border-radius: 3px;
+  }
+
+  /* Copy button */
+  .copy-btn {
+    position: absolute; top: 16px; right: 16px;
+    background: var(--text); color: white; border: none;
+    padding: 7px 16px; border-radius: 8px; font-size: 12px; font-weight: 600;
+    cursor: pointer; font-family: inherit; transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  }
+  .copy-btn:hover { background: #444; transform: translateY(-1px); }
+  .copy-btn.copied { background: var(--green); }
+
+  /* Consequences */
+  .consequences {
+    border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px;
+    background: var(--warm-gray); font-size: 14px; line-height: 2;
+    display: none; animation: fadeIn 0.3s ease;
+  }
   .consequences.active { display: block; }
-  .consequences h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-light); margin-bottom: 8px; }
+  .consequences h4 {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: var(--text-light); margin-bottom: 10px;
+  }
+  .consequence-item { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
+  .consequence-icon { flex-shrink: 0; width: 20px; text-align: center; font-size: 14px; }
+  .consequence-text { font-size: 13px; }
+
+  /* Action bar */
+  .action-bar {
+    display: none; margin-top: 16px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+    animation: fadeIn 0.3s ease;
+  }
+  .action-bar.active { display: flex; gap: 10px; flex-wrap: wrap; }
+  .action-btn {
+    padding: 10px 18px; border: 1px solid var(--border); border-radius: 8px;
+    background: white; font-size: 12px; font-weight: 600; cursor: pointer;
+    font-family: inherit; color: var(--text-light); transition: all 0.15s;
+  }
+  .action-btn:hover { border-color: var(--nyu-purple-light); color: var(--nyu-purple); background: var(--nyu-purple-bg); }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { padding: 16px; max-width: 100%; }
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 14px; }
+    .header h2 { font-size: 18px; }
+    .fields { flex-direction: column; gap: 12px; }
+    .field-wrap { min-width: 100%; }
+    .tabs { flex-direction: column; gap: 6px; }
+    .tab { width: 100%; padding: 12px; text-align: left; display: flex; align-items: center; gap: 8px; }
+    .tab .tab-sub { display: inline; margin-top: 0; margin-left: 4px; }
+    .policy-box { padding: 16px 18px; }
+    .policy-box h3 { font-size: 13px; padding-right: 70px; }
+    .policy-text { font-size: 13px; padding: 12px; }
+    .copy-btn { top: 12px; right: 12px; padding: 6px 12px; font-size: 11px; }
+    .consequences { padding: 16px 18px; }
+    .action-bar { flex-direction: column; }
+    .action-btn { width: 100%; text-align: center; }
+  }
 </style>
 </head>
 <body>
 
-<h2>AI Policy Generator for Your Syllabus</h2>
-<p>Enter your course details, choose your stance, and get ready-to-paste syllabus language.</p>
+<div class="header">
+  <h2>AI Policy Generator for Your Syllabus</h2>
+  <p>Enter your course details, choose your stance, and get ready-to-paste syllabus language.</p>
+</div>
 
 <div class="fields">
-  <input type="text" id="course" placeholder="Course name (e.g., Advanced Clinical Practice)" oninput="update()">
-  <input type="text" id="semester" placeholder="Semester (e.g., Fall 2026)" oninput="update()">
+  <div class="field-wrap">
+    <label for="course">Course Name</label>
+    <input type="text" id="course" placeholder="e.g., Advanced Clinical Practice" autocomplete="off">
+  </div>
+  <div class="field-wrap">
+    <label for="semester">Semester</label>
+    <input type="text" id="semester" placeholder="e.g., Fall 2026" autocomplete="off">
+  </div>
 </div>
 
-<div class="tabs">
-  <button class="tab tab-open" onclick="show('open')">Open Use</button>
-  <button class="tab tab-restricted" onclick="show('restricted')">Restricted Use</button>
-  <button class="tab tab-none" onclick="show('none')">AI-Free</button>
+<div class="tabs" role="tablist" aria-label="Choose an AI policy stance">
+  <button class="tab tab-open" role="tab" id="tab-open" aria-selected="true" aria-controls="box-open" tabindex="0">
+    <span class="tab-label">Open Use</span><span class="tab-sub">AI allowed with citation</span>
+  </button>
+  <button class="tab tab-restricted" role="tab" id="tab-restricted" aria-selected="false" aria-controls="box-restricted" tabindex="-1">
+    <span class="tab-label">Restricted Use</span><span class="tab-sub">Limited to brainstorming</span>
+  </button>
+  <button class="tab tab-none" role="tab" id="tab-none" aria-selected="false" aria-controls="box-none" tabindex="-1">
+    <span class="tab-label">AI-Free</span><span class="tab-sub">No AI for submissions</span>
+  </button>
 </div>
 
-<div class="policy-box" id="box-open">
-  <button class="copy-btn" onclick="copy('open')">Copy</button>
-  <h3>Open AI Use — Sample Language</h3>
-  <p class="policy-text" id="text-open"></p>
+<div class="policy-box" id="box-open" role="tabpanel" aria-labelledby="tab-open" tabindex="0">
+  <button class="copy-btn" data-type="open" aria-label="Copy open use policy to clipboard">Copy</button>
+  <h3>Open AI Use &mdash; Sample Language</h3>
+  <div class="policy-text" id="text-open"></div>
 </div>
-<div class="policy-box" id="box-restricted">
-  <button class="copy-btn" onclick="copy('restricted')">Copy</button>
-  <h3>Restricted AI Use — Sample Language</h3>
-  <p class="policy-text" id="text-restricted"></p>
+<div class="policy-box" id="box-restricted" role="tabpanel" aria-labelledby="tab-restricted" tabindex="0">
+  <button class="copy-btn" data-type="restricted" aria-label="Copy restricted use policy to clipboard">Copy</button>
+  <h3>Restricted AI Use &mdash; Sample Language</h3>
+  <div class="policy-text" id="text-restricted"></div>
 </div>
-<div class="policy-box" id="box-none">
-  <button class="copy-btn" onclick="copy('none')">Copy</button>
-  <h3>AI-Free — Sample Language</h3>
-  <p class="policy-text" id="text-none"></p>
+<div class="policy-box" id="box-none" role="tabpanel" aria-labelledby="tab-none" tabindex="0">
+  <button class="copy-btn" data-type="none" aria-label="Copy AI-free policy to clipboard">Copy</button>
+  <h3>AI-Free &mdash; Sample Language</h3>
+  <div class="policy-text" id="text-none"></div>
 </div>
 
-<div class="consequences" id="conseq"></div>
+<div class="consequences" id="conseq" role="region" aria-label="Policy permissions and restrictions"></div>
+
+<div class="action-bar" id="actionBar">
+  <button class="action-btn" id="downloadBtn" aria-label="Download policy as text file">Download as .txt</button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-let currentType = null;
-
+/* ── Data ── */
 const policies = {
-  open: (c,s) => `"Generative AI tools (such as ChatGPT, Claude, or Gemini) may be used in ${c}${s} as intellectual tools. If you use AI assistance, you must: (1) disclose which tool(s) you used, (2) describe how you used it, and (3) include relevant prompts as an appendix. Uncited AI use constitutes academic dishonesty. Note: AI tools must never be used with real client data, identifying information, or content subject to HIPAA protections."`,
-  restricted: (c,s) => `"In ${c}${s}, generative AI may only be used for brainstorming, generating initial outlines, or checking grammar. Using AI to draft, write, or substantially revise your submitted analysis or prose is not permitted. Process recordings, field placement documentation, and clinical reflections must be entirely your own work. Where AI is used within the permitted scope, you must document it."`,
-  none: (c,s) => `"${c}${s} requires you to develop clinical assessment, analytical writing, and ethical reasoning skills through your own independent effort. The use of generative AI tools to produce or edit submitted work is not permitted. This reflects a belief that you deserve the opportunity to develop these skills yourself — skills your future clients will depend on."`
+  open: (c, s) => `\u201CGenerative AI tools (such as ChatGPT, Claude, or Gemini) may be used in ${c}${s} as intellectual tools. If you use AI assistance, you must: (1) disclose which tool(s) you used, (2) describe how you used it, and (3) include relevant prompts as an appendix. Uncited AI use constitutes academic dishonesty. Note: AI tools must never be used with real client data, identifying information, or content subject to HIPAA protections.\u201D`,
+  restricted: (c, s) => `\u201CIn ${c}${s}, generative AI may only be used for brainstorming, generating initial outlines, or checking grammar. Using AI to draft, write, or substantially revise your submitted analysis or prose is not permitted. Process recordings, field placement documentation, and clinical reflections must be entirely your own work. Where AI is used within the permitted scope, you must document it.\u201D`,
+  none: (c, s) => `\u201C${c}${s} requires you to develop clinical assessment, analytical writing, and ethical reasoning skills through your own independent effort. The use of generative AI tools to produce or edit submitted work is not permitted. This reflects a belief that you deserve the opportunity to develop these skills yourself \u2014 skills your future clients will depend on.\u201D`
 };
 
 const consequences = {
-  open: { title: 'WHAT STUDENTS CAN DO — OPEN USE', items: [
-    {ok:true, t:'Use AI for brainstorming and idea generation'},
-    {ok:true, t:'Use AI for drafting and revision (with citation)'},
-    {ok:true, t:'Use AI for research synthesis'},
-    {ok:false, t:'Use AI with real client data (HIPAA)'},
-    {ok:false, t:'Submit without disclosure and citation'},
-    {ok:'warn', t:'Must include prompts as appendix'}
+  open: { title: 'What Students Can Do \u2014 Open Use', items: [
+    { ok: true, t: 'Use AI for brainstorming and idea generation' },
+    { ok: true, t: 'Use AI for drafting and revision (with citation)' },
+    { ok: true, t: 'Use AI for research synthesis' },
+    { ok: false, t: 'Use AI with real client data (HIPAA)' },
+    { ok: false, t: 'Submit without disclosure and citation' },
+    { ok: 'warn', t: 'Must include prompts as appendix' }
   ]},
-  restricted: { title: 'WHAT STUDENTS CAN DO — RESTRICTED', items: [
-    {ok:true, t:'Brainstorming and initial outlines'},
-    {ok:true, t:'Grammar and style checking'},
-    {ok:false, t:'Draft or substantially revise prose'},
-    {ok:false, t:'Process recordings or clinical reflections'},
-    {ok:false, t:'Field placement documentation'},
-    {ok:'warn', t:'Must document any AI use'}
+  restricted: { title: 'What Students Can Do \u2014 Restricted', items: [
+    { ok: true, t: 'Brainstorming and initial outlines' },
+    { ok: true, t: 'Grammar and style checking' },
+    { ok: false, t: 'Draft or substantially revise prose' },
+    { ok: false, t: 'Process recordings or clinical reflections' },
+    { ok: false, t: 'Field placement documentation' },
+    { ok: 'warn', t: 'Must document any AI use' }
   ]},
-  none: { title: 'WHAT STUDENTS CAN DO — AI-FREE', items: [
-    {ok:false, t:'Produce or edit any submitted work with AI'},
-    {ok:false, t:'Draft, outline, or revise with AI'},
-    {ok:true, t:'Use AI for personal learning (not submitted)'},
-    {ok:'warn', t:'Build skills your future clients depend on'},
-    {ok:'warn', t:'Requires clear detection/integrity plan'}
+  none: { title: 'What Students Can Do \u2014 AI-Free', items: [
+    { ok: false, t: 'Produce or edit any submitted work with AI' },
+    { ok: false, t: 'Draft, outline, or revise with AI' },
+    { ok: true, t: 'Use AI for personal learning (not submitted)' },
+    { ok: 'warn', t: 'Build skills your future clients depend on' },
+    { ok: 'warn', t: 'Requires clear detection/integrity plan' }
   ]}
 };
 
+/* ── State ── */
+let currentType = 'open';
+
+/* ── Utilities ── */
+function $(id) { return document.getElementById(id); }
+
+function showToast(msg, duration = 2500) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timeout);
+  t._timeout = setTimeout(() => t.classList.remove('show'), duration);
+}
+
+/* ── Update policy text ── */
 function update() {
-  const course = document.getElementById('course').value.trim();
-  const sem = document.getElementById('semester').value.trim();
+  const course = $('course').value.trim();
+  const sem = $('semester').value.trim();
   const c = course ? `<span class="hl">${course}</span>` : 'this course';
   const s = sem ? ` (${sem})` : '';
   for (const [type, fn] of Object.entries(policies)) {
-    document.getElementById('text-' + type).innerHTML = fn(c, s);
+    $('text-' + type).innerHTML = fn(c, s);
   }
 }
 
+/* ── Show policy ── */
 function show(type) {
   currentType = type;
+
+  // Update tab states
+  document.querySelectorAll('.tab').forEach(t => {
+    const isActive = t.id === 'tab-' + type;
+    t.setAttribute('aria-selected', isActive);
+    t.tabIndex = isActive ? 0 : -1;
+  });
+
+  // Show the correct policy box
   document.querySelectorAll('.policy-box').forEach(b => b.classList.remove('active'));
-  document.getElementById('box-' + type).classList.add('active');
+  $('box-' + type).classList.add('active');
+
+  // Show consequences
   const cq = consequences[type];
-  const el = document.getElementById('conseq');
+  const el = $('conseq');
   el.classList.add('active');
   el.innerHTML = `<h4>${cq.title}</h4>` + cq.items.map(i => {
-    const icon = i.ok === true ? '<span style="color:var(--green)">✓</span>' : i.ok === false ? '<span style="color:#D32F2F">✗</span>' : '<span style="color:#FF9800">⚠</span>';
-    return `<div>${icon} ${i.t}</div>`;
+    let icon, ariaLabel;
+    if (i.ok === true) { icon = '<span style="color:var(--green)">\u2713</span>'; ariaLabel = 'Allowed'; }
+    else if (i.ok === false) { icon = '<span style="color:#D32F2F">\u2717</span>'; ariaLabel = 'Not allowed'; }
+    else { icon = '<span style="color:#FF9800">\u26A0</span>'; ariaLabel = 'Caution'; }
+    return `<div class="consequence-item"><span class="consequence-icon" aria-label="${ariaLabel}">${icon}</span><span class="consequence-text">${i.t}</span></div>`;
   }).join('');
+
+  // Show action bar
+  $('actionBar').classList.add('active');
 }
 
+/* ── Copy ── */
 function copy(type) {
-  const el = document.getElementById('text-' + type);
-  const text = el.textContent.replace(/^"|"$/g, '');
+  const el = $('text-' + type);
+  const text = el.textContent.replace(/[\u201C\u201D]/g, '');
   navigator.clipboard.writeText(text).then(() => {
     const btn = el.parentElement.querySelector('.copy-btn');
-    btn.textContent = 'Copied!';
-    setTimeout(() => btn.textContent = 'Copy', 2000);
+    btn.classList.add('copied');
+    btn.textContent = '\u2713 Copied!';
+    showToast('Policy language copied to clipboard');
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.textContent = 'Copy';
+    }, 2000);
   });
 }
 
+/* ── Download ── */
+function downloadPolicy() {
+  const el = $('text-' + currentType);
+  if (!el) return;
+  const text = el.textContent.replace(/[\u201C\u201D]/g, '');
+  const course = $('course').value.trim() || 'Course';
+  const sem = $('semester').value.trim() || '';
+  const typeLabel = currentType === 'open' ? 'Open Use' : currentType === 'restricted' ? 'Restricted Use' : 'AI-Free';
+
+  let content = `AI POLICY FOR SYLLABUS\n`;
+  content += `${'='.repeat(40)}\n\n`;
+  content += `Policy Type: ${typeLabel}\n`;
+  if (course !== 'Course') content += `Course: ${course}\n`;
+  if (sem) content += `Semester: ${sem}\n`;
+  content += `\n${'='.repeat(40)}\n\n`;
+  content += text + '\n';
+
+  const blob = new Blob([content], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  const safeCourse = course.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30);
+  a.download = `AI_Policy_${currentType}_${safeCourse}.txt`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('Policy downloaded');
+}
+
+/* ── Event listeners ── */
+
+// Input changes
+$('course').addEventListener('input', update);
+$('semester').addEventListener('input', update);
+
+// Tab clicks
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const type = tab.id.replace('tab-', '');
+    show(type);
+  });
+});
+
+// Tab keyboard navigation
+document.querySelector('.tabs').addEventListener('keydown', (e) => {
+  const tabs = [...document.querySelectorAll('.tab')];
+  const idx = tabs.indexOf(document.activeElement);
+  if (idx === -1) return;
+
+  let next = -1;
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (idx + 1) % tabs.length;
+  else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (idx - 1 + tabs.length) % tabs.length;
+
+  if (next !== -1) {
+    e.preventDefault();
+    const type = tabs[next].id.replace('tab-', '');
+    show(type);
+    tabs[next].focus();
+  }
+});
+
+// Copy buttons
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => copy(btn.dataset.type));
+});
+
+// Download button
+$('downloadBtn').addEventListener('click', downloadPolicy);
+
+// Dark mode listener
+window.addEventListener('message', (e) => {
+  if (e.data && e.data.theme) {
+    document.documentElement.setAttribute('data-theme', e.data.theme);
+  }
+});
+
+/* ── Init ── */
 update();
+show('open');
 </script>
 </body>
 </html>
