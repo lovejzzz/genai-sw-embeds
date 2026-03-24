@@ -1,168 +1,508 @@
 {
-  "updated": "2026-03-24T07:03:00+00:00",
-  "source_count": 10,
+  "updated": "2026-03-24T21:21:10.095812+00:00",
+  "source_count": 7,
   "region_count": 3,
-  "article_count": 16,
+  "article_count": 50,
   "articles": [
     {
-      "id": "seed_001",
-      "title": "OpenAI Announces GPT-5 with Advanced Reasoning Capabilities",
-      "description": "OpenAI has unveiled GPT-5, its most capable model yet, featuring significantly improved reasoning, multimodal understanding, and a new architecture designed for complex multi-step problem solving across domains.",
-      "link": "https://openai.com/blog",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-24T06:00:00+00:00"
-    },
-    {
-      "id": "seed_002",
-      "title": "EU AI Act Enforcement Begins: What Organizations Need to Know",
-      "description": "The European Union's comprehensive AI Act enters its first enforcement phase this week, requiring high-risk AI systems to meet transparency and safety standards. Companies worldwide are scrambling to ensure compliance.",
-      "link": "https://www.theguardian.com/technology/artificialintelligenceai",
+      "id": "b9587208ad7e",
+      "title": "Anthropic and Pentagon face off in court over ban on company’s AI model",
+      "description": "After Anthropic refused to let its AI to be used in autonomous weapons systems, Trump ordered US agencies to quit using itSign up for the Breaking News US email to get newsletter alerts in your inboxAnthropic faced against the Department of Defense in a federal court on Tuesday afternoon, as the...",
+      "link": "https://www.theguardian.com/us-news/2026/mar/24/anthropic-pentagon-lawsuit",
       "source": "The Guardian",
       "region": "Europe",
       "category": "Policy",
-      "published": "2026-03-24T04:30:00+00:00"
+      "published": "2026-03-24T21:09:40+00:00"
     },
     {
-      "id": "seed_003",
-      "title": "Stanford Study: AI Tutors Improve Student Outcomes by 30% in Underserved Schools",
-      "description": "A large-scale study from Stanford HAI finds that AI-powered tutoring systems significantly boosted math and reading scores among students in low-income districts, though researchers caution about equitable access to the technology.",
-      "link": "https://hai.stanford.edu/news",
-      "source": "Stanford HAI",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-03-23T18:00:00+00:00"
-    },
-    {
-      "id": "seed_004",
-      "title": "Google DeepMind's AlphaFold 3 Maps New Drug Targets for Rare Diseases",
-      "description": "The latest version of AlphaFold has identified hundreds of previously unknown protein structures linked to rare genetic diseases, accelerating potential drug discovery timelines from years to months.",
-      "link": "https://deepmind.google/blog",
-      "source": "Google DeepMind",
-      "region": "Europe",
-      "category": "Research",
-      "published": "2026-03-23T15:00:00+00:00"
-    },
-    {
-      "id": "seed_005",
-      "title": "Anthropic Raises $5B Series D as Enterprise AI Demand Surges",
-      "description": "Claude-maker Anthropic has closed a $5 billion funding round, valuing the AI safety company at over $60 billion. The funding will support scaling safety research and enterprise product development.",
-      "link": "https://techcrunch.com/category/artificial-intelligence",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-03-23T12:00:00+00:00"
-    },
-    {
-      "id": "seed_006",
-      "title": "AI Bias in Healthcare: New Study Reveals Disparities in Diagnostic Tools",
-      "description": "Researchers at MIT found that widely-used AI diagnostic systems show significant accuracy gaps across racial and ethnic groups, renewing calls for mandatory bias auditing in medical AI applications.",
-      "link": "https://news.mit.edu/topic/mitartificial-intelligence2",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Ethics",
-      "published": "2026-03-23T09:00:00+00:00"
-    },
-    {
-      "id": "seed_007",
-      "title": "China Launches National AI Education Initiative for K-12 Schools",
-      "description": "China's Ministry of Education announced a nationwide program to integrate AI literacy into primary and secondary school curricula, aiming to train 10 million students in foundational AI skills by 2028.",
-      "link": "https://www.scmp.com/tech",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Education",
-      "published": "2026-03-22T22:00:00+00:00"
-    },
-    {
-      "id": "seed_008",
-      "title": "Microsoft Copilot Gets Social Work-Specific Templates for Documentation",
-      "description": "Microsoft has partnered with NASW to develop AI-powered templates within Copilot specifically designed for social work case documentation, progress notes, and treatment planning while maintaining client confidentiality.",
-      "link": "https://www.theverge.com/ai-artificial-intelligence",
+      "id": "ab0cbd62379d",
+      "title": "OpenAI just gave up Sora and its billion-dollar Disney deal",
+      "description": "On Tuesday afternoon, OpenAI announced \"We're saying goodbye to Sora,\" the video generation tool that it launched at the end of 2024, and centered in a massive licensing deal with Disney only a few months ago. The Wall Street Journal reported the move earlier, saying that OpenAI boss Sam Altman...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt",
       "source": "The Verge",
       "region": "North America",
       "category": "Tools",
-      "published": "2026-03-22T16:00:00+00:00"
+      "published": "2026-03-24T21:08:10+00:00"
     },
     {
-      "id": "seed_009",
-      "title": "UK Government Proposes AI Watermarking Requirement for All Generated Content",
-      "description": "The UK's Department for Science has proposed mandatory digital watermarks on all AI-generated text, images, and video, aiming to combat deepfakes and misinformation ahead of upcoming elections.",
-      "link": "https://www.bbc.co.uk/news/technology",
-      "source": "BBC",
+      "id": "dfecfa14e643",
+      "title": "Anthropic hands Claude Code more control, but keeps it on a leash",
+      "description": "Anthropic’s new auto mode for Claude Code lets AI execute tasks with fewer approvals, reflecting a broader shift toward more autonomous tools that balance speed with safety through built-in safeguards.",
+      "link": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T21:00:30+00:00"
+    },
+    {
+      "id": "0fba9864efec",
+      "title": "Arm’s first CPU ever will plug into Meta’s AI datacenters later this year",
+      "description": "After decades of only licensing its chip designs for others to use, UK-based Arm revealed the first chip it's producing on its own, and the first customer. Dubbed the Arm AGI CPU, it's another chip designed for inference, or running the cloud processing for AI tools like AI agents that can...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T20:43:14+00:00"
+    },
+    {
+      "id": "1a8dc973c36f",
+      "title": "Databricks bought two startups to underpin its new AI security product",
+      "description": "With an overflowing war chest from its recent $5 billion raise, Databricks is buying startups and looking for more. It acquired Antimatter and SiftD.ai.",
+      "link": "https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-24T20:40:56+00:00"
+    },
+    {
+      "id": "e0b89364ae6b",
+      "title": "Arm is releasing the first in-house chip in its 35-year history",
+      "description": "Arm is producing its own CPU for the first time. It developed the CPU with Meta, which is also the chip's first customer.",
+      "link": "https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-24T19:48:54+00:00"
+    },
+    {
+      "id": "b77d68d7248a",
+      "title": "OpenAI’s plans to make ChatGPT more like Amazon aren’t going so well",
+      "description": "OpenAI says it's moving away from Instant Checkout, which allowed users to buy items directly through the ChatGPT interface.",
+      "link": "https://techcrunch.com/2026/03/24/openais-plans-to-make-chatgpt-more-like-amazon-arent-going-so-well/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T19:27:56+00:00"
+    },
+    {
+      "id": "354246d26a20",
+      "title": "Google TV’s new Gemini features keep fans updated on sports teams and more",
+      "description": "Three Gemini-powered features are coming to your Google TV. This includes visual responses, deep dives, and sports briefs.",
+      "link": "https://techcrunch.com/2026/03/24/google-tv-new-gemini-features-keep-fans-updated-on-sports-teams-deep-dives-visual-answers/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T19:12:11+00:00"
+    },
+    {
+      "id": "f00f28286cf0",
+      "title": "Baltimore sues Elon Musk’s AI company over Grok’s fake nude images",
+      "description": "Lawsuit argues XAI failed to disclose risks, limitations and exposure to harm that come with using chatbotThe mayor and city council of Baltimore, Maryland, filed a lawsuit against Elon Musk’s xAI company on Tuesday, alleging that its Grok chatbot violated consumer protections by generating...",
+      "link": "https://www.theguardian.com/technology/2026/mar/24/elon-musk-grok-ai-lawsuit-baltimore",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-03-24T18:57:05+00:00"
+    },
+    {
+      "id": "d4af6dbda341",
+      "title": "OpenAI adds open source tools to help developers build for teen safety",
+      "description": "Rather than working from scratch to figure out how to make AI safer for teens, developers can use these policies to fortify what they build.",
+      "link": "https://techcrunch.com/2026/03/24/openai-adds-open-source-tools-to-help-developers-build-for-teen-safety/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-24T18:41:34+00:00"
+    },
+    {
+      "id": "424a026b9c96",
+      "title": "Talat’s AI meeting notes stay on your machine, not in the cloud",
+      "description": "The subscription-free AI meeting notes app is a local-first twist on notetaking tools like Granola.",
+      "link": "https://techcrunch.com/2026/03/24/talats-ai-meeting-notes-stay-on-your-machine-not-in-the-cloud/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T18:41:33+00:00"
+    },
+    {
+      "id": "16cb9fb648de",
+      "title": "Doss raises $55M for AI inventory management that plugs into ERP",
+      "description": "Doss's AI-powered inventory management system integrates with existing ERP systems. The Series B round was co-led by Madrona and Premji Invest.",
+      "link": "https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-24T17:18:29+00:00"
+    },
+    {
+      "id": "81f9267694c0",
+      "title": "ChatGPT and Gemini are fighting to be the AI bot that sells you stuff",
+      "description": "The AI-powered shopping rivalry is heating up as Google and OpenAI launch new features to help you buy things while interacting with their chatbots. Now, Google is teaming up with Gap Inc to allow its Gemini AI assistant to purchase clothes on your behalf from any of its stores, which include...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899677/openai-google-gemini-ai-shopping-features",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T17:13:00+00:00"
+    },
+    {
+      "id": "346c5e7241ca",
+      "title": "‘I’m deathly afraid’: what is digital spirituality leading us toward?",
+      "description": "Where traditional religion once gathered people together, digital spirituality is now consumed in isolation, mediated by tech gods with opaque agendasSign up for AI for the People, a six-week newsletter course, hereJim Pu’u didn’t set out to find God. His soul-searching began with a modest idea:...",
+      "link": "https://www.theguardian.com/lifeandstyle/ng-interactive/2026/mar/24/ai-religion-god-digital-spirituality",
+      "source": "The Guardian",
       "region": "Europe",
       "category": "Policy",
-      "published": "2026-03-22T11:00:00+00:00"
+      "published": "2026-03-24T17:00:43+00:00"
     },
     {
-      "id": "seed_010",
-      "title": "New Open-Source AI Model Rivals GPT-4 at Fraction of the Cost",
-      "description": "A coalition of academic institutions has released an open-source language model that benchmarks competitively with proprietary systems, potentially democratizing access to advanced AI for researchers and educators.",
-      "link": "https://arstechnica.com/ai",
-      "source": "Ars Technica",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-22T08:00:00+00:00"
-    },
-    {
-      "id": "seed_011",
-      "title": "How Professors Are Using AI to Create More Inclusive Assessments",
-      "description": "A growing number of higher education institutions are leveraging AI tools to design assessments that accommodate diverse learning styles and reduce cultural bias in testing, according to a new EdSurge report.",
-      "link": "https://www.edsurge.com/news",
-      "source": "EdSurge",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-03-21T20:00:00+00:00"
-    },
-    {
-      "id": "seed_012",
-      "title": "Japan Develops AI-Powered Elder Care Companion Robots",
-      "description": "Japanese tech firms have unveiled a new generation of AI companion robots designed for elderly care facilities, capable of emotional recognition, medication reminders, and real-time health monitoring.",
-      "link": "https://www.wired.com/tag/ai",
+      "id": "df03ca23cd44",
+      "title": "Arm Is Now Making Its Own Chips",
+      "description": "The chip design firm says Meta, OpenAI, Cerebras, and Cloudflare are among the first customers of its new artificial intelligence hardware.",
+      "link": "https://www.wired.com/story/chip-design-firm-arm-is-making-its-own-ai-cpu/",
       "source": "WIRED",
-      "region": "Asia",
-      "category": "Tools",
-      "published": "2026-03-21T14:00:00+00:00"
-    },
-    {
-      "id": "seed_013",
-      "title": "AI Ethics Board Calls for Moratorium on Emotion Recognition in Hiring",
-      "description": "A coalition of AI ethics researchers and civil rights organizations is urging governments to ban the use of AI emotion recognition systems in hiring processes, citing unreliable science and discriminatory outcomes.",
-      "link": "https://hai.stanford.edu/news",
-      "source": "Stanford HAI",
       "region": "North America",
-      "category": "Ethics",
-      "published": "2026-03-21T10:00:00+00:00"
+      "category": "Industry",
+      "published": "2026-03-24T17:00:00+00:00"
     },
     {
-      "id": "seed_014",
-      "title": "Google Launches Free AI Literacy Course for University Faculty",
-      "description": "Google has released a comprehensive, free online course designed to help university professors understand, evaluate, and thoughtfully integrate generative AI tools into their teaching practices across disciplines.",
-      "link": "https://blog.google/technology/ai",
-      "source": "Google AI Blog",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-03-20T17:00:00+00:00"
-    },
-    {
-      "id": "seed_015",
-      "title": "India Announces $2B Investment in Domestic AI Infrastructure",
-      "description": "India's government has committed $2 billion toward building sovereign AI compute infrastructure, including data centers and training facilities, as part of its strategy to become a global AI development hub.",
-      "link": "https://techcrunch.com/category/artificial-intelligence",
+      "id": "fdeb29f3641a",
+      "title": "Meet the former Apple designer building a new AI interface at Hark",
+      "description": "The company said it would design models, hardware, and interfaces in tandem to deliver a \"seamless end-to-end personal intelligence product.\"",
+      "link": "https://techcrunch.com/2026/03/24/meet-the-former-apple-designer-building-a-new-ai-interface-at-hark/",
       "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T16:00:00+00:00"
+    },
+    {
+      "id": "4f77dc4e73d1",
+      "title": "China’s WeRide eyes Hong Kong, Singapore roads for robotaxis as self-driving giants expand",
+      "description": "Chinese self-driving technology developers continue to expand outside the mainland as WeRide seeks to launch robotaxi services this year in Hong Kong and Singapore, according to an executive. WeRide’s planned entry into Hong Kong was set to cover both robotaxis and robobuses, said senior...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3347747/chinas-weride-eyes-hong-kong-singapore-roads-robotaxis-self-driving-giants-expand?utm_source=rss_feed",
+      "source": "South China Morning Post",
       "region": "Asia",
       "category": "Industry",
-      "published": "2026-03-20T12:00:00+00:00"
+      "published": "2026-03-24T14:15:08+00:00"
     },
     {
-      "id": "seed_016",
-      "title": "Researchers Develop AI System That Detects Social Worker Burnout Early",
-      "description": "A team at Columbia University has created an AI tool that analyzes workplace patterns to identify early signs of burnout among social workers, potentially reducing turnover in an already understaffed profession.",
-      "link": "https://news.mit.edu/topic/mitartificial-intelligence2",
+      "id": "93877c54c2d6",
+      "title": "Divide between Silicon Valley and ordinary people grows ever larger",
+      "description": "Big tech believes the future is AI while everyday Americans remain wary; and the dangers of riding in a Tesla Cybertruck Hello, and welcome to TechScape. I’m your host, Blake Montgomery. This week in tech, we discuss a moment of divergence between Silicon Valley and everyday people; deep cuts at...",
+      "link": "https://www.theguardian.com/technology/2026/mar/24/silcon-valley-ai-techscape",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Ethics",
+      "published": "2026-03-24T13:58:47+00:00"
+    },
+    {
+      "id": "35c38dabd589",
+      "title": "Anthropic’s Claude Code and Cowork can control your computer",
+      "description": "Anthropic has updated Claude to perform tasks in its Code and Cowork AI tools autonomously by using your computer for you. The new feature can be used to automatically open files, use web browsers and apps, and run dev tools \"with no setup required,\" even when you're away from your computer,...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899430/anthropic-claude-code-cowork-ai-control-computer",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T13:32:23+00:00"
+    },
+    {
+      "id": "302ef26b75e2",
+      "title": "US move to ban Chinese routers as part of onshoring push could be uphill battle: analysts",
+      "description": "A US move to ban imports of new foreign-made consumer routers aims to pressure Chinese manufacturers to “onshore” parts of their production chain, although that will be a challenge given limited US manufacturing capacity, according to analysts. The US Federal Communications Commission (FCC) said...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3347733/us-move-ban-chinese-routers-part-onshoring-push-could-be-uphill-battle-analysts?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-03-24T13:30:08+00:00"
+    },
+    {
+      "id": "200cfc30913c",
+      "title": "Mirage raises $75M to continue building models for its AI video-editing app Captions",
+      "description": "Mirage, the maker of video-editing app Captions, has raised $75 million in growth financing from General Catalyst's Customer Value Fund (CVF).",
+      "link": "https://techcrunch.com/2026/03/24/mirage-raises-75m-to-continue-building-models-for-its-ai-video-editing-app-captions/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-24T13:00:00+00:00"
+    },
+    {
+      "id": "3d9072d7aadb",
+      "title": "Agile Robots becomes the latest robotics company to partner with Google DeepMind",
+      "description": "Agile Robots will incorporate Google DeepMind's robotics foundation models into its bots while collecting data for the AI research lab.",
+      "link": "https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-24T12:05:00+00:00"
+    },
+    {
+      "id": "8b606f1a30a6",
+      "title": "As the US midterms approach, AI is going to emerge as a key issue concerning voters | Nathan E Sanders and Bruce Schneier",
+      "description": "There is a political divide over AI but few leaders are taking a strong stand. It’s time for that to changeIn December, the Trump administration signed an executive order that neutered states’ ability to regulate AI by ordering his administration to both sue and withhold funds from states that...",
+      "link": "https://www.theguardian.com/commentisfree/2026/mar/24/midterm-elections-ai-voters",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-24T12:00:37+00:00"
+    },
+    {
+      "id": "f1e9477a0eb4",
+      "title": "Helping developers build safer AI experiences for teens",
+      "description": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems.",
+      "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-24T11:00:00+00:00"
+    },
+    {
+      "id": "cb74049c452e",
+      "title": "Revolut warns it risks backlash over support for energy-intensive AI and crypto",
+      "description": "Fintech company’s profits leap to £1.7bn as it gears up for US push after getting UK banking licence this month Business live – latest updatesThe UK banking app Revolut has said it could face a backlash over its support for energy-intensive sectors such as crypto and AI, as it posted a 57%...",
+      "link": "https://www.theguardian.com/business/2026/mar/24/revolut-ai-crypto-profits-us-banking-licence-uk",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-03-24T10:40:32+00:00"
+    },
+    {
+      "id": "0af8c775a86b",
+      "title": "Chris Hayes Has Some Advice for Keeping Up With the News",
+      "description": "The host of MS Now’s All In, knows how hard it is to stay current. But he also knows where you should focus your attention—and it starts with a sober view of AI.",
+      "link": "https://www.wired.com/story/the-big-interview-podcast-chris-hayes/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-24T10:30:00+00:00"
+    },
+    {
+      "id": "405f00d2d6a8",
+      "title": "Your Body Is Betraying Your Right to Privacy",
+      "description": "Attachment to smart devices and biometric surveillance leaves Americans more vulnerable to police searches than ever. Left unchecked it will only get worse.",
+      "link": "https://www.wired.com/story/book-excerpt-your-data-will-be-used-against-you-andrew-guthrie-ferguson/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Ethics",
+      "published": "2026-03-24T10:00:00+00:00"
+    },
+    {
+      "id": "83bbe5442159",
+      "title": "Update on the OpenAI Foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-24T09:00:00+00:00"
+    },
+    {
+      "id": "753168a84647",
+      "title": "Powering product discovery in ChatGPT",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-24T09:00:00+00:00"
+    },
+    {
+      "id": "9993c7b44284",
+      "title": "Alibaba debuts its latest RISC-V-based chip amid shift to AI agents",
+      "description": "Alibaba Group Holding’s research arm Damo Academy has unveiled a chip designed to fuel artificial intelligence agents, as the tech giant bets on open-source RISC-V architecture to ride the wave of agentic AI. XuanTie C950, the latest flagship in Alibaba’s XuanTie RISC-V series, was introduced at...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3347684/alibaba-debuts-its-latest-risc-v-based-chip-amid-shift-ai-agents?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-03-24T08:00:11+00:00"
+    },
+    {
+      "id": "30bee3bc3fa6",
+      "title": "HKIC, Gobi Partners and HKU team up for fund backing university research start-ups",
+      "description": "Hong Kong Investment Corporation (HKIC), the government’s investment arm, has teamed up with venture capital firm Gobi Partners and the University of Hong Kong (HKU) to launch a fund on Tuesday to invest in technology start-ups spun off from the university’s research breakthroughs, according to...",
+      "link": "https://www.scmp.com/business/banking-finance/article/3347689/hkic-gobi-partners-and-hku-team-fund-backing-university-research-start-ups?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-03-24T07:21:49+00:00"
+    },
+    {
+      "id": "76e8d5ecbaa1",
+      "title": "Amount of AI-generated child sexual abuse material found online surged in 2025",
+      "description": "Internet Watch Foundation verified 8,029 pieces of realistic AI-made content, with 65% of videos in worst categoryThe amount of AI-generated child sexual abuse material found online rose by 14% last year, with the majority of videos showing the most extreme type of content, according to a safety...",
+      "link": "https://www.theguardian.com/technology/2026/mar/24/ai-generated-child-sexual-abuse-videos-images-online-surged-2025-internet-watch-foundation",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-24T06:00:12+00:00"
+    },
+    {
+      "id": "03ba26692200",
+      "title": "Hong Kong’s eMPF to cut fees by 21.6% from April, saving US$6.4 billion in 10 years",
+      "description": "The electronic platform of the Mandatory Provident Fund (eMPF) will cut administration fees for 378 investment funds by more than 21 per cent from April 1, the pension regulator said on Tuesday, adding that this will achieve its cost-saving target of HK$50 billion (US$6.4 billion) in less than...",
+      "link": "https://www.scmp.com/business/banking-finance/article/3347671/hong-kongs-empf-cut-fees-216-april-saving-us64-billion-10-years?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Tools",
+      "published": "2026-03-24T05:06:37+00:00"
+    },
+    {
+      "id": "b76b120ab3a8",
+      "title": "From infrastructure to AI: how Alibaba Cloud powers the global ambitions of Chinese companies",
+      "description": "New technology is transforming international trade and, with the help of the cloud and artificial intelligence (AI), Chinese firms are increasingly well placed to compete globally. “For Chinese companies going overseas, the requirement has evolved from just providing infrastructure to...",
+      "link": "https://www.scmp.com/native/tech/topics/chinese-firms-rise-cloud-power/article/3347560/infrastructure-ai-how-alibaba-cloud-powers-global-ambitions-chinese-companies?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-03-24T04:40:08+00:00"
+    },
+    {
+      "id": "5ac73630b3ae",
+      "title": "How to create “humble” AI",
+      "description": "An MIT-led team is designing artificial intelligence systems for medical diagnosis that are more collaborative and forthcoming about uncertainty.",
+      "link": "https://news.mit.edu/2026/creating-humble-ai-0324",
       "source": "MIT News",
       "region": "North America",
       "category": "Research",
-      "published": "2026-03-19T09:00:00+00:00"
+      "published": "2026-03-24T04:00:00+00:00"
+    },
+    {
+      "id": "2e4746d84685",
+      "title": "Surging demand for AI agents fuels Hong Kong’s race to expand computing power",
+      "description": "As leading Chinese chip executives predict that autonomous AI agents will trigger an unprecedented explosion in computing demand, Hong Kong is accelerating efforts to expand its artificial intelligence computing capacity. Calling token consumption in the era of AI “far beyond our imagination”,...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3347609/surging-demand-ai-agents-fuels-hong-kongs-race-expand-computing-power?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-03-24T02:30:09+00:00"
+    },
+    {
+      "id": "650fd7bd37be",
+      "title": "Hong Kong stocks rebound on hopes of a US-Iran deal as tensions ease",
+      "description": "Hong Kong stocks rebounded on Tuesday on signs of a de-escalation of the US-Israel war against Iran after President Donald Trump said he would delay any attacks on the Gulf nation’s energy facilities. The Hang Seng Index surged 2.8 per cent to 25,063.71 at the close. The Hang Seng Tech Index...",
+      "link": "https://www.scmp.com/business/china-business/article/3347649/hong-kong-stocks-rebound-hopes-us-iran-deal-tensions-ease?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Tools",
+      "published": "2026-03-24T02:00:45+00:00"
+    },
+    {
+      "id": "bbe5bbf5b93c",
+      "title": "Why Hong Kong is betting on RISC-V to build a global open-source chip hub",
+      "description": "Last week, Hong Kong Investment Corporation (HKIC) announced the establishment of the Hong Kong RISC-V Alliance. The move follows Financial Secretary Paul Chan Mo-po’s earlier pledge to actively promote collaboration among industry, academia and the investment sector to develop the open-source...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3347614/why-hong-kong-betting-risc-v-build-global-open-source-chip-hub?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-03-24T00:30:08+00:00"
+    },
+    {
+      "id": "7c224a8a8138",
+      "title": "3 Chinese EV makers raise prices – but analysts warn weak demand could force reversal",
+      "description": "Three Chinese electric vehicle (EV) makers have raised prices for some models in response to rising supply chain costs, but analysts say the increases are unlikely to be sustained given weakening domestic demand. Xiaomi became the latest manufacturer to adjust pricing on March 19, announcing...",
+      "link": "https://www.scmp.com/business/banking-finance/article/3347527/three-chinese-ev-makers-raise-prices-analysts-warn-weak-demand-could-force-reversal?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-03-23T23:30:08+00:00"
+    },
+    {
+      "id": "ad9c3b5c8be6",
+      "title": "Air Street becomes one of the largest solo VCs in Europe with $232M fund",
+      "description": "London’s Air Street Capital has raised a large Fund III with eyes locked on backing early-stage European and North American AI companies.",
+      "link": "https://techcrunch.com/2026/03/23/air-street-becomes-one-of-the-largest-solo-vcs-in-europe-with-232m-fund/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-23T22:36:39+00:00"
+    },
+    {
+      "id": "91d8a9962b67",
+      "title": "Advancing international trade research and finding community",
+      "description": "Sojun Park, a postdoc at the Center for International Studies, has learned much from his research on intellectual property as well as his interactions with students and mentors at MIT.",
+      "link": "https://news.mit.edu/2026/sojun-park-advancing-international-trade-research-finding-community-0323",
+      "source": "MIT News",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-23T21:00:00+00:00"
+    },
+    {
+      "id": "762217a1ce3c",
+      "title": "Bernie Sanders’ AI ‘gotcha’ video flops, but the memes are great",
+      "description": "Sen. Bernie Sanders thinks he's tricked Claude into revealing the AI industry's secrets, but he really just exposed how agreeable chatbots can become.",
+      "link": "https://techcrunch.com/2026/03/23/bernie-sanders-ai-gotcha-video-flops-but-the-memes-are-great/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-23T20:15:59+00:00"
+    },
+    {
+      "id": "e8cf7d097540",
+      "title": "Google’s new Pixel 10 ads made me go ‘Wait, WHAT are they trying to sell?’",
+      "description": "Ever watch a TV ad and wonder, \"How did this get approved?\" Today, Google has not one but two new ad spots for its six-month-old Pixel 10 phones, and… let's just say they may not come across as intended. First, there's \"With 100x Zoom,\" an ad that appears to suggest that if a vacation rental...",
+      "link": "https://www.theverge.com/tech/898992/google-pixel-10-ads-moving-on-stalker-lying-beach-view-100-zoom",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-23T19:49:11+00:00"
+    },
+    {
+      "id": "99d57b13d4e3",
+      "title": "Nvidia CEO Jensen Huang says &#8216;I think we&#8217;ve achieved AGI&#8217;",
+      "description": "On a Monday episode of the Lex Fridman podcast, Nvidia CEO Jensen Huang made a hot-button statement: \"I think we've achieved AGI.\" AGI, or artificial general intelligence, is a vaguely defined term that has incited a lot of discussion by tech CEOs, tech workers, and the general public in recent...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-23T19:42:33+00:00"
+    },
+    {
+      "id": "a392a41308f1",
+      "title": "Vibe-coding startup Lovable is on the hunt for acquisitions",
+      "description": "Lovable's founder said the fast-growing vibe-coding startup is looking for startups and teams to join its company.",
+      "link": "https://techcrunch.com/2026/03/23/vibe-coding-startup-lovable-is-on-the-hunt-for-acquisitions/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-23T18:22:04+00:00"
+    },
+    {
+      "id": "7b56592c6cfe",
+      "title": "Apple sets June date for WWDC 2026, teasing ‘AI advancements’",
+      "description": "Apple will host its next Worldwide Developers Conference the week of June 8. The company is expected to announce major updates to Siri with advanced AI capabilities.",
+      "link": "https://techcrunch.com/2026/03/23/apple-wwdc-june-8-12-ai-advancements-siri-developers-conference/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-23T18:00:45+00:00"
+    },
+    {
+      "id": "eb3baf274128",
+      "title": "On algorithms, life, and learning",
+      "description": "Operations research expert Dimitris Bertsimas delivered the annual Killian Lecture, providing a look at the past and future of his work.",
+      "link": "https://news.mit.edu/2026/algorithms-life-learning-killian-lecture-dimitris-bertsimas-0323",
+      "source": "MIT News",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-23T17:45:00+00:00"
+    },
+    {
+      "id": "9d974af5adcc",
+      "title": "AI boom risks widening wealth divide, says BlackRock’s Larry Fink",
+      "description": "CEO of asset manager says only a few firms and investors may reap rewards from growth in the technologyThe boom in artificial intelligence risks widening inequality, with only a handful of companies and investors likely to reap its financial rewards, the BlackRock chief executive, Larry Fink,...",
+      "link": "https://www.theguardian.com/technology/2026/mar/23/ai-boom-risks-widening-wealth-divide-blackrock-larry-fink",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Industry",
+      "published": "2026-03-23T16:51:35+00:00"
+    },
+    {
+      "id": "733843fdc177",
+      "title": "Tencent adds ClawBot plug-in to WeChat amid OpenClaw boom and privacy warnings",
+      "description": "Tencent Holdings is rolling out a “ClawBot” plug-in for China’s most popular app WeChat as it seeks to capitalise on the OpenClaw craze, even as authorities continue to warn about risks. The move announced on Sunday will allow WeChat’s more than 1 billion monthly active users to command their...",
+      "link": "https://www.scmp.com/tech/article/3347590/tencent-adds-clawbot-plug-wechat-amid-openclaw-boom-and-privacy-warnings?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-03-23T14:30:07+00:00"
+    },
+    {
+      "id": "b1de5020822a",
+      "title": "Do we have to keep talking about AI? The machines are always one step ahead | Zoe Williams",
+      "description": "Whether you want to free it or regulate it into submission, one thing is clear: this new technology is moving so fast that we can’t fully grasp itAt an 80th birthday party at the weekend, I met an academic who was evasive about his field. When he finally disclosed “computer science”, I asked him...",
+      "link": "https://www.theguardian.com/commentisfree/2026/mar/23/do-we-have-to-keep-talking-about-ai-the-machines-are-always-one-step-ahead",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-23T13:50:39+00:00"
     }
   ]
 }
