@@ -391,6 +391,127 @@
   .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 
   /* ═══════════════════════════════════════
+     ARTICLE DETAIL MODAL
+     ═══════════════════════════════════════ */
+  .article-modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+    z-index: 300; display: none; align-items: flex-end; justify-content: center;
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  }
+  .article-modal-overlay.open { display: flex; animation: fadeInOverlay 0.25s ease; }
+  @keyframes fadeInOverlay { from{opacity:0} to{opacity:1} }
+
+  .article-modal {
+    background: white; border-radius: 20px 20px 0 0;
+    max-width: 680px; width: 100%; max-height: 88vh;
+    overflow-y: auto; position: relative;
+    animation: slideUp 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    box-shadow: 0 -8px 40px rgba(0,0,0,0.15);
+  }
+  @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} }
+
+  .article-modal .modal-img-wrap {
+    position: relative; overflow: hidden;
+    border-radius: 20px 20px 0 0;
+  }
+  .article-modal .modal-img {
+    width: 100%; height: 280px; object-fit: cover; display: block;
+  }
+  .article-modal .modal-img-placeholder {
+    width: 100%; height: 220px; display: flex;
+    align-items: center; justify-content: center; font-size: 64px;
+  }
+  .article-modal .modal-img-gradient {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.4));
+    pointer-events: none;
+  }
+  .article-modal .modal-close {
+    position: absolute; top: 14px; right: 14px; z-index: 5;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(0,0,0,0.5); border: none; cursor: pointer;
+    color: white; font-size: 18px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .article-modal .modal-close:hover { background: rgba(0,0,0,0.7); }
+
+  .article-modal .modal-body { padding: 24px 28px 28px; }
+  .article-modal .modal-cat {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; padding: 4px 12px; border-radius: 4px;
+    display: inline-block; margin-bottom: 12px;
+  }
+  .article-modal .modal-title {
+    font-family: var(--serif); font-size: 26px; font-weight: 900;
+    line-height: 1.25; color: var(--text); margin-bottom: 14px;
+    letter-spacing: -0.3px;
+  }
+  .article-modal .modal-meta {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    font-size: 12px; color: var(--text-light);
+    padding-bottom: 16px; margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .article-modal .modal-source-name { font-weight: 700; color: var(--text); }
+  .article-modal .modal-region {
+    background: var(--warm-gray); padding: 2px 8px;
+    border-radius: 4px; font-size: 11px; font-weight: 600;
+  }
+  .article-modal .modal-desc {
+    font-family: var(--body-serif); font-size: 16px;
+    line-height: 1.75; color: var(--text-medium);
+    margin-bottom: 24px;
+  }
+  .article-modal .modal-actions {
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  .article-modal .read-source-btn {
+    flex: 1; min-width: 200px; padding: 14px 24px;
+    background: var(--nyu-purple); color: white; border: none;
+    border-radius: 10px; font-family: var(--sans);
+    font-size: 14px; font-weight: 700; cursor: pointer;
+    transition: all 0.2s; text-align: center;
+    text-decoration: none; display: flex;
+    align-items: center; justify-content: center; gap: 8px;
+  }
+  .article-modal .read-source-btn:hover {
+    background: var(--nyu-purple-light); transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(87,6,140,0.2);
+  }
+  .article-modal .read-source-btn .arrow { font-size: 16px; }
+  .article-modal .share-btn {
+    padding: 14px 20px; background: white;
+    border: 1.5px solid var(--border); border-radius: 10px;
+    font-family: var(--sans); font-size: 13px; font-weight: 600;
+    color: var(--text-light); cursor: pointer; transition: all 0.2s;
+  }
+  .article-modal .share-btn:hover {
+    border-color: var(--nyu-purple); color: var(--nyu-purple);
+    background: var(--nyu-purple-bg);
+  }
+
+  .article-modal .modal-source-url {
+    margin-top: 12px; font-size: 11px; color: var(--text-light);
+    word-break: break-all;
+  }
+  .article-modal .modal-source-url a {
+    color: var(--nyu-purple); text-decoration: none;
+  }
+  .article-modal .modal-source-url a:hover { text-decoration: underline; }
+
+  @media (max-width: 520px) {
+    .article-modal { max-height: 92vh; border-radius: 16px 16px 0 0; }
+    .article-modal .modal-img { height: 200px; }
+    .article-modal .modal-body { padding: 20px 20px 24px; }
+    .article-modal .modal-title { font-size: 22px; }
+    .article-modal .modal-desc { font-size: 15px; }
+    .article-modal .modal-actions { flex-direction: column; }
+    .article-modal .read-source-btn { min-width: 100%; }
+  }
+
+  /* ═══════════════════════════════════════
      ANIMATIONS
      ═══════════════════════════════════════ */
   @keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
@@ -480,6 +601,27 @@
   <p class="credit">Published daily via GitHub Actions for <a href="https://socialwork.nyu.edu" target="_blank" rel="noopener">NYU Silver School of Social Work</a></p>
 </footer>
 
+<!-- ═══ ARTICLE DETAIL MODAL ═══ -->
+<div class="article-modal-overlay" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="article-modal">
+    <div class="modal-img-wrap" id="modalImgWrap"></div>
+    <button class="modal-close" id="modalClose" aria-label="Close article">&times;</button>
+    <div class="modal-body">
+      <span class="modal-cat" id="modalCat"></span>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-actions">
+        <a class="read-source-btn" id="modalReadBtn" href="#" target="_blank" rel="noopener noreferrer">
+          Read Full Article <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <button class="share-btn" id="modalShareBtn">Copy Link</button>
+      </div>
+      <div class="modal-source-url" id="modalSourceUrl"></div>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -554,9 +696,80 @@ function imgHtml(article, cls, h) {
   return `<div class="${cls} img-placeholder ${ph}" style="height:${h}px">${emoji}</div>`;
 }
 
-function openArticle(url) {
-  window.open(url, '_blank', 'noopener,noreferrer');
+/* ── Article Detail Modal ── */
+function openArticle(articleId) {
+  const article = allArticles.find(a => a.id === articleId);
+  if (!article) return;
+
+  const modal = $('articleModal');
+  const emoji = catEmoji[(article.category || '').toLowerCase()] || '📰';
+  const ph = phClass(article.category);
+
+  // Image
+  if (article.image) {
+    $('modalImgWrap').innerHTML = `
+      <img src="${esc(article.image)}" alt="" class="modal-img"
+        onerror="this.outerHTML='<div class=\\'modal-img-placeholder img-placeholder ${ph}\\'>${emoji}</div>'">
+      <div class="modal-img-gradient"></div>`;
+  } else {
+    $('modalImgWrap').innerHTML = `
+      <div class="modal-img-placeholder img-placeholder ${ph}">${emoji}</div>`;
+  }
+
+  // Category
+  const catEl = $('modalCat');
+  catEl.textContent = article.category;
+  catEl.className = 'modal-cat ' + catClass(article.category);
+
+  // Title & description
+  $('modalTitle').textContent = article.title;
+  $('modalDesc').textContent = article.description;
+
+  // Meta
+  const pubDate = new Date(article.published);
+  const dateStr = pubDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  $('modalMeta').innerHTML = `
+    <span class="modal-source-name">${esc(article.source)}</span>
+    <span>${dateStr}</span>
+    ${article.region ? `<span class="modal-region">${esc(article.region)}</span>` : ''}`;
+
+  // Read button
+  $('modalReadBtn').href = article.link;
+
+  // Source URL display
+  try {
+    const domain = new URL(article.link).hostname;
+    $('modalSourceUrl').innerHTML = `Source: <a href="${esc(article.link)}" target="_blank" rel="noopener">${esc(domain)}</a>`;
+  } catch {
+    $('modalSourceUrl').innerHTML = `Source: <a href="${esc(article.link)}" target="_blank" rel="noopener">${esc(article.link)}</a>`;
+  }
+
+  // Show modal
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  $('modalClose').focus();
 }
+
+function closeModal() {
+  const modal = $('articleModal');
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Modal event listeners
+$('modalClose').addEventListener('click', closeModal);
+$('articleModal').addEventListener('click', e => {
+  if (e.target === $('articleModal')) closeModal();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && $('articleModal').classList.contains('open')) closeModal();
+});
+$('modalShareBtn').addEventListener('click', () => {
+  const link = $('modalReadBtn').href;
+  const title = $('modalTitle').textContent;
+  const text = `${title}\n${link}`;
+  navigator.clipboard.writeText(text).then(() => showToast('Link copied to clipboard'));
+});
 
 /* ── Date Ribbon ── */
 function buildDateRibbon() {
@@ -679,7 +892,7 @@ function renderAll() {
   // ── HERO: Lead story
   const lead = articles[0];
   html += `
-    <div class="hero-lead" onclick="openArticle('${esc(lead.link)}')" tabindex="0" role="article">
+    <div class="hero-lead" onclick="openArticle('${esc(lead.id)}')" tabindex="0" role="article">
       ${imgHtml(lead, 'hero-lead-img', 300)}
       <span class="hero-lead-category ${catClass(lead.category)}">${esc(lead.category)}</span>
       <h2>${esc(lead.title)}</h2>
@@ -697,7 +910,7 @@ function renderAll() {
     html += '<div class="hero-secondary">';
     secs.forEach(a => {
       html += `
-        <div class="hero-sec-card" onclick="openArticle('${esc(a.link)}')" tabindex="0" role="article">
+        <div class="hero-sec-card" onclick="openArticle('${esc(a.id)}')" tabindex="0" role="article">
           ${imgHtml(a, 'hero-sec-img', 95)}
           <div class="hero-sec-body">
             <span class="hero-sec-cat ${catClass(a.category)}">${esc(a.category)}</span>
@@ -727,7 +940,7 @@ function renderAll() {
       col.forEach((a, i) => {
         const isFeatured = ci === 1 && i === 0;
         html += `
-          <div class="grid-card${isFeatured ? ' featured' : ''}" onclick="openArticle('${esc(a.link)}')" tabindex="0" role="article">
+          <div class="grid-card${isFeatured ? ' featured' : ''}" onclick="openArticle('${esc(a.id)}')" tabindex="0" role="article">
             ${imgHtml(a, 'grid-card-img', isFeatured ? 180 : 120)}
             <span class="grid-card-cat ${catClass(a.category)}">${esc(a.category)}</span>
             <h4>${esc(trunc(a.title, 90))}</h4>
@@ -775,7 +988,7 @@ function renderAll() {
 
 function headlineItem(a, num) {
   return `
-    <div class="headline-item" onclick="openArticle('${esc(a.link)}')" tabindex="0" role="article">
+    <div class="headline-item" onclick="openArticle('${esc(a.id)}')" tabindex="0" role="article">
       <span class="headline-num">${num}</span>
       <div class="headline-body">
         <h5>${esc(trunc(a.title, 100))}</h5>
