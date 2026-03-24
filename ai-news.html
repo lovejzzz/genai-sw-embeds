@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily AI News — NYU Silver</title>
+<title>The AI Times — NYU Silver</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
 <style>
   :root {
     --nyu-purple: #57068C;
@@ -15,185 +15,296 @@
     --green: #2E7D32;
     --orange: #E65100;
     --warm-gray: #F8F7F5;
-    --border: #E8E5E0;
-    --text: #2D2D2D;
+    --border: #E0DDD8;
+    --border-light: #EDEAE5;
+    --text: #1A1A1A;
     --text-light: #777;
-    --radius: 14px;
+    --text-medium: #555;
+    --radius: 10px;
+    --serif: 'Playfair Display', 'Georgia', serif;
+    --body-serif: 'Source Serif 4', 'Georgia', serif;
+    --sans: 'Inter', -apple-system, sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: 'Inter', sans-serif; color: var(--text);
-    background: linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%);
-    padding: 28px 24px; max-width: 780px; margin: 0 auto;
-    min-height: 100vh;
+    font-family: var(--sans); color: var(--text);
+    background: #FAF9F7; max-width: 900px;
+    margin: 0 auto; min-height: 100vh;
   }
 
-  /* Focus visible */
   *:focus-visible { outline: 2px solid var(--nyu-purple); outline-offset: 2px; }
-  button:active { transform: scale(0.97); }
-
-  /* Screen-reader only */
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
-  /* ── Header ── */
-  .news-header {
-    text-align: center; margin-bottom: 28px;
-    animation: fadeDown 0.5s ease;
+  /* ═══════════════════════════════════════
+     MASTHEAD
+     ═══════════════════════════════════════ */
+  .masthead {
+    text-align: center; padding: 24px 24px 0;
+    animation: fadeIn 0.5s ease;
   }
-  .news-header .logo-row {
-    display: flex; align-items: center; justify-content: center; gap: 10px;
-    margin-bottom: 8px;
+  .masthead-rule { height: 3px; background: var(--nyu-purple); margin-bottom: 4px; }
+  .masthead-rule-thin { height: 1px; background: var(--nyu-purple); margin-bottom: 16px; }
+  .masthead h1 {
+    font-family: var(--serif); font-size: 48px; font-weight: 900;
+    color: var(--text); letter-spacing: -1px; line-height: 1.05;
+    margin-bottom: 4px;
   }
-  .news-header .pulse-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-    background: var(--green); position: relative;
+  .masthead h1 .the { font-weight: 400; font-style: italic; font-size: 32px; letter-spacing: 1px; }
+  .masthead-sub {
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 3px; color: var(--nyu-purple);
+    margin-bottom: 12px;
   }
-  .news-header .pulse-dot::after {
-    content: ''; position: absolute; inset: -3px; border-radius: 50%;
-    border: 2px solid var(--green); animation: pulse 2s ease-in-out infinite;
+  .masthead-meta {
+    display: flex; justify-content: center; align-items: center; gap: 16px;
+    font-size: 12px; color: var(--text-light); padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
   }
-  @keyframes pulse {
-    0%, 100% { opacity: 0; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.4); }
+  .masthead-meta .live-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green); display: inline-block;
+    animation: blink 2s ease-in-out infinite;
   }
-  .news-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px; font-weight: 800; color: var(--nyu-purple);
-    line-height: 1.2;
-  }
-  .news-header .subtitle {
-    font-size: 13px; color: var(--text-light); margin-top: 6px; line-height: 1.5;
-  }
-  .news-header .update-badge {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--nyu-purple-bg); color: var(--nyu-purple);
-    padding: 5px 14px; border-radius: 20px;
-    font-size: 11px; font-weight: 600; margin-top: 10px;
-    letter-spacing: 0.3px;
-  }
-  .news-header .update-badge .dot {
-    width: 6px; height: 6px; border-radius: 50%; background: var(--green);
-  }
-  @keyframes fadeDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .masthead-date { font-weight: 600; color: var(--text-medium); }
 
-  /* ── Category Filter ── */
-  .filter-bar {
-    display: flex; gap: 6px; margin-bottom: 22px; flex-wrap: wrap;
-    justify-content: center;
-    animation: fadeDown 0.5s ease 0.1s both;
+  /* ═══════════════════════════════════════
+     DATE RIBBON (Editions)
+     ═══════════════════════════════════════ */
+  .date-ribbon-wrap {
+    position: relative; padding: 0 24px;
+    border-bottom: 1px solid var(--border-light);
   }
-  .filter-btn {
-    padding: 7px 16px; border: 1.5px solid var(--border); border-radius: 20px;
-    background: white; cursor: pointer; font-family: inherit;
+  .date-ribbon {
+    display: flex; gap: 4px; padding: 10px 0;
+    overflow-x: auto; scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .date-ribbon::-webkit-scrollbar { display: none; }
+  .date-chip {
+    padding: 6px 14px; border-radius: 20px; border: 1.5px solid transparent;
+    background: transparent; cursor: pointer; font-family: var(--sans);
     font-size: 12px; font-weight: 600; color: var(--text-light);
-    transition: all 0.2s ease; white-space: nowrap;
+    white-space: nowrap; transition: all 0.2s ease; flex-shrink: 0;
   }
-  .filter-btn:hover {
-    border-color: var(--nyu-purple-light); color: var(--nyu-purple);
-    background: var(--nyu-purple-bg); transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(87,6,140,0.08);
+  .date-chip:hover { background: var(--warm-gray); color: var(--text); }
+  .date-chip.active {
+    background: var(--nyu-purple); color: white;
+    border-color: var(--nyu-purple);
   }
-  .filter-btn.active {
-    background: var(--nyu-purple); color: white; border-color: var(--nyu-purple);
-    box-shadow: 0 4px 12px rgba(87,6,140,0.2);
+  .date-chip .chip-day { display: block; font-size: 9px; font-weight: 500; opacity: 0.7; text-align: center; margin-top: 1px; }
+  .date-chip.active .chip-day { opacity: 0.85; }
+  .date-today-label {
+    font-size: 8px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; display: block; text-align: center;
+    color: var(--green); margin-top: 1px;
   }
+  .date-chip.active .date-today-label { color: #A5D6A7; }
 
-  /* ── Stats bar ── */
-  .stats-bar {
-    display: flex; gap: 12px; margin-bottom: 22px; justify-content: center;
-    animation: fadeDown 0.5s ease 0.15s both;
+  /* ═══════════════════════════════════════
+     SECTION NAV (Categories)
+     ═══════════════════════════════════════ */
+  .section-nav {
+    display: flex; justify-content: center; gap: 6px;
+    padding: 10px 24px; border-bottom: 1px solid var(--border-light);
+    flex-wrap: wrap;
   }
-  .stat-chip {
-    display: flex; align-items: center; gap: 6px;
+  .section-btn {
+    padding: 4px 12px; border: none; background: none;
+    cursor: pointer; font-family: var(--sans);
     font-size: 11px; font-weight: 600; color: var(--text-light);
-    background: white; padding: 5px 12px; border-radius: 8px;
-    border: 1px solid var(--border);
+    text-transform: uppercase; letter-spacing: 0.8px;
+    transition: all 0.15s; border-bottom: 2px solid transparent;
+    border-radius: 0;
   }
-  .stat-chip .stat-num { color: var(--nyu-purple); font-weight: 800; font-size: 13px; }
+  .section-btn:hover { color: var(--text); }
+  .section-btn.active {
+    color: var(--nyu-purple); border-bottom-color: var(--nyu-purple);
+    font-weight: 700;
+  }
 
-  /* ── Featured card ── */
-  .featured-card {
-    background: linear-gradient(135deg, var(--nyu-purple), #7B1FA2);
-    border-radius: var(--radius); padding: 28px 30px;
-    margin-bottom: 20px; position: relative; overflow: hidden;
-    cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;
-    animation: fadeUp 0.5s ease 0.2s both;
+  /* ═══════════════════════════════════════
+     CONTENT AREA
+     ═══════════════════════════════════════ */
+  .content { padding: 0 24px; }
+
+  /* Section dividers (newspaper style) */
+  .section-divider {
+    display: flex; align-items: center; gap: 16px;
+    margin: 28px 0 20px; position: relative;
   }
-  .featured-card::before {
-    content: ''; position: absolute; top: -50%; right: -30%;
-    width: 300px; height: 300px; border-radius: 50%;
-    background: rgba(255,255,255,0.05);
+  .section-divider::before, .section-divider::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
   }
-  .featured-card::after {
-    content: ''; position: absolute; bottom: -40%; left: -20%;
-    width: 200px; height: 200px; border-radius: 50%;
-    background: rgba(255,255,255,0.03);
+  .section-divider span {
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 2px; color: var(--text-light);
+    white-space: nowrap;
   }
-  .featured-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 40px rgba(87,6,140,0.25);
+
+  /* ═══════════════════════════════════════
+     HERO — ABOVE THE FOLD
+     ═══════════════════════════════════════ */
+  .hero { padding-top: 24px; animation: fadeIn 0.5s ease 0.1s both; }
+  .hero-lead {
+    cursor: pointer; margin-bottom: 20px;
+    transition: opacity 0.15s;
   }
-  .featured-label {
-    display: inline-flex; align-items: center; gap: 5px;
+  .hero-lead:hover { opacity: 0.92; }
+  .hero-lead-img {
+    width: 100%; height: 300px; object-fit: cover;
+    border-radius: var(--radius); margin-bottom: 16px;
+    background: var(--border-light);
+  }
+  .hero-lead-category {
     font-size: 10px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 1px; color: rgba(255,255,255,0.7);
-    margin-bottom: 12px; position: relative; z-index: 1;
+    letter-spacing: 1px; margin-bottom: 8px; display: inline-block;
+    padding: 3px 10px; border-radius: 4px;
   }
-  .featured-label .star { font-size: 13px; }
-  .featured-card h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px; font-weight: 800; color: white;
-    line-height: 1.35; margin-bottom: 10px;
-    position: relative; z-index: 1;
+  .hero-lead h2 {
+    font-family: var(--serif); font-size: 32px; font-weight: 900;
+    line-height: 1.2; margin-bottom: 10px; color: var(--text);
+    letter-spacing: -0.5px;
   }
-  .featured-card .featured-desc {
-    font-size: 14px; color: rgba(255,255,255,0.8);
-    line-height: 1.65; margin-bottom: 14px;
-    position: relative; z-index: 1;
+  .hero-lead .hero-desc {
+    font-family: var(--body-serif); font-size: 16px; color: var(--text-medium);
+    line-height: 1.7; margin-bottom: 10px;
   }
-  .featured-meta {
-    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-    font-size: 11px; color: rgba(255,255,255,0.6);
-    position: relative; z-index: 1;
+  .hero-lead .hero-meta {
+    font-size: 12px; color: var(--text-light);
+    display: flex; align-items: center; gap: 10px;
   }
-  .featured-source {
-    background: rgba(255,255,255,0.15); padding: 3px 10px;
-    border-radius: 6px; font-weight: 600;
-    color: rgba(255,255,255,0.9); font-size: 10px;
-  }
-  .featured-category {
-    background: rgba(255,255,255,0.1); padding: 3px 10px;
-    border-radius: 6px; font-weight: 600; font-size: 10px;
-    color: rgba(255,255,255,0.8);
-  }
+  .hero-lead .hero-source { font-weight: 700; color: var(--text-medium); }
 
-  /* ── News grid ── */
+  /* Secondary stories (2 columns) */
+  .hero-secondary {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    padding-bottom: 24px; border-bottom: 1px solid var(--border);
+  }
+  .hero-sec-card {
+    display: flex; gap: 14px; cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .hero-sec-card:hover { opacity: 0.85; }
+  .hero-sec-img {
+    width: 140px; height: 95px; object-fit: cover;
+    border-radius: 8px; flex-shrink: 0;
+    background: var(--border-light);
+  }
+  .hero-sec-body { min-width: 0; }
+  .hero-sec-cat {
+    font-size: 9px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; margin-bottom: 5px; display: inline-block;
+    padding: 2px 7px; border-radius: 3px;
+  }
+  .hero-sec-card h3 {
+    font-family: var(--serif); font-size: 16px; font-weight: 700;
+    line-height: 1.35; margin-bottom: 6px; color: var(--text);
+  }
+  .hero-sec-card .sec-meta {
+    font-size: 11px; color: var(--text-light);
+  }
+  .hero-sec-card .sec-source { font-weight: 600; color: var(--text-medium); }
+
+  /* ═══════════════════════════════════════
+     NEWS GRID — MAIN STORIES
+     ═══════════════════════════════════════ */
   .news-grid {
-    display: grid; grid-template-columns: 1fr;
-    gap: 12px; margin-bottom: 24px;
+    display: grid; grid-template-columns: 1fr 1.3fr 1fr; gap: 0;
+    position: relative;
   }
 
-  /* ── News card ── */
-  .news-card {
-    background: white; border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 20px 22px; cursor: pointer;
-    transition: all 0.2s ease; position: relative;
-    animation: fadeUp 0.4s ease both;
+  /* Column rules */
+  .grid-col { padding: 0 18px; }
+  .grid-col:not(:last-child) { border-right: 1px solid var(--border-light); }
+  .grid-col:first-child { padding-left: 0; }
+  .grid-col:last-child { padding-right: 0; }
+
+  /* Grid card */
+  .grid-card {
+    padding: 16px 0; cursor: pointer;
+    border-bottom: 1px solid var(--border-light);
+    transition: background 0.15s;
   }
-  .news-card:hover {
-    border-color: var(--nyu-purple-light);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(87,6,140,0.08);
+  .grid-card:last-child { border-bottom: none; }
+  .grid-card:hover { background: rgba(247,244,251,0.5); }
+  .grid-card-img {
+    width: 100%; height: 120px; object-fit: cover;
+    border-radius: 8px; margin-bottom: 10px;
+    background: var(--border-light);
   }
-  .news-card .card-top {
-    display: flex; align-items: center; gap: 8px;
-    margin-bottom: 10px;
+  .grid-card-cat {
+    font-size: 9px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; margin-bottom: 5px; display: inline-block;
+    padding: 2px 7px; border-radius: 3px;
   }
-  .news-card .card-category {
-    font-size: 10px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.5px; padding: 3px 10px; border-radius: 6px;
+  .grid-card h4 {
+    font-family: var(--serif); font-size: 15px; font-weight: 700;
+    line-height: 1.35; margin-bottom: 6px; color: var(--text);
   }
+  .grid-card .grid-desc {
+    font-size: 13px; color: var(--text-light); line-height: 1.55;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+    margin-bottom: 6px;
+  }
+  .grid-card .grid-meta {
+    font-size: 10px; color: var(--text-light);
+  }
+  .grid-card .grid-source { font-weight: 600; color: var(--text-medium); }
+
+  /* Center column featured card */
+  .grid-card.featured .grid-card-img { height: 180px; }
+  .grid-card.featured h4 { font-size: 18px; }
+
+  /* ═══════════════════════════════════════
+     MORE HEADLINES (compact list)
+     ═══════════════════════════════════════ */
+  .headlines-list { padding-bottom: 20px; }
+  .headline-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 12px 0; border-bottom: 1px solid var(--border-light);
+    cursor: pointer; transition: background 0.15s;
+  }
+  .headline-item:hover { background: rgba(247,244,251,0.4); }
+  .headline-item:last-child { border-bottom: none; }
+  .headline-num {
+    font-family: var(--serif); font-size: 22px; font-weight: 700;
+    color: var(--border); min-width: 28px; line-height: 1;
+    padding-top: 3px;
+  }
+  .headline-body { flex: 1; min-width: 0; }
+  .headline-body h5 {
+    font-family: var(--serif); font-size: 14px; font-weight: 700;
+    line-height: 1.4; color: var(--text); margin-bottom: 4px;
+  }
+  .headline-item:hover h5 { color: var(--nyu-purple); }
+  .headline-meta {
+    font-size: 10px; color: var(--text-light);
+    display: flex; gap: 8px; align-items: center;
+  }
+  .headline-source { font-weight: 600; }
+  .headline-cat-dot {
+    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  }
+
+  /* ═══════════════════════════════════════
+     IMAGE PLACEHOLDERS
+     ═══════════════════════════════════════ */
+  .img-placeholder {
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px; position: relative; overflow: hidden;
+  }
+  .img-placeholder.ph-research { background: linear-gradient(135deg, #E8F5E9, #B2DFDB); }
+  .img-placeholder.ph-industry { background: linear-gradient(135deg, #E3F2FD, #BBDEFB); }
+  .img-placeholder.ph-policy { background: linear-gradient(135deg, #FFF3E0, #FFE0B2); }
+  .img-placeholder.ph-tools { background: linear-gradient(135deg, #F3E5F5, #E1BEE7); }
+  .img-placeholder.ph-education { background: linear-gradient(135deg, #FCE4EC, #F8BBD0); }
+  .img-placeholder.ph-ethics { background: linear-gradient(135deg, #EDE7F6, #D1C4E9); }
+
+  /* Category color classes */
   .cat-research { background: #E8F5E9; color: var(--green); }
   .cat-industry { background: #E3F2FD; color: var(--accent-blue); }
   .cat-policy { background: #FFF3E0; color: var(--orange); }
@@ -201,468 +312,535 @@
   .cat-education { background: #FCE4EC; color: #C62828; }
   .cat-ethics { background: #F3E5F5; color: #7B1FA2; }
 
-  .news-card .card-time {
-    font-size: 10px; color: var(--text-light); font-weight: 500;
-  }
-  .news-card h3 {
-    font-size: 15px; font-weight: 700; line-height: 1.5;
-    margin-bottom: 8px; color: var(--text);
-    transition: color 0.15s;
-  }
-  .news-card:hover h3 { color: var(--nyu-purple); }
-  .news-card .card-desc {
-    font-size: 13px; color: var(--text-light); line-height: 1.7;
-    margin-bottom: 12px;
-    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  .news-card .card-footer {
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-  }
-  .news-card .card-source {
-    font-size: 11px; font-weight: 600; color: var(--text);
-    display: flex; align-items: center; gap: 4px;
-  }
-  .news-card .card-source .source-dot {
-    width: 4px; height: 4px; border-radius: 50%;
-    background: var(--nyu-purple-light);
-  }
-  .news-card .card-region {
-    font-size: 10px; font-weight: 600; color: var(--text-light);
-    background: var(--warm-gray); padding: 2px 8px; border-radius: 4px;
-  }
-  .news-card .card-link {
-    margin-left: auto; font-size: 11px; font-weight: 700;
-    color: var(--nyu-purple); opacity: 0;
-    transition: opacity 0.2s; text-decoration: none;
-  }
-  .news-card:hover .card-link { opacity: 1; }
+  .dot-research { background: var(--green); }
+  .dot-industry { background: var(--accent-blue); }
+  .dot-policy { background: var(--orange); }
+  .dot-tools { background: var(--nyu-purple); }
+  .dot-education { background: #C62828; }
+  .dot-ethics { background: #7B1FA2; }
 
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-
-  /* ── Load more ── */
-  .load-more-wrap {
-    text-align: center; margin-top: 8px; margin-bottom: 20px;
-  }
+  /* ═══════════════════════════════════════
+     LOAD MORE
+     ═══════════════════════════════════════ */
+  .load-more-wrap { text-align: center; padding: 16px 0 28px; }
   .load-more-btn {
-    padding: 12px 32px; border-radius: 10px;
-    background: white; border: 1.5px solid var(--border);
-    font-size: 13px; font-weight: 700; cursor: pointer;
-    font-family: inherit; color: var(--text-light);
-    transition: all 0.2s ease;
+    padding: 10px 32px; border: 1.5px solid var(--border);
+    border-radius: 6px; background: white; cursor: pointer;
+    font-family: var(--sans); font-size: 12px; font-weight: 700;
+    color: var(--text-light); transition: all 0.2s;
+    letter-spacing: 0.5px; text-transform: uppercase;
   }
   .load-more-btn:hover {
     border-color: var(--nyu-purple); color: var(--nyu-purple);
     background: var(--nyu-purple-bg);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(87,6,140,0.1);
   }
 
-  /* ── Empty state ── */
-  .empty-state {
-    text-align: center; padding: 48px 24px;
-    animation: fadeUp 0.4s ease;
-  }
-  .empty-state .empty-icon { font-size: 48px; margin-bottom: 14px; }
-  .empty-state h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
-  .empty-state p { font-size: 13px; color: var(--text-light); line-height: 1.6; }
-
-  /* ── Loading skeleton ── */
-  .skeleton-card {
-    background: white; border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 20px 22px; margin-bottom: 12px;
-  }
-  .skeleton-line {
-    height: 12px; background: linear-gradient(90deg, var(--border) 25%, #f0ede8 50%, var(--border) 75%);
+  /* ═══════════════════════════════════════
+     SKELETON LOADING
+     ═══════════════════════════════════════ */
+  .skeleton { animation: shimmer 1.5s infinite; border-radius: 6px;
+    background: linear-gradient(90deg, var(--border-light) 25%, #f5f3f0 50%, var(--border-light) 75%);
     background-size: 200% 100%;
-    border-radius: 6px; margin-bottom: 10px;
-    animation: shimmer 1.5s infinite;
   }
-  .skeleton-line.w80 { width: 80%; }
-  .skeleton-line.w60 { width: 60%; }
-  .skeleton-line.w40 { width: 40%; }
-  .skeleton-line.w100 { width: 100%; height: 16px; }
-  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
-  /* ── Footer ── */
-  .news-footer {
-    text-align: center; padding: 20px 0;
-    border-top: 1px solid var(--border);
-    font-size: 11px; color: var(--text-light); line-height: 1.7;
+  /* ═══════════════════════════════════════
+     EMPTY STATE
+     ═══════════════════════════════════════ */
+  .empty-state {
+    text-align: center; padding: 60px 24px;
+    animation: fadeIn 0.4s ease;
   }
-  .news-footer a {
+  .empty-state .icon { font-size: 48px; margin-bottom: 14px; }
+  .empty-state h3 { font-family: var(--serif); font-size: 20px; margin-bottom: 8px; }
+  .empty-state p { font-size: 14px; color: var(--text-light); line-height: 1.6; }
+
+  /* ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ */
+  .paper-footer {
+    padding: 20px 24px 28px; text-align: center;
+  }
+  .footer-rule { height: 3px; background: var(--nyu-purple); margin-bottom: 3px; }
+  .footer-rule-thin { height: 1px; background: var(--nyu-purple); margin-bottom: 16px; }
+  .paper-footer .sources {
+    font-size: 10px; color: var(--text-light); margin-bottom: 6px;
+    letter-spacing: 0.3px; line-height: 1.6;
+  }
+  .paper-footer .credit {
+    font-size: 11px; color: var(--text-light);
+  }
+  .paper-footer a {
     color: var(--nyu-purple); text-decoration: none; font-weight: 600;
   }
-  .news-footer a:hover { text-decoration: underline; }
+  .paper-footer a:hover { text-decoration: underline; }
 
-  /* ── Toast ── */
+  /* ═══════════════════════════════════════
+     TOAST
+     ═══════════════════════════════════════ */
   .toast {
-    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(80px);
-    background: var(--text); color: white; padding: 10px 20px; border-radius: 8px;
-    font-size: 13px; font-weight: 600; font-family: inherit;
+    position: fixed; bottom: 20px; left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--text); color: white; padding: 10px 20px;
+    border-radius: 8px; font-size: 13px; font-weight: 600;
+    font-family: var(--sans);
     box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 200;
-    opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; pointer-events: none;
+    opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
   }
   .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 
-  /* ── Responsive ── */
-  @media (min-width: 600px) {
-    .news-grid { grid-template-columns: 1fr 1fr; }
-    .news-card.wide { grid-column: 1 / -1; }
-  }
+  /* ═══════════════════════════════════════
+     ANIMATIONS
+     ═══════════════════════════════════════ */
+  @keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
 
+  /* ═══════════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════════ */
   @media (max-width: 768px) {
-    body { padding: 20px 16px; }
-    .news-header h1 { font-size: 24px; }
-    .featured-card { padding: 22px 20px; }
-    .featured-card h2 { font-size: 19px; }
+    .masthead h1 { font-size: 36px; }
+    .masthead h1 .the { font-size: 24px; }
+    .hero-lead h2 { font-size: 26px; }
+    .hero-lead-img { height: 220px; }
+    .hero-secondary { grid-template-columns: 1fr; gap: 16px; }
+    .hero-sec-img { width: 120px; height: 80px; }
+    .news-grid { grid-template-columns: 1fr 1fr; }
+    .grid-col:nth-child(3) { display: none; } /* Hide 3rd col on tablet; items go to headline list */
+    .grid-col:last-child { border-right: none; }
   }
 
-  @media (max-width: 480px) {
-    body { padding: 16px 12px; }
-    .news-header h1 { font-size: 21px; }
-    .filter-bar { gap: 5px; }
-    .filter-btn { padding: 6px 12px; font-size: 11px; }
-    .stats-bar { flex-wrap: wrap; gap: 8px; }
-    .featured-card { padding: 18px 16px; }
-    .featured-card h2 { font-size: 17px; }
-    .featured-card .featured-desc { font-size: 13px; }
-    .news-card { padding: 16px 18px; }
-    .news-card h3 { font-size: 14px; }
+  @media (max-width: 520px) {
+    .masthead { padding: 18px 16px 0; }
+    .masthead h1 { font-size: 30px; }
+    .masthead h1 .the { font-size: 20px; }
+    .masthead-sub { font-size: 9px; letter-spacing: 2px; }
+    .masthead-meta { flex-wrap: wrap; gap: 8px; font-size: 11px; }
+    .date-ribbon-wrap { padding: 0 16px; }
+    .section-nav { padding: 8px 16px; gap: 2px; }
+    .section-btn { font-size: 10px; padding: 4px 8px; letter-spacing: 0.5px; }
+    .content { padding: 0 16px; }
+    .hero-lead h2 { font-size: 22px; }
+    .hero-lead .hero-desc { font-size: 14px; }
+    .hero-lead-img { height: 180px; }
+    .hero-secondary { grid-template-columns: 1fr; }
+    .hero-sec-card { gap: 10px; }
+    .hero-sec-img { width: 100px; height: 70px; }
+    .hero-sec-card h3 { font-size: 14px; }
     .news-grid { grid-template-columns: 1fr; }
+    .grid-col { padding: 0 !important; border-right: none !important; }
+    .grid-col:nth-child(3) { display: block; }
+    .grid-card.featured .grid-card-img { height: 140px; }
+    .grid-card.featured h4 { font-size: 16px; }
+    .paper-footer { padding: 16px 16px 24px; }
   }
 </style>
 </head>
 <body>
 
-<!-- Header -->
-<header class="news-header" role="banner">
-  <div class="logo-row">
-    <div class="pulse-dot" aria-hidden="true"></div>
-    <h1>AI News Briefing</h1>
-  </div>
-  <p class="subtitle">Daily curated AI news for social work educators</p>
-  <div class="update-badge" id="updateBadge" aria-live="polite">
-    <span class="dot" aria-hidden="true"></span>
-    <span id="lastUpdated">Loading...</span>
+<!-- ═══ MASTHEAD ═══ -->
+<header class="masthead" role="banner">
+  <div class="masthead-rule" aria-hidden="true"></div>
+  <div class="masthead-rule-thin" aria-hidden="true"></div>
+  <h1><span class="the">The</span> AI Times</h1>
+  <div class="masthead-sub">Daily Intelligence for Social Work Educators</div>
+  <div class="masthead-meta">
+    <span class="masthead-date" id="mastheadDate">Loading...</span>
+    <span aria-hidden="true">&middot;</span>
+    <span><span class="live-dot" aria-hidden="true"></span> Auto-updated daily</span>
+    <span aria-hidden="true">&middot;</span>
+    <span id="editionLabel">Today's Edition</span>
   </div>
 </header>
 
-<!-- Category filters -->
-<nav class="filter-bar" role="tablist" aria-label="Filter news by category" id="filterBar">
-  <button class="filter-btn active" role="tab" aria-selected="true" data-cat="all">All Stories</button>
-  <button class="filter-btn" role="tab" aria-selected="false" data-cat="research">Research</button>
-  <button class="filter-btn" role="tab" aria-selected="false" data-cat="industry">Industry</button>
-  <button class="filter-btn" role="tab" aria-selected="false" data-cat="policy">Policy</button>
-  <button class="filter-btn" role="tab" aria-selected="false" data-cat="tools">Tools</button>
-  <button class="filter-btn" role="tab" aria-selected="false" data-cat="education">Education</button>
-  <button class="filter-btn" role="tab" aria-selected="false" data-cat="ethics">Ethics</button>
+<!-- ═══ DATE RIBBON ═══ -->
+<nav class="date-ribbon-wrap" aria-label="Browse past editions">
+  <div class="date-ribbon" id="dateRibbon" role="tablist"></div>
 </nav>
 
-<!-- Stats -->
-<div class="stats-bar" id="statsBar">
-  <div class="stat-chip"><span class="stat-num" id="statTotal">—</span> stories</div>
-  <div class="stat-chip"><span class="stat-num" id="statSources">—</span> sources</div>
-  <div class="stat-chip"><span class="stat-num" id="statRegions">—</span> regions</div>
-</div>
+<!-- ═══ SECTION NAV ═══ -->
+<nav class="section-nav" id="sectionNav" role="tablist" aria-label="Filter by category">
+  <button class="section-btn active" role="tab" aria-selected="true" data-cat="all">All</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="research">Research</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="industry">Industry</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="policy">Policy</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="tools">Tools</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="education">Education</button>
+  <button class="section-btn" role="tab" aria-selected="false" data-cat="ethics">Ethics</button>
+</nav>
 
-<!-- Featured card -->
-<div id="featuredSlot"></div>
+<!-- ═══ MAIN CONTENT ═══ -->
+<main class="content" id="mainContent" role="main"></main>
 
-<!-- News grid -->
-<div class="news-grid" id="newsGrid" role="feed" aria-label="AI news articles"></div>
-
-<!-- Load more -->
-<div class="load-more-wrap" id="loadMoreWrap" style="display:none;">
-  <button class="load-more-btn" id="loadMoreBtn">Load More Stories</button>
-</div>
-
-<!-- Footer -->
-<footer class="news-footer">
-  <p>Curated from RSS feeds worldwide &middot; Auto-updated daily via GitHub Actions</p>
-  <p>Built for <a href="https://socialwork.nyu.edu" target="_blank" rel="noopener">NYU Silver School of Social Work</a></p>
+<!-- ═══ FOOTER ═══ -->
+<footer class="paper-footer">
+  <div class="footer-rule" aria-hidden="true"></div>
+  <div class="footer-rule-thin" aria-hidden="true"></div>
+  <p class="sources" id="footerSources">Sources: TechCrunch &middot; MIT News &middot; WIRED &middot; BBC &middot; The Guardian &middot; Stanford HAI &middot; DeepMind &middot; and more</p>
+  <p class="credit">Published daily via GitHub Actions for <a href="https://socialwork.nyu.edu" target="_blank" rel="noopener">NYU Silver School of Social Work</a></p>
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 /* ══════════════════════════════════════════
-   AI Daily News — NYU Silver
-   Self-contained embed for Google Sites
+   THE AI TIMES — Newspaper-style daily news
    ══════════════════════════════════════════ */
 
-const NEWS_JSON_URL = 'news-data.json';
-const ITEMS_PER_PAGE = 8;
+const NEWS_URL = 'news-data.json';
+const ARCHIVE_URL = 'archive/';
 
 let allArticles = [];
 let filteredArticles = [];
 let currentCategory = 'all';
-let currentPage = 1;
-let newsData = null;
+let selectedDate = null; // null = today
+let availableDates = [];
 
 /* ── Utilities ── */
 function $(id) { return document.getElementById(id); }
 
-function showToast(msg, duration = 2500) {
+function showToast(msg, ms = 2500) {
   const t = $('toast');
   t.textContent = msg;
   t.classList.add('show');
-  clearTimeout(t._timeout);
-  t._timeout = setTimeout(() => t.classList.remove('show'), duration);
+  clearTimeout(t._t);
+  t._t = setTimeout(() => t.classList.remove('show'), ms);
 }
 
 function timeAgo(dateStr) {
-  const now = new Date();
-  const then = new Date(dateStr);
-  const diffMs = now - then;
-  const mins = Math.floor(diffMs / 60000);
-  const hours = Math.floor(mins / 60);
-  const days = Math.floor(hours / 24);
-
-  if (days > 7) {
-    return then.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-  }
-  if (days > 0) return `${days}d ago`;
-  if (hours > 0) return `${hours}h ago`;
-  if (mins > 0) return `${mins}m ago`;
+  const now = new Date(), then = new Date(dateStr);
+  const d = Math.floor((now - then) / 86400000);
+  const h = Math.floor((now - then) / 3600000);
+  const m = Math.floor((now - then) / 60000);
+  if (d > 7) return then.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  if (d > 0) return d + 'd ago';
+  if (h > 0) return h + 'h ago';
+  if (m > 0) return m + 'm ago';
   return 'Just now';
 }
 
-function formatDate(dateStr) {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString('en-US', {
-    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+function fmtDate(d) {
+  return d.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function esc(s) {
+  if (!s) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function trunc(s, n) {
+  if (!s) return '';
+  return s.length <= n ? s : s.substring(0, n).replace(/\s+\S*$/, '') + '...';
+}
+
+function catClass(cat) { return 'cat-' + (cat || 'industry').toLowerCase(); }
+function dotClass(cat) { return 'dot-' + (cat || 'industry').toLowerCase(); }
+function phClass(cat) { return 'ph-' + (cat || 'industry').toLowerCase(); }
+
+const catEmoji = {
+  research: '🔬', industry: '📊', policy: '⚖️',
+  tools: '🛠️', education: '🎓', ethics: '🤝'
+};
+
+function imgHtml(article, cls, h) {
+  const emoji = catEmoji[(article.category || '').toLowerCase()] || '📰';
+  const ph = phClass(article.category);
+  if (article.image) {
+    return `<img src="${esc(article.image)}" alt="" class="${cls}" loading="lazy"
+             onerror="this.outerHTML='<div class=\\'${cls} img-placeholder ${ph}\\' style=\\'height:${h}px\\'>${emoji}</div>'">`;
+  }
+  return `<div class="${cls} img-placeholder ${ph}" style="height:${h}px">${emoji}</div>`;
+}
+
+function openArticle(url) {
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+/* ── Date Ribbon ── */
+function buildDateRibbon() {
+  const ribbon = $('dateRibbon');
+  const today = new Date();
+  let html = '';
+
+  for (let i = 0; i < 14; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const ds = d.toISOString().split('T')[0];
+    const label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const day = d.toLocaleDateString('en-US', { weekday: 'short' });
+    const isToday = i === 0;
+    const active = (selectedDate === null && isToday) || selectedDate === ds;
+
+    html += `<button class="date-chip${active ? ' active' : ''}" data-date="${ds}"
+              role="tab" aria-selected="${active}" aria-label="${fmtDate(d)}">
+      ${label}
+      <span class="chip-day">${day}</span>
+      ${isToday ? '<span class="date-today-label">Today</span>' : ''}
+    </button>`;
+  }
+
+  ribbon.innerHTML = html;
+
+  ribbon.querySelectorAll('.date-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ds = btn.dataset.date;
+      const todayStr = new Date().toISOString().split('T')[0];
+      selectedDate = ds === todayStr ? null : ds;
+      loadEdition(selectedDate);
+    });
   });
 }
 
-/* ── Render loading skeleton ── */
-function showSkeleton() {
-  let html = '';
-  for (let i = 0; i < 4; i++) {
-    html += `<div class="skeleton-card">
-      <div class="skeleton-line w40"></div>
-      <div class="skeleton-line w100"></div>
-      <div class="skeleton-line w80"></div>
-      <div class="skeleton-line w60"></div>
-    </div>`;
-  }
-  $('newsGrid').innerHTML = html;
-}
+/* ── Load edition ── */
+async function loadEdition(dateStr) {
+  const url = dateStr ? ARCHIVE_URL + dateStr + '.json' : NEWS_URL;
 
-/* ── Render featured card ── */
-function renderFeatured(article) {
-  if (!article) { $('featuredSlot').innerHTML = ''; return; }
-  $('featuredSlot').innerHTML = `
-    <article class="featured-card" onclick="openArticle('${encodeURIComponent(article.link)}')" role="article" tabindex="0"
-             aria-label="Featured: ${article.title}">
-      <div class="featured-label"><span class="star" aria-hidden="true">&#9733;</span> TOP STORY</div>
-      <h2>${escapeHtml(article.title)}</h2>
-      <p class="featured-desc">${escapeHtml(truncate(article.description, 180))}</p>
-      <div class="featured-meta">
-        <span class="featured-source">${escapeHtml(article.source)}</span>
-        <span class="featured-category">${article.category}</span>
-        <span>${timeAgo(article.published)}</span>
-        ${article.region ? `<span>${article.region}</span>` : ''}
-      </div>
-    </article>`;
-}
+  // Update masthead
+  const d = dateStr ? new Date(dateStr + 'T12:00:00') : new Date();
+  $('mastheadDate').textContent = fmtDate(d);
+  $('editionLabel').textContent = dateStr ? 'Archive Edition' : "Today's Edition";
 
-/* ── Render a news card ── */
-function renderCard(article, index, wide) {
-  const catClass = 'cat-' + article.category.toLowerCase();
-  return `
-    <article class="news-card${wide ? ' wide' : ''}" onclick="openArticle('${encodeURIComponent(article.link)}')"
-             role="article" tabindex="0" aria-label="${escapeHtml(article.title)}"
-             style="animation-delay: ${index * 0.06}s">
-      <div class="card-top">
-        <span class="card-category ${catClass}">${article.category}</span>
-        <span class="card-time">${timeAgo(article.published)}</span>
-      </div>
-      <h3>${escapeHtml(article.title)}</h3>
-      <p class="card-desc">${escapeHtml(truncate(article.description, 160))}</p>
-      <div class="card-footer">
-        <span class="card-source"><span class="source-dot" aria-hidden="true"></span> ${escapeHtml(article.source)}</span>
-        ${article.region ? `<span class="card-region">${article.region}</span>` : ''}
-        <span class="card-link" aria-hidden="true">Read &rarr;</span>
-      </div>
-    </article>`;
-}
+  // Update ribbon active state
+  buildDateRibbon();
 
-/* ── Render grid ── */
-function renderGrid() {
-  const start = 0;
-  const end = currentPage * ITEMS_PER_PAGE;
-  const items = filteredArticles.slice(start, end);
+  // Show loading
+  showSkeleton();
+  if (dateStr) showToast('Loading ' + d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }) + ' edition...');
 
-  if (items.length === 0) {
-    $('newsGrid').innerHTML = `
-      <div class="empty-state" style="grid-column: 1 / -1;">
-        <div class="empty-icon" aria-hidden="true">&#128270;</div>
-        <h3>No stories in this category</h3>
-        <p>Try selecting a different category or check back tomorrow for fresh news.</p>
+  try {
+    const resp = await fetch(url + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('No archive for this date');
+    const data = await resp.json();
+
+    allArticles = (data.articles || []).sort((a, b) =>
+      new Date(b.published) - new Date(a.published)
+    );
+
+    filterByCategory(currentCategory);
+  } catch (e) {
+    $('mainContent').innerHTML = `
+      <div class="empty-state">
+        <div class="icon">📅</div>
+        <h3>No edition for this date</h3>
+        <p>The archive for this date isn't available yet. Try a more recent date, or click "Today" to view the latest news.</p>
       </div>`;
-    $('loadMoreWrap').style.display = 'none';
-    return;
   }
-
-  let html = '';
-  items.forEach((article, i) => {
-    // First item in grid or every 5th is wide on desktop
-    const wide = (i === 0 || i % 5 === 0);
-    html += renderCard(article, i, wide);
-  });
-  $('newsGrid').innerHTML = html;
-
-  // Load more button
-  $('loadMoreWrap').style.display = end < filteredArticles.length ? '' : 'none';
 }
 
-/* ── Update stats ── */
-function updateStats() {
-  if (!newsData) return;
-  const articles = filteredArticles;
-  $('statTotal').textContent = articles.length;
-
-  const sources = new Set(articles.map(a => a.source));
-  $('statSources').textContent = sources.size;
-
-  const regions = new Set(articles.map(a => a.region).filter(Boolean));
-  $('statRegions').textContent = regions.size;
+/* ── Skeleton ── */
+function showSkeleton() {
+  $('mainContent').innerHTML = `
+    <div style="padding-top:24px">
+      <div class="skeleton" style="width:100%;height:250px;margin-bottom:16px;border-radius:10px"></div>
+      <div class="skeleton" style="width:60%;height:20px;margin-bottom:10px"></div>
+      <div class="skeleton" style="width:90%;height:14px;margin-bottom:8px"></div>
+      <div class="skeleton" style="width:40%;height:12px;margin-bottom:28px"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div><div class="skeleton" style="width:100%;height:90px;margin-bottom:8px;border-radius:8px"></div><div class="skeleton" style="width:80%;height:14px;margin-bottom:6px"></div><div class="skeleton" style="width:50%;height:10px"></div></div>
+        <div><div class="skeleton" style="width:100%;height:90px;margin-bottom:8px;border-radius:8px"></div><div class="skeleton" style="width:80%;height:14px;margin-bottom:6px"></div><div class="skeleton" style="width:50%;height:10px"></div></div>
+      </div>
+    </div>`;
 }
 
 /* ── Filter ── */
 function filterByCategory(cat) {
   currentCategory = cat;
-  currentPage = 1;
 
-  // Update filter buttons
-  document.querySelectorAll('.filter-btn').forEach(b => {
+  document.querySelectorAll('.section-btn').forEach(b => {
     const isActive = b.dataset.cat === cat;
     b.classList.toggle('active', isActive);
     b.setAttribute('aria-selected', isActive);
   });
 
-  // Filter articles
-  if (cat === 'all') {
-    filteredArticles = [...allArticles];
-  } else {
-    filteredArticles = allArticles.filter(a =>
-      a.category.toLowerCase() === cat.toLowerCase()
-    );
-  }
+  filteredArticles = cat === 'all'
+    ? [...allArticles]
+    : allArticles.filter(a => (a.category || '').toLowerCase() === cat);
 
-  // Featured card: only show for "all"
-  if (cat === 'all' && filteredArticles.length > 0) {
-    renderFeatured(filteredArticles[0]);
-    filteredArticles = filteredArticles.slice(1);
-  } else {
-    renderFeatured(null);
-  }
-
-  updateStats();
-  renderGrid();
+  renderAll();
 }
 
-/* ── Open article ── */
-function openArticle(encodedUrl) {
-  const url = decodeURIComponent(encodedUrl);
-  window.open(url, '_blank', 'noopener,noreferrer');
-}
-
-/* ── Helpers ── */
-function escapeHtml(str) {
-  if (!str) return '';
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
-}
-
-function truncate(str, len) {
-  if (!str) return '';
-  if (str.length <= len) return str;
-  return str.substring(0, len).replace(/\s+\S*$/, '') + '...';
-}
-
-/* ── Fetch & init ── */
-async function init() {
-  showSkeleton();
-
-  try {
-    const resp = await fetch(NEWS_JSON_URL + '?t=' + Date.now());
-    if (!resp.ok) throw new Error('Failed to load news data');
-    newsData = await resp.json();
-
-    // Set update time
-    $('lastUpdated').textContent = 'Updated ' + formatDate(newsData.updated);
-
-    // Sort by date (newest first)
-    allArticles = (newsData.articles || []).sort((a, b) =>
-      new Date(b.published) - new Date(a.published)
-    );
-
-    // Initial render
-    filterByCategory('all');
-
-  } catch (err) {
-    console.error('News load error:', err);
-    $('newsGrid').innerHTML = `
-      <div class="empty-state" style="grid-column: 1 / -1;">
-        <div class="empty-icon" aria-hidden="true">&#128225;</div>
-        <h3>News feed loading...</h3>
-        <p>The news data is updated daily via GitHub Actions. If this is the first visit, the data may still be generating. Please refresh in a few minutes.</p>
+/* ── Render Everything ── */
+function renderAll() {
+  const articles = filteredArticles;
+  if (articles.length === 0) {
+    $('mainContent').innerHTML = `
+      <div class="empty-state">
+        <div class="icon">🔍</div>
+        <h3>No stories found</h3>
+        <p>No articles in this category. Try "All" or check back tomorrow.</p>
       </div>`;
-    $('lastUpdated').textContent = 'Waiting for first update...';
+    return;
   }
+
+  let html = '<div class="hero">';
+
+  // ── HERO: Lead story
+  const lead = articles[0];
+  html += `
+    <div class="hero-lead" onclick="openArticle('${esc(lead.link)}')" tabindex="0" role="article">
+      ${imgHtml(lead, 'hero-lead-img', 300)}
+      <span class="hero-lead-category ${catClass(lead.category)}">${esc(lead.category)}</span>
+      <h2>${esc(lead.title)}</h2>
+      <p class="hero-desc">${esc(trunc(lead.description, 220))}</p>
+      <div class="hero-meta">
+        <span class="hero-source">${esc(lead.source)}</span>
+        <span>${timeAgo(lead.published)}</span>
+        ${lead.region ? `<span>&middot; ${esc(lead.region)}</span>` : ''}
+      </div>
+    </div>`;
+
+  // ── HERO: Secondary (2 stories)
+  const secs = articles.slice(1, 3);
+  if (secs.length) {
+    html += '<div class="hero-secondary">';
+    secs.forEach(a => {
+      html += `
+        <div class="hero-sec-card" onclick="openArticle('${esc(a.link)}')" tabindex="0" role="article">
+          ${imgHtml(a, 'hero-sec-img', 95)}
+          <div class="hero-sec-body">
+            <span class="hero-sec-cat ${catClass(a.category)}">${esc(a.category)}</span>
+            <h3>${esc(trunc(a.title, 80))}</h3>
+            <div class="sec-meta"><span class="sec-source">${esc(a.source)}</span> &middot; ${timeAgo(a.published)}</div>
+          </div>
+        </div>`;
+    });
+    html += '</div>';
+  }
+
+  html += '</div>'; // close .hero
+
+  // ── GRID SECTION (articles 3-8)
+  const gridArticles = articles.slice(3, 10);
+  if (gridArticles.length >= 3) {
+    html += '<div class="section-divider"><span>Latest Headlines</span></div>';
+    html += '<div class="news-grid">';
+
+    // Split into 3 columns
+    const col1 = gridArticles.filter((_, i) => i % 3 === 0);
+    const col2 = gridArticles.filter((_, i) => i % 3 === 1);
+    const col3 = gridArticles.filter((_, i) => i % 3 === 2);
+
+    [col1, col2, col3].forEach((col, ci) => {
+      html += '<div class="grid-col">';
+      col.forEach((a, i) => {
+        const isFeatured = ci === 1 && i === 0;
+        html += `
+          <div class="grid-card${isFeatured ? ' featured' : ''}" onclick="openArticle('${esc(a.link)}')" tabindex="0" role="article">
+            ${imgHtml(a, 'grid-card-img', isFeatured ? 180 : 120)}
+            <span class="grid-card-cat ${catClass(a.category)}">${esc(a.category)}</span>
+            <h4>${esc(trunc(a.title, 90))}</h4>
+            <p class="grid-desc">${esc(trunc(a.description, 100))}</p>
+            <div class="grid-meta"><span class="grid-source">${esc(a.source)}</span> &middot; ${timeAgo(a.published)}</div>
+          </div>`;
+      });
+      html += '</div>';
+    });
+
+    html += '</div>';
+  } else if (gridArticles.length > 0) {
+    // Fewer than 3 — show as simple list
+    html += '<div class="section-divider"><span>More Stories</span></div>';
+    html += '<div class="headlines-list">';
+    gridArticles.forEach((a, i) => {
+      html += headlineItem(a, i + 4);
+    });
+    html += '</div>';
+  }
+
+  // ── MORE HEADLINES (articles 10+)
+  const moreArticles = articles.slice(10);
+  if (moreArticles.length) {
+    html += '<div class="section-divider"><span>More Headlines</span></div>';
+    html += '<div class="headlines-list">';
+    moreArticles.forEach((a, i) => {
+      html += headlineItem(a, i + 11);
+    });
+    html += '</div>';
+  }
+
+  $('mainContent').innerHTML = html;
+
+  // Animate in
+  $('mainContent').style.animation = 'none';
+  void $('mainContent').offsetWidth;
+  $('mainContent').style.animation = 'fadeIn 0.4s ease';
+
+  // Keyboard: Enter on articles
+  $('mainContent').querySelectorAll('[role="article"]').forEach(el => {
+    el.addEventListener('keydown', e => { if (e.key === 'Enter') el.click(); });
+  });
 }
 
-/* ── Event listeners ── */
+function headlineItem(a, num) {
+  return `
+    <div class="headline-item" onclick="openArticle('${esc(a.link)}')" tabindex="0" role="article">
+      <span class="headline-num">${num}</span>
+      <div class="headline-body">
+        <h5>${esc(trunc(a.title, 100))}</h5>
+        <div class="headline-meta">
+          <span class="headline-cat-dot ${dotClass(a.category)}"></span>
+          <span>${esc(a.category)}</span>
+          <span>&middot;</span>
+          <span class="headline-source">${esc(a.source)}</span>
+          <span>&middot;</span>
+          <span>${timeAgo(a.published)}</span>
+          ${a.region ? `<span>&middot; ${esc(a.region)}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+}
 
-// Filter buttons
-document.querySelectorAll('.filter-btn').forEach(btn => {
+/* ── Event Listeners ── */
+
+// Category filter
+document.querySelectorAll('.section-btn').forEach(btn => {
   btn.addEventListener('click', () => filterByCategory(btn.dataset.cat));
 });
 
-// Keyboard navigation for filters
-$('filterBar').addEventListener('keydown', (e) => {
-  const btns = [...document.querySelectorAll('.filter-btn')];
-  const idx = btns.indexOf(document.activeElement);
-  if (idx === -1) return;
-
-  let next = -1;
-  if (e.key === 'ArrowRight') next = (idx + 1) % btns.length;
-  else if (e.key === 'ArrowLeft') next = (idx - 1 + btns.length) % btns.length;
-
-  if (next !== -1) {
-    e.preventDefault();
-    btns[next].focus();
-    btns[next].click();
-  }
+// Keyboard nav for section buttons
+$('sectionNav').addEventListener('keydown', e => {
+  const btns = [...document.querySelectorAll('.section-btn')];
+  const i = btns.indexOf(document.activeElement);
+  if (i === -1) return;
+  let n = -1;
+  if (e.key === 'ArrowRight') n = (i + 1) % btns.length;
+  if (e.key === 'ArrowLeft') n = (i - 1 + btns.length) % btns.length;
+  if (n !== -1) { e.preventDefault(); btns[n].focus(); btns[n].click(); }
 });
 
-// Load more
-$('loadMoreBtn').addEventListener('click', () => {
-  currentPage++;
-  renderGrid();
+// Dark mode
+window.addEventListener('message', e => {
+  if (e.data && e.data.theme) document.documentElement.setAttribute('data-theme', e.data.theme);
 });
 
-// Enter key on cards
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && e.target.classList.contains('news-card')) {
-    e.target.click();
-  }
-  if (e.key === 'Enter' && e.target.classList.contains('featured-card')) {
-    e.target.click();
-  }
-});
+/* ── Init ── */
+async function init() {
+  $('mastheadDate').textContent = fmtDate(new Date());
+  buildDateRibbon();
+  showSkeleton();
 
-// Dark mode listener
-window.addEventListener('message', (e) => {
-  if (e.data && e.data.theme) {
-    document.documentElement.setAttribute('data-theme', e.data.theme);
-  }
-});
+  try {
+    const resp = await fetch(NEWS_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('Load failed');
+    const data = await resp.json();
 
-/* ── Start ── */
+    allArticles = (data.articles || []).sort((a, b) =>
+      new Date(b.published) - new Date(a.published)
+    );
+
+    filterByCategory('all');
+  } catch (e) {
+    $('mainContent').innerHTML = `
+      <div class="empty-state">
+        <div class="icon">📡</div>
+        <h3>The AI Times is loading...</h3>
+        <p>News data is updated daily via GitHub Actions. If this is the first visit, please trigger the workflow manually and refresh.</p>
+      </div>`;
+  }
+}
+
 init();
 </script>
 </body>
