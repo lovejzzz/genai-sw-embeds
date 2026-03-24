@@ -273,6 +273,60 @@ def extract_image(entry) -> str | None:
     return None
 
 
+def fetch_og_image(article_url: str) -> str | None:
+    """Fetch the og:image meta tag from the actual article page.
+    This is the fallback when RSS doesn't provide an image.
+    Almost every news site sets og:image for social sharing."""
+    try:
+        resp = requests.get(
+            article_url,
+            headers={"User-Agent": "NYU-Silver-AI-News-Bot/1.0"},
+            timeout=8,
+            allow_redirects=True,
+        )
+        if resp.status_code != 200:
+            return None
+
+        # Only read the first 50KB to find meta tags (they're in <head>)
+        html = resp.text[:50000]
+
+        # Try og:image
+        match = re.search(
+            r'<meta\s+[^>]*property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']',
+            html, re.IGNORECASE
+        )
+        if not match:
+            # Some sites put content before property
+            match = re.search(
+                r'<meta\s+[^>]*content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']',
+                html, re.IGNORECASE
+            )
+        if match:
+            url = match.group(1)
+            if url.startswith("http"):
+                return url
+
+        # Try twitter:image as fallback
+        match = re.search(
+            r'<meta\s+[^>]*(?:name|property)=["\']twitter:image["\'][^>]*content=["\']([^"\']+)["\']',
+            html, re.IGNORECASE
+        )
+        if not match:
+            match = re.search(
+                r'<meta\s+[^>]*content=["\']([^"\']+)["\'][^>]*(?:name|property)=["\']twitter:image["\']',
+                html, re.IGNORECASE
+            )
+        if match:
+            url = match.group(1)
+            if url.startswith("http"):
+                return url
+
+    except Exception:
+        pass
+
+    return None
+
+
 def fetch_feed(feed_config: dict, cutoff_date: datetime) -> list:
     """Fetch and parse a single RSS feed."""
     url = feed_config["url"]
@@ -319,8 +373,10 @@ def fetch_feed(feed_config: dict, cutoff_date: datetime) -> list:
 
             category = classify_article(title, description, default_cat)
 
-            # Extract image
+            # Extract image from RSS, then fallback to og:image from article page
             image = extract_image(entry)
+            if not image and link:
+                image = fetch_og_image(link)
 
             # Truncate description
             if len(description) > 300:
