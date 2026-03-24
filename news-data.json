@@ -1,0 +1,168 @@
+{
+  "updated": "2026-03-24T07:03:00+00:00",
+  "source_count": 10,
+  "region_count": 3,
+  "article_count": 16,
+  "articles": [
+    {
+      "id": "seed_001",
+      "title": "OpenAI Announces GPT-5 with Advanced Reasoning Capabilities",
+      "description": "OpenAI has unveiled GPT-5, its most capable model yet, featuring significantly improved reasoning, multimodal understanding, and a new architecture designed for complex multi-step problem solving across domains.",
+      "link": "https://openai.com/blog",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-24T06:00:00+00:00"
+    },
+    {
+      "id": "seed_002",
+      "title": "EU AI Act Enforcement Begins: What Organizations Need to Know",
+      "description": "The European Union's comprehensive AI Act enters its first enforcement phase this week, requiring high-risk AI systems to meet transparency and safety standards. Companies worldwide are scrambling to ensure compliance.",
+      "link": "https://www.theguardian.com/technology/artificialintelligenceai",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-24T04:30:00+00:00"
+    },
+    {
+      "id": "seed_003",
+      "title": "Stanford Study: AI Tutors Improve Student Outcomes by 30% in Underserved Schools",
+      "description": "A large-scale study from Stanford HAI finds that AI-powered tutoring systems significantly boosted math and reading scores among students in low-income districts, though researchers caution about equitable access to the technology.",
+      "link": "https://hai.stanford.edu/news",
+      "source": "Stanford HAI",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-03-23T18:00:00+00:00"
+    },
+    {
+      "id": "seed_004",
+      "title": "Google DeepMind's AlphaFold 3 Maps New Drug Targets for Rare Diseases",
+      "description": "The latest version of AlphaFold has identified hundreds of previously unknown protein structures linked to rare genetic diseases, accelerating potential drug discovery timelines from years to months.",
+      "link": "https://deepmind.google/blog",
+      "source": "Google DeepMind",
+      "region": "Europe",
+      "category": "Research",
+      "published": "2026-03-23T15:00:00+00:00"
+    },
+    {
+      "id": "seed_005",
+      "title": "Anthropic Raises $5B Series D as Enterprise AI Demand Surges",
+      "description": "Claude-maker Anthropic has closed a $5 billion funding round, valuing the AI safety company at over $60 billion. The funding will support scaling safety research and enterprise product development.",
+      "link": "https://techcrunch.com/category/artificial-intelligence",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-23T12:00:00+00:00"
+    },
+    {
+      "id": "seed_006",
+      "title": "AI Bias in Healthcare: New Study Reveals Disparities in Diagnostic Tools",
+      "description": "Researchers at MIT found that widely-used AI diagnostic systems show significant accuracy gaps across racial and ethnic groups, renewing calls for mandatory bias auditing in medical AI applications.",
+      "link": "https://news.mit.edu/topic/mitartificial-intelligence2",
+      "source": "MIT News",
+      "region": "North America",
+      "category": "Ethics",
+      "published": "2026-03-23T09:00:00+00:00"
+    },
+    {
+      "id": "seed_007",
+      "title": "China Launches National AI Education Initiative for K-12 Schools",
+      "description": "China's Ministry of Education announced a nationwide program to integrate AI literacy into primary and secondary school curricula, aiming to train 10 million students in foundational AI skills by 2028.",
+      "link": "https://www.scmp.com/tech",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Education",
+      "published": "2026-03-22T22:00:00+00:00"
+    },
+    {
+      "id": "seed_008",
+      "title": "Microsoft Copilot Gets Social Work-Specific Templates for Documentation",
+      "description": "Microsoft has partnered with NASW to develop AI-powered templates within Copilot specifically designed for social work case documentation, progress notes, and treatment planning while maintaining client confidentiality.",
+      "link": "https://www.theverge.com/ai-artificial-intelligence",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-22T16:00:00+00:00"
+    },
+    {
+      "id": "seed_009",
+      "title": "UK Government Proposes AI Watermarking Requirement for All Generated Content",
+      "description": "The UK's Department for Science has proposed mandatory digital watermarks on all AI-generated text, images, and video, aiming to combat deepfakes and misinformation ahead of upcoming elections.",
+      "link": "https://www.bbc.co.uk/news/technology",
+      "source": "BBC",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-22T11:00:00+00:00"
+    },
+    {
+      "id": "seed_010",
+      "title": "New Open-Source AI Model Rivals GPT-4 at Fraction of the Cost",
+      "description": "A coalition of academic institutions has released an open-source language model that benchmarks competitively with proprietary systems, potentially democratizing access to advanced AI for researchers and educators.",
+      "link": "https://arstechnica.com/ai",
+      "source": "Ars Technica",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-22T08:00:00+00:00"
+    },
+    {
+      "id": "seed_011",
+      "title": "How Professors Are Using AI to Create More Inclusive Assessments",
+      "description": "A growing number of higher education institutions are leveraging AI tools to design assessments that accommodate diverse learning styles and reduce cultural bias in testing, according to a new EdSurge report.",
+      "link": "https://www.edsurge.com/news",
+      "source": "EdSurge",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-03-21T20:00:00+00:00"
+    },
+    {
+      "id": "seed_012",
+      "title": "Japan Develops AI-Powered Elder Care Companion Robots",
+      "description": "Japanese tech firms have unveiled a new generation of AI companion robots designed for elderly care facilities, capable of emotional recognition, medication reminders, and real-time health monitoring.",
+      "link": "https://www.wired.com/tag/ai",
+      "source": "WIRED",
+      "region": "Asia",
+      "category": "Tools",
+      "published": "2026-03-21T14:00:00+00:00"
+    },
+    {
+      "id": "seed_013",
+      "title": "AI Ethics Board Calls for Moratorium on Emotion Recognition in Hiring",
+      "description": "A coalition of AI ethics researchers and civil rights organizations is urging governments to ban the use of AI emotion recognition systems in hiring processes, citing unreliable science and discriminatory outcomes.",
+      "link": "https://hai.stanford.edu/news",
+      "source": "Stanford HAI",
+      "region": "North America",
+      "category": "Ethics",
+      "published": "2026-03-21T10:00:00+00:00"
+    },
+    {
+      "id": "seed_014",
+      "title": "Google Launches Free AI Literacy Course for University Faculty",
+      "description": "Google has released a comprehensive, free online course designed to help university professors understand, evaluate, and thoughtfully integrate generative AI tools into their teaching practices across disciplines.",
+      "link": "https://blog.google/technology/ai",
+      "source": "Google AI Blog",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-03-20T17:00:00+00:00"
+    },
+    {
+      "id": "seed_015",
+      "title": "India Announces $2B Investment in Domestic AI Infrastructure",
+      "description": "India's government has committed $2 billion toward building sovereign AI compute infrastructure, including data centers and training facilities, as part of its strategy to become a global AI development hub.",
+      "link": "https://techcrunch.com/category/artificial-intelligence",
+      "source": "TechCrunch",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-03-20T12:00:00+00:00"
+    },
+    {
+      "id": "seed_016",
+      "title": "Researchers Develop AI System That Detects Social Worker Burnout Early",
+      "description": "A team at Columbia University has created an AI tool that analyzes workplace patterns to identify early signs of burnout among social workers, potentially reducing turnover in an already understaffed profession.",
+      "link": "https://news.mit.edu/topic/mitartificial-intelligence2",
+      "source": "MIT News",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-19T09:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News — NYU Silver</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap">
+<style>
+  :root {
+    --nyu-purple: #57068C;
+    --nyu-purple-light: #8E6BAF;
+    --nyu-purple-bg: #F7F4FB;
+    --accent-blue: #2B579A;
+    --green: #2E7D32;
+    --orange: #E65100;
+    --warm-gray: #F8F7F5;
+    --border: #E8E5E0;
+    --text: #2D2D2D;
+    --text-light: #777;
+    --radius: 14px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif; color: var(--text);
+    background: linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%);
+    padding: 28px 24px; max-width: 780px; margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  /* Focus visible */
+  *:focus-visible { outline: 2px solid var(--nyu-purple); outline-offset: 2px; }
+  button:active { transform: scale(0.97); }
+
+  /* Screen-reader only */
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+  /* ── Header ── */
+  .news-header {
+    text-align: center; margin-bottom: 28px;
+    animation: fadeDown 0.5s ease;
+  }
+  .news-header .logo-row {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-bottom: 8px;
+  }
+  .news-header .pulse-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--green); position: relative;
+  }
+  .news-header .pulse-dot::after {
+    content: ''; position: absolute; inset: -3px; border-radius: 50%;
+    border: 2px solid var(--green); animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+  .news-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 800; color: var(--nyu-purple);
+    line-height: 1.2;
+  }
+  .news-header .subtitle {
+    font-size: 13px; color: var(--text-light); margin-top: 6px; line-height: 1.5;
+  }
+  .news-header .update-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--nyu-purple-bg); color: var(--nyu-purple);
+    padding: 5px 14px; border-radius: 20px;
+    font-size: 11px; font-weight: 600; margin-top: 10px;
+    letter-spacing: 0.3px;
+  }
+  .news-header .update-badge .dot {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--green);
+  }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ── Category Filter ── */
+  .filter-bar {
+    display: flex; gap: 6px; margin-bottom: 22px; flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeDown 0.5s ease 0.1s both;
+  }
+  .filter-btn {
+    padding: 7px 16px; border: 1.5px solid var(--border); border-radius: 20px;
+    background: white; cursor: pointer; font-family: inherit;
+    font-size: 12px; font-weight: 600; color: var(--text-light);
+    transition: all 0.2s ease; white-space: nowrap;
+  }
+  .filter-btn:hover {
+    border-color: var(--nyu-purple-light); color: var(--nyu-purple);
+    background: var(--nyu-purple-bg); transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(87,6,140,0.08);
+  }
+  .filter-btn.active {
+    background: var(--nyu-purple); color: white; border-color: var(--nyu-purple);
+    box-shadow: 0 4px 12px rgba(87,6,140,0.2);
+  }
+
+  /* ── Stats bar ── */
+  .stats-bar {
+    display: flex; gap: 12px; margin-bottom: 22px; justify-content: center;
+    animation: fadeDown 0.5s ease 0.15s both;
+  }
+  .stat-chip {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 11px; font-weight: 600; color: var(--text-light);
+    background: white; padding: 5px 12px; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .stat-chip .stat-num { color: var(--nyu-purple); font-weight: 800; font-size: 13px; }
+
+  /* ── Featured card ── */
+  .featured-card {
+    background: linear-gradient(135deg, var(--nyu-purple), #7B1FA2);
+    border-radius: var(--radius); padding: 28px 30px;
+    margin-bottom: 20px; position: relative; overflow: hidden;
+    cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeUp 0.5s ease 0.2s both;
+  }
+  .featured-card::before {
+    content: ''; position: absolute; top: -50%; right: -30%;
+    width: 300px; height: 300px; border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+  .featured-card::after {
+    content: ''; position: absolute; bottom: -40%; left: -20%;
+    width: 200px; height: 200px; border-radius: 50%;
+    background: rgba(255,255,255,0.03);
+  }
+  .featured-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(87,6,140,0.25);
+  }
+  .featured-label {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; color: rgba(255,255,255,0.7);
+    margin-bottom: 12px; position: relative; z-index: 1;
+  }
+  .featured-label .star { font-size: 13px; }
+  .featured-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 800; color: white;
+    line-height: 1.35; margin-bottom: 10px;
+    position: relative; z-index: 1;
+  }
+  .featured-card .featured-desc {
+    font-size: 14px; color: rgba(255,255,255,0.8);
+    line-height: 1.65; margin-bottom: 14px;
+    position: relative; z-index: 1;
+  }
+  .featured-meta {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    font-size: 11px; color: rgba(255,255,255,0.6);
+    position: relative; z-index: 1;
+  }
+  .featured-source {
+    background: rgba(255,255,255,0.15); padding: 3px 10px;
+    border-radius: 6px; font-weight: 600;
+    color: rgba(255,255,255,0.9); font-size: 10px;
+  }
+  .featured-category {
+    background: rgba(255,255,255,0.1); padding: 3px 10px;
+    border-radius: 6px; font-weight: 600; font-size: 10px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  /* ── News grid ── */
+  .news-grid {
+    display: grid; grid-template-columns: 1fr;
+    gap: 12px; margin-bottom: 24px;
+  }
+
+  /* ── News card ── */
+  .news-card {
+    background: white; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px 22px; cursor: pointer;
+    transition: all 0.2s ease; position: relative;
+    animation: fadeUp 0.4s ease both;
+  }
+  .news-card:hover {
+    border-color: var(--nyu-purple-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(87,6,140,0.08);
+  }
+  .news-card .card-top {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 10px;
+  }
+  .news-card .card-category {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; padding: 3px 10px; border-radius: 6px;
+  }
+  .cat-research { background: #E8F5E9; color: var(--green); }
+  .cat-industry { background: #E3F2FD; color: var(--accent-blue); }
+  .cat-policy { background: #FFF3E0; color: var(--orange); }
+  .cat-tools { background: var(--nyu-purple-bg); color: var(--nyu-purple); }
+  .cat-education { background: #FCE4EC; color: #C62828; }
+  .cat-ethics { background: #F3E5F5; color: #7B1FA2; }
+
+  .news-card .card-time {
+    font-size: 10px; color: var(--text-light); font-weight: 500;
+  }
+  .news-card h3 {
+    font-size: 15px; font-weight: 700; line-height: 1.5;
+    margin-bottom: 8px; color: var(--text);
+    transition: color 0.15s;
+  }
+  .news-card:hover h3 { color: var(--nyu-purple); }
+  .news-card .card-desc {
+    font-size: 13px; color: var(--text-light); line-height: 1.7;
+    margin-bottom: 12px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .news-card .card-footer {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .news-card .card-source {
+    font-size: 11px; font-weight: 600; color: var(--text);
+    display: flex; align-items: center; gap: 4px;
+  }
+  .news-card .card-source .source-dot {
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--nyu-purple-light);
+  }
+  .news-card .card-region {
+    font-size: 10px; font-weight: 600; color: var(--text-light);
+    background: var(--warm-gray); padding: 2px 8px; border-radius: 4px;
+  }
+  .news-card .card-link {
+    margin-left: auto; font-size: 11px; font-weight: 700;
+    color: var(--nyu-purple); opacity: 0;
+    transition: opacity 0.2s; text-decoration: none;
+  }
+  .news-card:hover .card-link { opacity: 1; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ── Load more ── */
+  .load-more-wrap {
+    text-align: center; margin-top: 8px; margin-bottom: 20px;
+  }
+  .load-more-btn {
+    padding: 12px 32px; border-radius: 10px;
+    background: white; border: 1.5px solid var(--border);
+    font-size: 13px; font-weight: 700; cursor: pointer;
+    font-family: inherit; color: var(--text-light);
+    transition: all 0.2s ease;
+  }
+  .load-more-btn:hover {
+    border-color: var(--nyu-purple); color: var(--nyu-purple);
+    background: var(--nyu-purple-bg);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(87,6,140,0.1);
+  }
+
+  /* ── Empty state ── */
+  .empty-state {
+    text-align: center; padding: 48px 24px;
+    animation: fadeUp 0.4s ease;
+  }
+  .empty-state .empty-icon { font-size: 48px; margin-bottom: 14px; }
+  .empty-state h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .empty-state p { font-size: 13px; color: var(--text-light); line-height: 1.6; }
+
+  /* ── Loading skeleton ── */
+  .skeleton-card {
+    background: white; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px 22px; margin-bottom: 12px;
+  }
+  .skeleton-line {
+    height: 12px; background: linear-gradient(90deg, var(--border) 25%, #f0ede8 50%, var(--border) 75%);
+    background-size: 200% 100%;
+    border-radius: 6px; margin-bottom: 10px;
+    animation: shimmer 1.5s infinite;
+  }
+  .skeleton-line.w80 { width: 80%; }
+  .skeleton-line.w60 { width: 60%; }
+  .skeleton-line.w40 { width: 40%; }
+  .skeleton-line.w100 { width: 100%; height: 16px; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+  /* ── Footer ── */
+  .news-footer {
+    text-align: center; padding: 20px 0;
+    border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--text-light); line-height: 1.7;
+  }
+  .news-footer a {
+    color: var(--nyu-purple); text-decoration: none; font-weight: 600;
+  }
+  .news-footer a:hover { text-decoration: underline; }
+
+  /* ── Toast ── */
+  .toast {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(80px);
+    background: var(--text); color: white; padding: 10px 20px; border-radius: 8px;
+    font-size: 13px; font-weight: 600; font-family: inherit;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 200;
+    opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+  /* ── Responsive ── */
+  @media (min-width: 600px) {
+    .news-grid { grid-template-columns: 1fr 1fr; }
+    .news-card.wide { grid-column: 1 / -1; }
+  }
+
+  @media (max-width: 768px) {
+    body { padding: 20px 16px; }
+    .news-header h1 { font-size: 24px; }
+    .featured-card { padding: 22px 20px; }
+    .featured-card h2 { font-size: 19px; }
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 16px 12px; }
+    .news-header h1 { font-size: 21px; }
+    .filter-bar { gap: 5px; }
+    .filter-btn { padding: 6px 12px; font-size: 11px; }
+    .stats-bar { flex-wrap: wrap; gap: 8px; }
+    .featured-card { padding: 18px 16px; }
+    .featured-card h2 { font-size: 17px; }
+    .featured-card .featured-desc { font-size: 13px; }
+    .news-card { padding: 16px 18px; }
+    .news-card h3 { font-size: 14px; }
+    .news-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="news-header" role="banner">
+  <div class="logo-row">
+    <div class="pulse-dot" aria-hidden="true"></div>
+    <h1>AI News Briefing</h1>
+  </div>
+  <p class="subtitle">Daily curated AI news for social work educators</p>
+  <div class="update-badge" id="updateBadge" aria-live="polite">
+    <span class="dot" aria-hidden="true"></span>
+    <span id="lastUpdated">Loading...</span>
+  </div>
+</header>
+
+<!-- Category filters -->
+<nav class="filter-bar" role="tablist" aria-label="Filter news by category" id="filterBar">
+  <button class="filter-btn active" role="tab" aria-selected="true" data-cat="all">All Stories</button>
+  <button class="filter-btn" role="tab" aria-selected="false" data-cat="research">Research</button>
+  <button class="filter-btn" role="tab" aria-selected="false" data-cat="industry">Industry</button>
+  <button class="filter-btn" role="tab" aria-selected="false" data-cat="policy">Policy</button>
+  <button class="filter-btn" role="tab" aria-selected="false" data-cat="tools">Tools</button>
+  <button class="filter-btn" role="tab" aria-selected="false" data-cat="education">Education</button>
+  <button class="filter-btn" role="tab" aria-selected="false" data-cat="ethics">Ethics</button>
+</nav>
+
+<!-- Stats -->
+<div class="stats-bar" id="statsBar">
+  <div class="stat-chip"><span class="stat-num" id="statTotal">—</span> stories</div>
+  <div class="stat-chip"><span class="stat-num" id="statSources">—</span> sources</div>
+  <div class="stat-chip"><span class="stat-num" id="statRegions">—</span> regions</div>
+</div>
+
+<!-- Featured card -->
+<div id="featuredSlot"></div>
+
+<!-- News grid -->
+<div class="news-grid" id="newsGrid" role="feed" aria-label="AI news articles"></div>
+
+<!-- Load more -->
+<div class="load-more-wrap" id="loadMoreWrap" style="display:none;">
+  <button class="load-more-btn" id="loadMoreBtn">Load More Stories</button>
+</div>
+
+<!-- Footer -->
+<footer class="news-footer">
+  <p>Curated from RSS feeds worldwide &middot; Auto-updated daily via GitHub Actions</p>
+  <p>Built for <a href="https://socialwork.nyu.edu" target="_blank" rel="noopener">NYU Silver School of Social Work</a></p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ══════════════════════════════════════════
+   AI Daily News — NYU Silver
+   Self-contained embed for Google Sites
+   ══════════════════════════════════════════ */
+
+const NEWS_JSON_URL = 'news-data.json';
+const ITEMS_PER_PAGE = 8;
+
+let allArticles = [];
+let filteredArticles = [];
+let currentCategory = 'all';
+let currentPage = 1;
+let newsData = null;
+
+/* ── Utilities ── */
+function $(id) { return document.getElementById(id); }
+
+function showToast(msg, duration = 2500) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timeout);
+  t._timeout = setTimeout(() => t.classList.remove('show'), duration);
+}
+
+function timeAgo(dateStr) {
+  const now = new Date();
+  const then = new Date(dateStr);
+  const diffMs = now - then;
+  const mins = Math.floor(diffMs / 60000);
+  const hours = Math.floor(mins / 60);
+  const days = Math.floor(hours / 24);
+
+  if (days > 7) {
+    return then.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+  if (days > 0) return `${days}d ago`;
+  if (hours > 0) return `${hours}h ago`;
+  if (mins > 0) return `${mins}m ago`;
+  return 'Just now';
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('en-US', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+  });
+}
+
+/* ── Render loading skeleton ── */
+function showSkeleton() {
+  let html = '';
+  for (let i = 0; i < 4; i++) {
+    html += `<div class="skeleton-card">
+      <div class="skeleton-line w40"></div>
+      <div class="skeleton-line w100"></div>
+      <div class="skeleton-line w80"></div>
+      <div class="skeleton-line w60"></div>
+    </div>`;
+  }
+  $('newsGrid').innerHTML = html;
+}
+
+/* ── Render featured card ── */
+function renderFeatured(article) {
+  if (!article) { $('featuredSlot').innerHTML = ''; return; }
+  $('featuredSlot').innerHTML = `
+    <article class="featured-card" onclick="openArticle('${encodeURIComponent(article.link)}')" role="article" tabindex="0"
+             aria-label="Featured: ${article.title}">
+      <div class="featured-label"><span class="star" aria-hidden="true">&#9733;</span> TOP STORY</div>
+      <h2>${escapeHtml(article.title)}</h2>
+      <p class="featured-desc">${escapeHtml(truncate(article.description, 180))}</p>
+      <div class="featured-meta">
+        <span class="featured-source">${escapeHtml(article.source)}</span>
+        <span class="featured-category">${article.category}</span>
+        <span>${timeAgo(article.published)}</span>
+        ${article.region ? `<span>${article.region}</span>` : ''}
+      </div>
+    </article>`;
+}
+
+/* ── Render a news card ── */
+function renderCard(article, index, wide) {
+  const catClass = 'cat-' + article.category.toLowerCase();
+  return `
+    <article class="news-card${wide ? ' wide' : ''}" onclick="openArticle('${encodeURIComponent(article.link)}')"
+             role="article" tabindex="0" aria-label="${escapeHtml(article.title)}"
+             style="animation-delay: ${index * 0.06}s">
+      <div class="card-top">
+        <span class="card-category ${catClass}">${article.category}</span>
+        <span class="card-time">${timeAgo(article.published)}</span>
+      </div>
+      <h3>${escapeHtml(article.title)}</h3>
+      <p class="card-desc">${escapeHtml(truncate(article.description, 160))}</p>
+      <div class="card-footer">
+        <span class="card-source"><span class="source-dot" aria-hidden="true"></span> ${escapeHtml(article.source)}</span>
+        ${article.region ? `<span class="card-region">${article.region}</span>` : ''}
+        <span class="card-link" aria-hidden="true">Read &rarr;</span>
+      </div>
+    </article>`;
+}
+
+/* ── Render grid ── */
+function renderGrid() {
+  const start = 0;
+  const end = currentPage * ITEMS_PER_PAGE;
+  const items = filteredArticles.slice(start, end);
+
+  if (items.length === 0) {
+    $('newsGrid').innerHTML = `
+      <div class="empty-state" style="grid-column: 1 / -1;">
+        <div class="empty-icon" aria-hidden="true">&#128270;</div>
+        <h3>No stories in this category</h3>
+        <p>Try selecting a different category or check back tomorrow for fresh news.</p>
+      </div>`;
+    $('loadMoreWrap').style.display = 'none';
+    return;
+  }
+
+  let html = '';
+  items.forEach((article, i) => {
+    // First item in grid or every 5th is wide on desktop
+    const wide = (i === 0 || i % 5 === 0);
+    html += renderCard(article, i, wide);
+  });
+  $('newsGrid').innerHTML = html;
+
+  // Load more button
+  $('loadMoreWrap').style.display = end < filteredArticles.length ? '' : 'none';
+}
+
+/* ── Update stats ── */
+function updateStats() {
+  if (!newsData) return;
+  const articles = filteredArticles;
+  $('statTotal').textContent = articles.length;
+
+  const sources = new Set(articles.map(a => a.source));
+  $('statSources').textContent = sources.size;
+
+  const regions = new Set(articles.map(a => a.region).filter(Boolean));
+  $('statRegions').textContent = regions.size;
+}
+
+/* ── Filter ── */
+function filterByCategory(cat) {
+  currentCategory = cat;
+  currentPage = 1;
+
+  // Update filter buttons
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    const isActive = b.dataset.cat === cat;
+    b.classList.toggle('active', isActive);
+    b.setAttribute('aria-selected', isActive);
+  });
+
+  // Filter articles
+  if (cat === 'all') {
+    filteredArticles = [...allArticles];
+  } else {
+    filteredArticles = allArticles.filter(a =>
+      a.category.toLowerCase() === cat.toLowerCase()
+    );
+  }
+
+  // Featured card: only show for "all"
+  if (cat === 'all' && filteredArticles.length > 0) {
+    renderFeatured(filteredArticles[0]);
+    filteredArticles = filteredArticles.slice(1);
+  } else {
+    renderFeatured(null);
+  }
+
+  updateStats();
+  renderGrid();
+}
+
+/* ── Open article ── */
+function openArticle(encodedUrl) {
+  const url = decodeURIComponent(encodedUrl);
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+/* ── Helpers ── */
+function escapeHtml(str) {
+  if (!str) return '';
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function truncate(str, len) {
+  if (!str) return '';
+  if (str.length <= len) return str;
+  return str.substring(0, len).replace(/\s+\S*$/, '') + '...';
+}
+
+/* ── Fetch & init ── */
+async function init() {
+  showSkeleton();
+
+  try {
+    const resp = await fetch(NEWS_JSON_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('Failed to load news data');
+    newsData = await resp.json();
+
+    // Set update time
+    $('lastUpdated').textContent = 'Updated ' + formatDate(newsData.updated);
+
+    // Sort by date (newest first)
+    allArticles = (newsData.articles || []).sort((a, b) =>
+      new Date(b.published) - new Date(a.published)
+    );
+
+    // Initial render
+    filterByCategory('all');
+
+  } catch (err) {
+    console.error('News load error:', err);
+    $('newsGrid').innerHTML = `
+      <div class="empty-state" style="grid-column: 1 / -1;">
+        <div class="empty-icon" aria-hidden="true">&#128225;</div>
+        <h3>News feed loading...</h3>
+        <p>The news data is updated daily via GitHub Actions. If this is the first visit, the data may still be generating. Please refresh in a few minutes.</p>
+      </div>`;
+    $('lastUpdated').textContent = 'Waiting for first update...';
+  }
+}
+
+/* ── Event listeners ── */
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => filterByCategory(btn.dataset.cat));
+});
+
+// Keyboard navigation for filters
+$('filterBar').addEventListener('keydown', (e) => {
+  const btns = [...document.querySelectorAll('.filter-btn')];
+  const idx = btns.indexOf(document.activeElement);
+  if (idx === -1) return;
+
+  let next = -1;
+  if (e.key === 'ArrowRight') next = (idx + 1) % btns.length;
+  else if (e.key === 'ArrowLeft') next = (idx - 1 + btns.length) % btns.length;
+
+  if (next !== -1) {
+    e.preventDefault();
+    btns[next].focus();
+    btns[next].click();
+  }
+});
+
+// Load more
+$('loadMoreBtn').addEventListener('click', () => {
+  currentPage++;
+  renderGrid();
+});
+
+// Enter key on cards
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && e.target.classList.contains('news-card')) {
+    e.target.click();
+  }
+  if (e.key === 'Enter' && e.target.classList.contains('featured-card')) {
+    e.target.click();
+  }
+});
+
+// Dark mode listener
+window.addEventListener('message', (e) => {
+  if (e.data && e.data.theme) {
+    document.documentElement.setAttribute('data-theme', e.data.theme);
+  }
+});
+
+/* ── Start ── */
+init();
+</script>
+</body>
+</html>
