@@ -275,6 +275,10 @@
     color: var(--border); min-width: 28px; line-height: 1;
     padding-top: 3px;
   }
+  .headline-thumb {
+    width: 80px; height: 56px; object-fit: cover; border-radius: 6px;
+    flex-shrink: 0; background: var(--border-light);
+  }
   .headline-body { flex: 1; min-width: 0; }
   .headline-body h5 {
     font-family: var(--serif); font-size: 14px; font-weight: 700;
@@ -288,6 +292,27 @@
   .headline-source { font-weight: 600; }
   .headline-cat-dot {
     width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  }
+
+  /* More Headlines load more */
+  .headlines-hidden { display: none; }
+  .headlines-load-more {
+    text-align: center; padding: 14px 0 4px;
+  }
+  .headlines-load-more-btn {
+    padding: 9px 28px; border: 1.5px solid var(--border);
+    border-radius: 6px; background: white; cursor: pointer;
+    font-family: var(--sans); font-size: 11px; font-weight: 700;
+    color: var(--text-light); transition: all 0.2s;
+    letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .headlines-load-more-btn:hover {
+    border-color: var(--nyu-purple); color: var(--nyu-purple);
+    background: var(--nyu-purple-bg);
+  }
+
+  @media (max-width: 520px) {
+    .headline-thumb { width: 64px; height: 46px; }
   }
 
   /* ═══════════════════════════════════════
@@ -962,14 +987,30 @@ function renderAll() {
     html += '</div>';
   }
 
-  // ── MORE HEADLINES (articles 10+)
+  // ── MORE HEADLINES (articles 10+) — show 5 initially, rest behind Load More
   const moreArticles = articles.slice(10);
   if (moreArticles.length) {
+    const INITIAL_HEADLINES = 5;
+    const visible = moreArticles.slice(0, INITIAL_HEADLINES);
+    const hidden = moreArticles.slice(INITIAL_HEADLINES);
+
     html += '<div class="section-divider"><span>More Headlines</span></div>';
     html += '<div class="headlines-list">';
-    moreArticles.forEach((a, i) => {
+    visible.forEach((a, i) => {
       html += headlineItem(a, i + 11);
     });
+
+    if (hidden.length) {
+      html += `<div class="headlines-hidden" id="hiddenHeadlines">`;
+      hidden.forEach((a, i) => {
+        html += headlineItem(a, i + 11 + INITIAL_HEADLINES);
+      });
+      html += '</div>';
+      html += `<div class="headlines-load-more" id="headlinesLoadMore">
+        <button class="headlines-load-more-btn" onclick="showMoreHeadlines()">Load ${hidden.length} More</button>
+      </div>`;
+    }
+
     html += '</div>';
   }
 
@@ -990,6 +1031,7 @@ function headlineItem(a, num) {
   return `
     <div class="headline-item" onclick="openArticle('${esc(a.id)}')" tabindex="0" role="article">
       <span class="headline-num">${num}</span>
+      ${imgHtml(a, 'headline-thumb', 56)}
       <div class="headline-body">
         <h5>${esc(trunc(a.title, 100))}</h5>
         <div class="headline-meta">
@@ -1003,6 +1045,17 @@ function headlineItem(a, num) {
         </div>
       </div>
     </div>`;
+}
+
+/* ── Show More Headlines ── */
+function showMoreHeadlines() {
+  const hidden = $('hiddenHeadlines');
+  const btn = $('headlinesLoadMore');
+  if (hidden) {
+    hidden.classList.remove('headlines-hidden');
+    hidden.style.animation = 'fadeIn 0.4s ease';
+  }
+  if (btn) btn.style.display = 'none';
 }
 
 /* ── Event Listeners ── */
