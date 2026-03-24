@@ -1559,7 +1559,19 @@ async function init() {
     updateBriefing();
     updateTrending();
     updateSavedFilterButton();
-    filterByCategory('education');
+
+    // Default to Education; fallback to All if no education articles yet
+    var eduArticles = allArticles.filter(function(a) { return (a.category || '').toLowerCase() === 'education'; });
+    if (eduArticles.length > 0) {
+      filterByCategory('education');
+    } else {
+      currentCategory = 'all';
+      document.querySelectorAll('.section-btn').forEach(function(b) {
+        b.classList.toggle('active', b.dataset.cat === 'all');
+        b.setAttribute('aria-selected', b.dataset.cat === 'all');
+      });
+      filterByCategory('all');
+    }
   } catch (e) {
     $('mainContent').innerHTML =
       '<div class="empty-state">' +
