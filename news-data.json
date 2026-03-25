@@ -1,20 +1,9 @@
 {
-  "updated": "2026-03-25T15:35:34.461607+00:00",
+  "updated": "2026-03-25T15:43:08.993028+00:00",
   "source_count": 9,
   "region_count": 3,
   "article_count": 50,
   "articles": [
-    {
-      "id": "0d68117d7c1c",
-      "title": "Senate Democrats are trying to ‘codify’ Anthropic&#8217;s red lines on autonomous weapons and mass surveillance",
-      "description": "Anthropic's fight with the Pentagon is expanding to Congress. Sen. Adam Schiff (D-CA) is working on a new bill to \"codify\" Anthropic's red lines and ensure humans make the ultimate decisions in questions of life and death, and Sen. Elissa Slotkin (D-MI) recently introduced a bill to limit the...",
-      "link": "https://www.theverge.com/policy/900341/senator-schiff-anthropic-autonomous-weapons-mass-surveillance",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-03-25T15:05:46+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
     {
       "id": "98aa5f5c1b9b",
       "title": "OpenAI Enters Its Focus Era by Killing Sora",
@@ -51,7 +40,7 @@
     {
       "id": "98bb97e44d2b",
       "title": "Mark Zuckerberg and Jensen Huang are part of Trump’s new ‘tech panel’",
-      "description": "Meta CEO Mark Zuckerberg, Oracle CEO Larry Ellison, Nvidia CEO Jensen Huang, and Google cofounder Sergey Brin will be the first four members of the President's Council of Advisors on Science and Technology (PCAST), according to the Wall Street Journal. The panel, which will \"weigh in on AI...",
+      "description": "Meta CEO Mark Zuckerberg, Oracle CEO Larry Ellison, Nvidia CEO Jensen Huang, and Google co-founder Sergey Brin will be the first four members of the President's Council of Advisors on Science and Technology (PCAST), according to the Wall Street Journal. The panel, which will \"weigh in on AI...",
       "link": "https://www.theverge.com/policy/900340/trump-tech-panel-mark-zuckerberg-jensen-huang",
       "source": "The Verge",
       "region": "North America",
@@ -551,6 +540,17 @@
       "source": "OpenAI Blog",
       "region": "North America",
       "category": "Policy",
+      "published": "2026-03-24T09:00:00+00:00",
+      "image": null
+    },
+    {
+      "id": "753168a84647",
+      "title": "Powering product discovery in ChatGPT",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Tools",
       "published": "2026-03-24T09:00:00+00:00",
       "image": null
     }
