@@ -1,13 +1,233 @@
 {
-  "updated": "2026-03-25T07:57:08.274923+00:00",
-  "source_count": 7,
+  "updated": "2026-03-25T15:35:34.461607+00:00",
+  "source_count": 9,
   "region_count": 3,
   "article_count": 50,
   "articles": [
     {
+      "id": "0d68117d7c1c",
+      "title": "Senate Democrats are trying to ‘codify’ Anthropic&#8217;s red lines on autonomous weapons and mass surveillance",
+      "description": "Anthropic's fight with the Pentagon is expanding to Congress. Sen. Adam Schiff (D-CA) is working on a new bill to \"codify\" Anthropic's red lines and ensure humans make the ultimate decisions in questions of life and death, and Sen. Elissa Slotkin (D-MI) recently introduced a bill to limit the...",
+      "link": "https://www.theverge.com/policy/900341/senator-schiff-anthropic-autonomous-weapons-mass-surveillance",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-25T15:05:46+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "98aa5f5c1b9b",
+      "title": "OpenAI Enters Its Focus Era by Killing Sora",
+      "description": "As the ChatGPT-maker eyes an IPO, it's ditching Sora in favor of a unified AI assistant and enterprise coding tools.",
+      "link": "https://www.wired.com/story/openai-shuts-down-sora-ipo-ai-superapp/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-25T14:57:45+00:00",
+      "image": "https://media.wired.com/photos/69c314e588ed936ad6995cd4/master/pass/Sora-Shutdown-Business-2265991722.jpg"
+    },
+    {
+      "id": "bb4cde65b4e1",
+      "title": "Granola raises $125M, hits $1.5B valuation as it expands from meeting notetaker to enterprise AI app",
+      "description": "Granola's valuation jumped from $250 million to $1.5 billion with this round, and it has added more support for AI agents after users previously complained.",
+      "link": "https://techcrunch.com/2026/03/25/granola-raises-125m-hits-1-5b-valuation-as-it-expands-from-meeting-notetaker-to-enterprise-ai-app/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-25T14:48:40+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Granola-home.jpeg?resize=1200,675"
+    },
+    {
+      "id": "8997d2bca619",
+      "title": "Meta launches new initiative to support entrepreneurship, drive AI adoption",
+      "description": "Meta CEO Mark Zuckerberg said in a memo to staff that small businesses have always been a big part of the company's business model, and that while tens of millions of entrepreneurs already use its platforms to grow and connect with customers, the company wants to do more in the space.",
+      "link": "https://techcrunch.com/2026/03/25/meta-launches-new-initiative-to-support-entrepreneurship-drive-ai-adoption/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-25T14:45:20+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2233066222.jpg?resize=1200,800"
+    },
+    {
+      "id": "98bb97e44d2b",
+      "title": "Mark Zuckerberg and Jensen Huang are part of Trump’s new ‘tech panel’",
+      "description": "Meta CEO Mark Zuckerberg, Oracle CEO Larry Ellison, Nvidia CEO Jensen Huang, and Google cofounder Sergey Brin will be the first four members of the President's Council of Advisors on Science and Technology (PCAST), according to the Wall Street Journal. The panel, which will \"weigh in on AI...",
+      "link": "https://www.theverge.com/policy/900340/trump-tech-panel-mark-zuckerberg-jensen-huang",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-03-25T14:41:21+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/STKS507_FTCxMETA_ANTITRUST_CVIRGINIA_2_E.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "e41806ce6ad4",
+      "title": "Meta turns to AI to make shopping easier on Instagram and Facebook",
+      "description": "Meta is using generative AI to provide more product and brand information to consumers when they're shopping in its apps.",
+      "link": "https://techcrunch.com/2026/03/25/meta-turns-to-ai-to-make-shopping-easier-on-instagram-and-facebook/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-25T14:16:17+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1467844599.jpg?w=1024"
+    },
+    {
+      "id": "876b25a79b5f",
+      "title": "Semicon China: AI, advanced packaging set to drive country’s chip industry growth",
+      "description": "Agentic artificial intelligence and advanced packaging technology will be key growth drivers for China’s chip industry in coming years, as the country is expected to increase its share of chipmaking capacity to nearly half of the world’s total by 2028. According to data revealed at Semicon...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3347902/semicon-china-ai-advanced-packaging-set-drive-countrys-chip-industry-growth?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Tools",
+      "published": "2026-03-25T14:13:25+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/25/f31dd70b-6194-426c-a5c8-f349402e5b7e_d94e143b.jpg?itok=NSSR5y9i&v=1774448003"
+    },
+    {
+      "id": "64eb019aa86b",
+      "title": "New Bernie Sanders AI Safety Bill Would Halt Data Center Construction",
+      "description": "The US senator said on Tuesday that a moratorium would give lawmakers time to \"ensure that AI is safe.\" Alexandria Ocasio-Cortez will introduce a similar bill in the House in the weeks ahead.",
+      "link": "https://www.wired.com/story/new-bernie-sanders-ai-safety-bill-would-halt-data-center-construction/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-25T13:28:50+00:00",
+      "image": "https://media.wired.com/photos/69c2e3e5a650a44d3b555dcb/master/pass/AOC-Bernie-Sanders-Introduce-Data-Center-Moratorium-Politics-2253720668.jpg"
+    },
+    {
+      "id": "948887595dbc",
+      "title": "With Sift, two ex-SpaceX engineers are bringing the software that helped launch rockets to the factory floor",
+      "description": "Sift is building the data infrastructure for advanced manufacturing.",
+      "link": "https://techcrunch.com/2026/03/25/with-sift-stack-two-ex-spacex-engineers-are-bringing-the-software-that-helped-launch-rockets-to-the-factory-floor/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-25T13:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/SiftExplore_Crop.jpg?resize=1200,1070"
+    },
+    {
+      "id": "bbf8c928ea1e",
+      "title": "Tell us: have you used AI to plan a holiday?",
+      "description": "We would like to hear from holidaymakers about their experiences of using AIMore people are turning to AI to design their holidays, whether that’s asking ChatGPT for inspiration or using AI trip planners. Almost a fifth of adults under 25 now use AI to plan breaks, according to a 2025 survey of...",
+      "link": "https://www.theguardian.com/travel/2026/mar/25/tell-us-have-you-used-ai-to-plan-a-holiday",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-25T12:40:19+00:00",
+      "image": "https://i.guim.co.uk/img/media/c3a2fe93196459c149901fb8cf6ea9e8a9a680d6/534_0_5335_4268/master/5335.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=887392369b3f4a8e6915da069ff4fdcf"
+    },
+    {
+      "id": "fa01d82380b6",
+      "title": "Anthropic’s Claude Code gets ‘safer’ auto mode",
+      "description": "Anthropic has launched an \"auto mode\" for Claude Code, a new tool that lets AI make permissions-level decisions on users' behalf. The company says the feature offers vibe coders a safer alternative between constant handholding or giving the model dangerous levels of autonomy. Claude Code is...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/900201/anthropic-claude-code-auto-mode",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-03-25T11:39:46+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK269_ANTHROPIC_2_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "319f31f5795e",
+      "title": "China Mobile bets on Hong Kong as gateway for global computing flows",
+      "description": "China Mobile has invested nearly HK$10 billion (US$1.28 billion) over five years to help turn Hong Kong into a global computing hub, integrating the city into China’s national network. The world’s largest telecoms operator by subscribers on Wednesday opened a new data centre in northern Hong...",
+      "link": "https://www.scmp.com/business/companies/article/3347877/china-mobile-bets-hong-kong-gateway-global-computing-flows?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-03-25T11:30:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/25/2b727fc0-f4eb-496d-955c-151dd1ddb7a5_f2abbe08.jpg?itok=3WfYqNTd&v=1774434190"
+    },
+    {
+      "id": "9d7c5a70a75b",
+      "title": "Bernie Sanders and AOC introduce bill to pause building of new datacenters",
+      "description": "Lawmakers say moratorium on construction would buy time to create strong, federal guardrails for AIAmid an unprecedented energy crisis and the rapid buildout of artificial intelligence infrastructure, progressive lawmakers have unveiled a new policy to place a moratorium on the construction of...",
+      "link": "https://www.theguardian.com/us-news/2026/mar/25/datacenters-bernie-sanders-aoc",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-03-25T11:00:05+00:00",
+      "image": "https://i.guim.co.uk/img/media/28eaf33cbaa9d9afb9306f5ecc46ca2f8275f76c/413_0_4111_3291/master/4111.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=48f741396b2076cfa917b6439b9a3a9a"
+    },
+    {
+      "id": "28a856c8e72c",
+      "title": "Lucid Bots raises $20M to keep up with demand for its window-washing drones",
+      "description": "Lucid Bots has seen demand accelerate over the last year for its window cleaning drones and power washing robots.",
+      "link": "https://techcrunch.com/2026/03/25/lucid-bots-raises-20m-to-keep-up-with-demand-for-its-window-washing-drones/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-25T11:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Lucid-Bots.png?resize=1200,800"
+    },
+    {
+      "id": "da3a053abe4c",
+      "title": "China names Beijing, other city clusters as global tech hubs in self-reliance push",
+      "description": "China is stepping up its efforts to build Beijing and its environs, along with other major city clusters, into “international technological innovation centres”, according to a high-ranking official – part of the country’s accelerated push for tech self-sufficiency. Speaking at the opening of the...",
+      "link": "https://www.scmp.com/tech/article/3347816/china-names-beijing-other-city-clusters-global-tech-hubs-self-reliance-push?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-03-25T10:15:20+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/25/c0620840-d729-459b-baaf-5b5a8a028820_86961346.jpg?itok=t2SGq-P-&v=1774419247"
+    },
+    {
+      "id": "6084f4ea27f4",
+      "title": "Wristband enables wearers to control a robotic hand with their own movements",
+      "description": "By moving their hands and fingers, users can direct a robot to play piano or shoot a basketball, or they can manipulate objects in a virtual environment.",
+      "link": "https://news.mit.edu/2026/wristband-enables-wearers-control-robotic-hand-with-own-movements-0325",
+      "source": "MIT News",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-03-25T10:00:00+00:00",
+      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202603/MIT-Hand-Tracker-01-press.jpg?itok=C_JqeasJ"
+    },
+    {
+      "id": "bc28f15d2ed3",
+      "title": "Arm’s CEO Insists the Market Needs His New CPU. It Could Piss Everyone Off",
+      "description": "Arm just confirmed the rumors: It’s producing its own chip for the first time. CEO Rene Haas explains why this won’t alienate the many chipmakers who license the company’s designs.",
+      "link": "https://www.wired.com/story/arms-ceo-insists-the-market-needs-his-new-cpu-it-could-piss-everyone-off/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-03-25T10:00:00+00:00",
+      "image": "https://media.wired.com/photos/69c2ef3f0355f9e1ff2fd1e1/master/pass/JC_WIRED_ARM_4316_flat.jpg"
+    },
+    {
+      "id": "b5b95c8979c9",
+      "title": "Student use of AI for homework rises as concerns grow about critical thinking skills",
+      "description": "Student use of AI for homework increased in 2025, even as more students are worried the technology may be harming their ability to think critically, according to a new RAND report.",
+      "link": "https://www.eschoolnews.com/digital-learning/2026/03/25/student-use-of-ai-for-homework-rises/",
+      "source": "eSchool News",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-03-25T10:00:00+00:00",
+      "image": "https://www.eschoolnews.com/files/2026/03/students-AI-learning.png"
+    },
+    {
+      "id": "fc64dfb43ba8",
+      "title": "How Democrats Lost the Plot on Schools—and How to Get It Back",
+      "description": "Despite polling showing progressives maintain a slight edge on education, public trust in the party has plummeted The post How Democrats Lost the Plot on Schools—and How to Get It Back appeared first on Education Next.",
+      "link": "https://www.educationnext.org/how-democrats-lost-the-plot-on-schools-and-how-to-get-it-back/",
+      "source": "Education Next",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-03-25T09:00:04+00:00",
+      "image": "https://www.educationnext.org/wp-content/uploads/2026/03/mar26-web-barone-img01.png"
+    },
+    {
+      "id": "7304ecbd3a1d",
+      "title": "Shenzhen eyes ‘leapfrog’ gains in AI server supply chain under self-reliance push",
+      "description": "Shenzhen – southern China’s technology powerhouse – has launched an ambitious three-year action plan to build itself into a hub for intelligent computing clusters by advancing key areas such as semiconductors, storage and AI servers. The city aimed to see a “leapfrog” increase in the production...",
+      "link": "https://www.scmp.com/tech/article/3347834/shenzhen-eyes-leapfrog-gains-ai-server-supply-chain-under-self-reliance-push?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-03-25T08:00:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/25/c0c82a6b-5044-4cce-bf9c-0ca156003a61_a1fc3d38.jpg?itok=5RCKZnpI&v=1774422991"
+    },
+    {
       "id": "2d3bcacb2996",
       "title": "Hong Kong stocks extend rebound on signs of diplomatic path in Iran conflict",
-      "description": "Hong Kong stocks extended their rebound on Wednesday on signs that a diplomatic solution to Middle East tensions was making progress. The Hang Seng Index rose 0.9 per cent to 25,274.40 as of 9.40am local time. The Hang Seng Tech Index gained 1.4 per cent. On the mainland, the CSI 300 Index...",
+      "description": "Hong Kong stocks extended their rebound on Wednesday on signs that a diplomatic solution to Middle East tensions was making progress. The Hang Seng Index rose 1.1 per cent to 25,335.95 at the close, adding to a 2.7 per cent gain a day earlier. Technology stocks advanced, driving the Hang Seng...",
       "link": "https://www.scmp.com/business/china-business/article/3347782/hong-kong-stocks-extend-rebound-signs-diplomatic-path-iran-conflict?utm_source=rss_feed",
       "source": "South China Morning Post",
       "region": "Asia",
@@ -73,7 +293,7 @@
     {
       "id": "b9587208ad7e",
       "title": "Anthropic and Pentagon face off in court over ban on company’s AI model",
-      "description": "After Anthropic refused to let its AI to be used in autonomous weapons systems, Trump ordered US agencies to quit using itSign up for the Breaking News US email to get newsletter alerts in your inboxAnthropic faced against the Department of Defense in a federal court on Tuesday afternoon, as the...",
+      "description": "After Anthropic refused to let its AI to be used in autonomous weapons systems, Trump ordered US agencies to quit using itSign up for the Breaking News US email to get newsletter alerts in your inboxAnthropic faced off against the Department of Defense in a federal court on Tuesday afternoon, as...",
       "link": "https://www.theguardian.com/us-news/2026/mar/24/anthropic-pentagon-lawsuit",
       "source": "The Guardian",
       "region": "Europe",
@@ -178,7 +398,7 @@
       "region": "Europe",
       "category": "Tools",
       "published": "2026-03-24T18:57:05+00:00",
-      "image": "https://i.guim.co.uk/img/media/d395ff03b8fee7107ea8746951d996238e3244d1/226_0_2248_1799/master/2248.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=24f37488090a452d5d7de941051a7f53"
+      "image": "https://i.guim.co.uk/img/media/8ddeb93c00f9b029c2da4d2ed4aca1d86619dd15/1_0_4935_3950/master/4935.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f7d0e9208b9cf6684b1bb15a14dac1a5"
     },
     {
       "id": "d4af6dbda341",
@@ -190,28 +410,6 @@
       "category": "Policy",
       "published": "2026-03-24T18:41:34+00:00",
       "image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024"
-    },
-    {
-      "id": "424a026b9c96",
-      "title": "Talat’s AI meeting notes stay on your machine, not in the cloud",
-      "description": "The subscription-free AI meeting notes app is a local-first twist on notetaking tools like Granola.",
-      "link": "https://techcrunch.com/2026/03/24/talats-ai-meeting-notes-stay-on-your-machine-not-in-the-cloud/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-03-24T18:41:33+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/03/talat-app-at-2.11.22-PM.jpg?w=1086"
-    },
-    {
-      "id": "16cb9fb648de",
-      "title": "Doss raises $55M for AI inventory management that plugs into ERP",
-      "description": "Doss's AI-powered inventory management system integrates with existing ERP systems. The Series B round was co-led by Madrona and Premji Invest.",
-      "link": "https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-03-24T17:18:29+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Doss-Founder-Photo.jpg?resize=1200,800"
     },
     {
       "id": "81f9267694c0",
@@ -245,17 +443,6 @@
       "category": "Industry",
       "published": "2026-03-24T17:00:00+00:00",
       "image": "https://media.wired.com/photos/69c1dcea9b0c01414434424c/master/pass/Chip-Design-Firm-Arm-Making-Own-AI-CPU-Business-2250850574.jpg"
-    },
-    {
-      "id": "fdeb29f3641a",
-      "title": "Meet the former Apple designer building a new AI interface at Hark",
-      "description": "The company said it would design models, hardware, and interfaces in tandem to deliver a \"seamless end-to-end personal intelligence product.\"",
-      "link": "https://techcrunch.com/2026/03/24/meet-the-former-apple-designer-building-a-new-ai-interface-at-hark/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-03-24T16:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Screenshot-2026-03-24-at-6.20.59-AM.png?w=939"
     },
     {
       "id": "4f77dc4e73d1",
@@ -300,28 +487,6 @@
       "category": "Policy",
       "published": "2026-03-24T13:30:08+00:00",
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/24/f43ce199-de59-4edf-8dd8-e2c7b3237ddf_e8f20731.jpg?itok=05lBvXkX&v=1774350483"
-    },
-    {
-      "id": "200cfc30913c",
-      "title": "Mirage raises $75M to continue building models for its AI video-editing app Captions",
-      "description": "Mirage, the maker of video-editing app Captions, has raised $75 million in growth financing from General Catalyst's Customer Value Fund (CVF).",
-      "link": "https://techcrunch.com/2026/03/24/mirage-raises-75m-to-continue-building-models-for-its-ai-video-editing-app-captions/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-24T13:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/09/Mirage-background.png?w=1200"
-    },
-    {
-      "id": "3d9072d7aadb",
-      "title": "Agile Robots becomes the latest robotics company to partner with Google DeepMind",
-      "description": "Agile Robots will incorporate Google DeepMind's robotics foundation models into its bots while collecting data for the AI research lab.",
-      "link": "https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-24T12:05:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/05/Google-DeepMind.jpg?w=1024"
     },
     {
       "id": "8b606f1a30a6",
@@ -388,171 +553,6 @@
       "category": "Policy",
       "published": "2026-03-24T09:00:00+00:00",
       "image": null
-    },
-    {
-      "id": "753168a84647",
-      "title": "Powering product discovery in ChatGPT",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-03-24T09:00:00+00:00",
-      "image": null
-    },
-    {
-      "id": "9993c7b44284",
-      "title": "Alibaba debuts its latest RISC-V-based chip amid shift to AI agents",
-      "description": "Alibaba Group Holding’s research arm Damo Academy has unveiled a chip designed to fuel artificial intelligence agents, as the tech giant bets on open-source RISC-V architecture to ride the wave of agentic AI. XuanTie C950, the latest flagship in Alibaba’s XuanTie RISC-V series, was introduced at...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3347684/alibaba-debuts-its-latest-risc-v-based-chip-amid-shift-ai-agents?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-03-24T08:00:11+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/24/6697ed3f-8172-45ca-aa7a-8cb67750ed7b_26bfef7b.jpg?itok=SPe8tzOR&v=1774335351"
-    },
-    {
-      "id": "30bee3bc3fa6",
-      "title": "HKIC, Gobi Partners and HKU team up for fund backing university research start-ups",
-      "description": "Hong Kong Investment Corporation (HKIC), the government’s investment arm, has teamed up with venture capital firm Gobi Partners and the University of Hong Kong (HKU) to launch a fund on Tuesday to invest in technology start-ups spun off from the university’s research breakthroughs, according to...",
-      "link": "https://www.scmp.com/business/banking-finance/article/3347689/hkic-gobi-partners-and-hku-team-fund-backing-university-research-start-ups?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-03-24T07:21:49+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/24/9fa23c67-a51c-45a0-b7b1-36f6722c2e1e_eb395834.jpg?itok=WUc0jX0M&v=1774336632"
-    },
-    {
-      "id": "76e8d5ecbaa1",
-      "title": "Amount of AI-generated child sexual abuse material found online surged in 2025",
-      "description": "Internet Watch Foundation verified 8,029 pieces of realistic AI-made content, with 65% of videos in worst categoryThe amount of AI-generated child sexual abuse material found online rose by 14% last year, with the majority of videos showing the most extreme type of content, according to a safety...",
-      "link": "https://www.theguardian.com/technology/2026/mar/24/ai-generated-child-sexual-abuse-videos-images-online-surged-2025-internet-watch-foundation",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-03-24T06:00:12+00:00",
-      "image": "https://i.guim.co.uk/img/media/c17c4dd03bec179e97a197bb75aef019d5fce6a3/175_0_5151_4122/master/5151.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8f8cb84f344197a3dff5e283a6a447a5"
-    },
-    {
-      "id": "03ba26692200",
-      "title": "Hong Kong’s eMPF to cut fees by 21.6% from April, saving US$6.4 billion in 10 years",
-      "description": "The electronic platform of the Mandatory Provident Fund (eMPF) will cut administration fees for 378 investment funds by more than 21 per cent from April 1, the pension regulator said on Tuesday, adding that this will achieve its cost-saving target of HK$50 billion (US$6.4 billion) in less than...",
-      "link": "https://www.scmp.com/business/banking-finance/article/3347671/hong-kongs-empf-cut-fees-216-april-saving-us64-billion-10-years?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Tools",
-      "published": "2026-03-24T05:06:37+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/24/ede4e66f-3b2d-468e-9ead-a171921169ac_eb83ff18.jpg?itok=0Z4uwtRW&v=1774328393"
-    },
-    {
-      "id": "b76b120ab3a8",
-      "title": "From infrastructure to AI: how Alibaba Cloud powers the global ambitions of Chinese companies",
-      "description": "New technology is transforming international trade and, with the help of the cloud and artificial intelligence (AI), Chinese firms are increasingly well placed to compete globally. “For Chinese companies going overseas, the requirement has evolved from just providing infrastructure to...",
-      "link": "https://www.scmp.com/native/tech/topics/chinese-firms-rise-cloud-power/article/3347560/infrastructure-ai-how-alibaba-cloud-powers-global-ambitions-chinese-companies?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-03-24T04:40:08+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/23/d9865b39-3831-4e67-92ef-649b7a66bce2_2aac4e2e.jpg?itok=b_1n3Gmt&v=1774250674"
-    },
-    {
-      "id": "5ac73630b3ae",
-      "title": "How to create “humble” AI",
-      "description": "An MIT-led team is designing artificial intelligence systems for medical diagnosis that are more collaborative and forthcoming about uncertainty.",
-      "link": "https://news.mit.edu/2026/creating-humble-ai-0324",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-24T04:00:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202603/MIT-HumbleAI-01-press.jpg?itok=w90pox8K"
-    },
-    {
-      "id": "2e4746d84685",
-      "title": "Surging demand for AI agents fuels Hong Kong’s race to expand computing power",
-      "description": "As leading Chinese chip executives predict that autonomous AI agents will trigger an unprecedented explosion in computing demand, Hong Kong is accelerating efforts to expand its artificial intelligence computing capacity. Calling token consumption in the era of AI “far beyond our imagination”,...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3347609/surging-demand-ai-agents-fuels-hong-kongs-race-expand-computing-power?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-03-24T02:30:09+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/23/e39d0cda-5eff-4cb4-b853-ecec40e6332b_220d325f.jpg?itok=u_-vABGY&v=1774264585"
-    },
-    {
-      "id": "650fd7bd37be",
-      "title": "Hong Kong stocks rebound on hopes of a US-Iran deal as tensions ease",
-      "description": "Hong Kong stocks rebounded on Tuesday on signs of a de-escalation of the US-Israel war against Iran after President Donald Trump said he would delay any attacks on the Gulf nation’s energy facilities. The Hang Seng Index surged 2.8 per cent to 25,063.71 at the close. The Hang Seng Tech Index...",
-      "link": "https://www.scmp.com/business/china-business/article/3347649/hong-kong-stocks-rebound-hopes-us-iran-deal-tensions-ease?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Tools",
-      "published": "2026-03-24T02:00:45+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/24/271d9ec5-8fd6-4d01-8558-b01f8f7bde8d_b44cc7df.jpg?itok=fHQSynN-&v=1774317586"
-    },
-    {
-      "id": "bbe5bbf5b93c",
-      "title": "Why Hong Kong is betting on RISC-V to build a global open-source chip hub",
-      "description": "Last week, Hong Kong Investment Corporation (HKIC) announced the establishment of the Hong Kong RISC-V Alliance. The move follows Financial Secretary Paul Chan Mo-po’s earlier pledge to actively promote collaboration among industry, academia and the investment sector to develop the open-source...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3347614/why-hong-kong-betting-risc-v-build-global-open-source-chip-hub?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-03-24T00:30:08+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/23/8fdadf61-a7f2-475d-88e3-20c32497b008_057b8c29.jpg?itok=kC7pQtOX&v=1774265384"
-    },
-    {
-      "id": "7c224a8a8138",
-      "title": "3 Chinese EV makers raise prices – but analysts warn weak demand could force reversal",
-      "description": "Three Chinese electric vehicle (EV) makers have raised prices for some models in response to rising supply chain costs, but analysts say the increases are unlikely to be sustained given weakening domestic demand. Xiaomi became the latest manufacturer to adjust pricing on March 19, announcing...",
-      "link": "https://www.scmp.com/business/banking-finance/article/3347527/three-chinese-ev-makers-raise-prices-analysts-warn-weak-demand-could-force-reversal?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-03-23T23:30:08+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/03/23/e4a2359c-5ee0-451c-8e53-fa748743e1a4_16bfb43c.jpg?itok=Biwhc5iv&v=1774235278"
-    },
-    {
-      "id": "91d8a9962b67",
-      "title": "Advancing international trade research and finding community",
-      "description": "Sojun Park, a postdoc at the Center for International Studies, has learned much from his research on intellectual property as well as his interactions with students and mentors at MIT.",
-      "link": "https://news.mit.edu/2026/sojun-park-advancing-international-trade-research-finding-community-0323",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-23T21:00:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202603/mit-cis-sojun-park.jpg?itok=NxZXpd9n"
-    },
-    {
-      "id": "e8cf7d097540",
-      "title": "Google’s new Pixel 10 ads made me go ‘Wait, WHAT are they trying to sell?’",
-      "description": "Ever watch a TV ad and wonder, \"How did this get approved?\" Today, Google has not one but two new ad spots for its six-month-old Pixel 10 phones, and… let's just say they may not come across as intended. First, there's \"With 100x Zoom,\" an ad that appears to suggest that if a vacation rental...",
-      "link": "https://www.theverge.com/tech/898992/google-pixel-10-ads-moving-on-stalker-lying-beach-view-100-zoom",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-03-23T19:49:11+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/chrome_Apdz9O6Gdb.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "99d57b13d4e3",
-      "title": "Nvidia CEO Jensen Huang says &#8216;I think we&#8217;ve achieved AGI&#8217;",
-      "description": "On a Monday episode of the Lex Fridman podcast, Nvidia CEO Jensen Huang made a hot-button statement: \"I think we've achieved AGI.\" AGI, or artificial general intelligence, is a vaguely defined term that has incited a lot of discussion by tech CEOs, tech workers, and the general public in recent...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-03-23T19:42:33+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "eb3baf274128",
-      "title": "On algorithms, life, and learning",
-      "description": "Operations research expert Dimitris Bertsimas delivered the annual Killian Lecture, providing a look at the past and future of his work.",
-      "link": "https://news.mit.edu/2026/algorithms-life-learning-killian-lecture-dimitris-bertsimas-0323",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-03-23T17:45:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202603/MIT-Bertsima-Killian-Lecture-01-press.jpg?itok=e8x7sWR2"
     }
   ]
 }
