@@ -1,0 +1,306 @@
+{
+  "updated": "2026-03-26T08:00:00Z",
+  "categories": [
+    {
+      "id": "research",
+      "name": "Research Tools",
+      "icon": "🔬",
+      "tools": [
+        {
+          "name": "Elicit",
+          "url": "https://elicit.com",
+          "description": "AI research assistant that finds and summarizes academic papers.",
+          "pricing": "Free / $10+ mo.",
+          "swUseCase": "Students search for evidence-based interventions for specific populations.",
+          "tags": [
+            "research",
+            "literature-review"
+          ]
+        },
+        {
+          "name": "Consensus",
+          "url": "https://consensus.app",
+          "description": "AI-powered search engine for peer-reviewed research.",
+          "pricing": "Free / $9.99 mo.",
+          "swUseCase": "Faculty find current research on social work practice outcomes.",
+          "tags": [
+            "research",
+            "evidence-based"
+          ]
+        },
+        {
+          "name": "Research Rabbit",
+          "url": "https://www.researchrabbit.ai",
+          "description": "Citation-based discovery tool that maps related papers.",
+          "pricing": "Free",
+          "swUseCase": "Build literature networks around topics like housing insecurity or racial disparities in child welfare.",
+          "tags": [
+            "research",
+            "citation-mapping"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "name": "Assessment Tools",
+      "icon": "📝",
+      "tools": [
+        {
+          "name": "Gradescope",
+          "url": "https://www.gradescope.com",
+          "description": "AI-assisted grading and rubric tool.",
+          "pricing": "Institutional license",
+          "swUseCase": "Streamline grading of reflective journals and case analyses across large sections.",
+          "tags": [
+            "grading",
+            "assessment"
+          ]
+        },
+        {
+          "name": "Turnitin Draft Coach",
+          "url": "https://www.turnitin.com/products/draft-coach",
+          "description": "Writing feedback tool integrated with LMS.",
+          "pricing": "Institutional license",
+          "swUseCase": "Students get real-time feedback on APA formatting and citation quality before submission.",
+          "tags": [
+            "writing",
+            "feedback"
+          ]
+        },
+        {
+          "name": "Quizizz AI",
+          "url": "https://quizizz.com",
+          "description": "AI-generated quizzes from any content.",
+          "pricing": "Free / $19 mo.",
+          "swUseCase": "Auto-generate comprehension checks from CSWE competency readings.",
+          "tags": [
+            "quiz",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Writing Tools",
+      "icon": "✍️",
+      "tools": [
+        {
+          "name": "Grammarly",
+          "url": "https://www.grammarly.com",
+          "description": "AI writing assistant for grammar, tone, and clarity.",
+          "pricing": "Free / $12 mo.",
+          "swUseCase": "Help students refine professional emails to field supervisors and agencies.",
+          "tags": [
+            "writing",
+            "grammar"
+          ]
+        },
+        {
+          "name": "Diffit",
+          "url": "https://diffit.me",
+          "description": "Generates adapted reading materials at different levels.",
+          "pricing": "Free / $34.99 mo.",
+          "swUseCase": "Create differentiated case study materials for students with varied reading levels.",
+          "tags": [
+            "writing",
+            "accessibility"
+          ]
+        },
+        {
+          "name": "Brisk Teaching",
+          "url": "https://www.briskteaching.com",
+          "description": "AI teaching assistant for feedback and lesson planning.",
+          "pricing": "Free / $14 mo.",
+          "swUseCase": "Generate rubric-aligned feedback on student process recordings.",
+          "tags": [
+            "teaching",
+            "feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "detection",
+      "name": "Detection Tools",
+      "icon": "🔍",
+      "tools": [
+        {
+          "name": "Turnitin AI Detection",
+          "url": "https://www.turnitin.com/solutions/ai-writing",
+          "description": "AI writing detection integrated with LMS.",
+          "pricing": "Institutional license",
+          "swUseCase": "Flag potential AI-generated content in student papers for conversation, not punishment.",
+          "tags": [
+            "detection",
+            "integrity"
+          ]
+        },
+        {
+          "name": "Copyleaks",
+          "url": "https://copyleaks.com",
+          "description": "AI and plagiarism detection with multilingual support.",
+          "pricing": "Free trial / $9.99+ mo.",
+          "swUseCase": "Screen student submissions with nuanced reports that distinguish AI-assisted from AI-generated work.",
+          "tags": [
+            "detection",
+            "plagiarism"
+          ]
+        },
+        {
+          "name": "GPTZero",
+          "url": "https://gptzero.me",
+          "description": "AI detection tool designed for educators.",
+          "pricing": "Free / $15 mo.",
+          "swUseCase": "Quick-check student writing with probability scores and highlighted passages.",
+          "tags": [
+            "detection",
+            "educator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chatbots",
+      "name": "AI Chatbots",
+      "icon": "💬",
+      "tools": [
+        {
+          "name": "Claude",
+          "url": "https://claude.ai",
+          "description": "Anthropic’s AI assistant — strong at analysis and nuanced reasoning.",
+          "pricing": "Free / $20+ mo.",
+          "swUseCase": "Upload an entire case study and ask Claude to identify risk factors.",
+          "tags": [
+            "chatbot",
+            "analysis"
+          ]
+        },
+        {
+          "name": "ChatGPT",
+          "url": "https://chat.openai.com",
+          "description": "OpenAI’s conversational AI — versatile and widely adopted.",
+          "pricing": "Free / $20+ mo.",
+          "swUseCase": "Create a Custom GPT as a \"client\" for role-play practice.",
+          "tags": [
+            "chatbot",
+            "roleplay"
+          ]
+        },
+        {
+          "name": "Google Gemini",
+          "url": "https://gemini.google.com",
+          "description": "Google’s AI with deep integration into Workspace.",
+          "pricing": "Free (NYU)",
+          "swUseCase": "Quiz generation from course readings.",
+          "tags": [
+            "chatbot",
+            "google"
+          ]
+        },
+        {
+          "name": "Google NotebookLM",
+          "url": "https://notebooklm.google.com",
+          "description": "AI-powered notebook that grounds responses in your sources.",
+          "pricing": "Free (NYU)",
+          "swUseCase": "Upload your syllabus, course readings, and CSWE competencies.",
+          "tags": [
+            "chatbot",
+            "sources"
+          ]
+        },
+        {
+          "name": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com",
+          "description": "AI assistant integrated with Microsoft 365.",
+          "pricing": "Free / $30 mo.",
+          "swUseCase": "Co-authoring field placement reports.",
+          "tags": [
+            "chatbot",
+            "microsoft"
+          ]
+        },
+        {
+          "name": "Perplexity AI",
+          "url": "https://www.perplexity.ai",
+          "description": "AI-powered answer engine with cited sources.",
+          "pricing": "Free / $20 mo.",
+          "swUseCase": "Students use for evidence-based practice research.",
+          "tags": [
+            "chatbot",
+            "research"
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "headers": [
+      "Feature",
+      "Claude",
+      "ChatGPT",
+      "Gemini",
+      "NotebookLM",
+      "Copilot",
+      "Perplexity"
+    ],
+    "rows": [
+      [
+        "Free Tier",
+        "Yes (limits)",
+        "Yes (GPT-3.5)",
+        "Yes",
+        "Yes (limits)",
+        "Yes",
+        "Yes (limits)"
+      ],
+      [
+        "Long Documents",
+        "Yes (200k)",
+        "No (paid)",
+        "Yes (1M)",
+        "Yes (500k/source)",
+        "Yes (30k)",
+        "Yes (paid)"
+      ],
+      [
+        "Custom Personas",
+        "Yes",
+        "Yes",
+        "Yes",
+        "Yes",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Cited Sources",
+        "No",
+        "No",
+        "Sometimes",
+        "Yes",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "NYU Institutional",
+        "No",
+        "No",
+        "No",
+        "No",
+        "Yes",
+        "No"
+      ],
+      [
+        "Best SW Use",
+        "Summaries, role-play",
+        "Brainstorming, drafts",
+        "Research, summaries",
+        "Source analysis",
+        "Research, drafts",
+        "Research, citation"
+      ]
+    ]
+  },
+  "warning": "⚠️ No AI detection tool is 100% accurate. Use as a conversation starter, not definitive proof."
+}
