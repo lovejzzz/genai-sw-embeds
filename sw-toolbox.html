@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SW Faculty Toolbox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --nyu-purple:#57068C;
+  --nyu-deep:#3D0066;
+  --nyu-light:#F3E8FF;
+  --nyu-accent:#8B5CF6;
+  --nyu-violet:#7C3AED;
+  --surface:#FFFFFF;
+  --surface-2:#F9FAFB;
+  --surface-3:#F3F4F6;
+  --text:#111827;
+  --text-2:#4B5563;
+  --text-3:#9CA3AF;
+  --border:#E5E7EB;
+  --border-2:#D1D5DB;
+  --green:#059669;
+  --green-bg:#ECFDF5;
+  --amber:#D97706;
+  --amber-bg:#FFFBEB;
+  --blue:#2563EB;
+  --blue-bg:#EFF6FF;
+  --rose:#E11D48;
+  --rose-bg:#FFF1F2;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.05);
+  --shadow:0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);
+  --shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+  --shadow-lg:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+  --radius:12px;
+  --radius-sm:8px;
+  --radius-xs:6px;
+  --transition:200ms cubic-bezier(.4,0,.2,1);
+}
+
+html{font-size:15px;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--text);background:var(--surface);line-height:1.6;overflow-x:hidden}
+
+/* -- Header -- */
+.header{
+  background:linear-gradient(135deg,var(--nyu-deep) 0%,var(--nyu-purple) 40%,var(--nyu-accent) 100%);
+  color:#fff;padding:2.5rem 1.5rem 2rem;text-align:center;position:relative;overflow:hidden;
+}
+.header::before{
+  content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.header-content{position:relative;z-index:1;max-width:800px;margin:0 auto}
+.header h1{
+  font-family:'Playfair Display',serif;font-weight:800;font-size:2rem;
+  letter-spacing:-.02em;margin-bottom:.35rem;
+  text-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.header p{font-size:.9rem;opacity:.85;max-width:500px;margin:0 auto .2rem}
+.last-updated{font-size:.7rem;opacity:.5;margin-top:.5rem}
+
+/* -- Search & Filter -- */
+.controls{
+  max-width:960px;margin:-1.5rem auto 0;padding:0 1rem;position:relative;z-index:2;
+}
+.search-box{
+  background:var(--surface);border-radius:var(--radius);
+  box-shadow:var(--shadow-lg);padding:.75rem 1rem;display:flex;align-items:center;gap:.75rem;
+  border:1px solid var(--border);
+}
+.search-box svg{width:18px;height:18px;color:var(--text-3);flex-shrink:0}
+.search-box input{
+  flex:1;border:none;outline:none;font-size:.9rem;font-family:inherit;color:var(--text);
+  background:transparent;
+}
+.search-box input::placeholder{color:var(--text-3)}
+.search-clear{
+  display:none;background:var(--surface-3);border:none;border-radius:50%;
+  width:24px;height:24px;cursor:pointer;font-size:.75rem;color:var(--text-2);
+  align-items:center;justify-content:center;transition:var(--transition);
+}
+.search-clear.visible{display:flex}
+.search-clear:hover{background:var(--border)}
+
+.filter-bar{
+  display:flex;gap:.4rem;margin-top:.75rem;flex-wrap:wrap;justify-content:center;
+}
+.filter-btn{
+  padding:.35rem .8rem;border-radius:100px;border:1.5px solid var(--border);
+  background:var(--surface);font-size:.75rem;font-weight:500;color:var(--text-2);
+  cursor:pointer;transition:var(--transition);font-family:inherit;
+}
+.filter-btn:hover{border-color:var(--nyu-accent);color:var(--nyu-purple)}
+.filter-btn.active{
+  background:var(--nyu-purple);color:#fff;border-color:var(--nyu-purple);
+}
+
+/* -- Category Sections -- */
+.content{max-width:960px;margin:0 auto;padding:1.5rem 1rem 2rem}
+
+.category{margin-bottom:2rem;animation:fadeUp .4s ease-out both}
+.category-header{
+  display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;
+  padding-bottom:.5rem;border-bottom:2px solid var(--nyu-light);
+}
+.category-icon{font-size:1.3rem}
+.category-name{
+  font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;
+  color:var(--nyu-deep);
+}
+.category-count{
+  font-size:.65rem;font-weight:600;background:var(--nyu-light);color:var(--nyu-purple);
+  padding:.15rem .5rem;border-radius:100px;margin-left:auto;
+}
+
+/* -- Tool Cards -- */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem}
+
+.tool-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1rem 1.1rem;transition:var(--transition);position:relative;
+  display:flex;flex-direction:column;
+}
+.tool-card:hover{
+  border-color:var(--nyu-accent);box-shadow:var(--shadow-md);transform:translateY(-2px);
+}
+.tool-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+.tool-name{
+  font-weight:700;font-size:.95rem;color:var(--nyu-deep);
+}
+.tool-name a{color:inherit;text-decoration:none;transition:var(--transition)}
+.tool-name a:hover{color:var(--nyu-accent)}
+.tool-pricing{
+  font-size:.65rem;font-weight:600;padding:.15rem .45rem;border-radius:100px;
+  white-space:nowrap;flex-shrink:0;
+}
+.pricing-free{background:var(--green-bg);color:var(--green)}
+.pricing-paid{background:var(--amber-bg);color:var(--amber)}
+.pricing-inst{background:var(--blue-bg);color:var(--blue)}
+
+.tool-desc{font-size:.8rem;color:var(--text-2);margin-bottom:.5rem;line-height:1.5}
+
+.sw-usecase{
+  background:var(--nyu-light);border-radius:var(--radius-xs);padding:.55rem .7rem;
+  font-size:.75rem;color:var(--nyu-deep);line-height:1.5;margin-top:auto;
+  border-left:3px solid var(--nyu-purple);
+}
+.sw-usecase strong{font-weight:600;color:var(--nyu-purple)}
+
+.tool-actions{
+  display:flex;gap:.4rem;margin-top:.6rem;
+}
+.tool-btn{
+  display:inline-flex;align-items:center;gap:.3rem;padding:.3rem .65rem;
+  border-radius:var(--radius-xs);font-size:.7rem;font-weight:600;
+  text-decoration:none;transition:var(--transition);font-family:inherit;
+  cursor:pointer;border:none;
+}
+.tool-btn-primary{
+  background:var(--nyu-purple);color:#fff;
+}
+.tool-btn-primary:hover{background:var(--nyu-deep)}
+.tool-btn-secondary{
+  background:var(--surface-3);color:var(--text-2);border:1px solid var(--border);
+}
+.tool-btn-secondary:hover{background:var(--border);color:var(--text)}
+
+/* -- Comparison Table -- */
+.comparison-section{margin:2rem 0}
+.comparison-toggle{
+  display:flex;align-items:center;gap:.5rem;cursor:pointer;padding:.75rem 1rem;
+  background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);
+  font-weight:600;font-size:.9rem;color:var(--nyu-deep);width:100%;
+  font-family:inherit;transition:var(--transition);
+}
+.comparison-toggle:hover{background:var(--nyu-light);border-color:var(--nyu-accent)}
+.comparison-toggle svg{transition:transform .2s ease}
+.comparison-toggle.open svg{transform:rotate(180deg)}
+
+.comparison-table-wrap{
+  overflow-x:auto;margin-top:.5rem;border-radius:var(--radius);
+  border:1px solid var(--border);display:none;
+}
+.comparison-table-wrap.visible{display:block;animation:fadeUp .3s ease-out}
+.comparison-table{width:100%;border-collapse:collapse;font-size:.75rem}
+.comparison-table th{
+  background:var(--nyu-deep);color:#fff;padding:.55rem .65rem;
+  text-align:left;font-weight:600;position:sticky;top:0;white-space:nowrap;
+}
+.comparison-table td{
+  padding:.5rem .65rem;border-bottom:1px solid var(--border);color:var(--text-2);
+}
+.comparison-table tr:nth-child(even) td{background:var(--surface-2)}
+.comparison-table tr:hover td{background:var(--nyu-light)}
+.comparison-table td:first-child{font-weight:600;color:var(--text);white-space:nowrap}
+.cell-yes{color:var(--green);font-weight:600}
+.cell-no{color:var(--rose);font-weight:500}
+.cell-partial{color:var(--amber);font-weight:500}
+
+/* -- Warning Banner -- */
+.warning-banner{
+  display:flex;align-items:flex-start;gap:.6rem;padding:.75rem 1rem;
+  background:var(--amber-bg);border:1px solid #FCD34D;border-radius:var(--radius-sm);
+  margin:1.5rem 0;font-size:.8rem;color:#92400E;line-height:1.5;
+}
+.warning-banner svg{flex-shrink:0;margin-top:.1rem}
+
+/* -- Footer -- */
+.footer{
+  text-align:center;padding:1.5rem 1rem;font-size:.7rem;color:var(--text-3);
+  border-top:1px solid var(--border);margin-top:1rem;
+}
+.footer a{color:var(--nyu-purple);text-decoration:none}
+.footer a:hover{text-decoration:underline}
+
+/* -- No results -- */
+.no-results{
+  text-align:center;padding:3rem 1rem;color:var(--text-3);
+}
+.no-results svg{width:48px;height:48px;margin-bottom:.75rem;opacity:.4}
+.no-results p{font-size:.9rem}
+
+/* -- Animations -- */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* -- Responsive -- */
+@media(max-width:600px){
+  .header h1{font-size:1.5rem}
+  .tools-grid{grid-template-columns:1fr}
+  .comparison-table{font-size:.65rem}
+}
+
+/* -- Skeleton Loading -- */
+.skeleton{animation:pulse 1.5s infinite}
+.skeleton-card{
+  background:var(--surface-3);border-radius:var(--radius);height:180px;
+}
+@keyframes pulse{
+  0%,100%{opacity:1}
+  50%{opacity:.5}
+}
+
+/* -- Scroll to top -- */
+.scroll-top{
+  position:fixed;bottom:1.5rem;right:1.5rem;width:36px;height:36px;
+  background:var(--nyu-purple);color:#fff;border:none;border-radius:50%;
+  cursor:pointer;box-shadow:var(--shadow-md);transition:var(--transition);
+  display:none;align-items:center;justify-content:center;z-index:10;
+}
+.scroll-top.visible{display:flex}
+.scroll-top:hover{background:var(--nyu-deep);transform:scale(1.1)}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <h1>SW Faculty Toolbox</h1>
+    <p>Every tool comes with a social work-specific use case. Click any tool to explore.</p>
+    <div class="last-updated" id="lastUpdated"></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input type="text" id="searchInput" placeholder="Search tools, use cases, or features..." aria-label="Search tools">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">&times;</button>
+  </div>
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all">All Tools</button>
+  </div>
+</div>
+
+<main class="content" id="mainContent">
+  <!-- skeleton loading -->
+  <div class="tools-grid skeleton" id="skeleton">
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+  </div>
+</main>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+const DATA_URL = 'toolbox-data.json';
+let allData = null;
+let activeFilter = 'all';
+let searchQuery = '';
+
+const $main = document.getElementById('mainContent');
+const $search = document.getElementById('searchInput');
+const $clear = document.getElementById('searchClear');
+const $filterBar = document.getElementById('filterBar');
+const $scrollTop = document.getElementById('scrollTop');
+const $updated = document.getElementById('lastUpdated');
+
+// -- Fetch data --
+function loadData() {
+  fetch(DATA_URL, { cache: 'no-store' })
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      allData = data;
+      buildFilters();
+      render();
+      if (allData.updated) {
+        var d = new Date(allData.updated);
+        $updated.textContent = 'Last updated: ' + d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      }
+    })
+    .catch(function(e) {
+      $main.innerHTML = '<div class="no-results"><p>Unable to load toolbox data. Please refresh the page.</p></div>';
+    });
+}
+
+// -- Build filter buttons --
+function buildFilters() {
+  allData.categories.forEach(function(cat) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.dataset.filter = cat.id;
+    btn.textContent = cat.name;
+    $filterBar.appendChild(btn);
+  });
+}
+
+// -- Pricing badge class --
+function pricingClass(p) {
+  var lower = p.toLowerCase();
+  if (lower.includes('institutional') || lower.includes('license')) return 'pricing-inst';
+  if (lower === 'free') return 'pricing-free';
+  return 'pricing-paid';
+}
+
+// -- Highlight search matches --
+function hl(text) {
+  if (!searchQuery) return text;
+  var re = new RegExp('(' + searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return text.replace(re, '<mark>$1</mark>');
+}
+
+// -- Cell styling for comparison --
+function cellClass(val) {
+  var v = val.toLowerCase().trim();
+  if (v === 'yes') return 'cell-yes';
+  if (v === 'no') return 'cell-no';
+  if (v.startsWith('yes') || v.includes('sometimes')) return 'cell-partial';
+  return '';
+}
+
+// -- Render --
+function render() {
+  var q = searchQuery.toLowerCase();
+  var html = '';
+  var totalVisible = 0;
+
+  allData.categories.forEach(function(cat, ci) {
+    if (activeFilter !== 'all' && activeFilter !== cat.id) return;
+
+    var tools = cat.tools.filter(function(t) {
+      if (!q) return true;
+      return (
+        t.name.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q) ||
+        t.swUseCase.toLowerCase().includes(q) ||
+        t.tags.some(function(tag) { return tag.includes(q); })
+      );
+    });
+
+    if (tools.length === 0) return;
+    totalVisible += tools.length;
+
+    html += '<section class="category" style="animation-delay:' + (ci * 80) + 'ms">';
+    html += '<div class="category-header">';
+    html += '<span class="category-icon">' + cat.icon + '</span>';
+    html += '<span class="category-name">' + cat.name + '</span>';
+    html += '<span class="category-count">' + tools.length + ' tool' + (tools.length !== 1 ? 's' : '') + '</span>';
+    html += '</div>';
+    html += '<div class="tools-grid">';
+
+    tools.forEach(function(t) {
+      html += '<article class="tool-card">';
+      html += '<div class="tool-card-top">';
+      html += '<div class="tool-name"><a href="' + t.url + '" target="_blank" rel="noopener">' + hl(t.name) + '</a></div>';
+      html += '<span class="tool-pricing ' + pricingClass(t.pricing) + '">' + t.pricing + '</span>';
+      html += '</div>';
+      html += '<p class="tool-desc">' + hl(t.description) + '</p>';
+      html += '<div class="sw-usecase"><strong>SW Use Case:</strong> ' + hl(t.swUseCase) + '</div>';
+      html += '<div class="tool-actions">';
+      html += '<a class="tool-btn tool-btn-primary" href="' + t.url + '" target="_blank" rel="noopener">';
+      html += 'Visit Tool ';
+      html += '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>';
+      html += '</a></div></article>';
+    });
+
+    html += '</div></section>';
+  });
+
+  // Comparison table
+  if ((activeFilter === 'all' || activeFilter === 'chatbots') && !q && allData.comparison) {
+    var cmp = allData.comparison;
+    html += '<section class="comparison-section">';
+    html += '<button class="comparison-toggle" id="cmpToggle" onclick="toggleComparison()">';
+    html += '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>';
+    html += 'Chatbot Quick Comparison</button>';
+    html += '<div class="comparison-table-wrap" id="cmpTable"><table class="comparison-table">';
+    html += '<thead><tr>' + cmp.headers.map(function(h) { return '<th>' + h + '</th>'; }).join('') + '</tr></thead>';
+    html += '<tbody>' + cmp.rows.map(function(row) { return '<tr>' + row.map(function(cell) { return '<td class="' + cellClass(cell) + '">' + cell + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
+    html += '</table></div></section>';
+  }
+
+  // Warning
+  if ((activeFilter === 'all' || activeFilter === 'detection') && !q && allData.warning) {
+    html += '<div class="warning-banner">';
+    html += '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+    html += allData.warning + '</div>';
+  }
+
+  if (totalVisible === 0) {
+    html = '<div class="no-results">';
+    html += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/></svg>';
+    html += '<p>No tools match your search. Try different keywords.</p></div>';
+  }
+
+  html += '<footer class="footer">';
+  html += '<p>NYU Silver School of Social Work &middot; GenAI for Social Work Education</p>';
+  html += '<p>Tool data auto-updated via <a href="https://github.com/lovejzzz/genai-sw-embeds" target="_blank">GitHub</a></p>';
+  html += '</footer>';
+
+  $main.innerHTML = html;
+}
+
+// -- Toggle comparison --
+function toggleComparison() {
+  var toggle = document.getElementById('cmpToggle');
+  var table = document.getElementById('cmpTable');
+  if (!toggle || !table) return;
+  toggle.classList.toggle('open');
+  table.classList.toggle('visible');
+}
+
+// -- Search --
+var searchTimer;
+$search.addEventListener('input', function() {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(function() {
+    searchQuery = $search.value.trim();
+    $clear.classList.toggle('visible', searchQuery.length > 0);
+    render();
+  }, 200);
+});
+$clear.addEventListener('click', function() {
+  $search.value = '';
+  searchQuery = '';
+  $clear.classList.remove('visible');
+  render();
+  $search.focus();
+});
+
+// -- Filter buttons --
+$filterBar.addEventListener('click', function(e) {
+  if (!e.target.classList.contains('filter-btn')) return;
+  activeFilter = e.target.dataset.filter;
+  $filterBar.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  e.target.classList.add('active');
+  render();
+});
+
+// -- Scroll to top --
+window.addEventListener('scroll', function() {
+  $scrollTop.classList.toggle('visible', window.scrollY > 400);
+});
+$scrollTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+// -- Init --
+loadData();
+</script>
+</body>
+</html>
