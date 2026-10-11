@@ -1,9 +1,196 @@
 {
-  "updated": "2026-10-10T13:27:15.263238+00:00",
-  "source_count": 8,
+  "updated": "2026-10-11T13:52:33.155950+00:00",
+  "source_count": 6,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "fa56297d27fd",
+      "title": "Apple’s Tim Cook kicks off China visit amid mixed signals on new iPhone demand",
+      "description": "Apple executive chairman Tim Cook has begun his third visit to China this year, following the launch of the iPhone 18 Pro line-up and the iPhone Duo, the company’s first foldable device, in one of its biggest markets. Cook met Meng Fanli, governor of the southern province of Guangdong, on Sunday...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3370500/apples-tim-cook-kicks-china-visit-amid-mixed-signals-new-iphone-demand?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-10-11T13:00:09+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/11/ebad0a68-b379-421a-805a-2be3a3d68569_4ef8e600.jpg?itok=ITjh1Pk5&v=1791717455"
+    },
+    {
+      "id": "ac85c289c029",
+      "title": "I Made Terrible Games With Google’s AI Playground",
+      "description": "A long day’s haul in the video game slop mines.",
+      "link": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-11T11:30:00+00:00",
+      "image": "https://media.wired.com/photos/6ac967401dd8a2ab2e331c51/master/pass/Google-Playground-Gear-PG_THUMBNAIL_BLOG%20(1).png"
+    },
+    {
+      "id": "6b3c3e51864d",
+      "title": "US’s Reagan-era economic promises return as Trump’s AI-fueled growth fantasy",
+      "description": "‘Even if AI supercharged the economy, its impact on the government’s finances would be muted’Back through political history to the age of Ronald Reagan, Republicans have repeatedly promised the US public that tax cuts would pay for themselves, firing up economic growth and filling the...",
+      "link": "https://www.theguardian.com/business/2026/oct/11/trump-ai-economy-reagan",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-11T11:00:25+00:00",
+      "image": "https://i.guim.co.uk/img/media/c01cee88362c0355e50eac343016f771811f0cd2/355_0_3701_2960/master/3701.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=49a33576790d62cea89e2ea931557cdd"
+    },
+    {
+      "id": "ddbd527c0ea5",
+      "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+      "description": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-10-11T11:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/100926_Asus_TUF_A14_Hermes_local_AI_ADiBenedetto_0001.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "342e1401fe06",
+      "title": "Fixated on AI, the world has forgotten what is staring it in the face: nuclear annihilation | Simon Tisdall",
+      "description": "This is no scoffing matter. The accelerating proliferation of advanced nuclear weapons is bringing ‘end times’ closer by the dayHumankind has fearfully and sometimes joyfully anticipated the end of the world ever since it began. The Bible’s Book of Revelation speaks of “end times”, a period of...",
+      "link": "https://www.theguardian.com/commentisfree/2026/oct/11/ai-annihilation-advanced-nuclear-weapons",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-11T09:00:22+00:00",
+      "image": "https://i.guim.co.uk/img/media/603ece70d9015d3f39bcf155098c10c864112098/192_528_1858_1487/master/1858.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=84e728e204eb8f79dc14adc7725b8a4d"
+    },
+    {
+      "id": "9c053523fc69",
+      "title": "‘Gaza is a moral tear in the universe’: Naomi Klein and Astra Taylor | Radical Thinking with Aditya Chakrabortty – podcast",
+      "description": "Are we really living through ‘end-times fascism’? Naomi Klein and Astra Taylor think so.In a new series from the Guardian, the pair speak to Radical Thinking with Aditya Chakrabortty in an extended interview. From Trump 2.0 and the rise of the tech billionaires to Gaza and the climate emergency,...",
+      "link": "https://www.theguardian.com/news/audio/2026/oct/11/gaza-is-a-moral-tear-in-the-universe-naomi-klein-and-astra-taylor-radical-thinking-with-aditya-chakrabortty-podcast",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Industry",
+      "published": "2026-10-11T07:00:20+00:00",
+      "image": "https://i.guim.co.uk/img/media/94b5d3f21f443f54277cfa6a35ec6c17b937751b/365_0_2698_2160/master/2698.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5fd6ddb6c8afe744d53ebc3aa059ae48"
+    },
+    {
+      "id": "d5e3217a5f67",
+      "title": "What’s in a name? What China and Trump call AI reveals how they see its future",
+      "description": "US President Donald Trump wants to banish the word “artificial” from artificial intelligence, saying it makes one of the world’s most consequential technologies sound “fake”. Across the Pacific, however, China’s name for the technology has long carried a different connotation – one that places...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3370269/whats-name-what-china-and-trump-call-ai-reveals-how-they-see-its-future?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-10-11T06:00:06+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/09/c49a7995-a220-48c4-9316-6288bfdaa2d0_bf7e7d43.jpg?itok=lmUeRKvH&v=1791517470"
+    },
+    {
+      "id": "3755111bce17",
+      "title": "Japan’s Sumitomo Bakelite expands China chip packaging materials output amid AI boom",
+      "description": "Japanese semiconductor materials giant Sumitomo Bakelite plans to expand production of advanced chip packaging materials in China and Singapore, marking the second such announcement for its Chinese operations in less than four months as artificial intelligence drives demand for more...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3370468/japans-sumitomo-bakelite-expands-china-chip-packaging-materials-output-amid-ai-boom?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Tools",
+      "published": "2026-10-11T03:04:32+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/11/5cc3b5c9-959c-419e-af61-be894ef84f7e_d5a56088.jpg?itok=6oObqj1o&v=1791687789"
+    },
+    {
+      "id": "46291b060274",
+      "title": "Nuclear war and malicious use of AI threaten end of humanity by 2100, says Lancet assessment",
+      "description": "Newly established commission identifies 17 catastrophic threats to human health but says ‘realistic route to act’ on each existsHumans could become extinct by the year 2100 due to malicious use of AI or nuclear conflict, according to a new global risk assessment.They top a list of 17 major...",
+      "link": "https://www.theguardian.com/global-development/2026/oct/11/nuclear-war-and-malicious-use-of-ai-threaten-end-of-humanity-by-2100-says-lancet-assessment",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-10T23:01:09+00:00",
+      "image": "https://i.guim.co.uk/img/media/f50120ad5ffe55e5024a1ec6dc2e727ce8f4f95d/269_0_3928_3142/master/3928.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=821105db283a829e3ca0732b7742a923"
+    },
+    {
+      "id": "77eb3f37805c",
+      "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+      "description": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of nested black boxes\" whose advice and actions we simply accept or [&#8230;]",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-10-10T22:10:17+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK178_Satya_Nadella_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "0981bd5f8bd9",
+      "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+      "description": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+      "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-10-10T21:47:51+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/11/satya-nadella-2_web.png?w=1000"
+    },
+    {
+      "id": "141ff54715bb",
+      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+      "description": "Is Apple hoping to get into the AI-generated podcast business?",
+      "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-10T19:50:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/01/apple-podcasts-1.jpg?w=1200"
+    },
+    {
+      "id": "692d2a93919e",
+      "title": "Black Box: The Chatbots | The Line | Ep 5 - podcast",
+      "description": "Five stories that feel like five answers to one important question: in a world where AI chatbots can help us through a breakup, listen like a friend, be a life coach, draft a difficult text message and do our work, where do we draw the line? Continue reading...",
+      "link": "https://www.theguardian.com/australia-news/audio/2026/oct/11/black-box-the-chatbots-the-line-ep-5-full-story-podcast",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-10-10T19:00:08+00:00",
+      "image": "https://i.guim.co.uk/img/media/4c85abb174c68555842108292cbc66659566b096/1_0_2499_2000/master/2499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c84a8f7a47e784eb69b8139f7026f9a3"
+    },
+    {
+      "id": "0d0cf25998a7",
+      "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+      "description": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG. The label filed a lawsuit in September claiming that DistroKid has created...",
+      "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-10-10T18:52:07+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/distrokid_logo_og_image.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "1dd49211cda4",
+      "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+      "description": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register before doors open to save up to $100 and get a second pass at 50% off.",
+      "link": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-10T15:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/06/Startup-Battlefield-2023-2.jpg?resize=1200,800"
+    },
+    {
+      "id": "1ef98de1a39b",
+      "title": "Anthropic is cutting off its internal evaluations from the internet",
+      "description": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-10T14:41:16+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "955eaaf6ff27",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "description": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-10-10T14:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813"
+    },
     {
       "id": "e1c12791c3c3",
       "title": "AI agent makers are promising privacy — will they deliver?",
@@ -58,17 +245,6 @@
       "category": "Policy",
       "published": "2026-10-10T07:00:50+00:00",
       "image": "https://i.guim.co.uk/img/media/9ea424dbf07304d22c342e95943d49c1042c65de/0_0_1020_816/master/1020.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5ae912c51382eda86e49efa2aa5bee54"
-    },
-    {
-      "id": "1d3e71e78dbf",
-      "title": "‘Gaza is a moral tear in the universe’: Naomi Klein and Astra Taylor | Radical Thinking with Aditya Chakrabortty – podcast",
-      "description": "Are we really living through ‘end times fascism’? Naomi Klein and Astra Taylor think so.In a new series from the Guardian, the pair speak to Radical Thinking with Aditya Chakrabortty in an extended interview. From Trump 2.0 and the rise of the tech billionaire to Gaza and the climate emergency,...",
-      "link": "https://www.theguardian.com/politics/audio/2026/oct/10/gaza-is-a-moral-tear-in-the-universe-naomi-klein-and-astra-taylor-radical-thinking-with-aditya-chakrabortty-podcast",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-10-10T06:45:50+00:00",
-      "image": "https://i.guim.co.uk/img/media/94b5d3f21f443f54277cfa6a35ec6c17b937751b/541_0_2255_1805/master/2255.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=aa499b7a8d18e6770ef117573fef06be"
     },
     {
       "id": "cb69450d5925",
@@ -335,17 +511,6 @@
       "image": "https://www.eschoolnews.com/files/2026/10/decision-education-schools.png"
     },
     {
-      "id": "f3e6c868216c",
-      "title": "OpenAI doubles down on decision to fire three AI safety researchers",
-      "description": "OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed \"a significant breach of trust.\" In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita &#8288;Balesni were dismissed for violating \"clear policies on...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-09T09:48:26+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
       "id": "ef0867cd0038",
       "title": "China state funds double down on Hua Hong in legacy chip push",
       "description": "Chinese state funds are ramping up support for the country’s second-largest contract chipmaker, pouring billions of yuan into the parent of Hua Hong Grace Semiconductor and a new manufacturing facility to fuel Beijing’s drive for self-reliance in mature-node chips. The capital blitz, spanning...",
@@ -388,171 +553,6 @@
       "category": "Research",
       "published": "2026-10-09T07:13:16+00:00",
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/09/5b5ccdd0-b333-40be-bce5-ecd6de72be4c_4aafabd9.jpg?itok=8uqyqsvY&v=1791528397"
-    },
-    {
-      "id": "b5f1f16e1541",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "description": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
-      "link": "https://openai.com/index/sophos",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-10-09T07:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/4pg31JOD6Z3cO31LCR6GYq/8c1cedfd2e85c6dd80d2ea8c5ea0c9a1/sophos-social.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "764b5092cdf6",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "description": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-      "link": "https://openai.com/index/asana-browser-agent",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-09T07:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/4bNHf0rdpv55WFke9YADV7/306540f0701aa79ce7cc9057f616c577/asana-blue-layered-paper-social-seo-1920x1080.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "181007a17fe7",
-      "title": "British households would be £5,000 richer if we were more innovative. Let’s unleash our talents | Gordon Brown",
-      "description": "We have a deep reservoir of assets, but struggle to turn small companies into global success stories. Innovation needs to be at the heart of government policyGordon Brown was UK prime minister from 2007 to 2010The coming 10 years are almost certain to be the decade that sees the greatest...",
-      "link": "https://www.theguardian.com/commentisfree/2026/oct/09/gordon-brown-british-households-5000-richer-innovation",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-09T05:00:39+00:00",
-      "image": "https://i.guim.co.uk/img/media/af54d7267194e9b8370c2768f87c4c2c861eb5cf/0_0_3895_3116/master/3895.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=40bd6247c9d2bfe1f2e952d92beb519a"
-    },
-    {
-      "id": "d96b957677d3",
-      "title": "Firmus pulls biggest ASX float since Telstra amid investor doubt about datacentre company",
-      "description": "The $11-a-share offer would have been the biggest debut on the stock market since the telecommunication giant in 1997Get our breaking news email, free app or daily news podcastFirmus Technologies has scrapped what was set to be Australia’s biggest company listing in decades after investor demand...",
-      "link": "https://www.theguardian.com/australia-news/2026/oct/09/firmus-pulls-asx-float-datacentre-investor-doubt-australia",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-10-09T04:37:55+00:00",
-      "image": "https://i.guim.co.uk/img/media/3f78853d8984360756d6b468ab297674afc855c8/331_0_1253_1002/master/1253.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=92a47609cb73a30d6aa09e5eb3469d27"
-    },
-    {
-      "id": "ca5003ed3f8f",
-      "title": "Anthropic bans users from ‘needless abusive or cruel behavior’ towards Claude",
-      "description": "A spokesperson for the tech company did not specify what kind of behavior would be considered abusiveAnthropic has barred users from exhibiting “sustained and needless abusive or cruel behavior” toward its models, as the company’s leaders continue to ponder machine consciousness.The Verge first...",
-      "link": "https://www.theguardian.com/technology/2026/oct/08/anthropic-bans-abusive-behavior-claude",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-09T01:25:42+00:00",
-      "image": "https://i.guim.co.uk/img/media/6e190063ccfe8ce226fbe77ca8498af1a2fd082b/9_0_2975_2380/master/2975.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e7b59ff43aa0ed50367e33e89ae9afbc"
-    },
-    {
-      "id": "75cdf84429d6",
-      "title": "Trump hosts awards party for tech billionaires, almost as if he doesn’t care about ordinary Americans",
-      "description": "Amid a cost-of-living crisis, with US midterms a month away, the president held a ceremony to celebrate our tech overlords – againHe stands accused of being out of touch, enriching himself and his family, building a lavish White House ballroom and, with elections looming, neglecting the...",
-      "link": "https://www.theguardian.com/us-news/2026/oct/08/trump-awards-party-tech-billionaires",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-08T22:28:48+00:00",
-      "image": "https://i.guim.co.uk/img/media/629e3d3b4c0fefbf251d1a1f407c304c91571e56/478_0_4763_3813/master/4763.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ca2f435ec52eab66cc68c33224f0ca7d"
-    },
-    {
-      "id": "fd362c0a9643",
-      "title": "Anthropic launches free AI security scans for open-source projects",
-      "description": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-08T21:53:51+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "5d58d540e5d5",
-      "title": "3 Questions: What is the best path forward for AI in academia?",
-      "description": "MIT Statistics and Data Science Center Director Alexander (Sasha) Rakhlin shares important considerations for departments and institutions.",
-      "link": "https://news.mit.edu/2026/3-questions-what-best-path-forward-ai-academia-0925",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-08T21:25:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/ai-and-academia-00.jpg?itok=A5hPBHGn"
-    },
-    {
-      "id": "25bfb5076c1a",
-      "title": "Inside Elon Musk’s Midterm Spending Spree",
-      "description": "This week on “Uncanny Valley,” we discuss where Elon Musk’s PAC is spending millions, the latest ideology Trump claims is dangerous, and the backlash against the designer behind Muse’s logo.",
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-inside-elon-musks-midterm-spending-spree/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-10-08T21:14:12+00:00",
-      "image": "https://media.wired.com/photos/6ac6cf6962b0c903a0cf2363/master/pass/Uncanny-Valley-Elon-Spending-Business-2297775036.jpg"
-    },
-    {
-      "id": "946270111e13",
-      "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
-      "description": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifle through the Theranos founder's desk.",
-      "link": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-10-08T21:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2019/06/GettyImages-1158861262.jpg?resize=1200,832"
-    },
-    {
-      "id": "97c1b398600d",
-      "title": "California is trying to shut down robot vs. human cage matches",
-      "description": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a...",
-      "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-10-08T20:06:56+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Screenshot-2026-10-08-at-4.18.11-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "2d6dfb97fadd",
-      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-      "description": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
-      "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-08T20:04:26+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800"
-    },
-    {
-      "id": "0f8b23ee6ab1",
-      "title": "A teen tried to navigate Canadian mountains with Claude. His trek ended in an emergency rescue",
-      "description": "The incident is the latest to raise questions about the growing reliance on digital maps for wilderness navigationThe route up the Widowmaker Arete, a 1,700ft wall in British Columbia, is deceptively described as “mostly easy slab climbing”, interspersed with “short steep sections that can...",
-      "link": "https://www.theguardian.com/world/2026/oct/08/teen-hike-claude-ai-directions-rescue-canada-mountain",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-10-08T19:31:23+00:00",
-      "image": "https://i.guim.co.uk/img/media/cb686b8afe11249d8cc44a7737f323e0f832f1ee/0_290_1080_864/master/1080.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4bdf5497f6cba3fbc00e3904e81de3f7"
-    },
-    {
-      "id": "e1180b433a69",
-      "title": "She Designed Meta’s New AI Logo. Then Came the Hate",
-      "description": "Jessica Hische knew working for Meta might upset some people. But she didn’t anticipate just how angry they would get.",
-      "link": "https://www.wired.com/story/she-designed-metas-new-ai-logo-then-came-the-hate/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-10-08T19:30:00+00:00",
-      "image": "https://media.wired.com/photos/6ac690e71275a2452d67fafd/master/pass/Model-Behavior-Artist-Behind-Meta-Muse-Logo-Business.jpg"
-    },
-    {
-      "id": "ee139785ceca",
-      "title": "Ben Affleck is an AI nerd, and the internet is impressed",
-      "description": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a Hollywood star.",
-      "link": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-08T18:20:32+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/ben-affleck-GettyImages-2297443537.jpg?w=1024"
     }
   ]
 }
