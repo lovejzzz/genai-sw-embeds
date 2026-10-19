@@ -1,9 +1,185 @@
 {
-  "updated": "2026-10-18T11:59:30.610368+00:00",
-  "source_count": 8,
+  "updated": "2026-10-19T14:28:54.769600+00:00",
+  "source_count": 10,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "a45a52118039",
+      "title": "Calls to strengthen workplace privacy in Australia as employers turn to AI to track staff",
+      "description": "Monitoring tools common in a range of workplaces, including factories, office jobs, delivery work and in retail – often without employees being informedGet our breaking news email, free app or daily news podcastEmployers are increasingly using technology, from CCTV to keystroke monitoring, to...",
+      "link": "https://www.theguardian.com/technology/2026/oct/20/workplace-privacy-concerns-employers-use-ai-to-monitor-staff",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Ethics",
+      "published": "2026-10-19T14:00:03+00:00",
+      "image": "https://i.guim.co.uk/img/media/c2972d767784a668b4664e394a234487682599ea/497_0_5200_4160/master/5200.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=fddfb720cb9681200053ad62e0ec3687"
+    },
+    {
+      "id": "112f7966c2f6",
+      "title": "AI firm Anthropic to commit 5% of shares to fund for ‘public good’",
+      "description": "The $48bn giveaway comes amid concerns about the tech and as the company prepares for a stock market listingAnthropic has said it will commit 5% of its shares to a fund for the “public good”, as the AI developer behind the Claude chatbot seeks to bolster its appeal before its stock market...",
+      "link": "https://www.theguardian.com/technology/2026/oct/19/ai-firm-anthropic-to-commit-shares-to-fund-for-public-good",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-10-19T12:51:04+00:00",
+      "image": "https://i.guim.co.uk/img/media/2790d74966de266025ee31e1975f1f2ce9024d36/387_0_2915_2333/master/2915.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=48e0c0b3f31f3e732735bceacf9a8133"
+    },
+    {
+      "id": "70924e950c94",
+      "title": "US teens can access ‘nudify’ apps despite Apple and Google’s parental controls, report finds",
+      "description": "Exclusive: Using test accounts acting as 13-year-olds, Tech Transparency Project downloaded 135 apps with features to generate nonconsensual nude imageryIn December 2025, Morgan Dorfman received distressing news: a student at her daughter’s Pennsylvania high school was making AI-generated...",
+      "link": "https://www.theguardian.com/technology/2026/oct/19/us-teens-nudify-apps-apple-google-parental-controls",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Education",
+      "published": "2026-10-19T10:00:05+00:00",
+      "image": "https://i.guim.co.uk/img/media/1b5ce85190e6d89e4db3acb2c4d28f253a101ac3/500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9e995440120630b50fd41ceb493d82a5"
+    },
+    {
+      "id": "3905ec62f620",
+      "title": "Why learning can’t stop when the lesson ends",
+      "description": "The lesson goes well. The student follows the explanation, works through problems with the teacher, asks a good question or two, and leaves feeling like the material finally makes sense. Three days later, facing a similar problem alone, they're stuck again.",
+      "link": "https://www.eschoolnews.com/digital-learning/2026/10/19/why-learning-cant-stop-when-the-lesson-ends/",
+      "source": "eSchool News",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-10-19T10:00:00+00:00",
+      "image": "https://www.eschoolnews.com/files/2026/10/learning-AI.png"
+    },
+    {
+      "id": "b783ea314e0d",
+      "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
+      "description": "The entertainment giant hopes to get trust and safety tech, among other IP, from a startup whose chatbots dozens of states allege encouraged minors to self-harm and kill their parents.",
+      "link": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-10-19T09:00:00+00:00",
+      "image": "https://media.wired.com/photos/6acfe36ba2733753393886b8/master/pass/Disney-Asked-Character.AI-to-Go-Bankrupt-Business-1530260396.jpg"
+    },
+    {
+      "id": "ab785851676d",
+      "title": "The Education Exchange: Federal K–12 Scholarships Will Soon Be Available to American Families",
+      "description": "Paul E. Peterson interviews Jim Blew, advisor to the Federal Scholarship Tax Credit Coaltion The post The Education Exchange: Federal K–12 Scholarships Will Soon Be Available to American Families appeared first on Education Next.",
+      "link": "https://www.educationnext.org/the-education-exchange-federal-k-12-scholarships-will-soon-be-available-to-american-families/",
+      "source": "Education Next",
+      "region": "North America",
+      "category": "Education",
+      "published": "2026-10-19T08:55:05+00:00",
+      "image": "https://www.educationnext.org/wp-content/uploads/2025/06/june25-podcast-exchange-blew.png"
+    },
+    {
+      "id": "040fcb274b57",
+      "title": "Kylie Minogue songs already used to train AI as tech firms ‘strong-arm’ Australian government, music body warns",
+      "description": "Of the dozens of countries approached to water down their laws, Australia appears to be the only one considering it, publishers’ group saysGet our new political email, free app or daily news podcastAI has already been trained on the works of Australian artists including Kylie Minogue and Nick...",
+      "link": "https://www.theguardian.com/music/2026/oct/19/australia-music-global-copywright-outlier-ai-music-body-warnsns",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-19T00:57:46+00:00",
+      "image": "https://i.guim.co.uk/img/media/240b7746d1549bd30b616b6fd2e698b1838fb964/0_44_6452_5158/master/6452.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=721858cc70a72d5d5ff5c9223dff1786"
+    },
+    {
+      "id": "dbe0ead45c80",
+      "title": "CXMT shares fall 7.8% despite blockbuster earnings figures",
+      "description": "Chinese memory chip giant ChangXin Memory Technologies (CXMT) saw its shares fall more than 8 per cent in early Monday trading, despite forecasts of strong profits and plans for a share buy-back amid a global sector-wide market rout. CXMT shares dropped 7.8 per cent on Monday to close at 41.52...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3371314/cxmt-forecasts-us198-billion-3-quarters-net-income-pledges-share-buy-back?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-10-18T23:30:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/097ab58d-ccae-41d3-b321-04f2bb01051d_3ba26e49.jpg?itok=ZkLfXz5f&v=1792326542"
+    },
+    {
+      "id": "856799924bfd",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "description": "Anthropic said that it will commit 5% of its shares to the fund.",
+      "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-18T20:37:40+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2252871842.jpg?w=1024"
+    },
+    {
+      "id": "58deca85c871",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "description": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-18T18:28:10+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/avride-uber-delivery.webp?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "11d8194439d3",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "description": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-18T16:30:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/01/character-ai-alexa.jpg?resize=1200,675"
+    },
+    {
+      "id": "81013f73948a",
+      "title": "The AI promise was automation. The reality? Managing digital workers",
+      "description": "When artificial intelligence agents first arrived, they came with a tantalising promise: autonomous “digital workers” that would finally free humans from corporate drudgery. As businesses across Asia are discovering, however, the reality is quite the opposite – more work, new friction and a...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3371246/ai-promise-was-automation-reality-managing-digital-workers?utm_source=rss_feed",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-10-18T14:00:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/17/3f1f3d50-4800-40dd-9c65-9d9f8c7f55a3_28756836.jpg?itok=XMKYww9Z&v=1792222554"
+    },
+    {
+      "id": "853505254338",
+      "title": "‘Not our friends’: Victorian Coalition warns Advance’s ‘bizarre’ AI campaign may cost it majority government",
+      "description": "Exclusive: Rightwing lobby group, which says state poll is trial run for next federal election, accused of undermining Victorian Liberal messagingGet our new political email, free app or daily news podcastVictorian Coalition MPs have criticised a prominent conservative lobby group’s pre-election...",
+      "link": "https://www.theguardian.com/australia-news/2026/oct/19/victorian-election-advance-campaign-undermining-liberal-national-ntwnfb",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-18T14:00:02+00:00",
+      "image": "https://i.guim.co.uk/img/media/fb41be9bf72e66f7168f2879fc4905c2f87872b4/101_0_4680_3744/master/4680.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c55ef1082f9dafc1ae317d2458a715f3"
+    },
+    {
+      "id": "f89178f1a9fc",
+      "title": "Wikipedia often gets taken for granted – but its history is fascinating, and its future is fragile",
+      "description": "Wikipedia’s 68m articles have been consulted trillions of times. Not bad for a website that has barely changed since it was founded 20 years agoA few years ago, I was struck by the tension between how Wikipedia was used, and how it was talked about. Everyone was on it all the time, and yet its...",
+      "link": "https://www.theguardian.com/technology/2026/oct/18/wikipedia-human-history-ai-future-under-threat",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-18T14:00:02+00:00",
+      "image": "https://i.guim.co.uk/img/media/11bdcbd79d2083cd3ae980e805b8cdfd7e27fb80/145_0_2850_2279/master/2850.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=0f27343f273cf8aaa3b0aa9e5c33434c"
+    },
+    {
+      "id": "dc15aa4a8327",
+      "title": "What are self-replicating ‘AI worms’, and why is Anthropic worried about them?",
+      "description": "The tech company says successful AI worms need more capability on less powerful devices, but current trends make that feasible by the end of the yearWarnings about what artificial intelligence might do in the future – together with alarming reports of what it has gotten up to already – are being...",
+      "link": "https://www.theguardian.com/technology/2026/oct/18/anthropic-ai-worm-worries",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Research",
+      "published": "2026-10-18T13:30:00+00:00",
+      "image": "https://i.guim.co.uk/img/media/34972ab7bdc22bd58b4b430c49ae81493971934a/234_0_5907_4725/master/5907.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0febd2f8692eef6ecd233dd9e7cb3d09"
+    },
+    {
+      "id": "854e234d4594",
+      "title": "Microsoft pulls out of AI datacentre project in Essex over power supply concerns",
+      "description": "Development by UK firm Nscale heralded by ministers as largest of its kind in country loses anchor tenantThe development of a huge AI datacentre hailed by the UK government has received a fresh setback after Microsoft pulled out of the project over concerns about power supplies.The development...",
+      "link": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-10-18T13:05:14+00:00",
+      "image": "https://i.guim.co.uk/img/media/48d031cc06f5ca17cafd75b0f30a1537d4f35d43/7_0_686_549/master/686.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=198abd9c18d3a2f274ccdc2e5421505c"
+    },
     {
       "id": "7d951f7b434b",
       "title": "World leaders must wise up to threat of cyber-attacks or rogue fridges will be least of their worries | Heather Stewart",
@@ -181,28 +357,6 @@
       "image": "https://i.guim.co.uk/img/media/e0d13c6ce0b90597a109492537328402905b91ca/719_0_7202_5760/master/7202.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=954a668b146a575de64246e13871e911"
     },
     {
-      "id": "072f0ade57e8",
-      "title": "Madeline Horwath on AI food advertising – cartoon",
-      "description": "Continue reading...",
-      "link": "https://www.theguardian.com/commentisfree/picture/2026/oct/17/madeline-horwath-ai-food-advertising-cartoon-restaurants",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-17T10:00:28+00:00",
-      "image": "https://i.guim.co.uk/img/media/5eb232103143221059df1af2e71c313a9401c3b5/0_0_1500_1200/master/1500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e8d1d5ecfe465eab1d5bb56304d4a441"
-    },
-    {
-      "id": "78700638deed",
-      "title": "‘Countries are defying gravity’: how much longer can global economy resist chaos?",
-      "description": "Sky-high oil prices and geopolitical turmoil have made less of a dent than feared … just don’t bank on it to lastInside the vast, glass-walled Queen Sirikit conference centre in Bangkok, the air-conditioned atmosphere was calm as policymakers from more than 100 countries gathered this week for...",
-      "link": "https://www.theguardian.com/business/2026/oct/17/imf-warns-scale-subsidies-weather-global-chaos-untenable",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-17T10:00:27+00:00",
-      "image": "https://i.guim.co.uk/img/media/4ebcde00ba96fe3f02e1e3d31f290432784edae8/500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dc6f219f5c92d5d267069c1026fbafca"
-    },
-    {
       "id": "73edb7585057",
       "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
       "description": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
@@ -223,17 +377,6 @@
       "category": "Policy",
       "published": "2026-10-17T08:00:11+00:00",
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/17/f54e135a-3bed-48cb-8484-aed9e1d92e69_d8a883a0.jpg?itok=IACoC0wj&v=1792208232"
-    },
-    {
-      "id": "1b4f5a81b1fc",
-      "title": "Decluttering your online life: how to get your digital house in order and protect your data from AI",
-      "description": "The average person spends 40% of their waking hours online. Clearing out digital clutter can minimise environmental impacts and boost productivity Change by degrees offers life hacks and sustainable living tips each Saturday to help reduce your household’s carbon footprintGot a question or tip...",
-      "link": "https://www.theguardian.com/australia-news/2026/oct/17/decluttering-online-how-to-get-your-digital-house-in-order-protect-data-ai",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-10-16T23:00:15+00:00",
-      "image": "https://i.guim.co.uk/img/media/d4abb0e3366322b29d9410f1fbd2e8132118491a/0_0_6755_5407/master/6755.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=efaa873d2b1797de171332a405d61143"
     },
     {
       "id": "1153331823b1",
@@ -410,149 +553,6 @@
       "category": "Industry",
       "published": "2026-10-16T12:55:09+00:00",
       "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2300415994.jpg?w=1024"
-    },
-    {
-      "id": "db86b2997101",
-      "title": "ASML eyes hybrid bonding, report finds, as Chinese firms adopt chip packaging technique",
-      "description": "Dutch semiconductor equipment giant ASML is expanding into next-generation hybrid bonding, a technique that creates dense electrical connections by directly joining chips or silicon wafers, according to a new report. Major Chinese companies are also adopting the technology to improve chip...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3371181/asml-eyes-hybrid-bonding-report-finds-chinese-firms-adopt-chip-packaging-technique?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-10-16T12:30:12+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/037b3c29-42ae-4da5-98e0-38333de32817_7ab76241.jpg?itok=keZrneUN&v=1792146449"
-    },
-    {
-      "id": "d427aec018c5",
-      "title": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
-      "description": "A network of AI-generated models is using comics’ material to funnel views to their OnlyFans and Fanvue accounts—and there’s not much comedians can do about it.",
-      "link": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-16T11:00:00+00:00",
-      "image": "https://media.wired.com/photos/6ad165ce87819d1c9639eaa6/master/pass/Business_ComediansAreGettingRippedOffByAIHotGirls-ezgif.com-video-to-gif-converter%20(2).gif"
-    },
-    {
-      "id": "0f2a231fd1d3",
-      "title": "China’s AI boom, self-sufficiency push fuel earnings surge for local chip firms",
-      "description": "Chinese chip and tech firms have flagged as much as six-fold growth in unaudited third-quarter profits, as huge demand for home-grown processors and artificial intelligence infrastructure filters through links in the supply chain amid the country’s push for self-reliance. Shanghai-listed Yuanjie...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3371159/chinas-ai-boom-self-sufficiency-push-fuel-earnings-surge-local-chip-firms?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-10-16T09:30:09+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/94fc1051-97ee-41c4-acbb-d609d5cde169_82fdd786.jpg?itok=UvFWze20&v=1792141832"
-    },
-    {
-      "id": "91357fab814b",
-      "title": "AI threatens democracy. But we are not powerless: here’s how to fight back | Carine Fouteau",
-      "description": "Tech platforms pillage public-interest journalism for profit. But we have leverage as they sow the seeds of their own downfallCarine Fouteau is president and publishing director of the French investigative news outlet MediapartBig tech companies pose an immeasurable threat: socially,...",
-      "link": "https://www.theguardian.com/commentisfree/2026/oct/16/ai-existential-threat-real-journalism-democracy-resistance",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-10-16T07:49:45+00:00",
-      "image": "https://i.guim.co.uk/img/media/feed1ebf31946bca2d4594bd0ed6ce3c45e7ce63/379_0_5200_4160/master/5200.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=eb1a06451600cbf985bec09fa34d38f2"
-    },
-    {
-      "id": "08b986aaf09f",
-      "title": "Who is Nathan Chen, the Chinese teen AI prodigy being courted by Silicon Valley?",
-      "description": "A 17-year-old artificial intelligence researcher formerly with Moonshot AI has announced his departure for the United States, sparking intense speculation about his next move amid heated competition for elite talent between Silicon Valley and China’s tech hubs. Nathan Chen Guangyu wrote on...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3371117/who-nathan-chen-chinese-teen-ai-prodigy-being-courted-silicon-valley?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-10-16T06:30:13+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/a7102613-5eb9-4fca-b4ed-aeef606511c2_a711b484.jpg?itok=YUfNKNp5&v=1792131522"
-    },
-    {
-      "id": "ee9724865af7",
-      "title": "Hong Kong vies for role in robotics boom with launch of embodied AI hub",
-      "description": "The Hong Kong Productivity Council (HKPC) opened the city’s first experimental hub for embodied artificial intelligence on Thursday with the participation of seven mainland and Hong Kong companies, including industry leaders Unitree Robotics and Galbot, as the city looks to carve out a role in...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3371095/hong-kong-vies-role-robotics-boom-launch-embodied-ai-hub?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Tools",
-      "published": "2026-10-16T04:00:39+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/3d68b7fd-c7a4-4287-892b-825b17f0bc1b_70f93d56.jpg?itok=aGGvra_s&v=1792123227"
-    },
-    {
-      "id": "aabf032bfab0",
-      "title": "AI agents on Tencent Cloud try to break into Alibaba’s Amap: researchers",
-      "description": "A fleet of artificial intelligence agents operating on a Tencent Holdings cloud platform made thousands of attempts to circumvent security protections on Alibaba Group Holding’s mapping service, according to findings by third-party researchers. It is one of the first reported “rogue” AI events...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-10-16T01:00:06+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/15/ca572bf5-210c-419f-b3e4-a0e30d708761_cdcf728e.jpg?itok=9ye3d9xC&v=1792054955"
-    },
-    {
-      "id": "fc6920bf1c78",
-      "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
-      "description": "Meta says Muse excels at ‘multi-step reasoning’ and ‘complex software engineering’ as it races to catch up to Chinese rivalsMeta on Thursday launched a new open-weight AI model which it claims rivals, and in some cases outperforms, similar products from leading Chinese developers.Muse Spark Open...",
-      "link": "https://www.theguardian.com/technology/2026/oct/16/meta-releases-muse-spark-open-a-new-open-weight-ai-model",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-10-16T00:34:28+00:00",
-      "image": "https://i.guim.co.uk/img/media/24f8156f1c3ce3ecc74c4c1c10d376b740af751e/0_0_3165_2533/master/3165.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c136f73370d0bb05d664c7e9675bfe4d"
-    },
-    {
-      "id": "49963711d540",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "description": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
-      "link": "https://openai.com/index/benefit-street-partners",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-10-16T00:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/2Km2vOVvFRvxGl6hZqWOTQ/2073bb541740640de3d215ee6e36b28e/og.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "6ba6d44068db",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "description": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-      "link": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-10-16T00:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/4HTc2pk7XGFhzDU8RX0Ivg/ff2b922fa1914350c9d800da622ebe04/stack-overflow-social.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "a2e9910e7c22",
-      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-      "description": "The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.",
-      "link": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-10-15T23:44:56+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/IMG_4996.jpeg?resize=1200,900"
-    },
-    {
-      "id": "793a396267c3",
-      "title": "Hong Kong investors most eager in Asia to beat markets – but temper return hopes: report",
-      "description": "Hong Kong investors are Asia’s most ambitious stock pickers, but they have much more subdued return expectations than regional peers swept up in enthusiasm over artificial intelligence, according to a survey by a global asset management firm. Some 95 per cent of Hong Kong respondents said they...",
-      "link": "https://www.scmp.com/business/markets/article/3371039/hong-kong-investors-most-eager-asia-beat-markets-temper-return-hopes-report?utm_source=rss_feed",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-10-15T23:00:13+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/15/6471ccb7-a577-4a87-8fe8-3bd214d2802f_997a8243.jpg?itok=AvYNnGV-&v=1792063515"
-    },
-    {
-      "id": "168e9cf9b2d8",
-      "title": "ChatGPT can peek at your Chrome tabs now",
-      "description": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-10-15T22:43:23+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Screenshot-2026-10-15-at-6.35.44-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,100"
     }
   ]
 }
