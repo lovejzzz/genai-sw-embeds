@@ -1,9 +1,130 @@
 {
-  "updated": "2026-10-24T11:54:48.008300+00:00",
+  "updated": "2026-10-25T12:25:42.910079+00:00",
   "source_count": 8,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "bb9b75ef3f37",
+      "title": "Google’s AI search changes upended online publishing",
+      "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started The digital publishing...",
+      "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-10-25T12:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK414_STK480_AI_DIS_MISINFO_CVIRGINIA_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "c57514722920",
+      "title": "What the US Movement Against Data Centers Can Learn From Abroad",
+      "description": "Paris Marx, author of Hyperscale, has been tracking global data center development for years. The US has a lot to learn from what’s happened everywhere from Ireland to New Zealand.",
+      "link": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-10-25T10:00:00+00:00",
+      "image": "https://media.wired.com/photos/6adbe4fc594ddd5d406f1b4a/master/pass/102326-Power%20Play-What%20the%20US%20Anti-Data%20Center%20Movement%20Can%20Learn%20From%20Everywhere%20Else-v2.jpg"
+    },
+    {
+      "id": "64fa9dfd620e",
+      "title": "China’s tech giants are paying 1 million yuan for a new kind of AI engineer",
+      "description": "Chinese technology giants are dangling annual pay packages approaching 1 million yuan (US$149,739) to attract artificial intelligence engineers who can turn AI models into commercial applications. Companies including ByteDance, Tencent Holdings and Alibaba Group Holding are stepping up...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3371925/chinas-tech-giants-are-paying-1-million-yuan-new-kind-ai-engineer",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-10-25T06:00:20+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/cc89ef3c-39fe-4ff0-8c89-ea18fdb30944_9736d499.jpg?itok=Vvr_yQvW&v=1792746861"
+    },
+    {
+      "id": "5aa5cda331e8",
+      "title": "Blue Planet III is keeping the rough edges in the age of AI",
+      "description": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-10-24T21:29:12+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "d7fa6be5b7b9",
+      "title": "‘Synthetic twin’: Why Socceroo Cristian Volpato is the latest footballer to license his AI clone",
+      "description": "Athletes’ scramble to control – and monetise – their digital identities at the cutting edge of AI rights dealsGet our new political email, free app or daily news podcastThe Socceroos star stares at the camera as he strides through an enormous atrium, the sound of his football boots on polished...",
+      "link": "https://www.theguardian.com/technology/2026/oct/25/synthetic-twin-why-socceroo-cristian-volpato-is-the-latest-footballer-to-license-his-ai-clone",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-10-24T19:00:40+00:00",
+      "image": "https://i.guim.co.uk/img/media/15cf4bbae81d34c1e12101107eb8ac8c8eaadef2/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=da995054d8c1369392a1a07cd5886bc0"
+    },
+    {
+      "id": "1c875a66b843",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "description": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-10-24T19:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?resize=1200,797"
+    },
+    {
+      "id": "d99a6833a3a1",
+      "title": "Pennsylvania will require labels on AI-generated ads",
+      "description": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-10-24T18:32:21+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "61ea5c601fe7",
+      "title": "Block’s new voice model sounds eerily human",
+      "description": "Block said that the voice model can run locally on a MacBook M4 Max",
+      "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-10-24T16:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822"
+    },
+    {
+      "id": "ea19a41aae0d",
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "description": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+      "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-10-24T15:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900"
+    },
+    {
+      "id": "646780a825bd",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "description": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-10-24T14:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813"
+    },
+    {
+      "id": "beaecc78216d",
+      "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+      "description": "Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.",
+      "link": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-10-24T12:00:00+00:00",
+      "image": "https://media.wired.com/photos/6adbb8a7e6d0c133525c3e7c/master/pass/KernelPanic_The%20PHP%20Meltdown%20Shows%20How%20AI%20Makes%20Bugs%20More%20Exploitable.jpg"
+    },
     {
       "id": "a3b03c1f3463",
       "title": "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
@@ -423,28 +544,6 @@
       "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/mit-csail-X-hinges-cover.gif?itok=IsidN-fT"
     },
     {
-      "id": "6fcf4aad5e49",
-      "title": "Meta&#8217;s AI could still scrape news sites, legal experts say",
-      "description": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to restrict the 'associated with your products or services'...",
-      "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-22T20:32:05+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_1_Meta.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "05997250b2c1",
-      "title": "Meta turns Muse sharing back on",
-      "description": "Meta has re-enabled Muse sharing after security researchers had reported that public conversation links could be easy to find. The researchers said they had been able to find Muse pages like a marketing company's internal revenue review and a small business owner's loan application. Researchers...",
-      "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-10-22T20:24:04+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_C.png?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
       "id": "bba8c3995c87",
       "title": "The Social Society Helping Women Join the AI Boom",
       "description": "WIRED spoke with the founders of the Aged Intelligence Society, a fast-growing events startup that brings women together to “solve midlife problems using frontier tools.”",
@@ -454,105 +553,6 @@
       "category": "Tools",
       "published": "2026-10-22T19:56:32+00:00",
       "image": "https://media.wired.com/photos/6ada7db9ecc44326fbe9e386/master/pass/Model-Behavior-Illo-102226-2.jpg"
-    },
-    {
-      "id": "9153d9357453",
-      "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
-      "description": "Oh sure, SpaceX's credit risk is pretty high because it's about to borrow another $40 billion to spend on Nvidia chips, but who cares about that? SpaceX and Tesla have formed special committees to discuss a merger! The degree to which you find this merger compelling likely has to do with the...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-10-22T19:45:00+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKE012_SPACEX_IPO_2026_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "367a97ce9b1c",
-      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-      "description": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
-      "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-10-22T19:07:09+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/AI-agents.jpg?resize=1200,675"
-    },
-    {
-      "id": "0243eb1297cc",
-      "title": "Canva releases its first image generation model",
-      "description": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
-      "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-22T19:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Sample-Outputs.jpeg?resize=1200,675"
-    },
-    {
-      "id": "7402439126dd",
-      "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
-      "description": "OpenAI is launching its decision model to the world. Can it compete with the original Jev?",
-      "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-22T19:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-12.17.11-PM-1.png?resize=1200,988"
-    },
-    {
-      "id": "289a1cf8a047",
-      "title": "Build more responsive apps with the Decisions API",
-      "description": "Fast, focused, low-cost decisions for any application.",
-      "link": "https://openai.com/index/decisions-api",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-10-22T19:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/2oP82PTDAPhlalF1TRNt8Q/af6bb8e886e29d6e0880c75a0de781f8/build-more-responsive-apps-with-the-decisions-api-social.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "726cd35f8764",
-      "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
-      "description": "Microsoft’s new AI diagnostic system beat generalist doctors on hard cases, according to a study in Science. But most of the improvement seems to come from the AI models underneath, not from Microsoft’s system itself.",
-      "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-10-22T18:43:53+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1935915215.jpg?w=1024"
-    },
-    {
-      "id": "478d7204f85c",
-      "title": "The Guardian view on AI safety: the push for global regulation must advance | Editorial",
-      "description": "The current US administration is an obstacle, but public demand for protection will ultimately prevailOrganisations around the world scrambled on Thursday to fix critical flaws in PHP, the software that powers much of the web. The vulnerabilities could allow attackers to take control of affected...",
-      "link": "https://www.theguardian.com/commentisfree/2026/oct/22/the-guardian-view-on-ai-safety-the-push-for-global-regulation-must-advance",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-22T17:30:45+00:00",
-      "image": "https://i.guim.co.uk/img/media/7b2ac9acb1cb8d1678d58a8d278df37914456a10/542_0_5417_4335/master/5417.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=b7937bed0d1430eb03bc3576db36e911"
-    },
-    {
-      "id": "b6e06ad2d1c6",
-      "title": "The race to fix huge PHP code flaw at the heart of the internet - The Latest",
-      "description": "Websites around the world have been taken offline as governments and businesses scramble to fix a flaw in the computer language PHP. There are fears that hackers could exploit the vulnerability to steal data, take control of web servers and disrupt services. Millions of attempts have already...",
-      "link": "https://www.theguardian.com/news/video/2026/oct/22/the-race-to-fix-huge-php-flaw-at-the-heart-of-the-internet-the-latest",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-10-22T17:12:07+00:00",
-      "image": "https://i.guim.co.uk/img/media/4d539c19a73f45e8e90e48bce87a77fd5f27cc62/333_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=90b9a7808d4801ef47fba22548d1b7e2"
-    },
-    {
-      "id": "0f2a8952f08f",
-      "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
-      "description": "Microsoft points the blame for ConnectWise's breach at a China-aligned hacker, which relied on AI agents to rapidly hack into thousands of its customers.",
-      "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-10-22T16:47:17+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-591881449.jpg?resize=1200,799"
     }
   ]
 }
