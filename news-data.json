@@ -1,9 +1,262 @@
 {
-  "updated": "2026-11-13T15:13:16.692298+00:00",
-  "source_count": 9,
+  "updated": "2026-11-14T14:00:31.076653+00:00",
+  "source_count": 8,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "abdbf8303436",
+      "title": "Beware the New AI-Fueled Ransomware Boom",
+      "description": "Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.",
+      "link": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-14T13:00:00+00:00",
+      "image": null
+    },
+    {
+      "id": "91fd2c4e6dcc",
+      "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+      "description": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black...",
+      "link": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-14T12:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2194622930.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "7bf17744501a",
+      "title": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
+      "description": "Normally, aviation is slow to embrace new technology—but AI has come for the skies.",
+      "link": "https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-14T11:00:00+00:00",
+      "image": "https://media.wired.com/photos/6af209f8ab17b1a731ed42b4/master/pass/ai_aviation.gif"
+    },
+    {
+      "id": "7f237fdc4507",
+      "title": "‘The social contract is broken’: young people on feeling shut out of careers",
+      "description": "In the first instalment of a new series, four young people reveal the impact of an endless cycle of applications and rejectionsGuardian to follow lives of eight young people in their search for jobs“I’ve been demoralised by the process, just constantly applying, then interviewing. I’ve just been...",
+      "link": "https://www.theguardian.com/business/2026/nov/14/young-people-shut-out-of-work-ai",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-14T10:00:42+00:00",
+      "image": "https://i.guim.co.uk/img/media/860911eab1a0affc10c2e4feb5a296c6527679b1/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a9075a53f1c1206200ca26c9e6b8329a"
+    },
+    {
+      "id": "965525e687e3",
+      "title": "‘It’s like the wild west’: how AI has rocked the literary world",
+      "description": "With authors losing lucrative deals and writers removed from prize shortlists, accusations of AI use are sending shock waves through the publishing industry. Is it too late to turn the tide on machine writing?The romance novelist Coral Hart got her break writing books for Mills Boon, the...",
+      "link": "https://www.theguardian.com/books/ng-interactive/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Research",
+      "published": "2026-11-14T09:00:40+00:00",
+      "image": "https://i.guim.co.uk/img/media/b8a39bdb32dea0bb0e41f2a5aa45ffef61974668/725_1297_5935_4748/master/5935.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=117c27a2f9da3e1c4f06abfc82b06ffb"
+    },
+    {
+      "id": "170678fc5526",
+      "title": "Amazon has a plan to index the world’s online shopping data",
+      "description": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers...",
+      "link": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-13T23:49:11+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/acastro_STK103__03.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "83b091d9b455",
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "description": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-13T22:43:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang-nvidia.jpg?w=1024"
+    },
+    {
+      "id": "4d8c917bec87",
+      "title": "What the choice between Chuck Schumer and Chris Van Hollen for Senate leader is all about | Bernie Sanders",
+      "description": "This is not a personality contest. This is a debate about the future of the Democratic partyThe election for Democratic Senate leader between Chuck Schumer and Chris Van Hollen must be understood for what it is.This is not a personality contest. This is a debate about the future of the...",
+      "link": "https://www.theguardian.com/commentisfree/2026/nov/13/chuck-schumer-chris-van-hollen-senate-leader",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-13T21:28:45+00:00",
+      "image": "https://i.guim.co.uk/img/media/ac0ddd7ad657bd5a2e35035d09809eebce24312a/2410_459_3590_2871/master/3590.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=072fed3b3c030dec6d83cc7453fa5490"
+    },
+    {
+      "id": "92869cc65937",
+      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "description": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard...",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-13T20:45:10+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "5fecc85b0dcf",
+      "title": "Nvidia scandal: US treasury chief blames Lutnick’s commerce department over alleged lack of action",
+      "description": "US commerce secretary faces sack as questions emerge over senior Trump officials’ knowledge of alleged Chinese spy’s ties to Jensen HuangUS politics – live updatesThe US commerce secretary, Howard Lutnick, is facing growing pressure over his apparent lack of action over the Nvidia spying scandal...",
+      "link": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-13T19:51:28+00:00",
+      "image": "https://i.guim.co.uk/img/media/5534caea091e39afe776168281e50dd327c8be8e/563_0_3334_2668/master/3334.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5cfc91551ec81a92db228675af0c6ab1"
+    },
+    {
+      "id": "2afc3cd8454e",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "description": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-13T19:37:57+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Raising-money.jpg?resize=1200,829"
+    },
+    {
+      "id": "c87a0abbcac2",
+      "title": "Why the Nvidia scandal is far from over - The Latest",
+      "description": "Jensen Huang’s resignation from the AI chipmaker Nvidia has sent shockwaves through the global economy. Huang resigned after reported affairs with an Nvidia executive and a woman alleged to be a Chinese spy. The fallout is not over yet, with criticism mounting over the apparent lack of action...",
+      "link": "https://www.theguardian.com/news/video/2026/nov/13/why-the-nvidia-scandal-is-far-from-over-the-latest",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-13T19:20:53+00:00",
+      "image": "https://i.guim.co.uk/img/media/efda49c642dc93a6160523af97a8890ea5f8d2b2/0_0_1350_1080/master/1350.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=050b0aecbb03e96454b1a0542aeabc25"
+    },
+    {
+      "id": "93d8efa5443c",
+      "title": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
+      "description": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
+      "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-13T19:08:57+00:00",
+      "image": "https://media.wired.com/photos/6af75c7bac6958eb8481a5e6/master/pass/Security_MicrosoftBackOnline_v1.jpg"
+    },
+    {
+      "id": "0f5adda45b91",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "description": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-11-13T18:40:30+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2301327883.jpg?resize=1200,795"
+    },
+    {
+      "id": "2c1d33738a2a",
+      "title": "The Guardian view on M John Harrison’s Booker win: a new frontier for science fiction | Editorial",
+      "description": "The End of Everything is a novel for our age of permacrisis. Genre boundaries belong to the past“Science fiction will never be Literature with a capital ‘L,’” began a New York Times review of Margaret Atwood’s novel Oryx and Crake back in 2003. Now, the seemingly impossible has happened – M John...",
+      "link": "https://www.theguardian.com/commentisfree/2026/nov/13/the-guardian-view-on-m-john-harrisons-booker-win-a-new-frontier-for-science-fiction",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-13T18:00:56+00:00",
+      "image": "https://i.guim.co.uk/img/media/1ebe3b8e8d45e3f33e2d410da4fddc5189f8aa2c/628_0_6160_4928/master/6160.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=b5dbeab27cd008ade75e40bf1b9b74af"
+    },
+    {
+      "id": "e7897e48d2eb",
+      "title": "How it feels to battle with a flood of AI-generated complaints | Letters",
+      "description": "An investigator writes that a human-written grievance at least gets to the heart of the issue immediately. Plus letters from Dexter Jandoo and Pete BibbyRe your article (‘AI clog’: UK public bodies battle onslaught of chatbot-generated complaints, 8 November), I’m a complaint investigator for a...",
+      "link": "https://www.theguardian.com/technology/2026/nov/13/how-it-feels-to-battle-with-a-flood-of-ai-generated-complaints",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-13T17:53:05+00:00",
+      "image": "https://i.guim.co.uk/img/media/b492cc78910d604e67e0013a83af3f4da1ff5723/432_0_5029_4024/master/5029.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7a2ef96d8c37e7b6a384eaa644c89d26"
+    },
+    {
+      "id": "bb49d0f5805c",
+      "title": "If Gen Z are asked to go to war, it might not be in the way they expect | Brief letters",
+      "description": "Fighting for your country | Starbucks | Sparta | Itching powderJason Okundaye addresses the issue of whether Britain’s youth would be willing to lay down their lives in defence of our country (Gen Z doesn‘t relish going to war – so what! You should worry more about the reckless generations that...",
+      "link": "https://www.theguardian.com/world/2026/nov/13/if-gen-z-are-asked-to-go-to-war-it-might-not-be-in-the-way-they-expect",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Industry",
+      "published": "2026-11-13T17:52:28+00:00",
+      "image": "https://i.guim.co.uk/img/media/5302f817c9ffca31369c0ca5793631f39f9b326b/541_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6790a287b7a7efd2f1d18b7b7b5a6f52"
+    },
+    {
+      "id": "8167ee0d8a44",
+      "title": "‘Ahead of his time’: AI helps unlock discoveries hidden in notebooks of man who transformed maths",
+      "description": "Kurt Gödel left 1,009 pages of densely written text – much of it in an obsolete shorthand – which is now said to contain hundreds of proved theoremsThe Austrian logician Kurt Gödel was one of the most original thinkers of the 20th century. His two incompleteness theorems, published in 1931,...",
+      "link": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Research",
+      "published": "2026-11-13T16:38:27+00:00",
+      "image": "https://i.guim.co.uk/img/media/6eeccf216579fe2181ae737d30f31abd7590125c/210_58_1759_1407/master/1759.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=334efc63d7472a97d72be0ffd23af8bb"
+    },
+    {
+      "id": "dc70d08c9bd1",
+      "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+      "description": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
+      "link": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+      "source": "Ars Technica",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-11-13T16:26:32+00:00",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-500x500-1783631088.jpg"
+    },
+    {
+      "id": "5b2ea9073503",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "description": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
+      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-13T16:00:12+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/chatgpt-wallet.jpg?resize=1200,729"
+    },
+    {
+      "id": "d3d0ab4148da",
+      "title": "Jensen Huang and the End of the Founder Fairy Tale",
+      "description": "The former tech CEO is obsessed with the power of storytelling. But he hasn't spun his way out of his sex scandals.",
+      "link": "https://www.wired.com/story/jensen-huang-and-the-end-of-the-founder-fairy-tale/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-13T16:00:00+00:00",
+      "image": "https://media.wired.com/photos/6af64d55d057d0b5e841f091/master/pass/Backchannel-Jensen-Business.jpg"
+    },
+    {
+      "id": "3830b800262f",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "description": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "link": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-13T15:58:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2205754389.jpg?w=1024"
+    },
+    {
+      "id": "707bcf83f031",
+      "title": "Introducing ChatGPT Wallet",
+      "description": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "link": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-13T15:00:00+00:00",
+      "image": null
+    },
     {
       "id": "33be774c7b2b",
       "title": "What&#8217;s really at stake in the Jensen Huang saga",
@@ -126,17 +379,6 @@
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/f49d0c2f-8a94-4a84-81bd-430f95fd11ce_68195b0e.jpg?itok=I3TTadKH&v=1794563587"
     },
     {
-      "id": "0b415c471cd9",
-      "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-      "description": "US commerce secretary faces sack as warnings emerge about alleged Chinese spy’s ties to Jensen Huang and delays in adding Megaspeed to trade blacklistAnalysis: Jensen Huang built an AI kingdom. Now he’s gone, will Nvidia’s ramparts be breached?The US commerce secretary, Howard Lutnick, is facing...",
-      "link": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-13T09:41:22+00:00",
-      "image": "https://i.guim.co.uk/img/media/5534caea091e39afe776168281e50dd327c8be8e/563_0_3334_2668/master/3334.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5cfc91551ec81a92db228675af0c6ab1"
-    },
-    {
       "id": "02b3a99a736c",
       "title": "Jensen Huang quits, China trade surplus hits US$1 trillion, Xi-Trump summit",
       "description": "Jensen Huang resigned as chief executive officer of chipmaker Nvidia following an affair with an alleged Chinese spy, boosting the odds of tighter US export controls against China days before the countries’ leaders are due to meet. Huang left the company he founded in 1993 with immediate effect,...",
@@ -157,6 +399,17 @@
       "category": "Industry",
       "published": "2026-11-13T08:00:15+00:00",
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/9fe662f7-78ff-4c96-8bd3-9418fa2bede4_375633f0.jpg?itok=GJXx19k6&v=1794554804"
+    },
+    {
+      "id": "96f36e554ee7",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "description": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "link": "https://openai.com/business/customer-stories/shield",
+      "source": "OpenAI Blog",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-11-13T08:00:00+00:00",
+      "image": null
     },
     {
       "id": "48f79d80abcd",
@@ -291,17 +544,6 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290329/STK255_Google_Gemini_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
     },
     {
-      "id": "9b24e326607c",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "description": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "link": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T21:35:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2205754389.jpg?w=1024"
-    },
-    {
       "id": "c359c5c859e1",
       "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
       "description": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
@@ -311,248 +553,6 @@
       "category": "Research",
       "published": "2026-11-12T21:27:10+00:00",
       "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2300447831.jpg?w=1024"
-    },
-    {
-      "id": "32e040b333b1",
-      "title": "Three Lincoln Laboratory technologies receive 2026 R&D 100 Awards",
-      "description": "A secure operating system, a quantum microsystem platform, and a 5G interference-canceling algorithm are named among the year's most significant innovations.",
-      "link": "https://news.mit.edu/2026/lincoln-laboratory-technologies-receive-rd-100-awards-1112",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-12T21:15:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/mit-lincoln-awards.jpg?itok=LWW0sVfe"
-    },
-    {
-      "id": "5b79c25aa4f2",
-      "title": "Jensen Huang Didn’t Name His Own Replacement as One of Tech’s Most Powerful Women",
-      "description": "A recent WIRED investigation explored the complicated definition of “power” for women in the industry. Jensen Huang’s answers now appear to show his blind spots.",
-      "link": "https://www.wired.com/story/jensen-huang-colette-kress-replacement-powerful-women-in-tech/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-12T20:35:11+00:00",
-      "image": "https://media.wired.com/photos/6af5df9b506e35cfaae88b85/master/pass/111226-Jensen%20Power%20Women%20tech.jpg"
-    },
-    {
-      "id": "84b10e74c0ef",
-      "title": "Jensen Huang was having a third affair, Reuters reports",
-      "description": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.",
-      "link": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-12T20:26:47+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/09/Jensen-Huang.jpg?resize=1200,800"
-    },
-    {
-      "id": "6381e1ca31be",
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "description": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-      "link": "https://openai.com/business/customer-stories/amplitude",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-12T20:00:00+00:00",
-      "image": null
-    },
-    {
-      "id": "f1cd04262976",
-      "title": "No, AI agents did not discover a previously unknown Maya site",
-      "description": "Armed with a team of AI agents, Google researcher Pietro Miotti claimed earlier this week to have discovered a potentially unmapped Maya site in Mexico. There was just one problem: The site had already been discovered and was published in an academic journal last year. The incident, which...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-12T19:42:40+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/maya-sites.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "418bf19a0c2a",
-      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-      "description": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
-      "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-12T19:27:45+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/hydrogen-at-2.01.42-PM.jpg?resize=1200,589"
-    },
-    {
-      "id": "edf6b1051962",
-      "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-      "description": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results.",
-      "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T19:11:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2023/10/misbahfarah-together.jpg?resize=1200,676"
-    },
-    {
-      "id": "8c035ded24b1",
-      "title": "Jensen Huang’s $470 Billion Affair",
-      "description": "This week on “Uncanny Valley,” the team unpacks the Nvidia CEO’s affair with an alleged Chinese spy and what that means for the AI industry.",
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huangs-dollar470-billion-affair/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T18:59:58+00:00",
-      "image": "https://media.wired.com/photos/6af4e95d91c3d23473376fc7/master/pass/Uncanny-Valley-Jensen-Spy-Business.jpg"
-    },
-    {
-      "id": "7cb57a6dedf6",
-      "title": "Jensen Huang was a busted flush at Nvidia – he had to go | Nils Pratley",
-      "description": "CEO was viewed as ‘irreplaceable’, but recklessness of affair with a woman regarded by US officials as a Chinese spy made him a political liabilityHalf the tech world made up its mind before the facts could be assessed properly. Jensen Huang was “irreplaceable”, said the chorus at the start of...",
-      "link": "https://www.theguardian.com/technology/nils-pratley-on-finance/2026/nov/12/jensen-huang-was-a-busted-flush-at-nvidia-he-had-to-go",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-12T18:46:48+00:00",
-      "image": "https://i.guim.co.uk/img/media/66294c0dc06bc9275cba93a84e6baed88521c2d7/125_0_4666_3734/master/4666.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=5c5275cd0e88ecae5e5f6eb6f124ab77"
-    },
-    {
-      "id": "f7e7e718ebb5",
-      "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
-      "description": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a leadership transition.",
-      "link": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T18:39:23+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2290097570.jpg?w=1024"
-    },
-    {
-      "id": "659cace9b4c6",
-      "title": "Oh, Palantir is ‘progressive’ now, is it?",
-      "description": "I had other things to do today, but Alex Karp's pathetic attempt to pivot back to the left gave me no choice but to put them on hold. Last week's elections were a bloodbath for the right, a problem for all the wannabe fash founders who had tied their political fortunes to a \"vibe shift\" [&#8230;]",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T18:06:54+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/8407711/479950372.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "b78b3f6129bb",
-      "title": "Google DeepMind Staff Tap the UK Government to Escalate Their Unionization Fight",
-      "description": "After initial talks stalled, workers at Google DeepMind are trying to bypass company management in their bid to unionize.",
-      "link": "https://www.wired.com/story/google-deepmind-staff-escalate-their-union-fight/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-12T18:05:41+00:00",
-      "image": "https://media.wired.com/photos/6af50d1a5e386b9efd1b63f5/master/pass/Google-DeepMind-Staffers-Escalate-Unionization-Efforts-Business-2151467843.jpg"
-    },
-    {
-      "id": "c51c4a621b2b",
-      "title": "Introducing Gemini 4 Hydrogen",
-      "description": "",
-      "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-      "source": "Google DeepMind",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-11-12T18:00:50+00:00",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg"
-    },
-    {
-      "id": "76115e77b628",
-      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-      "description": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI",
-      "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-      "source": "Google AI Blog",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-12T18:00:00+00:00",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HydrogenUI_socialshare.max-600x600.format-webp.webp"
-    },
-    {
-      "id": "62d036f9fb34",
-      "title": "Jensen Huang Basically Lit More Than $1 Trillion on Fire in Less Than a Month",
-      "description": "Since the scandal involving an alleged Chinese spy began, Nvidia has lost an eye-watering sum from its market value.",
-      "link": "https://www.wired.com/story/jensen-huang-tanked-a-trillion-dollars-in-less-than-a-month/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T17:59:15+00:00",
-      "image": "https://media.wired.com/photos/6af5f0e82e74be76ab295bc3/master/pass/111226-nvidia-jensen-huang-dollar-destroyed.jpg"
-    },
-    {
-      "id": "515ed7d4ccf2",
-      "title": "Jensen Huang built an AI kingdom. Now he’s gone, will Nvidia’s ramparts be breached?",
-      "description": "CEO’s affair and resignation has brought company’s murky corporate contracts and supply chains into sharp focusCan the AI economy survive without its “central bank”? What does Jensen Huang’s fall mean for the world’s second-most valuable company, and what might a tremor in its fortunes mean for...",
-      "link": "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-built-an-ai-kingdom-now-hes-gone-will-nvidias-ramparts-be-breached",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-11-12T17:50:35+00:00",
-      "image": "https://i.guim.co.uk/img/media/8371f47b7280e46fb9321628941d7375be61a95f/749_0_3751_3000/master/3751.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=82bf6d6905126f00d7c1f40df2955853"
-    },
-    {
-      "id": "ceba0685ff6f",
-      "title": "The Jensen Huang scandal is hardly over",
-      "description": "I was certain, until the story of Jensen Huang's second affair hit, that Huang was bulletproof. After all, why wouldn't he be? He's placed himself indispensably at the center of the AI industry and famously had no succession plan at Nvidia. In fact, he's the only CEO Nvidia has ever had....",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-12T17:44:33+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Nvidia_Jensen_huang_03.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "21bdc8a77ea2",
-      "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
-      "description": "Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition.",
-      "link": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T17:36:40+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/07/Hugging-Face-CEO-Clem-Delangue.png?resize=1200,675"
-    },
-    {
-      "id": "ffb43c2b2cd0",
-      "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
-      "description": "The airline said it will not allow customers to use AI agents to book flights and manage reservations.",
-      "link": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T17:17:58+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/united-airlines-2231866642.jpg?resize=1200,801"
-    },
-    {
-      "id": "172cd37f1216",
-      "title": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
-      "description": "SoftBank lost over $3 billion preordering natural gas turbines to power AI data centers. Here's what the loss means to power markets.",
-      "link": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-12T17:00:52+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1294103185.jpg?resize=1200,799"
-    },
-    {
-      "id": "5ebaa5bd68f2",
-      "title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
-      "description": "Rather than giving consumers yet another photo-editing tool, Phota Labs aims to use advances in AI to automate the editing process so it’s easier for anyone to turn everyday moments into better photos.",
-      "link": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-12T17:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/04_Holiday_Lights_before_after.jpg?resize=1200,867"
-    },
-    {
-      "id": "1d9feaa9bf56",
-      "title": "AI chatbots are recommending fake retail websites, study finds",
-      "description": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared exclusively with The Verge prompted ChatGPT, Gemini, and Perplexity with a handful of...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-12T17:00:00+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_E.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
     }
   ]
 }
