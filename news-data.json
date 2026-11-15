@@ -1,9 +1,196 @@
 {
-  "updated": "2026-11-14T14:00:31.076653+00:00",
-  "source_count": 8,
+  "updated": "2026-11-15T14:37:05.584069+00:00",
+  "source_count": 7,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "ffb6c0313560",
+      "title": "Is the AI job apocalypse finally here? The evidence suggests otherwise | John Quiggin",
+      "description": "The role AI played in job losses at Australia’s NAB, Qantas, Canva and Atlassian is far from clear – but it may prove to have more impact on the stock market than the jobs marketGet our breaking news email, free app or daily news podcastIn 1987, the Nobel prize winning economist Robert Solow...",
+      "link": "https://www.theguardian.com/commentisfree/2026/nov/16/is-the-ai-job-apocalypse-finally-here-the-evidence-suggests-otherwise",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-15T14:00:19+00:00",
+      "image": "https://i.guim.co.uk/img/media/90b330e8a3a675d60169684e5857f5b61ae3ff3d/1500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=8141735be6d1c89e0624bb678fda89cc"
+    },
+    {
+      "id": "d0bec7e7b286",
+      "title": "Could Jensen Huang make a comeback? Musk, other tech heavyweights pressure Nvidia board",
+      "description": "Support has continued to build across the tech industry for Jensen Huang, with figures including Elon Musk rallying behind the former Nvidia CEO and an unverified online petition calling on the board to reinstate the company’s founder. Organisers of the “Stand with Jensen” campaign, who describe...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3374494/could-jensen-huang-make-comeback-musk-other-tech-heavyweights-pressure-nvidia-board",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-15T14:00:09+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/15/01adbf87-80de-4010-8c0c-bd3131f0ab86_0a691a07.jpg?itok=vs3SVw1K&v=1794738762"
+    },
+    {
+      "id": "fe754677553e",
+      "title": "An overview of Jensen Huang’s messy days",
+      "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The...",
+      "link": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-15T13:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301620664.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "8f97e0935c8c",
+      "title": "AI DJs Completely Kill My Groove",
+      "description": "YouTube Music and Spotify want synthetic hosts to curate your playlists. Their awkward banter and bogus song trivia are ruining the vibe.",
+      "link": "https://www.wired.com/story/ai-djs-completely-kill-my-groove/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-15T12:00:00+00:00",
+      "image": "https://media.wired.com/photos/6af7840bd2837972f5ddf4f3/master/pass/Untitled-1.jpg"
+    },
+    {
+      "id": "92abecc00d14",
+      "title": "This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets",
+      "description": "A Carnegie Mellon student’s tiny E Ink gadgets, called OATs, give houseplants, skateboards, and dumbbells expressive personalities to nudge you toward better habits.",
+      "link": "https://www.wired.com/story/this-ai-tamagotchi-oats-turns-everyday-objects-into-needy-virtual-pets/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-15T11:00:00+00:00",
+      "image": "https://media.wired.com/photos/6af4802ffbe5af43ea5dee0a/master/pass/Screenshot%202026-11-11%20at%2014.47.44.png"
+    },
+    {
+      "id": "a5431578653f",
+      "title": "Megaspeed rejects claims over supply chain as Nvidia-linked scrutiny intensifies",
+      "description": "Megaspeed, the Singaporean company caught in the Nvidia controversy, has pushed back against reported claims about its supply chain practices and distanced itself from former CEO Alice Huang. The firm said in a statement on Sunday that it “conducts legitimate and lawful business” and had hired...",
+      "link": "https://www.scmp.com/tech/article/3374493/megaspeed-rejects-claims-over-supply-chain-distances-itself-alice-huang",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-15T10:10:34+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/15/08ee1ea0-b89f-4f44-9187-decc04134b12_72f2ac7a.jpg?itok=I7n35fvl&v=1794743865"
+    },
+    {
+      "id": "71102d117120",
+      "title": "160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating",
+      "description": "Fears for national college entrance exam next week as test taker admits sending photos of questions to AI toolThe marks attained by the top scorer ⁠on South Korea’s national exam for aspiring tax accountants this year seemed too good to be true. On Sunday, sceptics were ⁠proven right when he...",
+      "link": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Education",
+      "published": "2026-11-15T08:56:11+00:00",
+      "image": "https://i.guim.co.uk/img/media/a5f3ffab9cd63da939e5c4cfbd21bff5a434ce93/747_0_4581_3664/master/4581.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0345763b40006ab93f3b552b4bf8de69"
+    },
+    {
+      "id": "1314c76fd50e",
+      "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+      "description": "Jensen Huang’s affair with a suspected spy is Silicon Valley’s worst nightmare come trueThe resignation this week of Nvidia’s founder and CEO Jensen Huang is one of the most astonishing corporate scandals in memory, featuring allegations of international espionage and extramarital affairs...",
+      "link": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Industry",
+      "published": "2026-11-15T06:00:06+00:00",
+      "image": "https://i.guim.co.uk/img/media/c688291392ebfaa491e16553c6a42ec3ff3c5b77/0_541_2400_1919/master/2400.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ea93f60f04e098da99d11b60a2005e68"
+    },
+    {
+      "id": "2f08f325c5d5",
+      "title": "No actors, no crew, no ticket sales: ‘So obviously AI’ film flops at China’s box office",
+      "description": "China has ushered artificial intelligence into its cinemas, but the country’s first fully AI-generated feature film has flopped at the box office. Made with no human actors or camera crew, Sanxingdui: Future Past brought in just around 1.8 million yuan (US$270,000) after three weeks in theatres,...",
+      "link": "https://www.scmp.com/economy/china-economy/article/3374358/no-actors-no-crew-no-ticket-sales-so-obviously-ai-film-flops-chinas-box-office",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-11-15T05:00:06+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/997ce214-dc35-473f-bb56-0c781741acbc_47d0a8c4.jpg?itok=TfXtf7Mc&v=1794563948"
+    },
+    {
+      "id": "39af7e4ec8dd",
+      "title": "Can Chinese AI companies curb cyber risks from open-weight models without losing their edge?",
+      "description": "China’s leading artificial intelligence model companies are beginning to curb the cybersecurity capabilities of their most advanced open-weight models, following a string of high-profile AI hacking incidents involving both US and Chinese companies. Earlier this month, Chinese technology giant...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3374332/can-chinese-ai-companies-curb-cyber-risks-open-weight-models-without-losing-their-edge",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-11-15T02:00:09+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/0005cfa7-184c-4dcc-b219-00c332a05837_e0f6e04b.jpg?itok=8-BxuYbO&v=1794557091"
+    },
+    {
+      "id": "cac180f71677",
+      "title": "Where was Nvidia’s security team?",
+      "description": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations,...",
+      "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-15T00:08:07+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang-1.jpg?w=1024"
+    },
+    {
+      "id": "3ff7936d6183",
+      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "description": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+      "link": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-14T21:41:22+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2216028442.jpg?w=1024"
+    },
+    {
+      "id": "5baf16d30c3a",
+      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
+      "description": "Andrew McLachlan says he chooses ‘real forests over virtual ones’ as he urges Labor government to consider AI’s impact on artists and environmentGet our daily political email, free app or daily news podcastThe outspoken Liberal senator Andrew McLachlan has raised the alarm about the approach of...",
+      "link": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-14T19:00:52+00:00",
+      "image": "https://i.guim.co.uk/img/media/bb100c4ad17c64282442b40c27895d51765e32dd/0_0_3485_2789/master/3485.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4cc8c16eac1f5108a0736b290b0363b0"
+    },
+    {
+      "id": "af3d4ad5ebb4",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "description": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-14T17:30:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?resize=1200,797"
+    },
+    {
+      "id": "c39deaec263f",
+      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "description": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+      "link": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-14T16:34:15+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang.jpg?w=1024"
+    },
+    {
+      "id": "730f448f474f",
+      "title": "‘Double standard’: why Jensen Huang saga sparked a debate about race for Asian-Americans",
+      "description": "While global markets focus on the geopolitical and business implications of Jensen Huang’s resignation from Nvidia, another fierce debate is raging among Asian-Americans: whether race played a role in the downfall of one of corporate America’s most recognisable Asian faces. At the heart of the...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3374435/double-standard-why-jensen-huang-saga-sparking-debate-about-race",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-14T15:00:07+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/14/32fa623b-0cd3-45cc-8aee-5394f9410a3a_252ba1e3.jpg?itok=RlcV6wSI&v=1794646794"
+    },
+    {
+      "id": "1dd45bf100f3",
+      "title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
+      "description": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is perhaps best known...",
+      "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-14T15:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD-Helen-Toner.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
     {
       "id": "abdbf8303436",
       "title": "Beware the New AI-Fueled Ransomware Boom",
@@ -13,7 +200,7 @@
       "region": "North America",
       "category": "Tools",
       "published": "2026-11-14T13:00:00+00:00",
-      "image": null
+      "image": "https://media.wired.com/photos/6af88e4339637940f3ecc20a/master/pass/image%20(76).png"
     },
     {
       "id": "91fd2c4e6dcc",
@@ -366,193 +553,6 @@
       "category": "Industry",
       "published": "2026-11-13T11:45:00+00:00",
       "image": "https://media.wired.com/photos/6af65ba58bac4203b57b5ba0/master/pass/Startup-Betting-on-AI-Microdramas-Culture.jpg"
-    },
-    {
-      "id": "937eac703d7d",
-      "title": "Jensen Huang’s exit tests Nvidia’s supply chain clout, ability to bankroll AI buildout",
-      "description": "For years, Jensen Huang was more than Nvidia’s CEO – he was a key figure driving the artificial intelligence boom, parlaying close ties with Asian chip foundries and aggressive financial backing into an unprecedented global buildout of data centres. Following his sudden resignation, the industry...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3374357/jensen-huangs-exit-tests-nvidias-supply-chain-clout-ability-bankroll-ai-buildout",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-13T11:00:10+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/f49d0c2f-8a94-4a84-81bd-430f95fd11ce_68195b0e.jpg?itok=I3TTadKH&v=1794563587"
-    },
-    {
-      "id": "02b3a99a736c",
-      "title": "Jensen Huang quits, China trade surplus hits US$1 trillion, Xi-Trump summit",
-      "description": "Jensen Huang resigned as chief executive officer of chipmaker Nvidia following an affair with an alleged Chinese spy, boosting the odds of tighter US export controls against China days before the countries’ leaders are due to meet. Huang left the company he founded in 1993 with immediate effect,...",
-      "link": "https://www.scmp.com/plus/tech/tech-war/article/3374341/jensen-huang-quits-china-trade-surplus-hits-us1-trillion-xi-trump-summit",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-13T09:00:26+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/7d8056e2-f59f-43f7-bf59-0e93e371f43a_3c8c5f5f.jpg?itok=jwlyCNzK&v=1794560424"
-    },
-    {
-      "id": "1a45bf42a9c8",
-      "title": "Court-appointed administrators to sound out investors for Nexperia stake amid Wingtech feud",
-      "description": "The two court-appointed administrators overseeing Nexperia said on Thursday they would sound out investors on a majority or minority stake in the Dutch chipmaker, a week after its Chinese owner Wingtech rejected their proposal to hand control of its operations outside China to foreign investors....",
-      "link": "https://www.scmp.com/tech/tech-war/article/3374320/court-appointed-administrators-sound-out-investors-nexperia-stake-amid-wingtech-feud",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-13T08:00:15+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/9fe662f7-78ff-4c96-8bd3-9418fa2bede4_375633f0.jpg?itok=GJXx19k6&v=1794554804"
-    },
-    {
-      "id": "96f36e554ee7",
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "description": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "link": "https://openai.com/business/customer-stories/shield",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-13T08:00:00+00:00",
-      "image": null
-    },
-    {
-      "id": "48f79d80abcd",
-      "title": "Jensen Huang’s abrupt exit stuns Nvidia’s China staff, clouding the outlook in a key market",
-      "description": "Jensen Huang’s abrupt resignation stunned some Nvidia staff in China and raised questions about the future of the US chipmaker’s operations in a market its co-founder had spent years cultivating, according to company sources. “It’s the end of an era. I really don’t understand why Huang was asked...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3374316/jensen-huangs-abrupt-exit-stuns-nvidias-china-staff-clouding-outlook-key-market",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-13T07:00:40+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/b5865823-298e-46af-999a-0efecb297310_d232326c.jpg?itok=0esXgjYT&v=1794552962"
-    },
-    {
-      "id": "a88ae2533ee4",
-      "title": "China’s SMIC sees AI computing crunch until 2028 as Nvidia heat risks tighter chip curbs",
-      "description": "China’s Semiconductor Manufacturing International Corporation (SMIC) is betting that a relentless data centre buildout will keep artificial intelligence computing power in short supply for the next two years. The bullish forecast comes as scrutiny over former Nvidia CEO Jensen Huang threatens to...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3374305/chinas-smic-sees-ai-computing-crunch-until-2028-nvidia-heat-risks-tighter-chip-curbs",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-13T05:55:56+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/5ca40b4c-5e88-47e8-81d1-c7acecc10e77_ae0edc39.jpg?itok=4P3fF_Ck&v=1794548432"
-    },
-    {
-      "id": "372ed2d42c5a",
-      "title": "Have we finally found a valid use case for AI? Meet Pino the autonomous virtual kiwi | First Dog on the Moon",
-      "description": "Pino noodles about making his own AI decisions. He has decided independently that he is into trains and cats. Aren’t we allSign up here to get an email whenever First Dog cartoons are publishedGet all your needs met at the First Dog shop if what you need is First Dog merchandise and prints...",
-      "link": "https://www.theguardian.com/commentisfree/picture/2026/nov/13/have-we-finally-found-a-valid-use-case-for-ai-meet-pino-the-autonomous-virtual-kiwi",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Research",
-      "published": "2026-11-13T05:35:13+00:00",
-      "image": "https://i.guim.co.uk/img/media/ef4684bfabe671cc5f1404e36328b02e7048e7c8/0_96_960_768/master/960.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=15065c33df88db93c5b9c37dadb96b10"
-    },
-    {
-      "id": "1b619fa6af4d",
-      "title": "New AI “copilot” helps engineers design better structures",
-      "description": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges.",
-      "link": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-13T05:00:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202611/MIT-ai-design-01-press.jpg?itok=mgkpfRIX"
-    },
-    {
-      "id": "2c9b02f41517",
-      "title": "Helping robots fit into the human workplace",
-      "description": "Founded by Anthony Jules ’92, SM ’92 and Professor Emeritus Rodney Brooks, Robust AI’s robots are designed to collaborate with humans in factories and warehouses.",
-      "link": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-13T05:00:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202611/MIT-Robust-AI-01-press.jpg?itok=1bn6fHx2"
-    },
-    {
-      "id": "e542074774e1",
-      "title": "Jensen Huang quits Nvidia; non-invasive treatment for kidney tumours: SCMP’s 7 highlights",
-      "description": "We have selected seven stories from this week’s news across Hong Kong, mainland China, the wider Asia region and beyond that resonated with our readers and shed light on topical issues. If you would like to see more of our reporting, please consider subscribing. 1. Jensen Huang resigns as Nvidia...",
-      "link": "https://www.scmp.com/news/china/article/3374278/jensen-huang-quits-nvidia-non-invasive-treatment-kidney-tumours-scmps-7-highlights",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-13T04:15:04+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/522d5079-9693-441b-a9ce-2de242113a2f_d7759fe6.jpg?itok=PAqOdvBb&v=1794535972"
-    },
-    {
-      "id": "e6f05f93da9b",
-      "title": "Eli Lilly beats Novo Nordisk to China approval for first oral GLP-1 weight-loss drug",
-      "description": "China has approved US pharmaceutical giant Eli Lilly’s weight-loss pill orforglipron, making it the country’s first available oral GLP-1 treatment for obesity as global drug makers seek to tap the country’s massive weight-management market. China’s National Medical Products Administration...",
-      "link": "https://www.scmp.com/business/companies/article/3374229/eli-lilly-beats-novo-nordisk-china-approval-first-oral-glp-1-weight-loss-drug",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Tools",
-      "published": "2026-11-13T01:01:06+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/6ec59f81-e654-4923-91e6-6593d8796984_baedbf68.jpg?itok=v1PmzlWp&v=1794480417"
-    },
-    {
-      "id": "63bf0617465f",
-      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-      "description": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
-      "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-12T22:42:51+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205211212-1.jpg?resize=1200,800"
-    },
-    {
-      "id": "56cc7dbf231f",
-      "title": "Silicon Valley Is Still Defending Jensen Huang",
-      "description": "Nvidia employees and tech insiders never thought the chip king would lose his job. Despite his sudden resignation, many of them are still in denial.",
-      "link": "https://www.wired.com/story/silicon-valley-is-still-defending-jensen-huang/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T22:29:43+00:00",
-      "image": "https://media.wired.com/photos/6af5104da36e580e1eb299b6/master/pass/Model-Behavior-Silicon-Valley-Waiting-for-Jensen-Scandal-to-Blow-Over-Business.jpg"
-    },
-    {
-      "id": "500e48157df0",
-      "title": "Muse can now place calls to US businesses — if you pay",
-      "description": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
-      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T22:22:28+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/muse-calls.jpg?w=1104"
-    },
-    {
-      "id": "6444bed576cc",
-      "title": "Jensen Huang Is Out. Will Nvidia’s Rivals Cash In?",
-      "description": "In a special episode of “Uncanny Valley,” we break down Jensen Huang’s resignation from Nvidia, what comes next for the company, and where the AI industry goes from here.",
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huang-is-out-will-nvidias-rivals-cash-in/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-12T22:14:41+00:00",
-      "image": "https://media.wired.com/photos/6af5ee2157e0a3ee177875cd/master/pass/Uncanny-Valley-Jensen-Emergency-Pod.jpg"
-    },
-    {
-      "id": "e1fc09d4e2cf",
-      "title": "Google’s new Gemini model is better at understanding complicated questions",
-      "description": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part in its responses. It's available...",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-12T21:55:32+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290329/STK255_Google_Gemini_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "c359c5c859e1",
-      "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-      "description": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
-      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-12T21:27:10+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2300447831.jpg?w=1024"
     }
   ]
 }
