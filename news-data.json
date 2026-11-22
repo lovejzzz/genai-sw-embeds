@@ -1,9 +1,185 @@
 {
-  "updated": "2026-11-21T15:10:57.558667+00:00",
+  "updated": "2026-11-22T15:09:19.792180+00:00",
   "source_count": 9,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "0da377e28ab2",
+      "title": "Will fragile bipartisanship on AI survive the silly season, or is parliament heading for a holiday meltdown? | Josh Butler",
+      "description": "A joint select committee report on Monday should signal where Labor is headed on issues including datacentres and copyright – and whether they’ll go it aloneGet our daily political email, free app or daily news podcastThe final four days of parliament for 2026 begin on Monday, and the government...",
+      "link": "https://www.theguardian.com/australia-news/2026/nov/23/will-fragile-bipartisanship-on-ai-survive-silly-season-or-is-parliament-heading-for-a-holiday-meltdown-the-agenda",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-22T14:00:32+00:00",
+      "image": "https://i.guim.co.uk/img/media/0703852cd8009754ed16a9c2bbad6d2d80b6fedd/864_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=ae53c78aa6f1109fd02df283bb90cc3d"
+    },
+    {
+      "id": "d450b67a4df1",
+      "title": "Tencent touts latest AI model Hy4’s performance on independent safety assessments",
+      "description": "Tencent Holdings has teamed up with an international group of artificial intelligence safety organisations to assess the risk level of its latest open-weight model, amid growing concerns over AI-assisted cyberattacks and biological misuse. The development marks the first time a leading Chinese...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3375374/tencent-touts-latest-ai-model-hy4s-performance-independent-safety-assessment",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-22T13:30:07+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/22/fa6d4bfb-8f9a-490b-a1c9-b9999907eccd_bf239c3f.jpg?itok=VgoYtddz&v=1795340431"
+    },
+    {
+      "id": "cf3ababe5455",
+      "title": "The vibe-coding revolution is coming to all the gadgets",
+      "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Like so many things...",
+      "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-22T13:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/AI_vibe_coding_hacker_hardware.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "6a969209ecb9",
+      "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
+      "description": "Choi Kyo-jin says he ‘failed to prepare adequately’ for entrance exams following last-minute scramble to tighten measuresSouth Korea’s education minister has resigned after an AI-assisted cheating scandal that erupted in the lead-up to key university entrance exams last week.The country has been...",
+      "link": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Education",
+      "published": "2026-11-22T12:12:08+00:00",
+      "image": "https://i.guim.co.uk/img/media/3d9052371f434580f71c25a962110e47f2e6a076/605_0_6228_4986/master/6228.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d3f07b25c72631f8072873e52093f91c"
+    },
+    {
+      "id": "b5e5633f02a3",
+      "title": "Why I won’t leave mathematics, despite AI solving centuries-old problems | Ken Ono",
+      "description": "I believe human judgment remains essential Last year, I nearly quit mathematics. On 20 November, Levent Alpöge announced that, working with Claude, he had proved the Riemann hypothesis, a 167-year-old problem about the distribution of prime numbers. The Lean and Mathlib communities have since...",
+      "link": "https://www.theguardian.com/commentisfree/2026/nov/22/why-i-wont-leave-mathematics-despite-ai-solving-centuries-old-problems",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Education",
+      "published": "2026-11-22T11:00:26+00:00",
+      "image": "https://i.guim.co.uk/img/media/df6c16bf913288657abe83afff8969abdd383bad/581_0_4307_3445/master/4307.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=91ea4a4ff3ca2da76a016f63e3049ab6"
+    },
+    {
+      "id": "71b9cf51cb35",
+      "title": "Banks Have Had It Up to Here With Your AI Agent",
+      "description": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+      "link": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-22T11:00:00+00:00",
+      "image": "https://media.wired.com/photos/6b0080a25f35c47a5c116087/master/pass/GettyImages-2285133719.jpg"
+    },
+    {
+      "id": "5bbd03733599",
+      "title": "It will soon be too late to regulate use of autonomous weapons, warns Red Cross",
+      "description": "Warning about putting ‘genie back in the bottle’ comes as UN conference fails to agree on regulation instrumentThe International Committee of the Red Cross and rights groups have warned that it will soon be too late to put the “genie back in the bottle” as the development of autonomous weapons...",
+      "link": "https://www.theguardian.com/science/2026/nov/22/red-cross-warns-too-late-regulate-autonomous-weapons-united-nations",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-22T09:00:22+00:00",
+      "image": "https://i.guim.co.uk/img/media/e83253eef2712121e66a9774fee97fca01778307/875_229_5546_4437/master/5546.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8fed7b574b96e4a1e100b44bc63bbd86"
+    },
+    {
+      "id": "1972b7b91a15",
+      "title": "‘Serious error of judgment’: outrage over military AI event at Berlin arts complex",
+      "description": "Kraftwerk Berlin, part of same development as techno club Tresor, transformed into ‘war room’ for arms firm eventWith their cavernous post-industrial venues, teeth-grinding four-by-four beats and bouncers that look like Blade Runner extras, Berlin’s nightclubs trade on a reputation for...",
+      "link": "https://www.theguardian.com/world/2026/nov/22/military-ai-event-berlin-kraftwerk-arts-complex",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-22T06:00:21+00:00",
+      "image": "https://i.guim.co.uk/img/media/4d3b2eefdc19be5ce451b348a00b741e730d6dbd/1327_0_6144_4918/master/6144.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=742e1c0140c566ace0b2c60fd9f5a9da"
+    },
+    {
+      "id": "c6a68734fa94",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "description": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Ethics",
+      "published": "2026-11-21T21:37:10+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800"
+    },
+    {
+      "id": "6e3c694f0d6e",
+      "title": "A tale of two Nvidias",
+      "description": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-21T21:07:42+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800"
+    },
+    {
+      "id": "c21a53999497",
+      "title": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
+      "description": "Anthropic’s Levent Alpöge says it took six weeks for him using the AI tool to solve 19th-century Riemann hypothesisA mathematician at Anthropic has said that the San Francisco-based artificial intelligence (AI) company’s software has helped crack one of the most important unsolved problems in...",
+      "link": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-21T20:15:57+00:00",
+      "image": "https://i.guim.co.uk/img/media/d3154f68df589c297fc3d173e2bb3d95faca05c9/530_0_4678_3742/master/4678.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1a7ad1c833428adafc056e7f188ca63a"
+    },
+    {
+      "id": "716b34bd4887",
+      "title": "The UN fails to agree on rules regulating ‘killer robots’",
+      "description": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of...",
+      "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-21T20:03:37+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "75baaf14466b",
+      "title": "Anthony Albanese talks a big game about sovereignty. But Australia remains in thrall to its ‘unreliable boyfriend’ | Julianne Schultz",
+      "description": "We rely on US tech platforms to provide the digital infrastructure of daily life. What happens when they all go dark?Sovereignty has become the buzzword of political rhetoric at precisely the moment it has become harder than ever to define, let alone control, and most Australians feel unsafe in...",
+      "link": "https://www.theguardian.com/commentisfree/2026/nov/22/anthony-albanese-talks-a-big-game-about-sovereignty-but-australia-remains-in-thrall-to-its-unreliable-boyfriend",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-21T19:00:06+00:00",
+      "image": "https://i.guim.co.uk/img/media/07c5e1e60c18e0d209d22916b379ba24ab64a47c/484_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=6256ca6cf6a4619cc9744c2923c84d9f"
+    },
+    {
+      "id": "0e0eae38ce09",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "description": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-21T17:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813"
+    },
+    {
+      "id": "0e24fa2d4c77",
+      "title": "International UN talks on controlling use of autonomous weapons collapse",
+      "description": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control the use of autonomous weapons collapsed just before 5am after all-night talks failed to...",
+      "link": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-21T16:36:11+00:00",
+      "image": "https://i.guim.co.uk/img/media/247601abada695f09f302253178bbc8f6e58cd42/415_0_4165_3333/master/4165.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c468b8ddd2fe15972ddb451853201d79"
+    },
+    {
+      "id": "f318028a3a12",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "description": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+      "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-21T16:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Inevitable-Key-Art_3x4-full-size.jpg?resize=899,1200"
+    },
     {
       "id": "106f1c3e9a6e",
       "title": "Can Anthropic afford to put safety first?",
@@ -16,8 +192,8 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_1121_Site.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
     },
     {
-      "id": "43a497041167",
-      "title": "‘I was shaking, crying, having trouble breathing’: the unchartered trauma of breaking up with AI companions",
+      "id": "00f670642387",
+      "title": "‘I was shaking, crying, having trouble breathing’: the uncharted trauma of breaking up with AI companions",
       "description": "People are falling in love with AI systems like ChatGPT and Gemini - and some relationships are ending in ways that feel like the very human experience of being dumpedSónia Veenstra, a 48-year-old former clinical psychologist from Lisbon, Portugal, was with her boyfriend, Steve, for two years...",
       "link": "https://www.theguardian.com/technology/ng-interactive/2026/nov/21/shaking-crying-trouble-breathing-breaking-up-with-ai-companions",
       "source": "The Guardian",
@@ -36,17 +212,6 @@
       "category": "Tools",
       "published": "2026-11-21T14:00:00+00:00",
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/classic-games-home-page-trimmed.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "9158d13993e4",
-      "title": "International talks on controlling use of autonomous weapons collapse",
-      "description": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control on the use of autonomous weapons collapsed just before 5am on Saturday morning, after all...",
-      "link": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-21T13:15:29+00:00",
-      "image": "https://i.guim.co.uk/img/media/247601abada695f09f302253178bbc8f6e58cd42/415_0_4165_3333/master/4165.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c468b8ddd2fe15972ddb451853201d79"
     },
     {
       "id": "2450910df9bd",
@@ -214,28 +379,6 @@
       "image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1219382595.jpg?resize=1200,750"
     },
     {
-      "id": "e0cda061c8b2",
-      "title": "Forget rogue robots, it’s tech billionaires and AI cricket that should really terrify us | Barney Ronay",
-      "description": "The encroachment of artificial intelligence smells like the death of sport. Can we find the will and collective backbone to resist?There was an interesting development this week in the endless rolling mega-froth over tech billionaire Jensen Huang, a saga that may or may not have involved some...",
-      "link": "https://www.theguardian.com/sport/2026/nov/20/cricket-rogue-robots-tech-billionaires-artificial-intelligence",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-20T19:00:36+00:00",
-      "image": "https://i.guim.co.uk/img/media/4ca3d80c03e1e8d9c6bb7f35e1b62a5099768106/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=9d9adfca9f7196f26766f899175df427"
-    },
-    {
-      "id": "ea99b04d3af7",
-      "title": "Is Claude creator Anthropic really worth $1.3 trillion? - The Latest",
-      "description": "The AI firm and Claude chatbot maker Anthropic has made a historic stock market debut, with a peak valuation of $1.3tn on its first day of trading. It marks a remarkable ascent for a start-up launched in just 2021 by a group of ex-OpenAI staffers. Anthropic’s CEO, Dario Amodei, said the...",
-      "link": "https://www.theguardian.com/news/video/2026/nov/20/is-claude-creator-anthropic-really-worth-15-trillion-the-latest",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-11-20T18:53:50+00:00",
-      "image": "https://i.guim.co.uk/img/media/2839cb432ed7a9109cae590901c997504e803e00/952_678_2493_1994/master/2493.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ed5d203d6d48dcd82a319c837651c133"
-    },
-    {
       "id": "0f8a78c0d173",
       "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
       "description": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies to build data centers outside of our...",
@@ -245,17 +388,6 @@
       "category": "Tools",
       "published": "2026-11-20T18:50:19+00:00",
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "d1a864a002a9",
-      "title": "Is Anthropic really worth $1.3 trillion? - The Latest",
-      "description": "The AI firm and Claude chatbot maker Anthropic has made a historic stock market debut, with a peak valuation of $1.3tn on its first day of trading. It marks a remarkable ascent for a start-up launched in just 2021 by a group of ex-OpenAI staffers. Anthropic’s CEO, Dario Amodei, said the...",
-      "link": "https://www.theguardian.com/news/audio/2026/nov/20/anthropic-1-trillion-valuation-the-latest",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-11-20T18:33:06+00:00",
-      "image": "https://i.guim.co.uk/img/media/8e65a071b2534c31a52362dec36a3285fcf12a2d/45_141_3442_2753/master/3442.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e6a2bb7b75461f2edb96be737c62f1c1"
     },
     {
       "id": "6545e1465af9",
@@ -379,28 +511,6 @@
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/20/50a7c1bb-ed55-428a-9090-e2ca9738ab15_ba1bd36c.jpg?itok=4ITgGQmC&v=1795175691"
     },
     {
-      "id": "904086c08d89",
-      "title": "Don’t blame cyber-attacks for recent outages. The real villain is the US economy | Bruce Schneier",
-      "description": "Our tech infrastructure is riddled with problems. But they’re all downstream of the incentives baked into shareholder capitalismIt’s been a bad week for our computerized infrastructure. We’ve seen outages at Microsoft, the FAA, a handful of banks, United Airlines, an unnamed classified NSA...",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/20/cyber-attacks-outages-blame-economy",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-11-20T11:00:31+00:00",
-      "image": "https://i.guim.co.uk/img/media/06367e7fdfd0f05a668d10411818299d34910160/656_0_6561_5249/master/6561.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=fa64ec54c6efe43599da8e31ee212d9a"
-    },
-    {
-      "id": "c0dd215e871c",
-      "title": "AI is imposing a hidden ‘cognitive tax’ on the lowest-paid workers",
-      "description": "It’s time to rethink welfare as AI reshapes the economy and wears down the brains of some of the most vulnerable workersAI is adding to the cognitive load of workers already stretched thin by unpredictable pay, insecure housing and mounting debt – and the lowest paid feel it most. We need to...",
-      "link": "https://www.theguardian.com/technology/2026/nov/20/ai-low-paid-workers-cognitive-tax",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Research",
-      "published": "2026-11-20T11:00:31+00:00",
-      "image": "https://i.guim.co.uk/img/media/b71c923b07b403bdaf953194f3dfdf7229e4b7c6/492_0_3408_2727/master/3408.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=7aa767831454c080a8c14c08f3f868d5"
-    },
-    {
       "id": "38ea9b5b8ef2",
       "title": "Regular Tech Bros Are Worried About Honeypots",
       "description": "The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
@@ -410,17 +520,6 @@
       "category": "Industry",
       "published": "2026-11-20T11:00:00+00:00",
       "image": "https://media.wired.com/photos/6afbae0afa103e595fff7d74/master/pass/Business_Honeypot%20Fears%20Are%20Trickling%20Down%20Into%20the%20Dating%20Lives%20of%20Normal%20Dudes_v1.jpg"
-    },
-    {
-      "id": "45404affa667",
-      "title": "Will AI break the internet? | Garrison Lovely",
-      "description": "Frontier models can exploit software flaws faster than the world can fix them. And the risks extend far beyond the cyber realmYou’re not crazy to feel the world is coming apart at the seams.Within the last week, outages took down core services at Microsoft, United Airlines and JPMorgan Chase. On...",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/20/ai-internet-outages-apocalypse",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Research",
-      "published": "2026-11-20T10:00:31+00:00",
-      "image": "https://i.guim.co.uk/img/media/d0d3e01dd99c16399c8dbc88cf6f6b915811600d/333_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=14805c38b046ae51b0e40e89e9b20e15"
     },
     {
       "id": "dbe2bb9d3b36",
@@ -454,105 +553,6 @@
       "category": "Policy",
       "published": "2026-11-20T08:03:42+00:00",
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/20/28fffc82-9be0-49d0-93c3-ec57a7d0ee27_dcd708eb.jpg?itok=_dV3Qnks&v=1795161820"
-    },
-    {
-      "id": "8f1ccb230c19",
-      "title": "This 16-Year-Old Founded an AI Missile Startup. He’s Targeting ‘Cost per Kill’",
-      "description": "Henrijs Dandzbergs dropped out of high school to join startup accelerator Y Combinator. With a new breed of missile, he wants to make killing as efficient as possible for the US and its military allies.",
-      "link": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-11-20T07:00:00+00:00",
-      "image": "https://media.wired.com/photos/6aff9b51715a3d6f512c8dee/master/pass/The-Boy-Who-Builds-Missiles-Business.jpg"
-    },
-    {
-      "id": "54b57448ec51",
-      "title": "‘We’re the most arrogant of all apes!’ A delightfully mind-expanding encounter with Peter Gabriel",
-      "description": "From sampling to streaming, the rock legend has always been in thrall to technology – but is superintelligence a step too far? Back with an epic new album, he unpacks his remarkable ideasPeter Gabriel asks me to fetch my laptop: he wants to show me a video of himself playing a keyboard duet with...",
-      "link": "https://www.theguardian.com/music/2026/nov/20/peter-gabriel-interview-ai-music-bonobo-ape-duets-jurassic-park-plants",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Ethics",
-      "published": "2026-11-20T05:00:22+00:00",
-      "image": "https://i.guim.co.uk/img/media/124bc29050c7da765c91e3c9121b3b2ab887ffa0/0_715_4126_3300/master/4126.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e7937a44819082fb118fed6e8f1d12b3"
-    },
-    {
-      "id": "b5ea4c0f7e82",
-      "title": "NextDC vows to keep future datacentres away from homes after community backlash in Melbourne",
-      "description": "Public expectations around datacentres have changed in the age of AI, chief executive Craig Scroggie saysGet our breaking news email, free app or daily news podcastCommunity backlash to a datacentre expansion in inner Melbourne that resulted in NextDC’s share price dropping 40% will change the...",
-      "link": "https://www.theguardian.com/australia-news/2026/nov/20/nextdc-vows-to-keep-future-datacentres-away-from-homes-after-community-backlash-in-melbourne",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-11-20T04:37:08+00:00",
-      "image": "https://i.guim.co.uk/img/media/9acf294a8c0fe26735bc3164495be1c8cbfbe068/683_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0e2ce623632edae487861518641be45f"
-    },
-    {
-      "id": "80ef99262584",
-      "title": "Apple may be developing its own AI agent that runs your Mac",
-      "description": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-      "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-20T00:56:01+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800"
-    },
-    {
-      "id": "f66d3545a3c5",
-      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-      "description": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
-      "link": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-20T00:43:50+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/antrhopic-openingday-getty.jpg?resize=1200,801"
-    },
-    {
-      "id": "f90430872330",
-      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
-      "description": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
-      "link": "https://openai.com/business/customer-stories/hebbia",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-20T00:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/70gWqYyqb096it9EoD7OqI/5df8cad1c7fdf2a4e942c3183a10f405/hebbia-smoked-depth-social.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "a778075ed232",
-      "title": "Can AI help scientists identify promising drug candidates?",
-      "description": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
-      "link": "https://openai.com/index/introducing-medchembench",
-      "source": "OpenAI Blog",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-20T00:00:00+00:00",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/37ZvKdwVigsgJ7G3FMr4Nb/12854063a79d19d63278704bf54e3010/introducing-medchembench-social.png?w=1600&amp;h=900&amp;fit=fill"
-    },
-    {
-      "id": "4bd9f3e7ec1b",
-      "title": "Apple is hiring engineers to build its own AI agent",
-      "description": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the...",
-      "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-19T22:31:41+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "dfc026a8bb5b",
-      "title": "AI helps researchers investigate how thousands of medical studies share code",
-      "description": "An MIT and Dana-Farber Institute-led team used large language models to examine nearly 4,000 studies and hundreds of code repositories, revealing gaps in the information needed to scrutinize and reuse published research.",
-      "link": "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-19T22:15:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202611/medical-code-pollard-research-00.jpeg?itok=otuCAojQ"
     }
   ]
 }
