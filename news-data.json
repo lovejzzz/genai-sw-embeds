@@ -1,9 +1,251 @@
 {
-  "updated": "2026-11-25T17:52:43.626945+00:00",
+  "updated": "2026-11-26T17:37:28.088432+00:00",
   "source_count": 7,
   "region_count": 3,
   "article_count": 50,
   "articles": [
+    {
+      "id": "d83bb05083ce",
+      "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "description": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+      "link": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-26T16:00:00+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jason_and_Lucia_17.117_b11r13mg5.jpg?resize=1200,675"
+    },
+    {
+      "id": "5d35413d9de9",
+      "title": "I’m an AI leader at a tech giant. Our industry has stopped taking safety seriously | Anonymous",
+      "description": "We’re developing the most powerful tech in history – but trust, safeguarding and privacy are being sidelined in favour of huge profitI’m a senior AI leader at one of the world’s biggest tech companies, and the products we put out into the world are increasingly being recklessly rushed, without...",
+      "link": "https://www.theguardian.com/commentisfree/2026/nov/26/ai-leader-tech-giant-trust-safeguarding-privacy-profit",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-26T14:06:10+00:00",
+      "image": "https://i.guim.co.uk/img/media/8cc6bbd0024f4ba8485616485bd55f9c34d98452/458_0_4167_3333/master/4167.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=017e2e1788767d4c160ed57310d8c804"
+    },
+    {
+      "id": "7782fc3a7886",
+      "title": "Alibaba founder Jack Ma visits T-Head chip unit as self-reliance gains urgency",
+      "description": "Alibaba Group Holding co-founder Jack Ma made a rare appearance at the offices of the company’s chip unit T-Head on Thursday ahead of its highly anticipated initial public offering in Hong Kong. The billionaire, dressed casually in a grey jumper, posed for photos with employees at T-Head’s...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3375954/alibaba-founder-jack-ma-visits-t-head-chip-unit-self-reliance-gains-urgency",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-26T13:33:25+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/2be5b617-97c9-4356-b9be-9ed50e21697d_65063d8b.jpg?itok=HrmJ1X7B&v=1795699997"
+    },
+    {
+      "id": "1c1c3130c156",
+      "title": "China’s tech ambitions to stay on track despite Shanghai party chief’s ouster: analysts",
+      "description": "The ousting of Shanghai Communist Party chief Chen Jining, a prominent technocrat who championed the city’s artificial intelligence and semiconductor sectors, could heighten scrutiny of state-backed tech investments, although analysts see little sign of a shift in China’s broader tech ambitions....",
+      "link": "https://www.scmp.com/tech/big-tech/article/3375938/chinas-tech-ambitions-stay-track-despite-shanghai-party-chiefs-ouster-analysts",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-11-26T13:00:14+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/b30a7c33-8eed-4069-8dd9-2c40fe523fd8_2d08b0b3.jpg?itok=YT8IaYOB&v=1795692696"
+    },
+    {
+      "id": "18c6e2ca0b9e",
+      "title": "Dozens of court cases in England and Wales affected by undisclosed AI use in 2026",
+      "description": "Exclusive: Investigation finds at least 25 cases affected by AI-generated witness statements, fictitious case law and nonexistent statutes Undisclosed AI use has affected more than two dozen court cases this year, prompting judges to complain about AI-generated witness statements, fictitious...",
+      "link": "https://www.theguardian.com/technology/2026/nov/26/dozens-of-court-cases-in-england-and-wales-affected-by-undisclosed-ai-use-in-2026",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-26T12:19:37+00:00",
+      "image": "https://i.guim.co.uk/img/media/18a0e7b9f66bc93973a6114fb4fac2215545e754/415_0_4167_3335/master/4167.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9ed745e4201500b4a32142b87296adf6"
+    },
+    {
+      "id": "247b5d1696ec",
+      "title": "Employers: do you have concerns about the rollout of Muse and other AI agents?",
+      "description": "Are you worried about staff connecting their digital assistants to work emails and databases? What steps are you taking to address this?Meta has rolled out its Muse AI assistant, which can be tasked with shopping, booking tickets and carrying out negotiations on a user’s behalf, across countries...",
+      "link": "https://www.theguardian.com/technology/2026/nov/26/employers-do-you-have-concerns-about-the-rollout-of-muse-and-other-ai-agents",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-26T11:23:41+00:00",
+      "image": "https://i.guim.co.uk/img/media/24f8156f1c3ce3ecc74c4c1c10d376b740af751e/225_0_3166_2533/master/3166.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d26eedf94b364b48ac47f1fa37b25be5"
+    },
+    {
+      "id": "6c8978dbb844",
+      "title": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
+      "description": "The FCA warned against “another force of attack” from agents after the company declined a request to work on joint testing ahead of rolling out its personal agent in the UK on Tuesday.",
+      "link": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-26T10:51:27+00:00",
+      "image": "https://media.wired.com/photos/6b07201067745997b8ffd8ed/master/pass/Meta-Refused-to-Share-Muse-for-Testing-Business-2300550254.jpg"
+    },
+    {
+      "id": "9fa7d43abb47",
+      "title": "Why Xi’s warning against a ‘blind’ tech rush is suddenly ringing louder",
+      "description": "Chinese President Xi Jinping’s warning last month against a disorderly rush into new industries has come into sharper focus this week with an investigation into Shanghai’s party chief, a sell-off in chip stocks and renewed questions about whether China’s computing boom can pay for itself. During...",
+      "link": "https://www.scmp.com/tech/article/3375914/why-xis-warning-against-blind-tech-rush-suddenly-ringing-louder",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-26T10:30:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/979c072a-5442-4ebc-9d9e-8b669da33878_25d3f261.jpg?itok=0aI437En&v=1795684608"
+    },
+    {
+      "id": "79e30128455a",
+      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+      "description": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs accuse the company of planning to auction off \"the private chat histories of...",
+      "link": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-26T09:54:40+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25557391/STK278_character_ai_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "2dddb5d55f18",
+      "title": "Huawei advances home-grown chip design ecosystem while eyeing global push to rival Nvidia",
+      "description": "Huawei Technologies and a local software partner claim to have made breakthroughs in domestic chip design tools built around the telecoms equipment giant’s Tau Scaling Law, marking the latest effort to cultivate a self-reliant semiconductor supply chain in China. Hangzhou-based Phlexing...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3375902/huawei-advances-home-grown-chip-design-ecosystem-while-eyeing-global-push-rival-nvidia",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-11-26T09:00:15+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/57207bb8-3db1-4af4-9585-235cac064260_1075bf2d.jpg?itok=rKh2F1nj&v=1795682501"
+    },
+    {
+      "id": "345c5251e7e8",
+      "title": "How US-China tech rivalry has been reset by Jensen Huang saga",
+      "description": "Laila Khawaja is research director at Gavekal Technologies, the financial services and analytics firm’s tech wing. Before her current role, she worked at Gavekal Fathom China from its founding in 2009, developing broad expertise in China’s corporate landscape. A graduate of Beijing Foreign...",
+      "link": "https://www.scmp.com/plus/tech/tech-war/article/3375892/how-us-china-tech-rivalry-has-been-reset-jensen-huang-saga",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-11-26T07:57:45+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/0ac66684-09e5-47d8-af10-b135675c4d1a_efeb4358.jpg?itok=el8IDiER&v=1795679498"
+    },
+    {
+      "id": "c0b70607ee81",
+      "title": "Elon Musk pledges to give two SpaceX shares to every child in the US",
+      "description": "The total value of the shares could reach almost $18bn and comes as tech companies debate how to share the spoils of the AI boomElon Musk, the world’s richest person, has pledged to give every child in the US two shares in SpaceX, the space ⁠and AI company he ​runs, worth a total of almost...",
+      "link": "https://www.theguardian.com/technology/2026/nov/26/elon-musk-pledges-to-give-two-spacex-shares-to-every-child-in-the-us",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-26T07:02:37+00:00",
+      "image": "https://i.guim.co.uk/img/media/6b1786336d92dd9924ed6029c54417bb3647a7e8/448_0_4604_3681/master/4604.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2ffd27c3386ac3237566a02659c8e900"
+    },
+    {
+      "id": "e5146c5dc6fc",
+      "title": "China pushes brain-computer interface breakthroughs as Neuralink advances towards market",
+      "description": "Chinese firms are racing to claim brain-computer interface (BCI) breakthroughs as Elon Musk’s Neuralink advances towards commercialisation, with Beijing seeking to leapfrog the US by setting standards and expanding real-world applications in what it sees as a strategic industry. Neuralink said...",
+      "link": "https://www.scmp.com/business/china-business/article/3375858/china-pushes-brain-computer-interface-breakthroughs-neuralink-advances-towards-market",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-11-26T07:00:11+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/81205e7e-9334-4423-96f1-09872c848795_e48a6620.jpg?itok=9dVMDJbA&v=1795667007"
+    },
+    {
+      "id": "bc21f83e0e5c",
+      "title": "Alibaba sells US$482 million in ZTO Express shares as AI focus sharpens",
+      "description": "Alibaba Group Holding has sharply reduced its stake in Chinese logistics giant ZTO Express, raising roughly US$482 million in its second major sell-off of the courier’s shares in two months. Alibaba and its three affiliates – Alibaba ZT Investment Limited, New Retail Strategic Opportunities...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3375870/alibaba-sells-us482-million-zto-express-shares-ai-focus-sharpens",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-26T05:04:00+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/2a758912-9996-4f2b-89d0-00d826fd1300_c4bce972.jpg?itok=Taj0jHCw&v=1795669438"
+    },
+    {
+      "id": "71e34096a8b2",
+      "title": "Chinese AI chips to capture 88% of home market by 2028, UBS says, as Nvidia woes mount",
+      "description": "China’s annual domestic artificial intelligence accelerator shipments are set to jump nearly sixfold between 2025 and 2030 to more than 10 million units, with Cambricon Technologies and Biren Technology emerging as front runners, according to UBS. This comes as Beijing doubles down on...",
+      "link": "https://www.scmp.com/tech/tech-war/article/3375758/chinese-ai-chips-capture-88-home-market-2028-ubs-says-nvidia-woes-mount",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-26T04:00:11+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/d81b9e33-a5f9-4bb8-8491-c90e53348b10_bf2ddfdd.jpg?itok=4okIZR-7&v=1795599700"
+    },
+    {
+      "id": "584e3a5209df",
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "description": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+      "link": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-25T22:44:32+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800"
+    },
+    {
+      "id": "403c1eb3f610",
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "description": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might appeal or...",
+      "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-25T21:51:26+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&#038;strip=all&#038;crop=2.859375,3.7218027238494,93.788122558594,91.658221639303"
+    },
+    {
+      "id": "7dfe7f42824f",
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "description": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
+      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Tools",
+      "published": "2026-11-25T20:03:27+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/openai-chatgpt.jpg?resize=1200,800"
+    },
+    {
+      "id": "4f9e6896dd6a",
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "description": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+      "link": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Industry",
+      "published": "2026-11-25T19:54:57+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/08/GettyImages-2227140868.jpg?w=1024"
+    },
+    {
+      "id": "a787d540899e",
+      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+      "description": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development.",
+      "link": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-11-25T19:44:24+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-viva-tech.jpg?w=1024"
+    },
+    {
+      "id": "c7f81779ec1b",
+      "title": "Backblaze explains why it's sharing customer information with advertisers",
+      "description": "Backblaze tells Ars it won't share users' backup, storage files with advertisers.",
+      "link": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/",
+      "source": "Ars Technica",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-11-25T18:38:29+00:00",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1219679299-500x500.jpg"
+    },
+    {
+      "id": "5a14e6f7d917",
+      "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+      "description": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
+      "link": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-25T18:11:46+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2237660127.jpg?resize=1200,800"
+    },
     {
       "id": "97e0b61624d3",
       "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
@@ -16,8 +258,8 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
     },
     {
-      "id": "6c01d90a6777",
-      "title": "State AGs fight Character AI’s plan to auction off users’ private chats",
+      "id": "fe4869f0aab0",
+      "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
       "description": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
       "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
       "source": "TechCrunch",
@@ -104,8 +346,8 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200"
     },
     {
-      "id": "1cb0175f4c48",
-      "title": "Aidan is one of thousands of students forced to verbally defend his honours thesis as universities take on AI",
+      "id": "9fa6bf18d425",
+      "title": "Aidan didn’t expect a spoken-word component in his thesis - but universities hope it will help tackle AI",
       "description": "Honours students are increasingly being asked to sit oral assessments – but at the University of Sydney it’s become a requirement for allGet our breaking news email, free app or daily news podcastWhen Aidan Elwig Pollock signed up for an honours program at the University of Sydney, he did not...",
       "link": "https://www.theguardian.com/australia-news/2026/nov/25/australian-universities-tackle-ai-plagiarism-oral-assessment-honours-masters-phd",
       "source": "The Guardian",
@@ -258,17 +500,6 @@
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/23/3293a0da-a9f4-4316-91e9-32a239ac4de2_4be905db.jpg?itok=9cBM2P_D&v=1795398479"
     },
     {
-      "id": "5021a1d7b3f8",
-      "title": "Jensen Huang’s return steadies Nvidia, but China curbs, US scrutiny show no sign of easing",
-      "description": "Jensen Huang’s return as Nvidia’s CEO may steady the chipmaker’s leadership and calm jitters across the global artificial intelligence supply chain, but it is unlikely to ease US export restrictions on China as national security scrutiny in Washington intensifies, analysts say. The reinstatement...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3375632/jensen-huangs-return-steadies-nvidia-china-curbs-us-scrutiny-show-no-sign-easing",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-25T03:00:17+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/148dbe71-21f2-4956-a193-c11e9c8c6c21_49b8f085.jpg?itok=v46lBZdN&v=1795517972"
-    },
-    {
       "id": "a6b9faffff22",
       "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
       "description": "Streaming service says 43% of uploads to platform in past 90 days were made entirely by artificial intelligenceThe music streaming service Tidal has announced it will ban entirely AI-generated music from its platform and remove millions of songs, saying AI music “diverts streams and royalties...",
@@ -278,17 +509,6 @@
       "category": "Industry",
       "published": "2026-11-25T02:12:22+00:00",
       "image": "https://i.guim.co.uk/img/media/b8638ee431643455ce8b3251c145e5241b067c0a/1120_0_5600_4480/master/5600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7d95adb467d6eeb1927e10790e030e54"
-    },
-    {
-      "id": "218ef6f20a1f",
-      "title": "Huawei’s home-grown HarmonyOS passes 100 million device mark in ‘landmark moment’",
-      "description": "Huawei Technologies has announced that HarmonyOS, its home-grown, Android-free operating system, has surpassed 100 million installations, marking a milestone in its effort to build a software ecosystem independent of Google’s mobile services amid US-led sanctions. The Shenzhen-based firm said...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3375680/huaweis-home-grown-harmonyos-passes-100-million-device-mark-landmark-moment",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Ethics",
-      "published": "2026-11-25T02:00:07+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/f7b6c811-fd59-461c-b9a0-71ae33dbd1a5_b9df4739.jpg?itok=lavHLsTc&v=1795569561"
     },
     {
       "id": "5029e5630764",
@@ -313,17 +533,6 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-ChatGPT.png?resize=1200,675"
     },
     {
-      "id": "64035ee0c5ad",
-      "title": "As CATL’s grip on Chinese EV makers loosens, Xpeng doubles down on battery production",
-      "description": "Chinese electric vehicle (EV) maker Xpeng is ramping up its battery pack manufacturing despite widening losses, seeking greater supply chain independence as carmakers continue to diversify away from Contemporary Amperex Technology Ltd (CATL). The Guangzhou-based firm recently signed a 1.8...",
-      "link": "https://www.scmp.com/business/china-evs/article/3375583/catls-grip-chinese-ev-makers-loosens-xpeng-doubles-down-battery-production",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-25T00:00:39+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/ec2472c7-9aa5-4ada-9601-5023fea31cca_a38197b1.jpg?itok=SlWY5Ezi&v=1795502725"
-    },
-    {
       "id": "76f35842bb95",
       "title": "Why Kindergarten Shouldn’t Feel Like Starting Over",
       "description": "On “This Week with EdSurge,” two guests explain how early educators build belonging.",
@@ -344,215 +553,6 @@
       "category": "Education",
       "published": "2026-11-25T00:00:00+00:00",
       "image": "https://images.ctfassets.net/eflsecw4kznd/1qVFld2JuwOQy1eKG6nDoJ/0069036e2b57c7bd7a37a932a183012b/shutterstock_2851690753.jpg?w=1200"
-    },
-    {
-      "id": "f178ec72a949",
-      "title": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
-      "description": "Nvidia’s place at the center of the US economy may have outweighed concerns about its CEO’s ties to a suspected Chinese intelligence asset, national security and foreign policy experts say.",
-      "link": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-24T23:39:04+00:00",
-      "image": "https://media.wired.com/photos/6b05a2cb470266bfec0ce9be/master/pass/GettyImages-2306037065.jpg"
-    },
-    {
-      "id": "f11a379c70ae",
-      "title": "Is Albo terminal? No – but the world is in chaos and he will need to find his way through wicked problems | Peter Lewis",
-      "description": "Anthony Albanese is ending the final week of parliament at his lowest ebb – it’s a chance for him to rebuild public confidence in his leadershipGuardian Essential poll: Albanese’s disapproval rating hits highest level as problems mount for Labor The prime minister, Anthony Albanese, ends the...",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/25/anthony-albanese-approval-rating-poll-results",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-24T23:22:51+00:00",
-      "image": "https://i.guim.co.uk/img/media/49813722733e3256b224c80b9415ef87acfff9f6/645_0_6448_5159/master/6448.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=9120a9c44baf03e603352b47594274ac"
-    },
-    {
-      "id": "4d3aba07f192",
-      "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-      "description": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
-      "link": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-24T22:27:52+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2192215566.jpg?resize=1200,800"
-    },
-    {
-      "id": "2f65fbd230ba",
-      "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
-      "description": "Sell-off signals investors are bracing for further volatility in key AI sector driving economic growth worldwideTechnology shares led a market retreat on Tuesday as caution returned after Jensen Huang’s extraordinary return to Nvidia days after he was forced to resign, with investors bracing for...",
-      "link": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-11-24T22:05:21+00:00",
-      "image": "https://i.guim.co.uk/img/media/ba0b7e2734b3f5675558eff081b376f8f83077b6/479_0_4801_3840/master/4801.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=fc808307b5e3f691453f80b7c9300755"
-    },
-    {
-      "id": "9feb5b9cea1a",
-      "title": "Nvidia’s Jensen Huang says he is in therapy, as comeback rally fades",
-      "description": "Jensen Huang apologised to Nvidia staff and said he was in therapy on Tuesday, as a stock rally triggered by his shock return as CEO faltered amid persistent doubts over the probes he faces and the fate of the AI investment boom. “I made some terrible mistakes,” Huang told an hour-long all-hands...",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3375675/nvidias-jensen-huang-apologises-staff-says-he-therapy",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-24T22:03:22+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/7787b1cc-d438-41a2-8d08-56e37094017e_e9b196d5.jpg?itok=NunsUDR_&v=1795557792"
-    },
-    {
-      "id": "53330ff543c2",
-      "title": "Why Asia’s AI rally faces a tougher road even after Jensen Huang’s comeback",
-      "description": "While Jensen Huang’s return to Nvidia has soothed market sentiment, analysts have warned that the artificial intelligence boom that propelled Asian chip stocks this year is unlikely to regain its first-half momentum – and that US regulatory scrutiny of the sector remains far from over. “The...",
-      "link": "https://www.scmp.com/business/markets/article/3375601/why-asias-ai-rally-faces-tougher-road-even-after-jensen-huangs-comeback",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-24T22:00:15+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/a4c72a09-1ed2-4f9f-94c5-69c93d16bb50_88c1f9ab.jpg?itok=R6KiZeLe&v=1795509595"
-    },
-    {
-      "id": "cbe1b688521f",
-      "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
-      "description": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
-      "link": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-24T21:48:27+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294936867.jpg?resize=1200,800"
-    },
-    {
-      "id": "f6a13116e71c",
-      "title": "Even the best AI agents struggle with everyday life",
-      "description": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
-      "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Research",
-      "published": "2026-11-24T21:33:29+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2296543552.jpg?w=1024"
-    },
-    {
-      "id": "54f976f1eaa6",
-      "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
-      "description": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
-      "link": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T21:32:38+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/muse-walmart.png?w=1200"
-    },
-    {
-      "id": "f68bf79f8332",
-      "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
-      "description": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
-      "link": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T21:19:52+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/01-maple-hero-chargebacks-photo-16x9-1.png?resize=1200,675"
-    },
-    {
-      "id": "8d83a4dd540d",
-      "title": "Jensen Huang reportedly tells Nvidia staff it&#8217;s ‘not true’ Trump got him rehired",
-      "description": "Nvidia CEO Jensen Huang apologized to staff during his first all-hands since returning to the company, while attempting to distance himself from the narrative that the White House and tech leaders helped him get his job back, according to reports from Bloomberg, The New York Times, and The...",
-      "link": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T20:02:03+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2300373989.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "c3f1e1657416",
-      "title": "Agentic system personalizes physical controls to help users “DJ their art”",
-      "description": "“TangiMap” uses an AI agent to reprogram how buttons, knobs, and sliders are used, helping users do things like edit photos and perform music in a more dynamic, tactile way.",
-      "link": "https://news.mit.edu/2026/tangimap-agentic-system-personalizes-physical-controls-help-users-dj-their-art-1124",
-      "source": "MIT News",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-24T19:30:00+00:00",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202611/MIT-csail-TangiMap.jpg?itok=eoPhYjUD"
-    },
-    {
-      "id": "3b93a86a7ae4",
-      "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
-      "description": "Anthropic’s post-IPO slump could put pressure on AI startup valuations.",
-      "link": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T18:30:42+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2305298275.jpg?w=594"
-    },
-    {
-      "id": "37f9f1bc8b73",
-      "title": "David Fincher is being dragged for suspected use of AI in his latest film",
-      "description": "Though David Fincher's fans had been eagerly anticipating The Further Mis-Adventures of Cliff Booth, early screenings of the Once Upon a Time in Hollywood sequel starring Brad Pitt have raised questions about whether generative AI was used in the film. People have claimed that the movie is...",
-      "link": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T18:15:00+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/UFP25_R4_Rec709_2p4gamma_6188x3240_20260828.0363314_R2.jpg?quality=90&#038;strip=all&#038;crop=20.001873779297,0,79.998126220703,100"
-    },
-    {
-      "id": "ca1dfafbfd61",
-      "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
-      "description": "The British cyber agency says that \"building strong foundations has never mattered more\" as AI hacking tools rely on exploiting simple security flaws.",
-      "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-24T18:02:59+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2023/08/password-stealing-malware.jpg?resize=1200,800"
-    },
-    {
-      "id": "7e0448bfdab2",
-      "title": "Jensen Huang Apologizes to Nvidia Employees in First All-Hands Since His Return",
-      "description": "The Nvidia CEO opened up about his personal life, defended his reinstatement, and acknowledged that his intense management style had hurt his staff.",
-      "link": "https://www.wired.com/story/jensen-huang-apologizes-to-nvidia-employees-in-first-all-hands-since-his-return/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T17:44:53+00:00",
-      "image": "https://media.wired.com/photos/6b05ac8615bd092ec9b638cd/master/pass/GettyImages-2279157190.jpg"
-    },
-    {
-      "id": "cc516ded9011",
-      "title": "Tidal will start banning AI-generated music next month",
-      "description": "Tidal is officially banning AI-generated music on December 9th. As a result of this change, Tidal will delete around 29 million AI-generated songs and reject an estimated 80,000 to 85,000 tracks per day, according to Tidal music lead Robert Andersen. The move comes just months after Tidal began...",
-      "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
-      "source": "The Verge",
-      "region": "North America",
-      "category": "Policy",
-      "published": "2026-11-24T17:17:09+00:00",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25319678/STK301_Tidal_01.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "1899f77b93f0",
-      "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
-      "description": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
-      "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Tools",
-      "published": "2026-11-24T17:00:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/11/MuseCharm.png?w=1200"
-    },
-    {
-      "id": "259b2ddd51e7",
-      "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
-      "description": "The company said it will still accept songs that were made with AI assistance, but not fully generated.",
-      "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-24T16:46:00+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/tidal-brand.jpg?w=720"
     }
   ]
 }
