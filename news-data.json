@@ -1,17 +1,215 @@
 {
-  "updated": "2026-11-26T17:37:28.088432+00:00",
-  "source_count": 7,
+  "updated": "2026-11-27T17:19:26.355121+00:00",
+  "source_count": 6,
   "region_count": 3,
   "article_count": 50,
   "articles": [
     {
-      "id": "d83bb05083ce",
-      "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "id": "6bb383d5fc3c",
+      "title": "Why Goldman Sachs gives Unitree Robotics a sell rating and sees 48% downside",
+      "description": "Goldman Sachs has initiated coverage of Unitree Robotics with a sell rating, warning that the Chinese humanoid robot maker’s valuation may have run ahead of its ability to turn an early hardware lead into lasting industrial adoption and profits. In a report published on Thursday evening, the US...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3376095/why-goldman-sachs-gives-unitree-robotics-sell-rating-and-sees-48-downside",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-11-27T14:15:58+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/837897c3-1e13-4b4a-ab90-e47bcfa97b9f_260fb7e6.jpg?itok=s81hJ6kH&v=1795788956"
+    },
+    {
+      "id": "9f98b817162f",
+      "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+      "description": "Aside from dealing with my calendar, there's one thing I want AI to do: tell me if I'm about to miss the bus. What I need is a widget. It needs to tell me real-time arrivals for the bus stop near my house. Tapping around on my phone screen to open the right app and [&#8230;]",
+      "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "source": "The Verge",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-27T14:00:00+00:00",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04405_processed.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+    },
+    {
+      "id": "f9c372065f5c",
+      "title": "Meta whistleblower calls on Burnham to go further with ban on NDAs",
+      "description": "Sarah Wynn-Williams says tech insiders with concerns about AI are being silenced in system reminiscent of George Orwell’s 1984The Meta whistleblower who made allegations about the social media company’s treatment of teenagers has urged Andy Burnham to go further in banning non-disclosure...",
+      "link": "https://www.theguardian.com/technology/2026/nov/27/meta-whistleblower-sarah-wynn-williams-calls-on-burnham-to-go-further-with-ban-on-non-disclosure-agreements",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-27T12:30:08+00:00",
+      "image": "https://i.guim.co.uk/img/media/f277f364251690f43120ef6a9b54a085d1c66319/245_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=fb9f9e35f1ff830caac363bca270d566"
+    },
+    {
+      "id": "cba0c5151b73",
+      "title": "China’s Tencent makes AI drug discovery breakthrough with Nature paper",
+      "description": "Tencent Holdings has published a paper on using artificial intelligence to automate drug discovery in the leading science journal Nature, marking a breakthrough for the Chinese tech giant as it accelerates AI-enabled scientific research. The paper, submitted to the British journal in June 2025...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3376082/chinas-tencent-makes-ai-drug-discovery-breakthrough-nature-paper",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-11-27T12:30:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/f3199eb5-ba49-480e-bcd6-a91e82249dc4_74257071.jpg?itok=2gQgO70y&v=1795780324"
+    },
+    {
+      "id": "1616e6b20fa9",
+      "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+      "description": "Labor leaders and advocates urge protections for workers and consumers as AI use becomes more commonplaceAs millions of Americans begin holiday shopping this Black Friday, consumers and workers alike are already seeing how artificial intelligence is reshaping the retail landscape.Anna, a cashier...",
+      "link": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-27T10:00:02+00:00",
+      "image": "https://i.guim.co.uk/img/media/b00b5e8e8d672e254701571ca7a06b5d31716990/950_531_4337_3469/master/4337.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=fff8a5def0795f04309757d16035545b"
+    },
+    {
+      "id": "0a859e4a1ddc",
+      "title": "‘I am scared’: Careless People author Sarah Wynn-Williams on living under a gag order - and why it’s time to speak out against big tech",
+      "description": "Since writing her bestselling exposé, the former employee has been forbidden from speaking publicly about Meta. In an exclusive extract from her Orwell lecture, she talks about corporate lawfare, and the growing backlash against NDAs George Orwell understood that what is missing often tells you...",
+      "link": "https://www.theguardian.com/books/2026/nov/27/careless-people-author-sarah-wynn-williams-the-silence-is-mine-it-doesnt-have-to-be-yours",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-27T10:00:01+00:00",
+      "image": "https://i.guim.co.uk/img/media/bce0280d37537d266d3ab1f3d051baf4a80e95d6/683_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b9c16ebae355bbbb2c2e32c7abd05154"
+    },
+    {
+      "id": "52088fb1e12c",
+      "title": "Pizza history: AI agent’s cardless purchase is a first for UK",
+      "description": "Papa John’s order was made without sharing bank security details – tech that could revolutionise shoppingRetailers enter the unknown with AI shopping assistants on Black FridayAn order of Papa John’s margherita pizzas has become the first purchase in the UK to be made using an AI agent using...",
+      "link": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-27T09:53:11+00:00",
+      "image": "https://i.guim.co.uk/img/media/bf6bce003fbe74cd0f36f89414dd7b2fb6f3888f/996_0_5020_4016/master/5020.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6e41aab7f165bd34c72c23b2fdf8e018"
+    },
+    {
+      "id": "f3fd5a1dfb2b",
+      "title": "Meituan logs second straight quarterly profit as it fends off Alibaba, JD in instant retail",
+      "description": "Chinese food-delivery giant Meituan reported a second consecutive profitable quarter on Friday, as the company navigates intensifying competition from Alibaba Group Holding and JD.com while seeking to sustain its earnings recovery. The Beijing-based firm’s adjusted net profit for the three...",
+      "link": "https://www.scmp.com/tech/big-tech/article/3376041/meituan-logs-second-straight-quarterly-profit-it-fends-alibaba-jd-instant-retail",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-27T09:18:29+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/c4a80a6e-a528-41b8-a0f0-bada993ba2d2_cc6c2579.jpg?itok=ZoErWMj9&v=1795770604"
+    },
+    {
+      "id": "0adbac3f1a53",
+      "title": "Netherlands ‘will not be dictated to’, trade chief says in fight against US Match Act",
+      "description": "Days after the Dutch foreign minister sent similar messages during his visit to China, the country’s trade minister has vowed that the government would do “everything in its power” to stop the US’ Multilateral Alignment of Technology Controls on Hardware (Match) Act from being adopted, but...",
+      "link": "https://www.scmp.com/economy/global-economy/article/3376024/netherlands-will-not-be-dictated-trade-chief-says-fight-against-us-match-act",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Policy",
+      "published": "2026-11-27T09:00:13+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/ecffccc3-37fb-4879-b145-fc13cf684ba1_9752140c.jpg?itok=vYZb7jqr&v=1795766088"
+    },
+    {
+      "id": "6370ee6c4230",
+      "title": "Will exit of key executive cloud WuXi Biologics’ US outlook?",
+      "description": "The planned departure of a top executive at WuXi Biologics’ US arm has sparked debate over the geopolitical pressures facing the Chinese biotech services giant, although analysts remain upbeat about the company’s outlook in the American market. Nuno Fontes, president of WuXi Biologics’ US...",
+      "link": "https://www.scmp.com/business/companies/article/3375993/will-exit-key-executive-cloud-wuxi-biologics-us-outlook",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-27T09:00:08+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/e656385b-1b47-4ea7-9676-fdcb26ebfd27_268aac4e.jpg?itok=qik7kTxf&v=1795756284"
+    },
+    {
+      "id": "a8ec52adf4d9",
+      "title": "Why did an AI chip frenzy send a Chinese blender maker’s stock soaring 370%?",
+      "description": "China’s artificial intelligence boom has sent retail investors scrambling for exposure to graphics processing units (GPUs) – even if it means settling for “grain processing units” instead. Shares of Joyoung, a Chinese home appliance maker best known for its soy milk makers, surged to an all-time...",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3376026/why-did-ai-chip-frenzy-send-chinese-blender-makers-stock-soaring-390",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Tools",
+      "published": "2026-11-27T08:01:50+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/6bb8d5cc-66e4-4949-87c6-5f329e92b00e_e6d9cd00.jpg?itok=VGFnZNY6&v=1795767271"
+    },
+    {
+      "id": "e02e58b10000",
+      "title": "Natural England objected to a datacentre. Weeks later ministers threatened to abolish the agency",
+      "description": "Body urged Bristol city council to reject plan because of risk to nearby protected wildlife and habitats Natural England objected to the building of a large AI datacentre near Bristol weeks before the government threatened to abolish the independent environmental adviser.The nature adviser made...",
+      "link": "https://www.theguardian.com/environment/2026/nov/27/natural-england-objected-datacentre-ministers-abolish-bristol",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Policy",
+      "published": "2026-11-27T07:00:57+00:00",
+      "image": "https://i.guim.co.uk/img/media/b5748b57a64addd2c5bb997a92af840adb787b60/1358_0_4536_3629/master/4536.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=61a9d49a0f37592a9150f488ee69bf78"
+    },
+    {
+      "id": "4b8ebd76e880",
+      "title": "‘If the bot gets it wrong, who’s liable?’ Retailers enter the unknown with AI shopping assistants on Black Friday",
+      "description": "Brands know use of agents such as Meta Muse is on the rise but are unlikely to hand them the keys to the shopHave you downloaded Meta’s AI assistant Muse or do you plan to?They promise to find the best Black Friday deals, source Christmas gifts and find the ingredients for a romantic dinner.This...",
+      "link": "https://www.theguardian.com/business/2026/nov/27/retailers-ai-shopping-assistants-black-friday-brands-meta-muse",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-27T07:00:56+00:00",
+      "image": "https://i.guim.co.uk/img/media/bf333e3f6dd6c522cb53dcbc952b64553693c73d/0_0_3385_2708/master/3385.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1a3e4cc12509c8df74c1cc971762b2d0"
+    },
+    {
+      "id": "56e876749c4a",
+      "title": "A New Breed of Chip Runs AI Models Using Waves of Light",
+      "description": "German company Q.ANT is trying to cut the amount of energy required to run AI models by using light to perform the toughest calculations.",
+      "link": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
+      "source": "WIRED",
+      "region": "North America",
+      "category": "Research",
+      "published": "2026-11-27T07:00:00+00:00",
+      "image": "https://media.wired.com/photos/6b073e1d34813a006d725bef/master/pass/QANT-CEO-QandA-Business.jpg"
+    },
+    {
+      "id": "6fbd8a746904",
+      "title": "Huawei guilty on 10 counts in US trial; Nvidia’s Jensen Huang returns: SCMP’s 7 highlights",
+      "description": "We have selected seven stories from this week’s news across Hong Kong, mainland China, the wider Asia region and beyond that resonated with our readers and shed light on topical issues. If you would like to see more of our reporting, please consider subscribing. 1. Chinese astronauts greet first...",
+      "link": "https://www.scmp.com/news/world/article/3375979/huawei-guilty-10-counts-us-trial-nvidias-jensen-huang-returns-scmps-7-highlights",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Industry",
+      "published": "2026-11-27T04:15:06+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/373cd195-f254-4d9f-a4a7-7f9a740dc707_bc7ffa97.jpg?itok=f84TWhz8&v=1795749415"
+    },
+    {
+      "id": "3b0e01f0e208",
+      "title": "Laila Khawaja on how the Jensen Huang saga resets the US-China tech rivalry",
+      "description": "Laila Khawaja is research director at Gavekal Technologies, the financial services and analytics firm’s tech wing. Before her current role, she worked at Gavekal Fathom China from its founding in 2009, developing broad expertise in China’s corporate landscape. A graduate of Beijing Foreign...",
+      "link": "https://www.scmp.com/tech/tech-war/article/3375909/laila-khawaja-how-jensen-huang-saga-resets-us-china-tech-rivalry",
+      "source": "South China Morning Post",
+      "region": "Asia",
+      "category": "Research",
+      "published": "2026-11-26T22:00:16+00:00",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/4a0dc809-5469-447c-98b7-233eb6b5b4f0_faa2cfe8.jpg?itok=U_77edhv&v=1795683783"
+    },
+    {
+      "id": "24a117b03ac3",
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "description": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+      "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "source": "TechCrunch",
+      "region": "North America",
+      "category": "Policy",
+      "published": "2026-11-26T20:03:54+00:00",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg?w=1024"
+    },
+    {
+      "id": "29a0c7a3b73b",
+      "title": "Can Elon Musk really put AI datacentres in space? - The Latest",
+      "description": "The Trump administration has approved Elon Musk’s plan to create datacentres in space. US federal regulators have authorised the launch of one million Starmind orbital satellites, which are built by Musk’s SpaceX, to process data in space. Supporters argue the project will be more...",
+      "link": "https://www.theguardian.com/news/video/2026/nov/26/can-elon-musk-really-put-ai-datacentres-in-space-the-latest",
+      "source": "The Guardian",
+      "region": "Europe",
+      "category": "Tools",
+      "published": "2026-11-26T18:34:17+00:00",
+      "image": "https://i.guim.co.uk/img/media/7da230064c1eaf9ac951b3f7766a1a4a840051b7/933_0_4663_3731/master/4663.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=08d90a74bbddee9aea167a5ffa7fefc8"
+    },
+    {
+      "id": "7d838fd5da66",
+      "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
       "description": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
       "link": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
       "source": "TechCrunch",
       "region": "North America",
-      "category": "Industry",
+      "category": "Tools",
       "published": "2026-11-26T16:00:00+00:00",
       "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jason_and_Lucia_17.117_b11r13mg5.jpg?resize=1200,675"
     },
@@ -159,17 +357,6 @@
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/2a758912-9996-4f2b-89d0-00d826fd1300_c4bce972.jpg?itok=Taj0jHCw&v=1795669438"
     },
     {
-      "id": "71e34096a8b2",
-      "title": "Chinese AI chips to capture 88% of home market by 2028, UBS says, as Nvidia woes mount",
-      "description": "China’s annual domestic artificial intelligence accelerator shipments are set to jump nearly sixfold between 2025 and 2030 to more than 10 million units, with Cambricon Technologies and Biren Technology emerging as front runners, according to UBS. This comes as Beijing doubles down on...",
-      "link": "https://www.scmp.com/tech/tech-war/article/3375758/chinese-ai-chips-capture-88-home-market-2028-ubs-says-nvidia-woes-mount",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-26T04:00:11+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/d81b9e33-a5f9-4bb8-8491-c90e53348b10_bf2ddfdd.jpg?itok=4okIZR-7&v=1795599700"
-    },
-    {
       "id": "584e3a5209df",
       "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
       "description": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
@@ -291,17 +478,6 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/11/Anita-Verma-Lallian-2.jpg?w=1024"
     },
     {
-      "id": "f6f5de6a01fa",
-      "title": "Nvidia’s Jensen Huang is back – but will he still be a regular visitor to China?",
-      "description": "While Jensen Huang has reclaimed his seat atop Nvidia, his days as Silicon Valley’s most visible and frequent emissary to China are likely over as the United States tightens its chip export controls, according to analysts. Following the 63-year-old’s brief departure amid internal and...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3375795/nvidias-jensen-huang-back-will-he-still-be-regular-visitor-china",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-25T15:30:07+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/115e1309-ba1f-4609-b121-e99b90b9ff20_9ae80d2d.jpg?itok=iDw7GB9M&v=1795613150"
-    },
-    {
       "id": "9c3d692e115c",
       "title": "New York bans AI toys, including those using internet to talk to children",
       "description": "The state attorney general says she would ‘not hesitate to enforce’ the five-year ban signed by Governor Kathy HochulThe New York governor, Kathy Hochul, signed legislation on Wednesday that places a five-year ban on the manufacture and sale of toys powered by AI chatbots, including talking...",
@@ -357,17 +533,6 @@
       "image": "https://i.guim.co.uk/img/media/908614cdd05b81d36b3667409a3239a6f801312e/0_0_6795_5439/master/6795.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e307eff04ee78b90986590c269d3006a"
     },
     {
-      "id": "137789c4114a",
-      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
-      "description": "Voters are demanding action on the issue. We need to make AI work for the American public, not the tech oligarchsThis month’s elections demonstrated the American public’s urgent demand for change. But they also revealed a glaring problem for the Democrats’ policy agenda: they haven’t presented a...",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-25T13:00:26+00:00",
-      "image": "https://i.guim.co.uk/img/media/052f70b3cd29d16bf1465828355cd94e1de55a2f/31_0_4626_3703/master/4626.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=825be0be38090a1530c03103c52adaa1"
-    },
-    {
       "id": "a40647099a55",
       "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
       "description": "The central question for investigators is what Nvidia knew about where those chips ended up and whether Huang's affair with a Megaspeed executive gave the company reason to doubt Megaspeed's assurances.",
@@ -388,171 +553,6 @@
       "category": "Tools",
       "published": "2026-11-25T13:00:00+00:00",
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-    },
-    {
-      "id": "9edf8314cf44",
-      "title": "MiniMax chatbot Talkie removed from Apple App Store over alleged sexual content",
-      "description": "Talkie, the AI companion app developed by Chinese artificial intelligence company MiniMax, has been removed from Apple App Stores worldwide over its use of sexual content, following media reports that its AI-generated characters had allegedly sent inappropriate messages to minors. The...",
-      "link": "https://www.scmp.com/tech/tech-trends/article/3375791/minimax-chatbot-talkie-removed-apple-app-store-over-alleged-sexual-content",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Tools",
-      "published": "2026-11-25T12:32:51+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/e97778f9-b61d-459e-8846-bc8d1c5c3edb_08f9b1bb.jpg?itok=YP_mCtqs&v=1795609970"
-    },
-    {
-      "id": "8bd233ca042a",
-      "title": "Airplane Turbulence Is Extremely Hard to Predict, but Maybe Not for Long",
-      "description": "The “hardest remaining problem in classical physics” gets a boost from terabytes of crowdsourced data and new ways of using machine learning and AI.",
-      "link": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/",
-      "source": "WIRED",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-11-25T11:30:00+00:00",
-      "image": "https://media.wired.com/photos/6b0548d39ef0144d4a117a16/master/pass/GettyImages-1291069581.jpg"
-    },
-    {
-      "id": "b61550a3b11b",
-      "title": "Our ‘Paris manifesto’ proposes how to deal with extreme wealth in the AI age | Open letter",
-      "description": "It is possible for democracy to reverse the dynamic of oligarchy. But we must act nowThe explosion of extreme wealth in the world is the defining social fact of our times.When Forbes magazine began ranking the world’s largest fortunes in 1987, the wealth of the richest 0.0001% of our planet’s...",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/25/paris-manifesto-open-letter-ai-oligarchy",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Policy",
-      "published": "2026-11-25T11:00:47+00:00",
-      "image": "https://i.guim.co.uk/img/media/2dd975b73ad768204e517055d0fd577371cdf078/598_0_4903_3922/master/4903.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=1c9aac5924c3fe66618d816071a71686"
-    },
-    {
-      "id": "bbfb0f989a93",
-      "title": "Huawei forms patent teams for chips and AI, eyeing ecosystem to rival Nvidia",
-      "description": "Huawei Technologies has established dedicated patent teams for semiconductors and artificial intelligence as it seeks to establish an overseas foothold for a computing ecosystem to rival Nvidia’s. Extending an intellectual property (IP) operation rooted in telecommunications, the Shenzhen-based...",
-      "link": "https://www.scmp.com/tech/big-tech/article/3375756/huawei-forms-patent-teams-chips-and-ai-eyeing-ecosystem-rival-nvidia",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-11-25T10:30:07+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/66766fc2-177c-4c19-95f1-86cd10e01979_7086cd84.jpg?itok=oCHjVNsh&v=1795599437"
-    },
-    {
-      "id": "3eced747578c",
-      "title": "AI's shock-and-awe raid on maths looks like pride before a fall | Rafael Behr",
-      "description": "Machines are bulldozing through hard problems to assert the power of their tech bro creators, not to advance human knowledgeIn most walks of life, trying something 12,363,153,437,138 times and getting the same result is reason enough to assume it works every time. Not in maths, where a...",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/25/ai-mathematics-human-knowledge-progress-technology-industry",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Education",
-      "published": "2026-11-25T10:05:15+00:00",
-      "image": "https://i.guim.co.uk/img/media/cdd7dbf6b2851930cbc2eb7bcc23473a0b6d999f/493_4_4048_3242/master/4048.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=eac1054ae5b54b7c80642e6d55077753"
-    },
-    {
-      "id": "90394c87b5f2",
-      "title": "Jensen Huang is back. The risk to Nvidia and the AI boom remains",
-      "description": "Jensen Huang resigned as CEO of Nvidia on November 12, yet on November 23 the board reinstated him. In the intervening days, the company lost around a trillion dollars in market value. When the news of Huang’s reinstatement broke on Monday, Nvidia shares jumped more than 30 per cent and...",
-      "link": "https://www.scmp.com/opinion/world-opinion/article/3375628/jensen-huang-back-risk-nvidia-and-ai-boom-remains",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Industry",
-      "published": "2026-11-25T08:36:51+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/53d477ec-6bfa-43af-a0c6-e5ff8deca5e6_ced70a34.jpg?itok=_uEciWXT&v=1795515694"
-    },
-    {
-      "id": "566d916cc519",
-      "title": "‘It’s been really a mess’: Meta insiders concerned over push to AI content moderation",
-      "description": "Several employees say rapid speed at which algorithms work means mistakes can happen at greater scaleMeta employees have expressed concern at the company’s push to replace human moderators with artificial intelligence, claiming the technology is leading to mistakes with the potential for...",
-      "link": "https://www.theguardian.com/technology/2026/nov/25/meta-insiders-concerned-push-to-ai-content-moderation",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Research",
-      "published": "2026-11-25T07:00:08+00:00",
-      "image": "https://i.guim.co.uk/img/media/534fcd6f2a9a97fae39f19c96472abe6ec41e0b9/0_819_3766_3013/master/3766.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=fdaa92599a07e39ed0ca2953309791c5"
-    },
-    {
-      "id": "a53a86ecdc6e",
-      "title": "What real or imagined horrors are waking you up at 4am? | First Dog on the Moon",
-      "description": "We are in the most globally anxious period since WW2. I made this up but it sounds trueSign up here to get an email whenever First Dog cartoons are publishedGet all your needs met at the First Dog shop if what you need is First Dog merchandise and prints Continue reading...",
-      "link": "https://www.theguardian.com/commentisfree/picture/2026/nov/25/what-real-or-imagined-horrors-are-waking-you-up-at-4am",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Research",
-      "published": "2026-11-25T05:28:12+00:00",
-      "image": "https://i.guim.co.uk/img/media/c834265aaf1f6dbe479a1f76f6ad7cf321895cea/0_48_636_509/master/636.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=71a450b1bdfd279ea7a2b458540182ee"
-    },
-    {
-      "id": "cb6d7dd55d1d",
-      "title": "Shein to pay US$100 million to settle US shipping, customer service claims",
-      "description": "Chinese fast-fashion ⁠giant Shein will pay US$100 million ⁠to settle with the US Federal Trade ⁠Commission (FTC) over claims it misled consumers on shipping times, product reviews and the origin of cotton in some of its goods, according to court documents filed on Tuesday. Shein also agreed ⁠not...",
-      "link": "https://www.scmp.com/tech/article/3375701/shein-pay-us100-million-settle-us-shipping-customer-service-claims",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Policy",
-      "published": "2026-11-25T04:54:23+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/9b1dea35-4da1-42d1-8261-951a5d07b7e6_7f0f273d.jpg?itok=L-hu4GCi&v=1795582454"
-    },
-    {
-      "id": "2d6baab359ef",
-      "title": "How wireless innovation resolves real-world challenges and keeps people connected",
-      "description": "A surgeon travelling on a high-speed train at nearly 350 kilometres per hour can download hundreds of medical images over a mobile network. A researcher working above 6,000 metres can stay in real-time contact with colleagues thousands of kilometres away. These are remarkable capabilities, made...",
-      "link": "https://www.scmp.com/native/tech/topics/technological-game-changers/article/3375410/how-wireless-innovation-resolves-real-world-challenges-and-keeps-people-connected",
-      "source": "South China Morning Post",
-      "region": "Asia",
-      "category": "Research",
-      "published": "2026-11-25T04:00:12+00:00",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/23/3293a0da-a9f4-4316-91e9-32a239ac4de2_4be905db.jpg?itok=9cBM2P_D&v=1795398479"
-    },
-    {
-      "id": "a6b9faffff22",
-      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
-      "description": "Streaming service says 43% of uploads to platform in past 90 days were made entirely by artificial intelligenceThe music streaming service Tidal has announced it will ban entirely AI-generated music from its platform and remove millions of songs, saying AI music “diverts streams and royalties...",
-      "link": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Industry",
-      "published": "2026-11-25T02:12:22+00:00",
-      "image": "https://i.guim.co.uk/img/media/b8638ee431643455ce8b3251c145e5241b067c0a/1120_0_5600_4480/master/5600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7d95adb467d6eeb1927e10790e030e54"
-    },
-    {
-      "id": "5029e5630764",
-      "title": "I asked AI if it was OK to use AI to write an obituary. The answer surprised me | Anna Spargo-Ryan",
-      "description": "Victorian Liberal leader Jess Wilson’s tribute to Molly Meldrum contained heaps of the right words. But they were written by something that can’t feelI know how this will sound but when my nanna died the second thought I had, after utter devastation, was: “This is a writer’s dream.” She was 101....",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/25/jess-wilson-molly-meldrum-tribute-ai-ethics-obituary",
-      "source": "The Guardian",
-      "region": "Europe",
-      "category": "Tools",
-      "published": "2026-11-25T01:00:01+00:00",
-      "image": "https://i.guim.co.uk/img/media/f3c83be0e5415a34561d49dc0d5206b7ca0cc88f/16_0_4680_3744/master/4680.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=2ce00b7814541369575f9918e632ef3e"
-    },
-    {
-      "id": "1584c3d0dc63",
-      "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
-      "description": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits and raising the question of whether...",
-      "link": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
-      "source": "TechCrunch",
-      "region": "North America",
-      "category": "Industry",
-      "published": "2026-11-25T00:12:02+00:00",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-ChatGPT.png?resize=1200,675"
-    },
-    {
-      "id": "76f35842bb95",
-      "title": "Why Kindergarten Shouldn’t Feel Like Starting Over",
-      "description": "On “This Week with EdSurge,” two guests explain how early educators build belonging.",
-      "link": "https://www.edsurge.com/news/why-kindergarten-shouldnt-feel-like-starting-over",
-      "source": "EdSurge",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-11-25T00:00:00+00:00",
-      "image": "https://images.ctfassets.net/eflsecw4kznd/RkEC3ZzTMV0qXTN2qMGIB/9542f22ea4ef1c80e14c7b9fa4ceb554/shutterstock_1476636281.jpg?w=1200"
-    },
-    {
-      "id": "820860ad667e",
-      "title": "What Happens When AI Outruns Title I Schools?",
-      "description": "As AI advances in curriculum and instruction, this educator questions whether the race to implementation is leaving Title I schools behind.",
-      "link": "https://www.edsurge.com/news/what-happens-when-ai-outruns-title-i-schools",
-      "source": "EdSurge",
-      "region": "North America",
-      "category": "Education",
-      "published": "2026-11-25T00:00:00+00:00",
-      "image": "https://images.ctfassets.net/eflsecw4kznd/1qVFld2JuwOQy1eKG6nDoJ/0069036e2b57c7bd7a37a932a183012b/shutterstock_2851690753.jpg?w=1200"
     }
   ]
 }
